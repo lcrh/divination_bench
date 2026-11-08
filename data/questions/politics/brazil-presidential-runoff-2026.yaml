@@ -1,0 +1,86 @@
+id: brazil-presidential-runoff-2026
+domain: politics
+title: Brazil presidential runoff, 25 October 2026 (Lula vs Flávio Bolsonaro)
+question: >-
+  Who will win Brazil's presidential runoff election on 25 October 2026 between
+  incumbent President Luiz Inácio Lula da Silva and Senator Flávio Bolsonaro?
+question_type: multiple_choice
+options: ["Luiz Inácio Lula da Silva", "Flávio Bolsonaro"]
+resolution_criteria: >-
+  Resolves to the candidate declared winner of the 25 October 2026 second round
+  by Brazil's Superior Electoral Court (TSE), based on valid votes.
+context_summary: >-
+  Brazil held the first round of its 2026 presidential election on 4 October.
+  In a result that both pollsters and prediction markets had failed to
+  anticipate, Senator Flávio Bolsonaro of the Liberal Party (PL), eldest son of
+  the convicted and ineligible former president Jair Bolsonaro, finished first
+  with about 47.0% of valid votes, ahead of the left-wing incumbent Luiz Inácio
+  Lula da Silva (Workers' Party, PT) on about 45.2%. Because nobody passed 50%,
+  the two met in a runoff on 25 October. Flávio collected endorsements from
+  most right-wing and centre-right figures, giving him an apparent advantage in
+  consolidating eliminated candidates' voters. Lula, 80, was seeking a record
+  fourth term; no Brazilian president since 1985 had won after trailing in the
+  first round. Around 33 million registered voters abstained in round one, and
+  Lula's campaign focused on turnout. Final-week polls showed a statistical tie
+  with Flávio marginally ahead: Quaest (released 21 Oct, after a televised
+  debate) had Flávio 45%, Lula 44% (valid votes 50.6% to 49.4%); Datafolha (22
+  Oct) had 47% to 46%, a 50-50 tie in valid votes; PoderData 51-49 and
+  RealTime Big Data 52-48 in valid votes for Flávio. Prediction markets were far
+  more confident than polls: after the first round Kalshi and Polymarket gave
+  Flávio roughly 78-80% and Lula about 20-25%.
+context_sources:
+  - url: https://www.investing.com/news/world-news/bolsonaros-lead-over-lula-narrows-ahead-brazilrunoff-quaest-poll-shows-4963288
+    title: Bolsonaro's lead over Lula narrows ahead Brazil runoff, Quaest poll shows
+    publisher: Reuters (via Investing.com)
+    published_date: 2026-10-21
+    excerpt: "Flavio Bolsonaro would receive 45% of the vote, compared with 44% for the leftist incumbent... A week earlier, Bolsonaro had 46% of the vote compared with Lula's 44%."
+  - url: https://www.cnbctv18.com/world/flavio-bolsonaro-and-lula-about-even-ahead-of-brazil-runoff-datafolha-poll-shows-20017491.htm
+    title: Flavio Bolsonaro and Lula about even ahead of Brazil runoff, Datafolha poll shows
+    publisher: Reuters (via CNBC TV18)
+    published_date: 2026-10-23
+    excerpt: "The senator... would receive 47% of the vote compared with 46% for the president... The senator surprisingly led Lula in the first-round vote earlier this month."
+  - url: https://noticias.uol.com.br/eleicoes/2026/10/23/pesquisas-segundo-turno-hoje-veja-numeros-de-datafolha-poderdata-quaest-e-outras.ghtm
+    title: "Pesquisas 2º turno hoje: veja números de Datafolha, Quaest e outras"
+    publisher: UOL
+    published_date: 2026-10-23
+    excerpt: "RealTime Big Data... Flávio Bolsonaro 52% dos votos válidos e Lula 48%... Datafolha divulgou ontem um empate em votos válidos, com 50% para Flávio Bolsonaro e 50% para Lula."
+event_date: 2026-10-25
+outcome_summary: >-
+  Lula won the runoff in a come-from-behind victory. With 100% of ballots
+  counted, the TSE reported Lula 51.79% (64,256,232 votes) to Flávio
+  Bolsonaro's 48.21% (59,826,041), a margin of about 4.43 million votes (3.58
+  points). Turnout was about 80.8%. Lula became the first president since the
+  return to civilian rule in 1985 to win after losing the first round, and the
+  first Brazilian to secure a fourth term (to 2030). The count was tense: at one
+  point the official tally had Flávio narrowly ahead before Lula overtook him.
+  Flávio Bolsonaro refused to recognise the result and called for it to be
+  annulled; TSE president Kássio Nunes Marques (a Jair Bolsonaro appointee)
+  confirmed Lula's victory. World leaders congratulated Lula. The result was a
+  major upset relative to prediction markets, which had Flávio at roughly
+  75-80% until election day.
+resolved_answer: Luiz Inácio Lula da Silva
+outcome_sources:
+  - url: https://www.bbc.com/news/articles/ckm23y3mg1yyo
+    title: Lula wins fourth term in dramatic Brazil election comeback
+    publisher: BBC News
+    published_date: 2026-10-26
+    excerpt: "Lula took 51.79% of votes, becoming the first president since Brazil's return to civilian rule in 1985 to be elected after losing the first round... Flávio Bolsonaro... has so far refused to recognise the result and called for it to be annulled."
+  - url: https://www.theguardian.com/world/ng-interactive/2026/oct/25/brazil-election-2026-live-second-round-results
+    title: "Brazil election 2026: Full second round results as Lula wins comeback against Flávio Bolsonaro"
+    publisher: The Guardian
+    published_date: 2026-10-25
+    excerpt: "Luiz Inácio Lula da Silva 51.79% | 64,256,232 votes; Flávio Bolsonaro 48.21% | 59,826,041 votes (100.0% of districts counted)."
+  - url: https://www.cnbc.com/2026/10/26/lula-brazil-election-prediction-markets.html
+    title: Lula wins Brazil runoff after prediction markets favored Bolsonaro
+    publisher: CNBC
+    published_date: 2026-10-26
+    excerpt: "As late as Sunday afternoon, Lula remained a significant underdog on prediction markets... Bolsonaro's odds on prediction markets surged after first-round voting on Oct. 4, with both Kalshi and Polymarket giving Bolsonaro an over 80% chance."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/brazil-presidential-election
+  pre_event_probability: {"Flávio Bolsonaro": 0.78, "Luiz Inácio Lula da Silva": 0.22}
+  as_of: 2026-10-22
+notes: >-
+  Market prices from Preduck price log (https://blog.preduck.com/blog/brazil-election-odds)
+  and Action Network preview: Polymarket Flávio 78% / Lula 22% on 22 Oct, Flávio 79.9% on 24 Oct;
+  Kalshi Flávio 79% / Lula 22%.

@@ -1,0 +1,93 @@
+id: israel-knesset-election-2026
+domain: politics
+title: Outcome of Israel's 27 October 2026 Knesset election
+question: >-
+  What will be the outcome of Israel's legislative election on 27 October 2026?
+  Which party will be largest, how many seats will Benjamin Netanyahu's bloc and
+  Gadi Eisenkot's opposition bloc win, and will either reach a 61-seat majority?
+question_type: open
+resolution_criteria: >-
+  Judged against the final official results certified by Israel's Central
+  Elections Committee for the 26th Knesset (party seat totals and bloc
+  arithmetic), plus the immediate post-election developments (e.g. who receives
+  the first mandate to form a government).
+context_summary: >-
+  Israelis voted on 27 October 2026 for the 26th Knesset (120 seats, 61 needed
+  for a majority, 3.25% threshold). Prime Minister Benjamin Netanyahu's Likud
+  led a bloc with Jewish Power (Ben-Gvir), Religious Zionism–Zehut (Smotrich),
+  Shas and United Torah Judaism; his coalition had controlled up to 68 seats in
+  the outgoing Knesset. The main challenger was former IDF chief of staff Gadi
+  Eisenkot, whose new Yashar! party headed a "change" bloc including Naftali
+  Bennett's Together (B'Yachad), Avigdor Lieberman's Yisrael Beiteinu and Yair
+  Golan's Democrats. Arab-led lists (the Hadash–Ta'al–Balad Joint List and
+  Ra'am) were outside both blocs; most Jewish opposition parties pledged not to
+  govern with them. Several small lists (Ofer Winter's People of Israel, the
+  Hendel–Zelekha Reservists/Economic list) hovered near the threshold. US
+  President Trump endorsed Netanyahu during the campaign. In the last legal
+  polls (published Friday 23 October), Channel 12 and KAN both had Yashar
+  first with 22 seats, Likud second with 20 and Bennett on 14, with
+  Eisenkot's bloc at 52 and Netanyahu's at 50; Maariv had 54 vs 48 and Channel
+  13 54 vs 50, with Arab parties around 14. A Times of Israel poll had the two
+  blocs tied at 51. The To 120 forecast gave Netanyahu's bloc ~54 expected
+  seats and only ~5% chance of 61+. Prediction markets mostly favoured
+  Eisenkot to become the next prime minister.
+context_sources:
+  - url: https://www.aa.com.tr/en/world/netanyahu-bloc-trailing-opposition-with-projected-50-seats-to-52-in-final-israeli-election-polls/4099160
+    title: Netanyahu bloc trailing opposition with projected 50 seats to 52 in final Israeli election polls
+    publisher: Anadolu Agency
+    published_date: 2026-10-24
+    excerpt: "Eisenkot's Yashar party would win 22 seats, followed by Netanyahu's Likud with 20, and former Prime Minister Naftali Bennett's Together party with 14... Eisenkot's camp would get 52 seats, Netanyahu's bloc 50, Arab parties 14."
+  - url: https://www.timesofisrael.com/netanyahu-and-eisenkot-in-dead-heat-five-days-before-election-final-toi-poll-shows/
+    title: Netanyahu and Eisenkot in dead heat five days before election, final ToI poll shows
+    publisher: The Times of Israel
+    published_date: 2026-10-23
+    excerpt: "Thursday's poll shows each of the two Jewish-led blocs receiving 51 seats, well below the 61 needed... Eisenkot's Yashar party winning 23 seats... Likud... 21."
+  - url: https://khanlist.com/story/with-two-days-until-election-eisenkot-leads-over-netanyahu-537cb5bb
+    title: "With two days until election: Eisenkot leads over Netanyahu, but neither can reach majority - poll"
+    publisher: KhanList
+    published_date: 2026-10-25
+    excerpt: "According to the final Maariv poll before the election, the opposition's change bloc has strengthened to 54 seats, compared with 48 for Netanyahu's bloc."
+  - url: https://twonetwenty.com/articles/october-26-final-forecast
+    title: "The final forecast: the distance to 61"
+    publisher: To 120
+    published_date: 2026-10-26
+    excerpt: "The vote-led R forecast puts the Netanyahu-aligned bloc at 53.6 expected seats and the Zionist Opposition at 51.6... reaches at least 61 in 5.4% of R simulations."
+event_date: 2026-10-27
+outcome_summary: >-
+  No bloc won a majority, but Likud outperformed the polls to finish clearly
+  first. Final official results (turnout ~78%, the highest in decades): Likud
+  27 seats (20.5%), Yashar! 21, Together (Bennett) 12, Joint List 11, Democrats
+  8, Ra'am 8, Yisrael Beiteinu 7, Jewish Power 7, United Torah Judaism 7, Shas
+  6, Religious Zionism–Zehut 6. The Hendel–Zelekha Reservists list (2.7%) and
+  Ofer Winter's People of Israel (1.7%) missed the threshold. Netanyahu's bloc
+  won 53 seats (down from 68 at its peak), Eisenkot's bloc 48, and Arab-led
+  parties a record 19, making them pivotal. Likud alleged Qatari interference
+  and fraud; the Central Elections Committee certified the results on 4
+  November after finding no irregularities that changed the outcome. Despite
+  Likud being largest, President Herzog gave the first mandate to form a
+  government to Eisenkot (backed by 67 MKs' recommendations vs 46 for
+  Netanyahu), with 28 days plus a possible 14-day extension.
+resolved_answer: >-
+  Hung Knesset: Likud largest party with 27 seats (Yashar! 21, Together 12);
+  Netanyahu's bloc 53, Eisenkot's bloc 48, Arab-led parties a record 19; no bloc
+  reached 61. Herzog then gave Eisenkot the first mandate.
+outcome_sources:
+  - url: https://www.washingtonpost.com/world/2026/10/30/final-vote-count-confirms-uncertainty-after-israeli-election/
+    title: Final vote count confirms uncertainty after Israeli election
+    publisher: The Washington Post
+    published_date: 2026-10-30
+    excerpt: "Israeli election authorities released a final vote tally early Friday... The turnout was 77.9 percent — the highest in decades."
+  - url: https://www.aljazeera.com/news/2026/11/4/israel-vote-results-confirmed-as-election-commission-rejects-fraud-claims
+    title: Israel vote results confirmed as election commission rejects fraud claims
+    publisher: Al Jazeera
+    published_date: 2026-11-04
+    excerpt: "the Netanyahu-led bloc won 53 parliamentary seats in the October 27 vote, while Gadi Eisenkot's opposition bloc got 48, and the Arab-led parties Ra'am and the Joint List secured a record 19."
+  - url: https://www.jpost.com/israel-election-2026/2026-11-08/live-updates-914159
+    title: "Israel Election 2026 live updates: Eisenkot receives mandate to build coalition"
+    publisher: The Jerusalem Post
+    published_date: 2026-11-08
+    excerpt: "Netanyahu's Likud won 27 seats, followed by Eisenkot's Yashar with 21 and Naftali Bennett's B'Yachad with 12... President Isaac Herzog has awarded the mandate to Eisenkot."
+notes: >-
+  Official CEC results: https://votes26.bechirot.gov.il/?lang=en. Polymarket "next PM" market
+  had Eisenkot favoured through most of the campaign (Israel Hayom); Netanyahu's odds jumped ~14
+  points after exit polls. Final PM not yet sworn in, so the question targets the election result.

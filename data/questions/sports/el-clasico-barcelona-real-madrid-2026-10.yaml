@@ -1,0 +1,81 @@
+id: el-clasico-barcelona-real-madrid-2026-10
+domain: sports
+title: El Clasico, 25 October 2026 - Barcelona vs Real Madrid at Camp Nou
+question: >-
+  What will be the result of the La Liga match between FC Barcelona and Real
+  Madrid at the Spotify Camp Nou on 25 October 2026?
+question_type: multiple_choice
+options: ["Barcelona win", "Draw", "Real Madrid win"]
+resolution_criteria: >-
+  Resolves to the full-time (90 minutes plus stoppage time) result of the La
+  Liga match FC Barcelona vs Real Madrid played on 25 October 2026, per the
+  official La Liga match report.
+context_summary: >-
+  Hansi Flick's Barcelona, the back-to-back La Liga champions, host Real
+  Madrid on Sunday 25 October at the Spotify Camp Nou. Barcelona have won all
+  nine league games, scoring 39 goals, and a win would make them the first
+  team in one of Europe's top five leagues to start a season with ten
+  straight victories. They lead Madrid by six points. However, Barcelona lost
+  their first match of the season on Tuesday, 4-2 at Paris Saint-Germain in
+  the Champions League, where Flick rested players with the Clasico in mind.
+  Barcelona are missing Dani Olmo (adductor, injured against PSG), Jules
+  Kounde (ankle), Eric Garcia, Andreas Christensen and Roony Bardghji. Real
+  Madrid, back under Jose Mourinho since the summer, have won four in a row,
+  including a thrashing of RB Leipzig in midweek, and are starting to look
+  like a coherent team. They have lost six of the last seven Clasicos, though.
+  Vinicius Jr is suspended (serving the second game of a four-match ban), and
+  Rodrygo and Raul Asencio are injured. Kylian Mbappe, Jude Bellingham, Arda
+  Guler and Federico Valverde lead the visitors. DraftKings priced Barcelona
+  at -165, the draw at +475 and Real Madrid at +300. Opta's model gave
+  Barcelona 54.4%, the draw 19.5% and Real Madrid 26.1%. ESPN's writers mostly
+  predicted Barcelona wins such as 3-1 or 4-2.
+context_sources:
+  - url: https://www.aljazeera.com/sports/2026/10/24/barcelona-vs-real-madrid-la-liga-el-clasico-preview-predictions-teams
+    title: "Barcelona vs Real Madrid: La Liga - El Clasico preview, predictions, teams"
+    publisher: Al Jazeera
+    published_date: 2026-10-24
+    excerpt: "Opta's supercomputer has given Barcelona a 54.4 percent chance of winning this Clasico while Real have a 26.1 percent probability. There are 19.5 percent odds of a draw ... Vinicius Jr will miss the game due to a suspension while Raul Asencio (leg) and Rodrygo (knee) are both injured."
+  - url: https://www.espn.com/soccer/story/_/id/50227950/barcelona-real-madrid-laliga-clasico-form-team-news-combined-xi-predictions-odds-all-head-head
+    title: "Barcelona-Real Madrid: Clasico form, team news, combined XI, predictions, odds"
+    publisher: ESPN
+    published_date: 2026-10-25
+    excerpt: "Barcelona: -165 Real Madrid: +300 Draw: +475. Odds via DraftKings, correct as of 7 a.m. ET on Oct. 25."
+event_date: 2026-10-25
+outcome_summary: >-
+  Real Madrid won 2-1 at the Spotify Camp Nou (attendance 62,055), ending
+  Barcelona's 100% league start and cutting the gap at the top to three
+  points. Kylian Mbappe scored both Madrid goals. In the 41st minute, Gerard
+  Martin's clearance struck Mbappe and went in after a cross from Yan
+  Diomande. Raphinha equalised in the 61st minute with a snapshot from Pedri's
+  pass that Andriy Lunin got a hand to. Lunin then made a big save from a
+  Martin header, and Lamine Yamal clipped a shot just wide in the 78th
+  minute. In the 87th minute, after skill from Jude Bellingham, Eduardo
+  Camavinga cut the ball back and Mbappe slotted in the winner. Jose Mourinho
+  celebrated with a knee slide, and Madrid players clashed with Barcelona
+  fans. The referee was Juan Martinez Munuera.
+resolved_answer: "Real Madrid win"
+outcome_sources:
+  - url: https://www.skysports.com/football/barcelona-vs-real-madrid/report/563017
+    title: "Barcelona 1-2 Real Madrid: Kylian Mbappe scores late winner in El Clasico to beat LaLiga leaders"
+    publisher: Sky Sports
+    published_date: 2026-10-26
+    excerpt: "It was the 87th minute when Mbappe tucked in from Eduardo Camavinga's cutback following some sublime skill from Jude Bellingham ... Real have closed to within three points of their great rivals."
+  - url: https://apnews.com/article/barcelona-real-madrid-clasico-yamal-mbappe-95def475e9ec1dc6e88b45b240dc8773
+    title: Mbappe leads Real Madrid to 2-1 win over Barcelona in clasico, Bayern back on top in Germany
+    publisher: AP News
+    published_date: 2026-10-25
+    excerpt: "Kylian Mbappe scored twice as Real Madrid beat Spanish leader Barcelona 2-1 in their clasico at Camp Nou."
+  - url: https://www.laliga.com/partidazos/el-clasico
+    title: ELCLASICO de LALIGA EA SPORTS - FC Barcelona vs Real Madrid
+    publisher: LaLiga
+    published_date: 2026-10-25
+    excerpt: "FC Barcelona 1 - 2 Real Madrid. Finalizado. Raphinha 61'; Mbappe 41' 87'. Spotify Camp Nou, 62.055. Juan Martinez Munuera."
+market:
+  platform: bookmaker (DraftKings via ESPN)
+  url: https://www.espn.com/soccer/story/_/id/50227950/barcelona-real-madrid-laliga-clasico-form-team-news-combined-xi-predictions-odds-all-head-head
+  pre_event_probability:
+    "Barcelona win": 0.595
+    "Draw": 0.166
+    "Real Madrid win": 0.239
+  as_of: 2026-10-25
+notes: "Probabilities normalised from DraftKings moneylines (-165 / +475 / +300)."

@@ -1,0 +1,90 @@
+id: japan-series-2026-softbank-dena
+domain: sports
+title: 2026 Japan Series - Fukuoka SoftBank Hawks vs Yokohama DeNA BayStars
+question: >-
+  Who will win the 2026 Japan Series between the Fukuoka SoftBank Hawks and
+  the Yokohama DeNA BayStars, and in how many games?
+question_type: multiple_choice
+options:
+  - "SoftBank in 4"
+  - "SoftBank in 5"
+  - "SoftBank in 6"
+  - "SoftBank in 7"
+  - "DeNA in 4"
+  - "DeNA in 5"
+  - "DeNA in 6"
+  - "DeNA in 7"
+resolution_criteria: >-
+  Resolves to the team that wins four games in the best-of-seven SMBC Japan
+  Series 2026 (starting 24 October 2026) combined with the number of decided
+  games needed, per NPB official results. If a tied game occurs, count games
+  won by the champion plus games won by the opponent.
+context_summary: >-
+  The 2026 Japan Series opens on 24 October at Yokohama Stadium. It is the
+  third meeting of these franchises, following 2017 (SoftBank in six) and
+  2024, when DeNA lost the first two games at home and then won four straight
+  to take their first title in 26 years. SoftBank are the defending champions
+  after beating Hanshin 4-1 in 2025, and they won the Pacific League with a
+  dominant 91-49-3 record (.650), 11.5 games clear. Under a new rule, that
+  margin gave them a two-win advantage in the Climax Series final stage, and
+  they then beat Nippon-Ham 6-4, 6-2 and 6-2. Yokohama DeNA finished only
+  third in the Central League (71-69-3) but are unbeaten in the postseason.
+  They won 2-1 and 4-1 at Yomiuri in the first stage, then swept the
+  pennant-winning Hanshin Tigers at Koshien 2-0, 1-0, 4-0 and 8-5, overcoming
+  Hanshin's one-win advantage, for six straight road wins. Neither team has
+  lost a postseason game. Game 1 starters are Yutaro Ishida for DeNA (5-8,
+  2.91 ERA) and Naoyuki Uwasawa for SoftBank (10-4, 2.39 ERA), with Livan
+  Moinelo, who was hit hard in the final stage, pushed to Game 2. DeNA's ace
+  Katsuki Azuma (16 wins, 1.98 ERA) is lined up for Game 2. Key bats include
+  Kensuke Kondo (.300/30 HR/100 RBI) for SoftBank and Shugo Maki (29 HR, 103
+  RBI) for DeNA. Games 1-2 are in Yokohama, Games 3-5 at Fukuoka's Mizuho
+  PayPay Dome, and Games 6-7 back in Yokohama.
+context_sources:
+  - url: https://japan.co.jp/e/reports/yokohama-dena-softbank-japan-series-preview-2026.html
+    title: Yokohama's Six-Game Surge Meets SoftBank's 91-Win Machine in Japan Series
+    publisher: Japan.co.jp
+    published_date: 2026-10-21
+    excerpt: "DeNA went 71-69-3 and finished third in the Central League; SoftBank topped the Pacific League with a 91-49-3 record and a .650 winning percentage ... DeNA won six postseason games in succession, while SoftBank swept its final-stage series against the Nippon-Ham Fighters."
+  - url: https://pacificleague.com/en/news/2026/10/10056351
+    title: Professional baseball news commentators provide a preview of the Japan Series between DeNA and the Softbank Hawks
+    publisher: Pacific League.com (Baseball King)
+    published_date: 2026-10-24
+    excerpt: "In the first game on the 24th, held at DeNA's home ground, Yokohama Stadium, Yutaro Ishida will start for DeNA and Naoyuki Uwasawa will start for the Softbank Hawks ... Since Moinelo was hit hard in the final stage ... they brought in Uwasawa for the first game."
+  - url: https://npb.jp/nippons/2026/dailyreport_1023.html
+    title: "Daily report (day before opening) - SMBC Japan Series 2026"
+    publisher: NPB.jp
+    published_date: 2026-10-23
+    excerpt: "Both teams reached the Japan Series unbeaten in the postseason; Game 1 starters are Yutaro Ishida (DeNA) and Naoyuki Uwasawa (SoftBank), first pitch 18:30 at Yokohama Stadium on the 24th. (Translated from Japanese.)"
+event_date: 2026-10-28
+outcome_summary: >-
+  The SoftBank Hawks swept the BayStars 4-0 to win back-to-back Japan Series
+  titles. It was their 13th overall, tying Seibu for the most by a Pacific
+  League club, and they finished the postseason a perfect 7-0, a first in
+  Japan Series history. Despite the sweep, the series was tight: Games 1, 2
+  and 3 all went to extra innings, the first time three straight Japan Series
+  games had done so. In Game 2, SoftBank tied it in the ninth and Kawamura,
+  who had one career home run, hit the winner. In Game 3 they tied it with
+  two out in the ninth on Makihara's hit, and Tomoya Masaki won it with a
+  walk-off home run. In Game 4 on 28 October at the Mizuho PayPay Dome, DeNA
+  led early on a Keita Sano two-run homer before catcher Yudai Yamamoto, traded
+  from DeNA in May, drove in three runs, including a game-tying two-run
+  triple, in a 4-2 comeback win. Closer Sugiyama got the save. Masaki was
+  named series MVP (.348, 2 HR).
+resolved_answer: "SoftBank in 4"
+outcome_sources:
+  - url: https://english.kyodonews.net/articles/-/89700
+    title: Hawks sweep BayStars to clinch back-to-back Japan Series titles
+    publisher: Kyodo News
+    published_date: 2026-10-28
+    excerpt: "The SoftBank Hawks clinched back-to-back Japan Series titles Wednesday as they completed a 4-0 sweep of the DeNA BayStars, with catcher Yudai Yamamoto driving in three runs against his former club in a 4-2 victory."
+  - url: https://pacificleague.com/en/news/2026/10/10056520
+    title: Softbank Hawks win the Japan Series with a historic first-ever undefeated 7-game winning streak in an overwhelming sweep
+    publisher: Pacific League.com
+    published_date: 2026-10-28
+    excerpt: "The Japan Series became a close contest, going into extra innings for three consecutive games starting from the first game for the first time in history ... Masaki ... settled it with a walk-off arch."
+  - url: https://en.wikipedia.org/wiki/2026_Japan_Series
+    title: 2026 Japan Series
+    publisher: Wikipedia
+    published_date: 2026-10-29
+    excerpt: "The Hawks swept the BayStars in 4 games to take home their 13th Japan Series championship ... Masaki won the Japan Series Most Valuable Player Award."
+backup: true

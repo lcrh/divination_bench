@@ -1,0 +1,92 @@
+id: fomc-oct-2026-dissents
+domain: economics
+title: Fed October 2026 FOMC decision and dissents
+question: >-
+  At the Federal Reserve's FOMC meeting ending on 28 October 2026, what will
+  the Committee decide on the federal funds target range, what will the vote
+  be, and which voting members (if any) will dissent and in which direction?
+question_type: open
+resolution_criteria: >-
+  Resolves to the decision, vote tally and named dissenters (with their
+  preferred alternative) as recorded in the official FOMC statement released
+  at 2:00 p.m. EDT on 28 October 2026.
+context_summary: >-
+  The Federal Reserve under Chair Kevin Warsh raised the federal funds target
+  range by 25 bp to 3.75%-4.00% on 16 September 2026, its first hike since
+  July 2023, on a unanimous vote; the September dot plot showed 16 of 18
+  participants expecting at least one more hike in 2026. Inflation has
+  re-accelerated on an oil shock tied to the Middle East conflict and
+  disruption in the Strait of Hormuz: September headline CPI was 3.7% y/y
+  (above the 3.6% consensus) and core 2.6%, while August core PCE eased to
+  3.0%. The labour market is soft, with September payrolls of just 29,000
+  and unemployment at 4.2%. Third-quarter GDP, due the day after the meeting,
+  is expected near or above 3%. Fed leaders John Williams and Philip Jefferson
+  signalled no urgency to move again in October, and Warsh declined to
+  prejudge either October or December. Heading into the 27-28 October
+  meeting, Kalshi priced a hold at about 95% and a 25 bp hike at about 5%;
+  CME FedWatch put a December hike near 73%. The committee is split: in July's
+  9-3 hold, regional presidents Beth Hammack (Cleveland), Lorie Logan (Dallas)
+  and Neel Kashkari (Minneapolis) dissented in favour of a hike; all three are
+  2026 voters, alongside Philadelphia's Anna Paulson. Kalshi's individual
+  dissent contracts priced Hammack at about 79%, Logan about 68%, Kashkari
+  about 35%, and governors Bowman and Waller in the mid-single digits, for an
+  expected dissent count of 1.83. Rabobank expected Hammack, Kashkari and Logan
+  to repeat their July hawkish dissents. Governor Lisa Cook, whom President
+  Trump is again trying to remove, has never dissented since joining in 2022.
+context_sources:
+  - url: https://kalshi.com/research/insights/october-fomc-preview
+    title: "October FOMC Meeting Preview: A Hold Is Priced In, But What's Next?"
+    publisher: Kalshi Research
+    published_date: 2026-10-28
+    excerpt: "Kalshi's expected dissent count has climbed to 1.83 from just under 1.0 in mid-September, with Cleveland's Beth Hammack (about 79%) and Dallas's Lorie Logan (about 68%) the likeliest to vote for a hike... Neel Kashkari near 35%, and Bowman and Waller in the mid-single digits."
+  - url: https://www.rabobank.com/knowledge/q011555505-skipper-warsh-and-his-hawkish-crew
+    title: Skipper Warsh and his Hawkish Crew
+    publisher: Rabobank
+    published_date: 2026-10-23
+    excerpt: "We expect the FOMC to remain on hold in October. However, we are likely to see Hammack, Kashkari and Logan repeat their July dissents in favor of a hike at this meeting."
+event_date: 2026-10-28
+outcome_summary: >-
+  The FOMC held the target range at 3.75%-4.00% by a 10-2 vote. The two
+  dissenters were Governor Lisa D. Cook and Cleveland Fed President Beth M.
+  Hammack, both preferring a 25 bp hike. Cook's dissent was the surprise: it
+  was her first since joining the Board in 2022 and some commentators read it
+  as linked to her legal fight with the Trump administration. Lorie Logan and
+  Neel Kashkari, who had dissented hawkishly in July and were priced as likely
+  dissenters, voted with the majority. The statement upgraded growth from
+  "solid" to "strong", said inflation "remains elevated", and replaced
+  forward-looking hike language with "the accumulation of more information
+  will help the Committee determine the policy stance". Nobody dissented in
+  favour of a cut. Warsh also announced that from 2027 one of the eight
+  meetings will be a strategy-only meeting with no rate vote, and said
+  politics played "no role" ahead of the midterms. Markets continued to price
+  a December hike as likely.
+resolved_answer: >-
+  Hold at 3.75%-4.00% by a 10-2 vote; Governor Lisa Cook and Cleveland Fed
+  President Beth Hammack dissented in favour of a 25 bp hike (Logan and
+  Kashkari did not dissent).
+outcome_sources:
+  - url: https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm
+    title: Federal Reserve issues FOMC statement
+    publisher: Board of Governors of the Federal Reserve System
+    published_date: 2026-10-28
+    excerpt: "The Committee decided to maintain the target range for the federal funds rate at 3-3/4 to 4 percent... Voting against the monetary policy action were Lisa D. Cook and Beth M. Hammack, who preferred to raise the target range for the federal funds rate by 1/4 percentage point at this meeting."
+  - url: https://www.westernasset.com/us/en/research/blog/october-fomc-recap-no-hike-but-hawk-talk-persists-2026-10-28.cfm
+    title: October FOMC Recap - No Hike But Hawk Talk Persists
+    publisher: Western Asset
+    published_date: 2026-10-28
+    excerpt: "Market participants were expecting two dissents from Hammack and Lorie Logan; however, Logan did not dissent, while Cook's dissent was a surprise."
+  - url: https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html
+    title: "Fed interest rate decision October 2026: Fed holds rates steady"
+    publisher: CNBC
+    published_date: 2026-10-28
+    excerpt: "This was Cook's first dissent since joining the Fed in 2022... Dallas President Lorie Logan and Minneapolis President Neel Kashkari both joined Hammack in voting no the last time the committee held, in July... However, they fell in with the majority Wednesday."
+market:
+  platform: kalshi
+  url: https://kalshi.com/research/insights/october-fomc-preview
+  pre_event_probability: {"Hold": 0.95, "Hike 25 bp": 0.05, "Hammack dissents": 0.79, "Logan dissents": 0.68, "Kashkari dissents": 0.35}
+  as_of: 2026-10-28
+notes: >-
+  Headline decision was near-certain (Polymarket "No change" ~0.93-0.96), so
+  the question targets the dissent pattern. Individual dissent probabilities
+  are Kalshi per-voter contracts as reported by Kalshi Research; Cook had no
+  quoted price and was not discussed as a likely dissenter.

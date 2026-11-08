@@ -1,0 +1,100 @@
+id: us-strike-iran-before-midterms-2026
+domain: geopolitics
+title: Will the US strike Iran before the 3 November 2026 midterm elections?
+question: >-
+  Will the United States carry out an air or missile strike that hits Iranian
+  territory at any point before the end of 3 November 2026 (US midterm
+  Election Day)?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if, between 2 October and 3 November 2026 (11:59 PM ET), the
+  United States carries out a publicly reported or acknowledged air strike or
+  surface-to-surface missile strike, initiated by US forces, that directly hits
+  Iranian territory (including Iranian islands). Intercepted munitions, cyber
+  operations, naval gunfire and threats do not count. This mirrors the
+  Polymarket market "US-Iran ceasefire continues through the midterms?", which
+  resolves No (i.e. this question resolves Yes) on such a strike.
+context_summary: >-
+  The US-Israel war with Iran, which began in early 2026, had settled into an
+  uneasy ceasefire, but not a settlement. Iran's Revolutionary Guard was still
+  disrupting traffic through the Strait of Hormuz, the US maintained a naval
+  presence and blockade in the Gulf, and oil prices were high (Brent was above
+  $105 in early October). Washington and Tehran were holding indirect talks
+  through Qatar on ending the war and reopening the strait. A preliminary deal
+  in June had collapsed. On 7 October The Atlantic reported that President
+  Trump had asked the Pentagon for strike options to use before the midterms.
+  The next day Trump posted on Truth Social: "we will not be attacking Iran at
+  any time prior to the midterm elections to be held in the United States on
+  November 3rd", citing "productive discussions". He left open renewed strikes
+  after the vote. Analysts tied the pledge to the war's unpopularity and to
+  high fuel prices hurting Republican candidates. They also noted that Iran
+  could escalate in the meantime, and that Trump had admitted using public
+  statements to keep adversaries off guard. On Polymarket,
+  "US-Iran ceasefire continues through the midterms?" (i.e. no US strike on
+  Iran by 3 November) traded around 72-80% in mid-October and about 94-95% on
+  1 November.
+context_sources:
+  - url: https://apnews.com/article/trump-iran-war-midterms-attack-422b1799a1a06466279ac265f560e014
+    title: Trump says US will not resume military strikes on Iran before the Nov. 3 midterm elections
+    publisher: AP News
+    published_date: 2026-10-08
+    excerpt: "President Donald Trump said Thursday that he will not order a resumption of military strikes on Iran before the Nov. 3 midterm elections in the United States."
+  - url: https://www.al-monitor.com/originals/2026/10/trump-says-no-iran-strikes-midterms-amid-productive-talks
+    title: Trump says no Iran strikes before midterms amid 'productive' talks
+    publisher: Al-Monitor
+    published_date: 2026-10-08
+    excerpt: "'we will not be attacking Iran at any time prior to the midterm elections to be held in the United States on November 3rd,' Trump said... Washington and Tehran continue indirect talks mediated by Qatar to end the seven-month war and reopen the Strait of Hormuz."
+  - url: https://www.washingtonpost.com/politics/2026/10/08/no-new-attack-iran-before-midterm-elections-trump-says/
+    title: No new attack on Iran before the midterm elections, Trump says
+    publisher: The Washington Post
+    published_date: 2026-10-08
+    excerpt: "The president has acknowledged sometimes using public statements about negotiations and military planning to keep adversaries off guard."
+  - url: https://www.cnn.com/2026/10/09/politics/trump-iran-war-midterms
+    title: Why Trump says he's not attacking Iran before Election Day
+    publisher: CNN
+    published_date: 2026-10-09
+    excerpt: "Iran appears to have succeeded in its apparent effort to use the midterm elections to inflict political pain on Trump... one reason why an Iranian escalation in the next three weeks cannot be ruled out."
+event_date: 2026-11-02
+outcome_summary: >-
+  Yes. On Monday 2 November 2026, the eve of the midterms, US forces struck
+  Iranian targets on Qeshm Island in the Strait of Hormuz. Iranian state media
+  (IRNA) reported several explosions there. US officials described the strikes
+  as limited and "defensive", not a resumption of major combat operations. They
+  said an IRGC unit had fired a surface-to-air missile at a US aircraft, and
+  the strike took out the launcher. The Wall Street Journal reported that this
+  was the latest in a series of limited, unannounced US strikes in recent
+  weeks. NBC was told the US was "occasionally striking Iranian missile
+  launchers in self-defense" when the IRGC fired at US aircraft. The Polymarket
+  "ceasefire continues through the midterms" market resolved No. Afterwards,
+  diplomacy via Qatar continued. By 7 November a Qatari plan was reported that
+  would have the US lift the naval blockade and release some frozen assets, in
+  exchange for IAEA inspections and Iran reopening the strait. Meanwhile
+  Netanyahu was reported to be pressing Trump for renewed military action.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://www.reuters.com/5f374b32b07b/world/middle-east/us-struck-irans-qeshm-island-wall-street-journal-reports-2026-11-03/
+    title: US carries out 'defensive' strikes on Iran's Qeshm Island, officials say
+    publisher: Reuters
+    published_date: 2026-11-02
+    excerpt: "The US carried out strikes on Iran's Qeshm Island in the Strait of Hormuz... The strikes... appeared to be limited and were not a resumption of major combat operations... defensive measures against Iranians using surface-to-air missiles against US assets."
+  - url: https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161
+    title: U.S. military carries out limited strikes on Iran's Qeshm Island, U.S. officials say
+    publisher: NBC News
+    published_date: 2026-11-02
+    excerpt: "Iran tried to target a U.S. aircraft again, leading to the U.S. strike on Qeshm to take out the launcher, the official said, calling it part of ongoing operations."
+  - url: https://www.theguardian.com/world/2026/nov/07/strait-of-hormuz-qatar-plan-iran-nuclear-inspections
+    title: Strait of Hormuz could reopen as part of Qatari plan for Iran nuclear inspections
+    publisher: The Guardian
+    published_date: 2026-11-07
+    excerpt: "Under the Qatar proposal, the US would immediately lift the naval blockade on Iran in the strait of Hormuz and release a portion of the $8bn (£6bn) of its frozen assets. In return, Iran would agree to visits by International Atomic Energy Agency inspectors..."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/us-iran-ceasefire-continues-through-the-midterms
+  pre_event_probability: {"Yes": 0.055, "No": 0.945}
+  as_of: 2026-11-01
+notes: >-
+  The market's own outcomes are inverted: "ceasefire continues" (= No here) traded at 0.945 at
+  12:00 UTC on 1 Nov, 0.82 on 26 Oct and ~0.75-0.80 in mid-October (Polymarket CLOB price
+  history). The outcome is a low-probability upset, below the ideal 10-90% band, although
+  the strike was small and described as defensive.

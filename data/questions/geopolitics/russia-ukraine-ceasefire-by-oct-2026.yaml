@@ -1,0 +1,96 @@
+id: russia-ukraine-ceasefire-by-oct-2026
+domain: geopolitics
+title: Will Russia and Ukraine agree any ceasefire before November 2026?
+question: >-
+  Will Russia and Ukraine agree to any ceasefire, even a temporary,
+  localized or humanitarian one, that both governments publicly confirm
+  before 1 November 2026?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if, between 21 October and 31 October 2026, an agreement to
+  halt hostilities is announced and publicly confirmed by both the Russian
+  and Ukrainian governments, whether directly or through a mediator. Any
+  geographic scope or duration counts, including a local humanitarian truce.
+  Prisoner exchanges or energy-strike moratoria proposed by only one side do
+  not count. Otherwise resolves No.
+context_summary: >-
+  More than four and a half years into Russia's full-scale invasion,
+  US-mediated peace efforts had stalled. On 20 October 2026 US envoy Steve
+  Witkoff held talks in Oslo with President Zelensky, the leaders of Norway
+  and Finland, and representatives of France, the UK, Germany, Poland, the EU
+  and NATO on a unified "framework agreement". Zelensky pressed for a
+  Trump-Putin-Zelensky summit, a format Moscow had rejected. On 21 October
+  Witkoff met Putin for about three hours in St Petersburg, his ninth
+  in-person meeting with him. Russia released detained American Stephen
+  Hubbard at the start of the meeting. Putin "agreed in principle" to resume
+  US-Russia-Ukraine trilateral talks at technical level "around the 10th of
+  November", possibly in Abu Dhabi. Aide Yuri Ushakov said the Oslo talks
+  "didn't contain much that was useful", and the Kremlin said the
+  Ukrainian/European proposals lacked "substance". Axios said the only
+  concession Putin appeared to make was agreeing to negotiate. Earlier
+  trilateral talks had been called off after Ukrainian strikes on Russia
+  during Russia's parliamentary elections. Fighting and long-range strikes
+  continued along the front. A Polymarket market on whether Russia and Ukraine would hold any (direct or
+  mediated) in-person diplomatic meeting by 31 October traded at about 18% on
+  21 October.
+context_sources:
+  - url: https://www.axios.com/2026/10/21/russia-ukraine-putin-witkoff-peace
+    title: Putin tells Witkoff he is ready to resume direct peace talks, Russia releases U.S. detainee
+    publisher: Axios
+    published_date: 2026-10-21
+    excerpt: "'Our president informed Steve Witkoff that we are, in principle, ready to resume the aforementioned trilateral negotiations on the main topic around the 10th of November,' [Ushakov] said... For now, it seems the only concession Putin agreed to is to negotiate."
+  - url: https://www.euronews.com/2026/10/21/russia-frees-detained-american-stephen-hubbard-during-us-envoys-visit
+    title: Kremlin open to new Ukraine peace talks as Russia frees US teacher Stephen Hubbard
+    publisher: Euronews
+    published_date: 2026-10-21
+    excerpt: "Russia is willing to return to three-way negotiations with the United States and Ukraine on ending the war... However, it complained that recent Ukrainian and European proposals lacked 'substance'."
+  - url: https://www.scmp.com/news/world/russia-central-asia/article/3371659/putin-holds-ukraine-peace-talks-trumps-envoy-witkoff-frees-american-hubbard
+    title: Putin says Russia to restart peace deal talks with US and Ukraine
+    publisher: South China Morning Post
+    published_date: 2026-10-21
+    excerpt: "Putin has agreed to resume US-mediated peace talks with Ukraine as soon as next month... the ninth time that Witkoff has met Putin in person."
+event_date: 2026-10-23
+outcome_summary: >-
+  Yes. On 23 October 2026 the White House announced that First Lady Melania
+  Trump, acting as "Exclusive Intermediary", had secured a Russia-Ukraine
+  ceasefire localized to the Russian-occupied, besieged city of Oleshky
+  (Kherson region). The purpose was to deliver humanitarian aid and evacuate
+  civilians; about 1,700-2,000 people remained there. Both sides confirmed it.
+  Russia's chief of general staff Valery Gerasimov ordered a "regime of
+  silence" on the Kherson axis. Ukrainian ombudsman Dmytro Lubinets and his
+  Russian counterpart Yana Lantratova, heads of the two negotiating teams,
+  fixed the start time in an online meeting on 24 October. The truce ran from
+  03:00 Kyiv time on 27 October to the end of 1 November and was described as
+  the longest and most widespread since 2022, covering the whole Kherson
+  frontline. Routes were demined. On 30 October a convoy of 25 buses evacuated
+  several hundred residents, some to Ukraine via Belarus and some to Russia.
+  Both sides said the ceasefire held. Fighting continued elsewhere, and
+  broader trilateral talks were still pending for November.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://www.whitehouse.gov/briefings-statements/2026/10/first-lady-melania-trump-secures-ceasefire-between-russia-and-ukraine-localized-to-oleshky/
+    title: First Lady Melania Trump Secures Ceasefire Between Russia and Ukraine, Localized to Oleshky
+    publisher: The White House
+    published_date: 2026-10-23
+    excerpt: "Both nations agreed to temporarily stop all military action in Oleshky to allow for humanitarian aid to enter and to prepare a civilian evacuation through a designated safe passageway."
+  - url: https://www.ukrinform.net/rubric-society/4177862-lubinets-discusses-details-of-oleshky-humanitarian-mission-with-russian-ombudswoman.html
+    title: Lubinets discusses details of Oleshky humanitarian mission with Russian ombudswoman
+    publisher: Ukrinform
+    published_date: 2026-10-24
+    excerpt: "'I informed the Russian side that the ceasefire will take effect on October 27 at 3:00 a.m. Kyiv time. The Russian representative... informed me that on the Russian side, the ceasefire will take effect on October 27 at 4:00 a.m. Moscow time.'"
+  - url: https://www.bbc.com/news/articles/c60me298k1yeo
+    title: "Oleshky ceasefire: Hundreds evacuated from Russian-occupied town in Ukraine"
+    publisher: BBC News
+    published_date: 2026-10-31
+    excerpt: "A ceasefire - the longest and most widespread since the start of Russia's invasion of Ukraine in 2022 - has been in force in the entire frontline region of Kherson since Tuesday... due to be in force until the end of Sunday 1 November."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/russia-x-ukraine-any-diplomatic-meeting-byptptpt-20260819
+  pre_event_probability: {"Yes": 0.185}
+  as_of: 2026-10-21
+notes: >-
+  The market is a proxy: "Will Russia and Ukraine hold any diplomatic meeting by October 31,
+  2026?" (mediated meetings count). It traded at 0.185 at 12:00 UTC on 21 Oct, 0.24 on 22 Oct,
+  then jumped to 0.99 on 23 Oct after the Oleshky announcement. The BBC published_date is
+  approximate (the article reports evacuees arriving "on Saturday", i.e. 31 Oct).

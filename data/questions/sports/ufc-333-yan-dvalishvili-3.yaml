@@ -1,0 +1,76 @@
+id: ufc-333-yan-dvalishvili-3
+domain: sports
+title: UFC 333 - Petr Yan vs Merab Dvalishvili trilogy for the bantamweight title
+question: >-
+  Will Petr Yan retain the UFC bantamweight championship against Merab
+  Dvalishvili in their trilogy fight at UFC 333 in Abu Dhabi on 24 October
+  2026?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if Petr Yan is declared the winner of the UFC 333
+  bantamweight title bout against Merab Dvalishvili (any method). Resolves No
+  if Dvalishvili wins, or if the bout ends in a draw or no contest.
+context_summary: >-
+  UFC 333 at Etihad Arena on Yas Island, Abu Dhabi (24 October 2026) has two
+  title fights. In the co-main event, men's bantamweight champion Petr Yan
+  (20-5) defends against Merab Dvalishvili (21-5) in a rubber match. Their
+  first fight, in March 2023, went to Dvalishvili with a relentlessly
+  wrestling-heavy performance that still holds the UFC record for takedown
+  attempts. Dvalishvili went on to win the title, which Yan had previously
+  held, and defended it repeatedly, fighting four title fights in 2025. Yan
+  then won the rematch by unanimous decision at UFC 323 on 6 December 2025,
+  an exceptional technical display of shutting down a wrestler that included
+  damaging body kicks. Yan is on a four-fight win streak, all by unanimous
+  decision. Statistically, Yan lands 5.16 significant strikes per minute to
+  Dvalishvili's 4.42, while Dvalishvili averages 5.97 takedowns per 15
+  minutes to Yan's 1.70. Previews raised health questions on both sides:
+  Dvalishvili's weight cut and badly damaged nose, and a back procedure for
+  Yan, though Dvalishvili comes in after a long rest. Odds: Yan about -150 to
+  -158 and Dvalishvili +120 to +125 (FanDuel/BetMGM). Most analysts expect
+  the fight to go the full 25 minutes. Several picked Yan by decision, while
+  BetMGM's writer picked Dvalishvili by decision. Alexander Volkanovski vs
+  Movsar Evloev for the featherweight title headlines the card.
+context_sources:
+  - url: https://sportsbookwire.usatoday.com/story/sports/ufc/2026/10/23/yan-vs-dvalishvili-ufc-333-odds-picks-and-predictions/92364435007/
+    title: Yan vs. Dvalishvili UFC 333 odds, picks and predictions
+    publisher: Sportsbook Wire (USA TODAY)
+    published_date: 2026-10-23
+    excerpt: "Records: Yan (20-5-0) | Dvalishvili (21-5-0) ... he has rattled off 4 straight wins, all via unanimous decision, including a rematch against Dvalishvili at UFC 323 Dec. 6, 2025. This will be the trilogy fight for all the marbles."
+  - url: https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/23/ufc-333-petr-yan-vs-merab-dvalishvili-3-trilogy-prediction-expert-pick-mma-betting-odds/92394784007/
+    title: "UFC 333: Petr Yan vs. Merab Dvalishvili 3 pick, prediction, time, odds"
+    publisher: MMA Junkie (USA TODAY)
+    published_date: 2026-10-23
+    excerpt: "The oddsmakers and the public favor the Russian fighter in this rubber match, listing Yan -148 and Dvalishvili +120 via FanDuel."
+event_date: 2026-10-24
+outcome_summary: >-
+  Petr Yan retained the title by unanimous decision, 48-47 on all three
+  scorecards, in what was called a Fight of the Year contender. Dvalishvili
+  clearly won the first two rounds on all three cards and the first half of
+  the third. A Yan body kick in round 3 turned the fight, and from then on it
+  was entirely Yan's: he took rounds 3, 4 and 5 on every card. Yan said his
+  coach told him going into the fifth that it was 2-2 and whoever won the
+  round would win the fight. It was the 20th trilogy in UFC history, and Yan
+  won the series 2-1. In the main event, Alexander Volkanovski retained the
+  featherweight title with a second-round TKO of the previously unbeaten
+  Movsar Evloev.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://www.cbssports.com/ufc/news/ufc-333-petr-yan-merab-dvalishvili-results-bantamweight-title-fight-of-the-year-contender/
+    title: "UFC 333 results: Petr Yan outduels Merab Dvalishvili to retain title in Fight of the Year contender"
+    publisher: CBS Sports
+    published_date: 2026-10-24
+    excerpt: "Dvalishvili clearly won the first half of the fight ... was Yan's big momentum-turning moment with the body kick in Round 3 enough to retain the title? ... all three judges saw the fight 48-47 for Yan."
+  - url: https://www.espn.com/mma/story/_/id/50220522/ufc-333-results-volkanovski-evloev
+    title: "UFC 333 results: Volkanovski and Yan win to retain titles"
+    publisher: ESPN
+    published_date: 2026-10-24
+    excerpt: "Yan ended his trilogy with Merab Dvalishvili with a comeback win in the rubber match. Yan lost the first two rounds according to all three judges, but stormed back in Round 3 and took each of the final rounds on all three judges' scorecards."
+market:
+  platform: bookmaker (FanDuel via MMA Junkie)
+  url: https://mmajunkie.usatoday.com/story/sports/ufc/2026/10/23/ufc-333-petr-yan-vs-merab-dvalishvili-3-trilogy-prediction-expert-pick-mma-betting-odds/92394784007/
+  pre_event_probability:
+    "Yes": 0.568
+    "No": 0.432
+  as_of: 2026-10-23
+notes: "Probabilities normalised from FanDuel moneyline Yan -148 / Dvalishvili +120."

@@ -1,0 +1,78 @@
+id: ukraine-eu-accession-clusters-oct-2026
+domain: geopolitics
+title: How many EU accession negotiating clusters will Ukraine have open by end of October 2026?
+question: >-
+  Of the six negotiating clusters in Ukraine's EU accession talks, how many
+  will be formally open as of 31 October 2026?
+question_type: multiple_choice
+options: ["2", "3", "4", "5", "6"]
+resolution_criteria: >-
+  Resolves to the number of clusters formally opened at an EU-Ukraine
+  intergovernmental (accession) conference on or before 31 October 2026, as
+  reported by the Council of the EU or the European Commission.
+context_summary: >-
+  Ukraine formally opened EU accession negotiations in 2026. After a
+  Kyiv-Budapest agreement in late spring on the rights of Ukraine's roughly
+  80,000-strong ethnic Hungarian minority, Hungary's new prime minister Péter
+  Magyar lifted the Orbán-era veto. Cluster 1 (fundamentals, including rule
+  of law) and cluster 6 (external relations) were opened in June and July,
+  so two of six were open. Hungary then blocked the next steps, including
+  screening reports for cluster 2 (internal market) and cluster 3
+  (competitiveness and inclusive growth). It said Kyiv must first legislate
+  on minority-language schooling. Moldova's talks were linked to Ukraine's.
+  Bill No. 16119 on national-minority schools was registered in the
+  Verkhovna Rada on 1 October. On 7 October, Hungary dropped its objection to
+  the preparatory step: EU ambassadors (Coreper) agreed to ask Kyiv and
+  Chisinau for negotiating positions on clusters 2 and 3. If the Rada passed
+  the bill, expected on Monday 12 October, the EU could adopt its common
+  position (which requires unanimity) and open the clusters at an
+  intergovernmental conference in Luxembourg on 13 October. Euronews warned
+  the process "could still be derailed", since the government struggled to
+  assemble stable Rada majorities. The remaining clusters 4 (green agenda) and
+  5 (agriculture and cohesion) were sensitive for several member states.
+  Kyiv's stated aim was to have all six open by the end of 2026.
+context_sources:
+  - url: https://www.euronews.com/2026/10/07/hungary-set-to-lift-veto-on-ukraines-eu-membership-talks
+    title: Hungary set to lift veto on Ukraine's EU membership talks
+    publisher: Euronews
+    published_date: 2026-10-07
+    excerpt: "Hungary has cleared the way for the EU to open two more negotiating clusters with Ukraine, signalling that Budapest is ready to lift its veto if Kyiv passes a minority-rights law next week... The process could still be derailed, however. Ukraine's parliament has yet to approve the minority law, amid difficulties in securing stable majorities in the Rada."
+  - url: https://www.eurointegration.com.ua/eng/news/2026/10/7/7247137/
+    title: Hungary gives green light to opening of Clusters 2 and 3 for Ukraine
+    publisher: European Pravda
+    published_date: 2026-10-07
+    excerpt: "Once the EU negotiating position has been approved, a Ukraine-EU intergovernmental conference could be held the following day, 13 October, at which Clusters 2 and 3 could be formally opened... A bill on education in national minority languages was registered in the Verkhovna Rada on 1 October."
+event_date: 2026-10-13
+outcome_summary: >-
+  4. On 12 October the Rada passed bill No. 16119 (273 votes at first reading,
+  266 in the final vote), and Zelensky signed it the same day. Hungarian
+  Foreign Minister Anita Orbán confirmed it met Budapest's condition. On 13
+  October the 4th EU-Ukraine Accession Conference in Luxembourg, chaired by
+  the Irish presidency with Commissioner Marta Kos, formally opened cluster 2
+  (internal market) and cluster 3 (competitiveness and inclusive growth),
+  covering 17 chapters. That brought Ukraine to four of six clusters. The
+  European Council endorsed the step on 16 October, and Zelensky and Magyar
+  held their first bilateral meeting in Brussels that day. But at EU working
+  party meetings on 20 and 27 October, Hungary refused to approve screening
+  results for clusters 4 and 5, so they did not advance in October. Ukraine's
+  EU envoy said Budapest had no new substantive objections and hoped they
+  would open by year-end.
+resolved_answer: "4"
+outcome_sources:
+  - url: https://www.consilium.europa.eu/en/meetings/international-ministerial-meetings/2026/10/13/ukraine/
+    title: 4th Accession Conference with Ukraine, 13 October 2026
+    publisher: Council of the European Union
+    published_date: 2026-10-13
+    excerpt: "The fourth meeting of the Accession Conference with Ukraine was held today in Luxembourg. The meeting served to open negotiations on clusters 2 - internal market and 3 – competitiveness and inclusive growth."
+  - url: https://www.euronews.com/2026/10/13/eu-advances-ukraine-accession-as-hungary-lifts-veto-paving-way-for-zelenskyy-magyar-meetin
+    title: EU advances Ukraine accession as Hungary lifts veto, paving way for Zelenskyy-Magyar meeting
+    publisher: Euronews
+    published_date: 2026-10-13
+    excerpt: "The EU Council has agreed to open two additional accession clusters with Ukraine after Hungary lifted its veto, bringing the total number of opened clusters to four out of six."
+  - url: https://kyivindependent.com/hungary-blocks-final-2-of-6-membership-to-do-lists-for-ukraine-and-moldova-no-explanation-given/
+    title: Hungary blocks next step in EU membership bids of Ukraine, Moldova, no explanation given
+    publisher: The Kyiv Independent
+    published_date: 2026-10-20
+    excerpt: "Hungary blocked the next step in the EU membership process for Moldova and Ukraine, even though their previous demands had been met... the final two clusters, which cover agriculture, environment, and transport."
+market: null
+backup: true

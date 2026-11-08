@@ -1,0 +1,94 @@
+id: tesla-roadster-sub-1s-0-60-demo-2026
+domain: tech
+title: Will Tesla demonstrate a sub-1-second 0-60 mph run at its October 2026 Roadster event?
+question: >-
+  At Tesla's next-generation Roadster unveiling on the evening of 15 October
+  2026 (US Central time), will a Roadster physically present at the event
+  perform a live, timed 0-60 mph run from a standing start in under 1.0
+  seconds?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if, during the 15 October 2026 event, any version of the
+  Roadster (prototype included) performs a live, timed 0-60 mph acceleration
+  run under its own power from a standing start, and the demonstrated time
+  (shown on screen / instrumentation, or officially published by Tesla for
+  that specific run) is below 1.0 seconds. Claims of future capability
+  without a demonstrated run do not count. Otherwise resolves No. Mirrors the
+  Polymarket market of the same name.
+context_summary: >-
+  Tesla is due to unveil the long-delayed second-generation Roadster at an
+  outdoor event near SpaceX's McGregor test site in Texas on Thursday 15
+  October, streamed on X at 7:55 pm Central. The car was first shown in 2017
+  with claims of 0-60 mph in 1.9 seconds, a 250+ mph top speed, 620 miles of
+  range and a $200,000 base price, with deliveries promised for 2020; it has
+  slipped repeatedly since. The event itself was postponed from 1 October,
+  officially because of high winds and because it "can only be held
+  outdoors". Musk has long tied the car to a "SpaceX option package": in 2018
+  he described roughly ten small cold-gas thrusters fed by a high-pressure
+  composite tank, and in 2021 he cited a target of about 1.1 seconds for
+  0-60 mph. He has said "the new Tesla Roadster can fly", called the reveal
+  "a candidate for greatest product demo of all time", and teased that it
+  "will be a BANGER, probably metaphorically, though some chance literally".
+  Reports said the demo car would be unmanned with spectators kept hundreds
+  of yards back, and the FAA issued temporary flight restrictions over the
+  site. Tesla has not confirmed which features will be shown live; previews
+  listed a measured 0-60 time, price and delivery date as the key things to
+  watch, and some commentators expected a launch around 1.5 seconds at best.
+  On Polymarket, a live timed sub-1-second 0-60 run was priced at about 20%
+  shortly before the event.
+context_sources:
+  - url: https://www.axios.com/2026/10/14/tesla-roadster-details-elon-musk
+    title: "Tesla Roadster preview: Elon Musk to unveil high-tech ride"
+    publisher: Axios
+    published_date: 2026-10-14
+    excerpt: "He promised in 2017 that the new Roadster would cost $250,000 and would go 0 to 60 mph in 1.9 seconds ... The company originally intended to debut the car two weeks ago but postponed the event due to weather conditions."
+  - url: https://www.teslarati.com/elon-musk-tesla-roadster-demo-tease/
+    title: Elon Musk says Tesla's Roadster demo could be a bang, quite literally
+    publisher: Teslarati
+    published_date: 2026-10-15
+    excerpt: "Musk has said a thruster equipped car could reach 60 mph in about 1.1 seconds ... reports ahead of the event say the car will be unmanned with spectators kept several hundred yards back."
+  - url: https://superchargeddaily.com/dispatch/roadster-banger-demo-day.html
+    title: "Roadster day preview: Musk promised a \"BANGER\""
+    publisher: Supercharged Daily
+    published_date: 2026-10-15
+    excerpt: "Best case, Tesla fires the thrusters on a closed course and shows a launch under 1.5 seconds ... Worst case, the SpaceX package is mentioned but not shown."
+event_date: 2026-10-15
+outcome_summary: >-
+  Yes. At the roughly 25-minute event in McGregor, Texas, the Roadster
+  repeatedly used a fan-suction system and cold-gas thrusters developed with
+  SpaceX: it drove up a curved ramp and hung upside down, launched off and
+  rolled upright in mid-air, leapt and barrel-rolled over a line of Tesla
+  vehicles, and did a standing side flip. In a third live demo, a
+  thruster-assisted 0-60 mph run was timed at 0.81 seconds (Tesla said 0.67
+  s with rollout subtracted). Tesla announced three trims: Performance (0-60
+  under 1.6 s, road-legal), Thrust (rear cold-gas thrusters, under 0.9 s,
+  $250,000 reservation) and an invite-only Rocket (perimeter thrusters, under
+  0.59 s, not approved for public roads). It claimed 230+ mph and 300+ miles
+  of range, and Musk said production would start in 2028. No price was
+  given. Reporters called it more of a stunt show than a product launch.
+  Polymarket's "0-60 under 1 second" and "flies for 1s+" markets both
+  resolved Yes.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://www.roadandtrack.com/news/a74151425/the-air-assisted-tesla-roadster-flies-in-demo-hits-0-60-in-08-seconds/
+    title: The Air-Assisted Tesla Roadster Flies in Demo, Hits 0-60 In 0.8 Seconds
+    publisher: Road & Track
+    published_date: 2026-10-15
+    excerpt: "Thanks to the help of the booster system, timing of a demo shown during the presentation showed the apparently final car reaching 60 MPH in 0.81 second."
+  - url: https://www.theverge.com/transportation/1012552/tesla-roadster-next-gen-reveal-elon-musk
+    title: The Tesla Roadster flew, drove upside down, and hit 60mph in under a second
+    publisher: The Verge
+    published_date: 2026-10-15
+    excerpt: "Tesla has also said that the Roadster can accelerate from 0-60mph in less than a second. And during the event, the company claimed it did so in 0.81 seconds."
+  - url: https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/
+    title: Tesla reveals SpaceX-powered Roadster that flies and falls with style
+    publisher: TechCrunch
+    published_date: 2026-10-15
+    excerpt: "Tesla's website showed Thursday the company is taking reservations for the car, charging $50,000 just to reserve the Performance, and $250,000 for Thrust."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/will-the-tesla-roadsters-0-60-time-be-less-than-1-second
+  pre_event_probability: {"Yes": 0.195}
+  as_of: 2026-10-15
+notes: "Polymarket CLOB price history at ~12:00 UTC on 15 Oct (first recorded point). High-volume market (~$6.8M). The companion 'Roadster flies for 1s+' market was ~0.67 just before the event and also resolved Yes."

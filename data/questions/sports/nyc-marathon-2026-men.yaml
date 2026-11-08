@@ -1,0 +1,71 @@
+id: nyc-marathon-2026-men
+domain: sports
+title: Men's winner of the 2026 TCS New York City Marathon
+question: >-
+  Who will win the men's elite race at the 2026 TCS New York City Marathon on
+  1 November 2026, and how will the race be decided?
+question_type: open
+resolution_criteria: >-
+  Resolves to the first-placed man in the official 2026 TCS New York City
+  Marathon results (1 November 2026). Open-ended predictions are judged on
+  the winner and also on podium, winning time and race dynamics.
+context_summary: >-
+  The 2026 TCS New York City Marathon on Sunday 1 November marks the 50th
+  anniversary of the five-borough course. It is the final World Marathon
+  Major of the year and a hilly, championship-style race usually run without
+  pacemakers. None of the five men who broke 2:02 this year is entered, so
+  there is no overwhelming favourite. Defending champion Benson Kipruto
+  (Kenya, 35, PB 2:02:16) is a four-time major winner who was third in Boston
+  in April in 2:02:50. However, he was only eighth in a half marathon in
+  Bogota in July, and no man has defended the NYC title since 2013. The big
+  storyline is Sweden's Andreas Almgren (31), a former 800 m runner (1:45
+  PB). He makes his marathon debut in the form of his life after winning the
+  European 10,000 m title in a championship record 27:23.44 and the World
+  Half Marathon title on 20 September in a European record 58:06. History is
+  against him: no European-born man has won NYC since 1996, and no debutant
+  has won since 2010. Other contenders include Deresa Geleta (Ethiopia,
+  2:02:38), CyBrian Kotut (2:03:22), two-time NYC champion Geoffrey Kamworor,
+  2024 winner Abdi Nageeye, Americans Zouhair Talbi (2:03:45 in Boston) and
+  Conner Mantz (2:04:43), Italy's Yemaneberhan Crippa (2:05:18, Paris winner
+  earlier in the year) and Edward Cheserek. On Kalshi's thinly traded market,
+  Almgren was favourite at 34%, Kipruto 28% and Sam Chelanga 6%.
+context_sources:
+  - url: https://www.letsrun.com/news/2026/10/2026-nyc-marathon-mens-preview-can-a-former-800m-guy-from-sweden-actually-win-or-does-benson-kipruto-repeat/
+    title: "2026 NYC Marathon Men's Preview: Can a former 800m guy from Sweden actually win, or does Benson Kipruto repeat?"
+    publisher: LetsRun.com
+    published_date: 2026-10-28
+    excerpt: "With none of the five guys who have broken 2:02 this year entered in NYC, there is no overwhelming favorite (In limited betting on Kalshi, they have Almgren the favorite at 34%, Kipruto 2nd at 28%, and somehow Sam Chelanga third at 6%)."
+event_date: 2026-11-01
+outcome_summary: >-
+  Andreas Almgren won on his marathon debut in 2:06:01, the third-fastest
+  time in New York race history. He became the first European-born men's
+  winner since 1996. The large lead pack passed 10 km in 30:52 and halfway in
+  1:04:01, after Zouhair Talbi made repeated surges, including on the
+  Queensboro Bridge after 25 km, that were all covered. Kipruto's 4:38 mile 23
+  broke the race down to four men: Almgren, Crippa, Kipruto and Talbi.
+  Almgren looked untroubled and led marginally at 40 km. Talbi dropped first,
+  then Kipruto. Almgren eased away from Yemaneberhan Crippa in Central Park to
+  win by 13 seconds (Crippa 2:06:14). Lesotho's Kamohelo Mofolo finished fast
+  for third in a PB of 2:06:26, pipping defending champion Kipruto (2:06:27)
+  on the line. In the women's race, Sheila Chepkirui won in 2:24:36.
+resolved_answer: "Andreas Almgren (SWE), 2:06:01 on his marathon debut, ahead of Yemaneberhan Crippa and Kamohelo Mofolo"
+outcome_sources:
+  - url: https://worldathletics.org/news/report/new-york-city-marathon-2026-almgren-chepkirui
+    title: Almgren wins on marathon debut, Chepkirui regains title in New York
+    publisher: World Athletics
+    published_date: 2026-11-01
+    excerpt: "Almgren ... eased away from Italy's Yeman Crippa in Central Park to win by 13 seconds in 2:06:01. A fast finish by Lesotho's Kamohelo Mofolo saw him take third place in a PB of 2:06:26, pipping Kenya's defending champion Benson Kipruto on the line."
+  - url: https://apnews.com/article/almgren-sweden-debut-nyc-marathon-c32d7b0c7710fd369d67759f024f0ba2
+    title: Andreas Almgren wins the New York City Marathon in his debut
+    publisher: AP News
+    published_date: 2026-11-01
+    excerpt: "The Swedish half-marathon star won his debut in the 26.2-mile distance Sunday, running the third-fastest time in race history. He finished in 2 hours, 6 minutes and 1 second."
+market:
+  platform: kalshi
+  url: https://www.letsrun.com/news/2026/10/2026-nyc-marathon-mens-preview-can-a-former-800m-guy-from-sweden-actually-win-or-does-benson-kipruto-repeat/
+  pre_event_probability:
+    "Andreas Almgren": 0.34
+    "Benson Kipruto": 0.28
+    "Sam Chelanga": 0.06
+  as_of: 2026-10-28
+backup: true

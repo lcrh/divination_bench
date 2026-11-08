@@ -1,0 +1,99 @@
+id: world-series-2026-brewers-rays
+domain: sports
+title: 2026 MLB World Series - Milwaukee Brewers vs Tampa Bay Rays
+question: >-
+  Who will win the 2026 World Series between the Milwaukee Brewers and the
+  Tampa Bay Rays, and in how many games?
+question_type: multiple_choice
+options:
+  - "Brewers in 4"
+  - "Brewers in 5"
+  - "Brewers in 6"
+  - "Brewers in 7"
+  - "Rays in 4"
+  - "Rays in 5"
+  - "Rays in 6"
+  - "Rays in 7"
+resolution_criteria: >-
+  Resolves to the team that wins four games in the best-of-seven 2026 World
+  Series (scheduled to start 23 October 2026) combined with the total number
+  of games played in the series, per MLB official results.
+context_summary: >-
+  The 2026 World Series opens on Friday 23 October at American Family Field
+  in Milwaukee. It is the first Fall Classic since 1980 in which neither team
+  has ever won a championship. The Milwaukee Brewers (103-59) had the best
+  record in baseball and hold home-field advantage (Games 1, 2, 6 and 7 at
+  home). They beat the San Diego Padres in four games in the NLDS and then
+  swept the two-time defending champion Los Angeles Dodgers 4-0 in the NLCS,
+  winning seven of eight playoff games and leading the postseason in home
+  runs. Their bullpen has been dominant, and ace Jacob Misiorowski, expected to
+  win the NL Cy Young, starts Game 1, with Logan Henderson as the number-two
+  starter. The lineup is deep (Brice Turang, William Contreras, Jackson
+  Chourio, Jake Bauers, Christian Yelich). The Tampa Bay Rays (98-64), the AL's
+  top seed, beat the Cleveland Guardians 4-2 in the ALCS, with former Brewers
+  ace Freddy Peralta, acquired at the trade deadline, named ALCS MVP. Their
+  offense leans on third baseman Junior Caminero (42 regular-season home runs)
+  and Yandy Diaz. All-Star Nick Martinez starts Game 1, and Drew Rasmussen
+  anchors the rotation. The two teams split their regular-season meetings,
+  with Milwaukee taking two of three at home. Sportsbooks favour Milwaukee at
+  about -160 to -180 (roughly 60-62%). In the exact-result market, "Brewers in
+  6" is the shortest price (+360) and "Rays in 4" the longest (+1300). Most
+  previews pick the Brewers in six.
+context_sources:
+  - url: https://www.si.com/betting/rays-vs-brewers-world-series-prediction-and-odds-milwaukee-favored-to-win-fall-classic-01m5d4agbrz0
+    title: Rays vs. Brewers World Series Prediction and Odds (Milwaukee Favored To Win Fall Classic)
+    publisher: Sports Illustrated
+    published_date: 2026-10-20
+    excerpt: "Series Odds - Rays: +140, Brewers: -160 ... Correct Score - Rays in 4 (+1300), Rays in 5 (+750), Rays in 6 (+650), Rays in 7 (+550), Brewers in 4 (+900), Brewers in 5 (+475), Brewers in 6 (+360), Brewers in 7 (+450)."
+  - url: https://www.cbssports.com/betting/news/world-series-2026-odds-picks-prediction-fall-classic-preview-for-brewers-vs-rays-series-beginning-friday/
+    title: "World Series 2026 odds, picks, prediction: Fall Classic preview for Brewers vs. Rays series beginning Friday"
+    publisher: CBS Sports
+    published_date: 2026-10-23
+    excerpt: "The latest DraftKings Sportsbook World Series odds list the Brewers as -180 favorites to win the title, with the Rays set as +160 underdogs ... Junior Caminero ... launched 42 home runs in the regular season ... it's Nick Martinez who will get the ball in Game 1."
+event_date: 2026-10-28
+outcome_summary: >-
+  The Milwaukee Brewers won the 2026 World Series 4-1, clinching their first
+  championship in franchise history with a 4-1 win in Game 5 at Tropicana
+  Field on 28 October. Game scores: G1 Brewers 3-2 (Misiorowski's first pitch
+  was 103.5 mph, a World Series record); G2 Brewers 5-4 after the Rays scored
+  four runs in the first inning; G3 Brewers 10-1, with an eight-run fifth
+  inning and seven straight hits; G4 Rays 4-3 in 12 innings, when pinch hitter
+  Ben Williamson hit a walk-off single after Cooper Pratt's 12th-inning home
+  run had put Milwaukee ahead, ending the Brewers' eight-game postseason
+  winning streak; G5 Brewers 4-1, with Misiorowski winning his second game of
+  the series and Trevor Megill getting a two-inning save. Catcher William
+  Contreras was named World Series MVP after hitting .381 with four RBIs,
+  throwing out four base stealers and going 10-for-13 on automated ball-strike
+  (ABS) challenges. Jackson Chourio tied Babe Ruth's record of 10 hits in the
+  first four games of a World Series. Milwaukee went 11-2 in the postseason.
+resolved_answer: "Brewers in 5"
+outcome_sources:
+  - url: https://en.wikipedia.org/wiki/2026_World_Series
+    title: 2026 World Series
+    publisher: Wikipedia
+    published_date: 2026-10-29
+    excerpt: "The Brewers defeated the Rays in five games to win their first championship in franchise history. Brewers catcher William Contreras was named the World Series Most Valuable Player (MVP) after batting .381 and going 10-for-13 on ABS challenges."
+  - url: https://www.mlb.com/news/brewers-beat-rays-game-5-win-2026-world-series
+    title: Brewers beat Rays in Game 5 to win first World Series in franchise history
+    publisher: MLB.com
+    published_date: 2026-10-28
+    excerpt: "At long last, after their 4-1 win over the Rays in Game 5, they are World Series champions ... winning the 11 postseason games required while losing just twice along the way."
+  - url: https://www.cbssports.com/mlb/news/2026-mlb-playoff-bracket-schedule-scores-results-how-to-watch/
+    title: "2026 MLB playoff bracket: Schedule and scores as Milwaukee Brewers win first World Series title"
+    publisher: CBS Sports
+    published_date: 2026-10-28
+    excerpt: "Game 1: Brewers 3, Rays 2; Game 2: Brewers 5, Rays 4; Game 3: Brewers 10, Rays 1; Game 4: Rays 4, Brewers 3 (12); Game 5: Brewers 4, Rays 1."
+market:
+  platform: bookmaker (correct-score market via Sports Illustrated)
+  url: https://www.si.com/betting/rays-vs-brewers-world-series-prediction-and-odds-milwaukee-favored-to-win-fall-classic-01m5d4agbrz0
+  pre_event_probability:
+    "Brewers in 4": 0.087
+    "Brewers in 5": 0.151
+    "Brewers in 6": 0.189
+    "Brewers in 7": 0.158
+    "Rays in 4": 0.062
+    "Rays in 5": 0.102
+    "Rays in 6": 0.116
+    "Rays in 7": 0.134
+  as_of: 2026-10-20
+notes: "Market probabilities are implied from American correct-score odds, normalised to remove the bookmaker margin. Series winner alone: Brewers about 0.60."

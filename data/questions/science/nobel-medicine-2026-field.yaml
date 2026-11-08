@@ -1,0 +1,89 @@
+id: nobel-medicine-2026-field
+domain: science
+title: Which discovery will the 2026 Nobel Prize in Physiology or Medicine honour?
+question: >-
+  For which line of research will the Nobel Assembly at Karolinska Institutet
+  award the 2026 Nobel Prize in Physiology or Medicine, announced on 5
+  October 2026, and to whom?
+question_type: multiple_choice
+options:
+  - "GLP-1 hormone biology (e.g. Drucker, Holst, Mojsov)"
+  - "Optogenetics (e.g. Deisseroth, Hegemann)"
+  - "Optical coherence tomography (Fujimoto, Huang, Swanson)"
+  - "Orexin and narcolepsy (Mignot, Yanagisawa)"
+  - "Another discovery"
+resolution_criteria: >-
+  Resolves to the option matching the prize motivation in the official
+  Nobel Assembly press release of 5 October 2026. The laureates named in each
+  option are examples. The option resolves on the field even if the exact
+  set of laureates differs. Judges may also credit correctly naming the
+  laureates.
+context_summary: >-
+  The 2026 Nobel Prize in Physiology or Medicine will be announced in
+  Stockholm on Monday 5 October, opening Nobel week. Nominations are secret
+  for 50 years, so forecasters rely on precursor awards and citation data.
+  The most-discussed candidate is the discovery of the gut hormone GLP-1, the
+  basis of semaglutide-type drugs that have transformed diabetes and obesity
+  treatment. Clarivate's 2026 Citation Laureates (17 September) named Daniel
+  Drucker, Jens Juul Holst and Svetlana Mojsov. Lotte Bjerre Knudsen of Novo
+  Nordisk is often mentioned as a fourth contender, and the death of pioneer
+  Joel Habener in late 2025 narrowed the field. Optogenetics, which uses
+  light-sensitive algal proteins to switch individual neurons on and off, has
+  been called overdue for years. Names linked to it include Karl Deisseroth,
+  Peter Hegemann, Gero Miesenböck, Georg Nagel and Ed Boyden. Clarivate's
+  other medicine picks were optical coherence tomography (James Fujimoto,
+  David Huang, Eric Swanson) and immune adhesion receptors (Timothy
+  Springer). Emmanuel Mignot and Masashi Yanagisawa won the September 2026
+  Lasker basic research award for orexin and narcolepsy. CAR-T cell therapy,
+  the gut microbiome, and the 2025 Lasker winners (low-complexity protein
+  domains; cystic fibrosis triple therapy) also feature in the speculation.
+  The committee has often surprised forecasters, and the prize can go to up
+  to three people.
+context_sources:
+  - url: https://clarivate.com/news/clarivate-reveals-citation-laureates-2026-recognizing-transformative-scientific-breakthroughs/
+    title: Clarivate Reveals Citation Laureates 2026 Recognizing Transformative Scientific Breakthroughs
+    publisher: Clarivate
+    published_date: 2026-09-17
+    excerpt: "Among this year's most visible discoveries are the scientific advances underpinning GLP-1 medicines, recognizing Daniel J. Drucker, Jens Juul Holst and Svetlana Mojsov."
+  - url: https://www.the-scientist.com/who-will-win-the-2026-nobel-prize-scientists-make-their-predictions-75076
+    title: "Who Will Win the 2026 Nobel Prize? Scientists Make Their Predictions"
+    publisher: The Scientist
+    published_date: 2026-09-30
+    excerpt: "I predict that Lotte Bjerre Knudsen and John Eng will receive the Nobel Prize in Physiology or Medicine."
+  - url: https://nordiclifescience.org/its-nobel-prize-time-who-will-win-this-year/
+    title: It's Nobel Prize time – Who will win this year?
+    publisher: Nordic Life Science
+    published_date: 2026-10-02
+    excerpt: "Will it be the GLP-1 pioneers – among them Denmark's Jens Juul Holst – optical coherence tomography, the wakefulness peptide orexin, or precision gene editing that is honored this year? Or will it be something completely different?"
+  - url: https://www.fnp.de/welt/nobelpreis-medizin-2026-die-favoriten-im-ueberblick-zr-94524746.html
+    title: "Nobelpreis Medizin 2026: Die Favoriten im Überblick"
+    publisher: Frankfurter Neue Presse
+    published_date: 2026-10-05
+    excerpt: "An der Spitze aller Prognosen steht das Forschungsfeld der GLP-1-Rezeptor-Agonisten ... Ebenfalls seit Jahren ganz oben auf den Wunschzetteln vieler Neurowissenschaftler steht die Optogenetik."
+event_date: 2026-10-05
+outcome_summary: >-
+  Optogenetics. On 5 October 2026 the Nobel Assembly awarded the prize
+  jointly to Karl Deisseroth (HHMI and Stanford, USA, 54), Peter Hegemann
+  (Humboldt University of Berlin, 71) and Georg Nagel (University of
+  Würzburg, 73) "for their discoveries concerning light-gated ion channels
+  and optogenetics". Each receives a third of SEK 12 million. Hegemann and
+  Nagel discovered channelrhodopsin, a light-gated channel protein in the
+  alga Chlamydomonas. Deisseroth put the gene into rat neurons, triggered
+  nerve signals with blue light in 2005, and made it work in living mice by
+  2007. The heavily tipped GLP-1 researchers missed out again. Gero
+  Miesenböck and Ed Boyden, often named in optogenetics speculation, were
+  left out, while Nagel was included. Clarivate noted that Deisseroth had
+  been one of its Citation Laureates since 2019.
+resolved_answer: "Optogenetics (e.g. Deisseroth, Hegemann)"
+outcome_sources:
+  - url: https://www.nobelprize.org/prizes/medicine/2026/press-release/
+    title: "Press release: Nobel Prize in Physiology or Medicine 2026"
+    publisher: NobelPrize.org
+    published_date: 2026-10-05
+    excerpt: "The Nobel Assembly at Karolinska Institutet has decided to award the 2026 Nobel Prize in Physiology or Medicine jointly to: Karl Deisseroth ... Peter Hegemann ... Georg Nagel ... 'for their discoveries concerning light-gated ion channels and optogenetics'."
+  - url: https://www.reuters.com/business/healthcare-pharmaceuticals/deisseroth-hegemann-nagelwin-2026-nobel-medicine-prize-2026-10-05/
+    title: US and German scientists win Nobel medicine prize for work on light and brain
+    publisher: Reuters
+    published_date: 2026-10-05
+    excerpt: "American Karl Deisseroth and Germans Peter Hegemann and Georg Nagel won the 2026 Nobel Prize in Physiology or Medicine on Monday for developing optogenetics."
+notes: "No liquid prediction market found; expert previews treated GLP-1 as the front-runner with optogenetics a strong alternative."

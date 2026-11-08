@@ -1,0 +1,98 @@
+id: f1-mexico-city-gp-2026-winner
+domain: sports
+title: Winner of the 2026 Formula 1 Mexico City Grand Prix
+question: >-
+  Who will win the 2026 Formula 1 Mexico City Grand Prix on 1 November 2026?
+question_type: multiple_choice
+options:
+  - "Lewis Hamilton"
+  - "Charles Leclerc"
+  - "George Russell"
+  - "Kimi Antonelli"
+  - "Max Verstappen"
+  - "Lando Norris"
+  - "Oscar Piastri"
+  - "Another driver"
+resolution_criteria: >-
+  Resolves to the driver classified first in the official FIA / Formula 1
+  race result of the 2026 Mexico City Grand Prix (Autodromo Hermanos
+  Rodriguez, 1 November 2026), including any post-race penalties applied on
+  the day.
+context_summary: >-
+  Mercedes' 20-year-old Kimi Antonelli arrives at the Mexico City Grand Prix
+  (71 laps, 1 November 2026) with nine wins this season, including Austin the
+  previous weekend. He leads team-mate George Russell by 123 points, with
+  Lewis Hamilton one point further back, so a top-nine finish will make him
+  the youngest world champion in history even if a rival wins. He missed
+  Thursday's media day through illness and admitted to feeling tense, then
+  qualified fifth. Hamilton took his first pole for Ferrari (1:16.514), just
+  0.009s ahead of Russell, though a car breakdown in second practice cost him
+  his race-simulation run. Charles Leclerc, who topped both Friday practice
+  sessions and finished second in Singapore and Austin, starts third and has
+  an unused set of soft tyres. Max Verstappen, a five-time winner in Mexico
+  City with two wins this season (Bahrain and Singapore), qualified fourth
+  but drops to fifth for a practice clash with Liam Lawson, which promotes
+  Antonelli to fourth. Lando Norris starts sixth, Isack Hadjar seventh and
+  Oscar Piastri twelfth. Lawson starts from the pit lane after a technical
+  disqualification, and Valtteri Bottas starts last. The run to Turn 1 is more
+  than 800 m, which has often let second-row starters slipstream into the
+  lead. Race-day bet365 odds: Hamilton 13/8, Leclerc 3/1, Russell 9/2,
+  Antonelli 9/2, Verstappen 5/1, Norris 40/1, Hadjar 100/1, Piastri 250/1.
+context_sources:
+  - url: https://www.bbc.com/sport/formula1/articles/cje36e0gze4ko
+    title: "On 'tense' Antonelli's big weekend, this was Hamilton's day"
+    publisher: BBC Sport
+    published_date: 2026-11-01
+    excerpt: "Lewis Hamilton secured his first pole position for Ferrari ... edged out his former Mercedes team-mate George Russell by just 0.009 seconds ... a one-place penalty for Red Bull's Max Verstappen puts Antonelli on the second row alongside Hamilton's team-mate Charles Leclerc."
+  - url: https://www.formula1.com/en/latest/article/official-grid-who-starts-where-for-the-2026-mexico-city-grand-prix.4AUykgAAZz3GMiI15Fqfir
+    title: "OFFICIAL GRID: Who starts where in Mexico City as Verstappen, Lawson and Bottas penalised"
+    publisher: Formula1.com
+    published_date: 2026-11-01
+    excerpt: "The 20-year-old starts the event in fourth on the grid, and a result of ninth or better will guarantee him the crown ... Max Verstappen starts fifth, the Dutch driver taking a one-place grid drop courtesy of a practice skirmish between him and Liam Lawson."
+  - url: https://www.racingpost.com/sport/motor-sports-tips/formula-1-tips/mexico-city-raceday-grand-prix-betting-tips-and-predictions-auZgL9z00DxZ/
+    title: "Mexico City Grand Prix raceday betting tips and predictions: Leclerc set for a strong show"
+    publisher: Racing Post
+    published_date: 2026-11-01
+    excerpt: "Hamilton is the 13-8 race favourite after taking his first grand prix pole position for Ferrari ... Odds: Lewis Hamilton 13-8, Charles Leclerc 3-1, George Russell 9-2, Kimi Antonelli 9-2, Max Verstappen 5-1, Lando Norris 40-1."
+event_date: 2026-11-01
+outcome_summary: >-
+  Max Verstappen (Red Bull) won from fifth on the grid in 2:20:28.772. It was
+  his third win of 2026, his 74th career win and his sixth in Mexico City. He
+  held off Lewis Hamilton (Ferrari) by 0.799s, with Kimi Antonelli third
+  (+4.006s), which clinched Antonelli the 2026 world title as the youngest
+  champion ever. Leclerc was fourth, Norris fifth and Russell sixth. On lap 1,
+  Hamilton and Leclerc ran side by side and both went off track. Leclerc took
+  the lead across the grass, Verstappen passed Hamilton for second, and
+  Russell spun Hadjar (Russell received a 10s penalty). Leclerc got a 5s
+  penalty, and Verstappen, starting on mediums, took the lead at the pit
+  stops. A heavy Turn 1 crash for Bottas, caused by a front-left suspension
+  failure, brought a red flag. Verstappen led the standing restart and
+  survived minor contact with Hamilton into Turn 1. A late Safety Car followed
+  a Piastri-Lindblad collision. Verstappen nailed the restart with eight laps
+  left and held Hamilton within a second to the flag.
+resolved_answer: "Max Verstappen"
+outcome_sources:
+  - url: https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH
+    title: Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix
+    publisher: Formula1.com
+    published_date: 2026-11-01
+    excerpt: "Verstappen claimed his third win of the season, the Red Bull driver withstanding late pressure from Hamilton to claim an unlikely win from fifth on the grid after being helped by an intense Ferrari intra-team battle."
+  - url: https://www.formula1.com/en/results/2026/races/1298/mexico/race-result
+    title: FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MEXICO 2026 - RACE RESULT
+    publisher: Formula1.com
+    published_date: 2026-11-01
+    excerpt: "1 Max Verstappen (Red Bull Racing) 2:20:28.772; 2 Lewis Hamilton (Ferrari) +0.799s; 3 Kimi Antonelli (Mercedes) +4.006s; 4 Charles Leclerc +10.707s; 5 Lando Norris +11.778s; 6 George Russell +12.263s."
+market:
+  platform: bookmaker (bet365 via Racing Post)
+  url: https://www.racingpost.com/sport/motor-sports-tips/formula-1-tips/mexico-city-raceday-grand-prix-betting-tips-and-predictions-auZgL9z00DxZ/
+  pre_event_probability:
+    "Lewis Hamilton": 0.318
+    "Charles Leclerc": 0.209
+    "George Russell": 0.152
+    "Kimi Antonelli": 0.152
+    "Max Verstappen": 0.139
+    "Lando Norris": 0.020
+    "Oscar Piastri": 0.003
+    "Another driver": 0.007
+  as_of: 2026-11-01
+notes: "Probabilities normalised from bet365 race-day fractional odds (after qualifying)."

@@ -1,0 +1,94 @@
+id: apple-largest-company-end-oct-2026
+domain: business
+title: Will Apple overtake Nvidia as the world's most valuable company at the end of October 2026?
+question: >-
+  At the market close on Friday 30 October 2026, the last trading day of
+  October, will Apple be the world's largest publicly traded company by market
+  capitalisation, ahead of Nvidia?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if, at the close of US trading on 30 October 2026, Apple's
+  market capitalisation exceeds that of every other listed company (in
+  practice, Nvidia), according to a consensus of credible financial reporting.
+  Otherwise No. This matches Polymarket's "Largest Company end of October
+  2026?" market.
+context_summary: >-
+  Nvidia has been the world's most valuable company almost continuously since
+  June 2025 and became the first company worth $5 trillion. In 2026, however,
+  investors have grown anxious about hyperscalers' huge AI capital spending
+  and whether it will pay off, while Apple, which has kept capex low, has been
+  the best-performing "Magnificent Seven" stock, up about 27%-28% this year.
+  Apple closed above $5 trillion for the first time in mid-October. Its first
+  foldable phone, the $1,999 iPhone Duo, launched globally on 23 October after
+  pre-orders sold out, and that morning Apple briefly passed Nvidia intraday
+  (about $5.11-5.13 trillion vs $5.09-5.10 trillion) before Nvidia moved back
+  ahead. Apple's only previous spell on top this year was briefly in July.
+  Nvidia fell about 7% in October through 23 October on concerns about the AI
+  financing environment, after Meta's 21 October earnings raised capex
+  guidance and showed negative free cash flow. At
+  the close on Monday 26 October, Nvidia was worth about $5.21 trillion and
+  Apple about $5.02 trillion, a gap of roughly $190 billion (under 4%). Key
+  events before the 30 October close are the Fed decision and Alphabet and
+  Microsoft earnings (28 October, after the bell) and Amazon and Intel
+  earnings (29 October). Apple reports fiscal Q4 results on 2 November, after
+  the deadline. On Polymarket on 28 October,
+  Nvidia was priced at about 93% to be the largest company at month-end and
+  Apple at about 7%.
+context_sources:
+  - url: https://www.cnbc.com/2026/10/23/apple-nvidia-market-cap-earnings.html
+    title: Apple nears Nvidia market cap ahead of Nov. 2 earnings
+    publisher: CNBC
+    published_date: 2026-10-23
+    excerpt: "Apple on Friday was trading at a market value of $5.05 trillion, compared to $5.10 trillion for Nvidia. Apple shares are having a great October - up 4% - as concerns about the AI financing environment drag Nvidia down 7% for the month."
+  - url: https://www.theapplepost.com/2026/10/23/73536/apple-briefly-overtakes-nvidia-to-become-worlds-most-valuable-company-as-iphone-duo-launches/
+    title: Apple briefly overtakes Nvidia to become world's most valuable company as iPhone Duo launches
+    publisher: The Apple Post
+    published_date: 2026-10-23
+    excerpt: "At one point during the session, Apple's market value reached roughly $5.13 trillion, compared with around $5.10 trillion for Nvidia... Live market-cap rankings later showed Nvidia back ahead of Apple."
+  - url: https://makkler.com/labs/news/apple-closes-the-valuation-gap-as-nvidia-faces-ai-spending-concerns-69aylq
+    title: Apple Closes the Valuation Gap as Nvidia Faces AI Spending Concerns
+    publisher: Makkler Labs (based on Ekonomim)
+    published_date: 2026-10-27
+    excerpt: "At Monday's close, Nvidia traded at $216... Apple finished at $343.91... their market values were $5.21 trillion and $5.02 trillion, respectively."
+event_date: 2026-10-30
+outcome_summary: >-
+  Yes. Apple closed Friday 30 October 2026 as the world's most valuable
+  company, with a market capitalisation of about $5.03 trillion against
+  Nvidia's $4.93 trillion. Apple's shares actually fell 1.2% that day, but
+  Nvidia sank 4.2% (to about $204.64) in a broad tech selloff, as
+  disappointing results from Alphabet (whose shares fell about 13% on 29
+  October, their worst day ever), Amazon and Intel deepened worries about AI
+  spending. The Nasdaq fell 2.9% that Friday. It was the first time Apple had
+  overtaken Nvidia at a close since late July. Nvidia lost about $835 billion
+  in market value over October, its worst month in a year. The lead did not
+  last: Nvidia regained the top spot on 3 November after Apple's 2 November
+  fiscal Q4 report, which beat on revenue and EPS, but its gross-margin
+  guidance of 45%-46% sent the shares lower.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://finance.yahoo.com/markets/stocks/articles/apple-overtakes-nvidia-become-world-202839510.html
+    title: Apple Overtakes Nvidia to Become World's Most Valuable Company
+    publisher: Bloomberg (via Yahoo Finance)
+    published_date: 2026-10-30
+    excerpt: "Shares of Apple fell 1.2% on Friday, resulting in a market capitalization of $5.03 trillion, while Nvidia sank 4.2% to close with a valuation of $4.93 trillion. This is the first time Apple has overtaken Nvidia since briefly doing so in late July."
+  - url: https://www.straitstimes.com/business/companies-markets/apple-overtakes-nvidia-to-become-worlds-most-valuable-company
+    title: Apple overtakes Nvidia as world's most valuable company
+    publisher: The Straits Times
+    published_date: 2026-10-31
+    excerpt: "Apple reclaimed the title of world's most valuable company on Oct 30... The Oct 30 sell-off came as a number of major technology companies disappointed with their results, including Intel and Amazon."
+  - url: https://finance.yahoo.com/markets/stocks/articles/nvidia-regains-title-world-most-165729513.html
+    title: Nvidia Regains Title Of World's Most Valuable Company - As Apple Shares Slide
+    publisher: Forbes (via Yahoo Finance)
+    published_date: 2026-11-03
+    excerpt: "Nvidia on Tuesday reclaimed its status as the most valuable company in the world from Apple, who surpassed it on Friday but promptly relinquished the title."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/largest-company-end-of-october-2026
+  pre_event_probability: {"Yes": 0.07, "No": 0.93}
+  as_of: 2026-10-28
+notes: >-
+  Polymarket daily prices (CLOB price-history API): Apple 0.07 and Nvidia 0.93
+  on 28 October. Apple had briefly traded up to about 0.34 on 24 October after
+  the intraday flip, then fell back. The market's resolution date is 31
+  October (a Saturday), so the 30 October close is decisive.

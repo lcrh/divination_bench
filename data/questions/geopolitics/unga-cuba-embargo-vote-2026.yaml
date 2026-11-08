@@ -1,0 +1,86 @@
+id: unga-cuba-embargo-vote-2026
+domain: geopolitics
+title: Support for the UN General Assembly's 2026 resolution against the US embargo on Cuba
+question: >-
+  At the UN General Assembly's annual vote on the resolution calling for an
+  end to the US embargo against Cuba (expected 27-28 October 2026), how many
+  member states will vote in favour?
+question_type: multiple_choice
+options: ["165 or more", "150-164", "135-149", "Fewer than 135"]
+resolution_criteria: >-
+  Resolves to the bin containing the number of "in favour" votes in the
+  recorded vote on the 2026 resolution "Necessity of ending the economic,
+  commercial and financial embargo imposed by the United States of America
+  against Cuba", as reported by UN Meetings Coverage.
+context_summary: >-
+  Since 1992 the UN General Assembly has adopted, almost every year, a
+  non-binding resolution demanding an end to the US embargo on Cuba, usually
+  near-unanimously. In 2024 the vote was 187 in favour, 2 against (US,
+  Israel) and 1 abstention. In October 2025, after US lobbying that included
+  Ukrainian claims that thousands of Cubans were fighting for Russia, support
+  fell to 165 in favour, 7 against (US, Israel, Argentina, Hungary, North
+  Macedonia, Paraguay, Ukraine) and 12 abstentions (mostly Central/Eastern
+  European states plus Costa Rica, Ecuador and Morocco). In 2026 the Trump
+  administration ran a much more aggressive campaign led by Secretary of
+  State Marco Rubio and UN Ambassador Mike Waltz. On 21 October Cuban Foreign
+  Minister Bruno Rodríguez accused Washington of threatening countries with
+  tariffs, visa denials for officials and their families, suspension of
+  cooperation programmes, and support for opposition parties in elections if
+  they did not change their votes. He also said the US was urging countries to
+  abstain or skip the vote. Waltz confirmed he had asked "many of our European
+  colleagues" to reconsider their support. US-Cuban tensions were high: the
+  Trump administration was openly calling for regime change and had added new
+  economic restrictions on the island. The vote was scheduled for 27 or 28
+  October.
+context_sources:
+  - url: https://press.un.org/en/2025/ga12723.doc.htm
+    title: General Assembly Overwhelmingly Adopts Resolution Calling on United States to End Cuba Embargo
+    publisher: UN Meetings Coverage and Press Releases
+    published_date: 2025-10-29
+    excerpt: "by a recorded vote of 165 in favour to 7 against (Argentina, Hungary, Israel, North Macedonia, Paraguay, Ukraine, United States), with 12 abstentions. In 2024... 187 votes in favour to 2 against (United States, Israel), with 1 abstention (Republic of Moldova)."
+  - url: https://www.reuters.com/world/americas/us-fails-make-big-dent-un-vote-calling-end-cuba-embargo-2025-10-29/
+    title: US fails to make big dent in UN vote calling for end to Cuba embargo
+    publisher: Reuters
+    published_date: 2025-10-29
+    excerpt: "despite lobbying by Washington that included sharing an accusation that up to 5,000 Cubans are fighting alongside Russian forces in Ukraine."
+  - url: https://www.aljazeera.com/news/2026/10/21/cuba-accuses-us-of-threatening-countries-ahead-of-un-embargo-vote
+    title: Cuba accuses US of threatening countries ahead of UN embargo vote
+    publisher: Al Jazeera
+    published_date: 2026-10-21
+    excerpt: "Rodriguez said US officials had threatened to suspend cooperation programmes, deny visas to government officials and their families, and even back opposition parties in upcoming elections if countries refused to change their positions... the vote... expected to take place on October 27 or 28."
+event_date: 2026-10-28
+outcome_summary: >-
+  Fewer than 135. On 28 October 2026 the General Assembly adopted the
+  resolution, the 34th such call, by 130 votes in favour, 17 against and 25
+  abstentions. That was a drop of 35 "yes" votes from 2025 and, per UN News,
+  the weakest backing in two decades. The number of "no" votes more than
+  doubled (from 7 to 17), and abstentions rose from 12 to 25. The abstainers
+  included major economies that had previously voted yes, such as Germany,
+  Italy and South Korea. During the debate on 27 October Cuban Foreign
+  Minister Rodríguez interrupted Ambassador Waltz on a point of order, and US
+  and Cuban officials reportedly shouted at and shoved each other. Waltz then
+  announced the expulsion of a Cuban mission diplomat for "assaulting an
+  American diplomat". He hailed a "tripling" of countries that had shifted
+  and predicted the trend would grow. Rodríguez said the US was "once again
+  isolated". India and most of the Global South still voted in favour.
+resolved_answer: Fewer than 135
+outcome_sources:
+  - url: https://press.un.org/en/2026/ga12801.doc.htm
+    title: General Assembly Adopts Resolution to Lift United States Embargo of Cuba
+    publisher: UN Meetings Coverage and Press Releases
+    published_date: 2026-10-28
+    excerpt: "By a recorded vote of 130 in favour to 17 against, with 25 abstentions, the 193-member organ reiterated its opposition to the restrictive measures... The vote, however, witnessed a continuing decline in support."
+  - url: https://news.un.org/en/story/2026/10/1168694
+    title: Backing for UN call to end Cuba embargo falls to 20-year low
+    publisher: UN News
+    published_date: 2026-10-28
+    excerpt: "The text passed by 130 votes in favour to 17 against, with 25 abstentions. Last year it was adopted by 165 votes to seven, with 12 abstentions."
+  - url: https://www.aljazeera.com/news/2026/10/28/un-votes-to-condemn-embargo-of-cuba-despite-us-lobbying-push
+    title: UN votes to condemn embargo of Cuba despite US lobbying push
+    publisher: Al Jazeera
+    published_date: 2026-10-28
+    excerpt: "Another 25 countries abstained, including countries such as Germany and Italy, that had previously voted in favour... 'now that we've had a tripling of countries that have shifted, we expect that to only continue to grow,' [Waltz] added."
+market: null
+notes: >-
+  No prediction market found. The bins are set so that the 2025 result (165) is the top bin and
+  the actual result (130) is not on a boundary.

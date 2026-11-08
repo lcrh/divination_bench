@@ -1,0 +1,92 @@
+id: erin-patterson-appeal-2026
+domain: law
+title: Outcome of Erin Patterson's mushroom-murder appeals in Victoria's Court of Appeal
+question: >-
+  How will Victoria's Court of Appeal rule on 30 October 2026 on Erin
+  Patterson's appeal against her murder convictions and the prosecution's
+  appeal against her sentence?
+question_type: multiple_choice
+options:
+  - "Convictions quashed and acquittal entered"
+  - "Convictions quashed and a retrial ordered"
+  - "Conviction appeal dismissed; sentence left unchanged (life with 33-year non-parole period)"
+  - "Conviction appeal dismissed; sentence increased (non-parole period lengthened or removed)"
+resolution_criteria: >-
+  Resolves according to the orders of the Court of Appeal of the Supreme
+  Court of Victoria handed down on 30 October 2026 in both the conviction
+  appeal and the Director of Public Prosecutions' sentence appeal.
+context_summary: >-
+  In July 2025 a Supreme Court of Victoria jury, sitting in Morwell, found
+  Erin Patterson guilty of murdering her former in-laws Don and Gail
+  Patterson and Gail's sister Heather Wilkinson, and of attempting to murder
+  Heather's husband Ian. She had served them beef Wellingtons laced with
+  death cap mushrooms at her Leongatha home in July 2023. In September 2025
+  Justice Christopher Beale sentenced her to life with a 33-year non-parole
+  period, so she could be released around 2056. He gave her a chance of
+  parole partly because of her harsh, near-solitary conditions as a
+  notorious prisoner. At a two-day Court of Appeal hearing in August 2026
+  (Justices Lesley Taylor, Stephen McLeish and Peter Kidd), her barrister
+  Richard Edney argued seven grounds. The main ground was a "catastrophic"
+  accommodation mix-up: the sequestered jury had stayed in the same hotel as
+  the lead police detective, prosecution solicitors and media. He also argued
+  that the Crown's five-day cross-examination was unfair and oppressive and
+  that its closing address changed its case on motive. He sought a retrial.
+  Director of Public Prosecutions Brendan Kissane KC said letters confirmed
+  there was no contact between jurors and others at the hotel. He also
+  cross-appealed, saying the sentence was manifestly inadequate and Patterson
+  should never be eligible for parole because the murders were in the
+  "worst category". The court reserved judgment and on 28 October announced
+  it would rule at 10am AEDT on Friday 30 October.
+context_sources:
+  - url: https://www.abc.net.au/news/2026-08-20/erin-patterson-appeal-mushroom-murder-court/107059860
+    title: Prosecutors say Erin Patterson's prison sentence inadequate for her crimes in Court of Appeal hearing
+    publisher: ABC News (Australia)
+    published_date: 2026-08-20
+    excerpt: "Mushroom killer Erin Patterson should be locked up for life with no chance of parole because the three murders she carried out were in the 'worst category', prosecutors say... lawyers for Patterson say the sentence was appropriate given the harshness of her prison life."
+  - url: https://www.abc.net.au/news/2026-08-20/live-blog-erin-patterson-appeal-day-2/107056898
+    title: Erin Patterson's 33-year non-parole period for mushroom murders 'inadequate', prosecutors argue in appeal — as it happened
+    publisher: ABC News (Australia)
+    published_date: 2026-08-20
+    excerpt: "He says both the letter from the judge's associate and the letter from the prosecution indicates there was no contact between the jury and any parties staying at the same hotel... The court reserves its decision in both appeals."
+  - url: https://www.abc.net.au/news/2026-10-28/erin-patterson-appeal-decision-to-be-handed-down-on-friday/107319736
+    title: Erin Patterson's mushroom murder appeal decision to be handed down on Friday
+    publisher: ABC News (Australia)
+    published_date: 2026-10-28
+    excerpt: "Three judges of Victoria's highest court, the Court of Appeal, will hand down the judgment at 10am AEDT... If Patterson's appeal succeeds, the Court of Appeal could order a re-trial or acquit Patterson entirely."
+event_date: 2026-10-30
+outcome_summary: >-
+  On 30 October 2026 the Court of Appeal dismissed Patterson's conviction
+  appeal. It granted leave on two grounds but rejected them, and rejected all
+  seven grounds overall. On the hotel issue, McLeish said there was "only
+  conjecture, guesswork, or surmise" against the jury keeper's assurance of
+  no contact. The court then upheld the DPP's sentence appeal, set aside the
+  33-year non-parole period as inadequate, and resentenced her to life
+  imprisonment with no non-parole period, meaning she will die in prison. The
+  judges called the offending "extraordinarily cold and calculated" and "a
+  case of such shocking criminality that it is inappropriate to fix a
+  non-parole period". They noted she had planned to kill all four guests for
+  nearly three weeks. It was among the harshest penalties in Victorian legal
+  history. Patterson, 52, watched by video link from the Dame Phyllis Frost
+  Centre. Her only remaining avenue is a special leave application to the
+  High Court of Australia, due within 28 days.
+resolved_answer: "Conviction appeal dismissed; sentence increased (non-parole period lengthened or removed)"
+outcome_sources:
+  - url: https://www.abc.net.au/news/2026-10-30/erin-patterson-loses-mushroom-murder-convictions-appeal/107326714
+    title: Mushroom murderer Erin Patterson likely to die in jail after failed appeal
+    publisher: ABC News (Australia)
+    published_date: 2026-10-30
+    excerpt: "Victoria's Court of Appeal increased Patterson's sentence for poisoning her relatives and dismissed all grounds of her appeal... appeal judges... decided to remove the non-parole period altogether, meaning Patterson's sentence will expire upon death."
+  - url: https://apnews.com/article/australian-death-cap-mushrooms-poisonings-patterson-4721489445371b9eb1c24eba030c3c13
+    title: Australian court orders Erin Patterson never to be released for mushroom poisonings
+    publisher: AP News
+    published_date: 2026-10-30
+    excerpt: "The three judges of the Victoria state Court of Appeal dismissed Patterson's appeal of her convictions and upheld prosecutors' challenge to the leniency of her 33-year nonparole sentence."
+  - url: https://www.sbs.com.au/news/article/erin-patterson-appeal-judgement-decision/ohwsyazkl
+    title: Mushroom murderer Erin Patterson to spend rest of life in prison after losing appeal
+    publisher: SBS News
+    published_date: 2026-10-30
+    excerpt: "'In all the circumstances, after anxious consideration, we have concluded that the case involved such shocking criminality that it is inappropriate to fix a non-parole period.'"
+market: null
+notes: >-
+  No market found. The options follow the four outcomes set out by AAP in its pre-judgment
+  explainer "Six ways mushroom killer's appeal could turn out".

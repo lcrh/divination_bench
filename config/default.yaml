@@ -1,0 +1,41 @@
+# Default benchmark configuration. All models are OpenRouter IDs.
+# Use `mock/<anything>` model IDs for offline dry runs.
+
+questions_dir: data/questions
+results_dir: results
+
+seeds: [0]
+
+generation:
+  methods: [tarot, iching, predict]
+  models:
+    - anthropic/claude-opus-5.5
+    - openai/gpt-6-astra
+  temperature: 1.0
+  max_tokens: 16000
+
+judging:
+  modes: [full, prediction]
+  judges:
+    - anthropic/claude-opus-5.5
+    - openai/gpt-6-astra
+    - deepseek/deepseek-v4-pro-0813
+  temperature: 0.0
+  max_tokens: 16000
+
+# Documented cutoffs of the tested models. Every question's event_date must be
+# after max(training_cutoff, release_date) for every tested model.
+model_cutoffs:
+  anthropic/claude-opus-5.5:
+    training_cutoff: 2026-06-30
+    release_date: 2026-09-22
+    source: https://platform.claude.com/docs/en/models/opus-5-5/overview
+  openai/gpt-6-astra:
+    training_cutoff: 2026-04-30
+    release_date: 2026-09-03
+    source: https://developers.openai.com/api/docs/models/gpt-6-astra
+
+knowledge_probe:
+  models:
+    - anthropic/claude-opus-5.5
+    - openai/gpt-6-astra

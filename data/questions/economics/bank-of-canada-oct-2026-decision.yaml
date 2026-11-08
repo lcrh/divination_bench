@@ -1,0 +1,90 @@
+id: bank-of-canada-oct-2026-decision
+domain: economics
+title: Bank of Canada October 2026 rate decision
+question: >-
+  What will the Bank of Canada decide about its overnight policy rate, currently
+  2.25%, at its announcement on 28 October 2026?
+question_type: multiple_choice
+options: ["Cut", "Hold at 2.25%", "Hike 25 bp", "Hike 50 bp or more"]
+resolution_criteria: >-
+  Resolves to the change in the target for the overnight rate announced by the
+  Bank of Canada on 28 October 2026, per its official press release.
+context_summary: >-
+  The Bank of Canada has held its overnight rate at 2.25% for seven straight
+  decisions, a level at the low end of its estimated neutral range. An oil
+  price surge linked to the war involving Iran has pushed Canadian headline
+  inflation back up: September CPI rose to 3.1% y/y from 3.0%, slightly better
+  than forecasters expected and just above the 1%-3% target band, driven by a
+  6.1% monthly jump in gasoline prices. Inflation excluding energy eased to
+  2.2% and the bank's preferred core measures slipped to 1.9% and 1.8%. The
+  labour market is weak: Canada lost 68,000 jobs in September and unemployment
+  rose to 6.5%. Against that, the bank's consumer survey showed a sharp rise in
+  long-term inflation expectations, and about half of firms plan to pass on
+  war- and tariff-related cost increases. Governor Tiff Macklem sounded hawkish
+  at the IMF meetings, saying that if oil stays near US$100 inflation will
+  drift up and the bank must ask whether it needs to "raise interest rates to
+  influence the path." Before the CPI release, swaps priced only about a 35%
+  chance of a hike; afterwards, pricing jumped to around 80%. Economists were divided:
+  in a Reuters poll of 21-23 October, 19 of 34 expected a 25 bp hike to 2.50%,
+  a sharp reversal from the prior poll, when 80% expected a hold through 2026.
+  Scotiabank, Desjardins and BMO called a hike; RBC, TD and Dominion Lending
+  Centres called a hold, citing the weak economy and soft core inflation. On
+  Polymarket, a 25 bp hike traded at about 83% and a hold at about 17% the day
+  before the decision.
+context_sources:
+  - url: https://www.investing.com/news/economy-news/bank-of-canada-to-raise-rates-to-250-on-october-28-and-once-again-by-endmarch-reuters-poll-4970116
+    title: Bank of Canada to raise rates to 2.50% on October 28 and once again by end-March - Reuters poll
+    publisher: Reuters (via Investing.com)
+    published_date: 2026-10-23
+    excerpt: "Nineteen of 34 economists surveyed in the October 21-23 poll, or 56% of them, said the BoC will hike its overnight rate by a quarter percentage point to 2.50%... This is a clear reversal from the previous poll, when 80% of respondents forecast the bank would hold."
+  - url: https://www.theglobeandmail.com/business/economy/article-bank-of-canada-interest-rate-hike-bets-tiff-macklem-hawkish-speech/
+    title: Financial markets betting on BoC rate hike next week despite subdued inflation data
+    publisher: The Globe and Mail
+    published_date: 2026-10-19
+    excerpt: "Interest rate swap markets... were pricing in around an 80-per-cent chance that the bank would raise its benchmark interest rate by a quarter-point at its Oct. 28 rate decision... up from roughly 35 per cent on Friday."
+  - url: https://kalshi.com/research/insights/october-fomc-preview
+    title: "October FOMC Meeting Preview: A Hold Is Priced In, But What's Next?"
+    publisher: Kalshi Research
+    published_date: 2026-10-28
+    excerpt: "The Bank of Canada decides today with a new Monetary Policy Report, and the market has been closely split on a first hike from 2.25%, with Desjardins expecting one and RBC a hold, even as Canada lost 68,000 jobs in September and its unemployment rate rose to 6.5%."
+event_date: 2026-10-28
+outcome_summary: >-
+  The Bank of Canada raised its overnight rate by 25 bp to 2.50%, its first
+  rate change in a year and first hike since July 2023 (Bank Rate 2.75%,
+  deposit rate 2.45%). Macklem said the increase was "needed to reduce the risk
+  that elevated energy prices could spill over and become generalized
+  inflation." Guidance was cautious: "There could be a need to increase the
+  policy rate further, but given uncertainties, Governing Council agreed to
+  proceed carefully," with decisions taken one meeting at a time. The bank
+  raised its inflation outlook sharply, expecting CPI around 3.5% by end-2026
+  and 3.1% in 2027 (from 2.0% in July), with a return to about 2% by mid-2028.
+  It lifted 2026 growth to 1.0% (from 0.7%) and sees about 2% growth in 2027.
+  Even after the hike, the rate sits below the 2.75% midpoint of the bank's
+  neutral range. The next decision is 9 December. Forecasters who called a
+  hold, including RBC, TD and Dominion Lending Centres, were wrong.
+resolved_answer: "Hike 25 bp"
+outcome_sources:
+  - url: https://www.streetinsider.com/Reuters/Bank+of+Canada+raises+key+interest+rate%2C+says+another+hike+possible/27246392.html
+    title: Bank of Canada raises key interest rate, says another hike possible
+    publisher: Reuters (via StreetInsider)
+    published_date: 2026-10-28
+    excerpt: "The bank lifted the rate by 25 basis points to 2.5%, as widely expected, and also ramped up its inflation forecast for 2027 to 3.1% from the 2.0% it had predicted in July."
+  - url: https://www.cbc.ca/news/business/livestory/bank-of-canada-interest-rate-announcement-oct-28-9.7398140
+    title: Bank of Canada governor says rate hike to 2.5% was needed in face of persistent inflation
+    publisher: CBC News
+    published_date: 2026-10-28
+    excerpt: "The central bank raised its benchmark interest rate by a quarter-point to 2.5 per cent, marking its first change after seven consecutive holds and its first increase since July 2023."
+  - url: https://bips.ca/resources/bank-of-canada-forecasting/2026-10-28
+    title: "Bank of Canada October 28, 2026 Forecast: Who Called It"
+    publisher: bips
+    published_date: 2026-10-28
+    excerpt: "Polymarket: Hike at 85% - Right; Kalshi: Hike at 81% - Right... Leslie Preston TD Economics: Called a hold - Missed; Abbey Xu RBC Economics: Called a hold - Missed."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/bank-of-canada-decision-in-october-20260715203359314
+  pre_event_probability: {"Hike 25 bp": 0.83, "Hold at 2.25%": 0.17}
+  as_of: 2026-10-27
+notes: >-
+  Polymarket daily prices from the CLOB price-history API. The hike was priced
+  at only about 15% until the 19 October CPI release. Kalshi was about 81%
+  before the decision.

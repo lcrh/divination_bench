@@ -1,0 +1,90 @@
+id: melbourne-cup-2026
+domain: sports
+title: Winner of the 2026 Melbourne Cup at Flemington
+question: >-
+  Which horse will win the 2026 Lexus Melbourne Cup (3200 m, Flemington, 3
+  November 2026), and how will the race unfold?
+question_type: open
+resolution_criteria: >-
+  Resolves to the horse officially placed first in the 2026 Melbourne Cup
+  (Race 7, Flemington, 3 November 2026), per Racing Victoria / Racing
+  Australia. Open-ended predictions are judged on the winner and also on
+  placings, trainer and jockey, and race shape.
+context_summary: >-
+  The 166th Melbourne Cup, a Group 1 two-mile handicap worth A$10.2 million,
+  is run at Flemington at 3pm on Tuesday 3 November with a full field of 24.
+  It is an open year with no standout stayer, and favourites have not won the
+  race in 12 years. Ciaron Maher saddles a record seven runners, including
+  Point Of Law (3yo colt, 53kg, barrier 9, Ethan Brown), Royal Supremacy,
+  Zahrann, Juja Kibo, Middle Earth, Mr Monaco and Shockletz. Point Of Law, bought
+  from King Charles III in July, makes only his sixth career start
+  after a romping win in the Group 3 Geelong Cup on his Australian debut.
+  Joseph O'Brien brings five Irish runners, including topweight Sons And
+  Lovers (57.5kg) and Trustyourinstinct (57kg, barrier 18, James McDonald).
+  There are British raiders from George Boughey, Roger Varian (Enfjaar) and
+  Harry Charlton (Wine Dark Sea). Defending local hopes include 2024 winner
+  Knight's Choice and Chris Waller's Asterix and Soul Of Spain. Defiantly and
+  Japan's Stinger Glass were ruled out. The late market was dominated by a
+  plunge on Boughey's Hopewell Rock (54.5kg, barrier 15, Zac Lloyd), a Goodwood
+  winner over 2816 m and a narrow Ebor runner-up who has never raced at 3200
+  m. Owner JP McManus reportedly bet A$1 million on him. By race morning
+  Hopewell Rock was favourite at about $6.50-$7, with Point Of Law easing to
+  $8-$8.50 and Trustyourinstinct around $9. Rain was forecast to turn the track
+  from Good 4 to soft.
+context_sources:
+  - url: https://www.oddschecker.com/insight/horse-racing/20261102-melbourne-cup-betting-tips-runners-guide-odds-trends
+    title: Melbourne Cup Betting Tips, Runners Guide, Odds & Trends
+    publisher: Oddschecker
+    published_date: 2026-11-02
+    excerpt: "Ciaron Maher saddles a record seven runners, Joseph O'Brien brings five from Ireland ... This is an open renewal with no standout stayer ... [the favourite is in] a group that has drawn a blank for 12 years."
+  - url: https://www.nine.com.au/sport/horse-racing/melbourne-cup-favourite-betting-odds-runners-field-20261102-p61aoh.html
+    title: "Melbourne Cup favourite 2026: Hopewell Rock new favourite after JP McManus bet"
+    publisher: Nine.com.au
+    published_date: 2026-11-02
+    excerpt: "Hopewell Rock was brought into favourite this morning and is paying $7 with TAB. Point Of Law, which was previously the favourite, has been pushed out to $8.50, while Trustyourinstinct has drifted out to $9."
+  - url: https://www.races.com.au/2026/11/03/race-day-melbourne-cup-2026-odds-shock-hopewell-rock-storms-into-favouritism-as-point-of-law-drifts/
+    title: "Race Day Melbourne Cup 2026 Odds Shock: Hopewell Rock Storms into Favouritism as Point Of Law Drifts"
+    publisher: races.com.au
+    published_date: 2026-11-03
+    excerpt: "Hopewell Rock ... installed as the new $6.50 Melbourne Cup favourite with Ladbrokes on Tuesday morning. At the same time, former market leader Point Of Law has eased from $6.50 out to $8."
+event_date: 2026-11-03
+outcome_summary: >-
+  Point Of Law (GB), the three-year-old colt formerly owned by King Charles
+  III, won the 2026 Melbourne Cup on his sixth career start in 3:21.88 on a
+  soft track. He was trained by Ciaron Maher, ridden by Ethan Brown (his
+  first Cup) and carried 53kg. He firmed back into favouritism just before
+  the jump. Stablemate Royal Supremacy went all out for the lead and stretched
+  the margin to as much as 20 lengths by the 1000 m mark. Point Of Law came
+  from mid-pack and ran him down about 150 m out, then raced clear. Zahrann
+  was second, 3 3/4 lengths back, and Juja Kibo third, so Maher became the
+  first trainer in 166 editions to train the trifecta. He also had five of
+  the first six home. Joseph O'Brien's best finisher was topweight Sons And
+  Lovers in fourth. Point Of Law became the third Northern Hemisphere
+  three-year-old to win, after Rekindling (2017) and Cross Counter (2018). It
+  was Maher's second Melbourne Cup win, after Gold Trip in 2022.
+resolved_answer: "Point Of Law (trainer Ciaron Maher, jockey Ethan Brown), ahead of Zahrann and Juja Kibo - a Maher trifecta"
+outcome_sources:
+  - url: https://www.abc.net.au/news/2026-11-03/melbourne-cup-point-of-law-wins-for-ciaron-maher/107341548
+    title: Point of Law wins Melbourne Cup to give trainer Ciaron Maher second victory
+    publisher: ABC News (Australia)
+    published_date: 2026-11-03
+    excerpt: "Point of Law, ridden by Ethan Brown came first, followed by Zahrann and Juja Kibo ... Royal Supremacy hit the front in the first half of the race and ... went all-out for the lead, stretching the margin to up to 20 lengths by the 1,000m mark."
+  - url: https://apnews.com/article/horse-racing-melbourne-cup-aec5b54a693af4d4d3db1d79d8a0237d
+    title: Point Of Law storms to a Melbourne Cup win after late surge past Royal Supremacy
+    publisher: AP News
+    published_date: 2026-11-03
+    excerpt: "Trainer Ciaron Maher made history in the 166-year-old race as the first to train a trifecta, with Zahrann 3 3/4-lengths behind in second place and Juja Kibo finishing third."
+  - url: https://www.abc.net.au/news/2026-11-03/melbourne-cup-2026-live-flemington/107335812
+    title: "Melbourne Cup 2026: Point of Law wins Cup, Ciaron Maher trains trifecta"
+    publisher: ABC News (Australia)
+    published_date: 2026-11-03
+    excerpt: "The three-year-old colt trained by Ciaron Maher firmed as the favourite just before the jump, taking the tag away from Hopewell Rock, which began the day as the most fancied to win."
+market:
+  platform: bookmaker (Ladbrokes / TAB fixed odds)
+  url: https://www.races.com.au/2026/11/03/race-day-melbourne-cup-2026-odds-shock-hopewell-rock-storms-into-favouritism-as-point-of-law-drifts/
+  pre_event_probability:
+    "Hopewell Rock": 0.15
+    "Point Of Law": 0.125
+    "Trustyourinstinct": 0.11
+  as_of: 2026-11-03
+notes: "Raw implied probabilities from race-morning fixed odds (not normalised). Point Of Law firmed back to favourite at the jump."

@@ -1,0 +1,87 @@
+id: tundu-lissu-treason-verdict-2026
+domain: law
+title: Verdict in Tanzanian opposition leader Tundu Lissu's treason trial
+question: >-
+  What will Tanzania's High Court decide when it delivers judgment in the
+  treason trial of opposition leader Tundu Lissu, scheduled for 6 November
+  2026?
+question_type: multiple_choice
+options:
+  - "Convicted of treason"
+  - "Acquitted of treason but convicted of a lesser offence"
+  - "Acquitted and freed"
+  - "Judgment postponed or case otherwise not decided on 6 November"
+resolution_criteria: >-
+  Resolves according to the judgment delivered by the three-judge High Court
+  panel (Dar es Salaam Sub-Registry) on 6 November 2026, as reported by major
+  news outlets.
+context_summary: >-
+  Tundu Lissu, 58, chairman of Tanzania's main opposition party Chadema and a
+  former presidential candidate, was arrested on 9 April 2025. This followed a
+  3 April 2025 rally in Dar es Salaam launching the campaign "No Reforms, No
+  Election". He was charged with treason under Section 39(2)(d) of the Penal
+  Code ("showing intent to threaten the government") for allegedly urging the
+  public to prevent the October 2025 general election. Treason carries a
+  possible death sentence and is not bailable, so he had been held without
+  bail ever since. Chadema was shut out of the 2025 election, which President
+  Samia Suluhu Hassan's government won amid deadly protests and international
+  criticism. Lissu represented himself, saying he had been denied private
+  access to his lawyers, and called the case politically motivated. In August
+  2026 the court ruled he had a case to answer. The prosecution called 17
+  witnesses and the defence 5; Lissu said senior police and military chiefs
+  declined to testify for him. Closing submissions ran from 23 to 29
+  September. Presiding Judge Dunstan Ndunguru, sitting with Justices James
+  Karayemaha and Ferdinand Kiwonde, set judgment for 6 November. He cited the
+  volume of evidence and the fact that the charge provision was being
+  considered for the first time. Rights groups and the US, which was
+  reviewing ties with Tanzania, were watching closely.
+context_sources:
+  - url: https://www.thecitizen.co.tz/tanzania/news/national/lissu-treason-trial-enters-final-submissions-5605630
+    title: Lissu treason trial enters final submissions
+    publisher: The Citizen
+    published_date: 2026-09-23
+    excerpt: "Mr Lissu faces a single charge of showing intent to threaten the government over allegations of inciting the public to prevent the 2025 general election... DCI Kingai stated he supported those anticipating a guilty verdict."
+  - url: https://www.theeastafrican.co.ke/tea/news/east-africa/court-sets-november-6-for-lissu-treason-verdict-5614558
+    title: Court sets November 6 for Lissu treason verdict
+    publisher: The EastAfrican
+    published_date: 2026-09-30
+    excerpt: "The volume of evidence and the fact that the charge was being considered under the provision for the first time required the judges to take time before delivering their decision. 'Therefore, we will deliver the judgment on November 6, 2026,' Justice Ndunguru said."
+  - url: https://www.riotimesonline.com/tundu-lissu-treason-trial-verdict-friday-2026/
+    title: Tundu Lissu Treason Verdict Is Due Friday
+    publisher: The Rio Times
+    published_date: 2026-11-03
+    excerpt: "the court can convict him, acquit him or delay again... The verdict lands while the US Senate weighs a bill on Tanzania and Washington reviews its ties with Dar es Salaam."
+event_date: 2026-11-06
+outcome_summary: >-
+  On 6 November 2026 the three-judge panel acquitted Lissu of treason. It
+  found the prosecution had failed to prove he intended to intimidate or
+  overthrow the government. However, it convicted him of incitement, a lesser
+  offence, holding that his "No Reforms, No Election" slogan and remarks
+  incited the public to disrupt the 2025 elections. He was sentenced to four
+  years in prison; he had already spent about 19 months in detention. Lissu
+  told the judges they had "manufactured" an offence he was never charged
+  with, "on political directives". He said he would seek bail, now possible
+  because the conviction was not for treason, and he has leave to appeal to
+  the Court of Appeal. If the sentence stands it would bar him from the 2030
+  elections. Human Rights Watch and other groups condemned the conviction.
+resolved_answer: "Acquitted of treason but convicted of a lesser offence"
+outcome_sources:
+  - url: https://www.bbc.com/news/articles/ckp8g4pm0y4lo
+    title: "Tundu Lissu: Tanzania opposition leader found guilty of incitement but acquitted of treason"
+    publisher: BBC News
+    published_date: 2026-11-06
+    excerpt: "A panel of three judges... acquitted him of the more serious offence of treason, saying prosecutors had failed to prove a key element of that charge... sentenced to four years in jail."
+  - url: https://apnews.com/article/tanzania-court-opposition-lissu-treason-incitement-161a559c8c7948fe0acbef889803d097
+    title: Tanzania opposition leader Lissu sentenced to 4 years for incitement, acquitted of treason
+    publisher: AP News
+    published_date: 2026-11-06
+    excerpt: "A court in Tanzania convicted the country's main opposition leader Tundu Lissu of incitement Friday and sentenced him to four years in prison, but acquitted him of the more serious charge of treason."
+  - url: https://www.hrw.org/news/2026/11/06/tanzanian-court-convicts-opposition-leader-of-incitement
+    title: Tanzanian Court Convicts Opposition Leader of Incitement
+    publisher: Human Rights Watch
+    published_date: 2026-11-06
+    excerpt: "Tanzania's High Court on November 6 convicted Tundu Lissu... of incitement, sentencing him to four years in prison. The judges acquitted him of treason, a charge that carries the death penalty."
+market: null
+notes: >-
+  No market found. "Deadly protests" around the 2025 election is background (AFP via Mwanzo TV:
+  "thousands were killed according to the opposition and rights activists").

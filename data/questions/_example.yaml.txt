@@ -1,0 +1,41 @@
+# Template for one question file. Copy to data/questions/<domain>/<id>.yaml
+# Validate with: uv run python -m divination_bench.questions
+id: example-central-bank-decision-2026-10
+domain: economics            # politics|geopolitics|law|economics|business|tech|science|sports|culture|other
+title: Example central bank October 2026 rate decision
+question: >-
+  What will the Example Central Bank decide about its policy rate at its
+  meeting on 29 October 2026?
+question_type: multiple_choice   # binary|multiple_choice|open
+options: ["Cut", "Hold", "Hike"]
+resolution_criteria: >-
+  Resolves to the decision announced in the bank's official statement on
+  29 October 2026.
+context_summary: >-
+  150-300 words describing the situation as it stood shortly before the
+  decisive event: key actors, stakes, what forecasters / markets expected.
+  MUST NOT mention or hint at the outcome.
+context_sources:
+  - url: https://example.com/preview
+    title: Preview of the October meeting
+    publisher: Example News
+    published_date: 2026-10-25
+    excerpt: "Markets price a 70% chance of a hold..."
+event_date: 2026-10-29
+outcome_summary: >-
+  What actually happened, with the specific facts a judge needs to score
+  predictions (numbers, names, margins, dates).
+resolved_answer: Hold
+outcome_sources:
+  - url: https://example.com/decision
+    title: Bank holds rates
+    publisher: Example News
+    published_date: 2026-10-29
+    excerpt: "The bank kept its rate at 4.25%..."
+market:                      # optional
+  platform: polymarket
+  url: https://polymarket.com/event/...
+  pre_event_probability: {"Hold": 0.7}
+  as_of: 2026-10-25
+backup: false                # true = reserve question, skipped unless --include-backups
+notes: null

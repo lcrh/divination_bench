@@ -1,0 +1,74 @@
+id: texas-senate-talarico-paxton-2026
+domain: politics
+title: Texas US Senate race 2026 — Talarico vs Paxton
+question: >-
+  Will Democrat James Talarico defeat Republican Ken Paxton in the US Senate
+  election in Texas on 3 November 2026?
+question_type: binary
+options: ["Yes", "No"]
+resolution_criteria: >-
+  Resolves Yes if James Talarico wins the 3 November 2026 Texas US Senate
+  general election per official results / AP call; No if Ken Paxton (or anyone
+  else) wins.
+context_summary: >-
+  Texas's 2026 Senate race pitted Republican Ken Paxton, the state's
+  controversial attorney general, against Democrat James Talarico, a
+  37-year-old state legislator and former middle-school teacher. No Democrat
+  had won statewide office in Texas in more than 30 years, and Donald Trump
+  carried the state by double digits in 2024. The 2026 midterm environment
+  was poor for Republicans nationally. Polls were close: a Fox News survey
+  (15–19 Oct) had a 49-49 tie, the University of Houston Hobby School had
+  Talarico ahead 48-46 among likely voters, and Emerson (17–19 Oct) also found
+  a two-point Talarico edge; the RealClearPolitics average showed Talarico
+  +1.8. Early voting was at record levels: about 4.54 million Texans had voted
+  by 26 October, up 74% from the same point in 2022, with voters with a
+  Democratic primary history slightly outnumbering Republican ones. Trump made
+  three visits to Texas in October to rally for Paxton, joined on the trail by
+  Governor Greg Abbott and Senator Ted Cruz. Prediction markets had swung from
+  Paxton near 80% in late 2025 to Talarico as a modest favourite: on 27
+  October both Polymarket and Kalshi priced Talarico at 66% and Paxton at
+  35-36%, with Kalshi's margin forecast at Talarico +2.1.
+context_sources:
+  - url: https://www.usatoday.com/story/news/state/texas/2026/10/21/texas-senate-governors-race-odds-on-kalshi-polymarket/92363928007/
+    title: What Kalshi, Polymarket say about Texas Senate, governor's race
+    publisher: USA Today
+    published_date: 2026-10-21
+    excerpt: "Polymarket: Talarico 65%, Paxton 36%... Kalshi: Talarico 63%, Paxton 37%."
+  - url: https://www.actionnetwork.com/news/texas-senate-race-odds-2026-kalshi-polymarket-texas-senate-predictions-talarico-vs-paxton-polls-analysis-oct-27-update
+    title: "Texas Senate Race Odds 2026 (Oct 27 Update)"
+    publisher: Action Network
+    published_date: 2026-10-27
+    excerpt: "James Talarico priced as a 66¢ favorite over Republican Ken Paxton on both Polymarket and Kalshi, even as the latest Talarico vs Paxton polls show a dead heat... 4,538,667 Texans had voted early as of October 26."
+event_date: 2026-11-03
+outcome_summary: >-
+  Talarico won comfortably, far more decisively than polls suggested. Texas
+  Secretary of State results (100% of polling locations): James Talarico (D)
+  5,444,982 votes (~55.1%), Ken Paxton (R) 4,249,373 (~43.0%), Libertarian Ted
+  Brown 190,237. The AP called the race on election night. Talarico became the
+  first Texas Democrat to win statewide office in more than 30 years, flipping
+  the seat. The roughly 12-point margin far exceeded both the final polls
+  (ranging from a tie to Talarico +5) and Kalshi's margin forecast of about
+  Talarico +2. His win was part of a national Democratic wave in which
+  Democrats took control of both the House and Senate, with further Senate
+  upsets in South Carolina and Kansas, a sharp rebuke to Trump, who had
+  campaigned for Paxton repeatedly.
+resolved_answer: "Yes"
+outcome_sources:
+  - url: https://apnews.com/article/texas-senate-talarico-paxton-midterm-election-66df71a7c2bfa962cffd4134ef1a0364
+    title: Democrat James Talarico wins Texas Senate election over Republican Ken Paxton
+    publisher: AP News
+    published_date: 2026-11-04
+    excerpt: "Democrat James Talarico flipped a U.S. Senate seat in Texas on Tuesday, defeating Republican Ken Paxton to pull off the party's first statewide victory in more than 30 years."
+  - url: https://electionresults.sos.state.tx.us/results.html
+    title: Election Results - Tuesday, November 3, 2026
+    publisher: Texas Secretary of State
+    published_date: 2026-11-04
+    excerpt: "REPUBLICAN KEN PAXTON 4,249,373; DEMOCRATIC JAMES TALARICO 5,444,982; LIBERTARIAN TED BROWN 190,237 (Polling Locations Reporting: 100%)."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/texas-senate-election-winner
+  pre_event_probability: {"Yes": 0.66, "No": 0.36}
+  as_of: 2026-10-27
+notes: >-
+  Kalshi had Talarico at 71% on 31 Oct (news.kalshi.com). Polymarket prices from Action Network
+  27 Oct. Texas SOS published_date is approximate (results page, no date stamp).

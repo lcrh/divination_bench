@@ -1,0 +1,99 @@
+id: el-salvador-haiti-response-2026
+domain: geopolitics
+title: El Salvador's response to the disappearance of four of its soldiers in Haiti
+question: >-
+  Four Salvadoran air force technicians serving with the UN-backed Gang
+  Suppression Force in Haiti went missing after a gang ambush on 18 October
+  2026. What will El Salvador do in response by the end of October 2026?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on El Salvador's main concrete response between 20 and 31 October
+  2026: the scale and nature of any military deployment, diplomatic steps
+  towards Haiti or the UN, and whether the four men are recovered. A
+  prediction scores well if it gets the scale (token, modest, or large) and
+  nature (rescue/search effort, broader anti-gang operations, or withdrawal)
+  of El Salvador's action right.
+context_summary: >-
+  On Sunday 18 October 2026 heavily armed gangs ambushed an armoured vehicle
+  of El Salvador's "Liberty II" contingent of the Gang Suppression Force
+  (GSF) in Santo, Croix-des-Bouquets, about 12 km north-east of
+  Port-au-Prince. The area is controlled by the 400 Mawozo and Chen Mechan
+  gangs. The vehicle was hit by "hundreds of bullets and explosives" and set
+  on fire. The four aviation technicians aboard escaped but then lost contact
+  and were missing. Salvadoran helicopters sent to help came under fire, and
+  repeated attempts to reach the area by land and air failed because of
+  heavy fighting. It was the first major attack and the first major
+  battlefield loss for the GSF, the multinational force authorised by the UN
+  Security Council to help Haiti's police fight gangs. Other GSF contingents
+  come from Mongolia, Guatemala, Jamaica, Sri Lanka, Chad and elsewhere. The
+  force was trying to recruit more troops while gang violence had displaced
+  nearly 1.5 million Haitians. El Salvador's president, Nayib Bukele, is
+  known for his mass-incarceration crackdown on gangs at home. El Salvador
+  had contributed troops and air crews, including helicopters, to the GSF. US Ambassador Mike Waltz raised the
+  ambush at the UN Security Council on 19 October. No gang had claimed
+  responsibility, and the fate of the four men was unknown.
+context_sources:
+  - url: https://www.upi.com/Top_News/World-News/2026/10/19/latam-haiti-elsalvador-military-missing-gang-suppression/4981792424229/
+    title: Four Salvadoran soldiers missing after gang ambush in Haiti
+    publisher: UPI
+    published_date: 2026-10-19
+    excerpt: "Explosives struck the armored vehicle, setting it on fire, but all four service members managed to escape... multiple attempts had been made to reach the area by land and air, but intense fighting and dangerous security conditions had prevented forces from establishing contact."
+  - url: https://www.investing.com/news/world-news/four-salvadoran-air-force-members-missing-after-gang-ambush-in-haiti-4958010
+    title: Four Salvadoran air force members missing after gang ambush in Haiti (Reuters)
+    publisher: Reuters via Investing.com
+    published_date: 2026-10-19
+    excerpt: "US Ambassador Mike Waltz said the Salvadorans' vehicle was hit by 'hundreds of bullets and explosives'... The UN-backed Gang Suppression Force is seeking to add soldiers as it fights gang violence... nearly 1.5 million people to flee their homes."
+  - url: https://apnews.com/article/haiti-gangs-salvador-attack-military-dd5d4b617fc526d3f7d994274732fc7e
+    title: Haiti gangs target foreign troops in biggest attack on new force
+    publisher: AP News
+    published_date: 2026-10-20
+    excerpt: "Gangs in Haiti opened fire on an armored vehicle over the weekend, leaving four soldiers from El Salvador unaccounted for in the first major attack since an international gang suppression force began operations."
+  - url: https://www.washingtonpost.com/world/2026/10/20/four-international-troops-missing-haiti-after-gang-ambush/
+    title: Four international troops missing in Haiti after gang ambush
+    publisher: The Washington Post
+    published_date: 2026-10-20
+    excerpt: "Four Salvadoran members of the United Nations-backed Gang Suppression Force in Haiti remain missing... the mission's first major battlefield loss since deploying this year."
+event_date: 2026-10-28
+outcome_summary: >-
+  Bukele escalated dramatically. On 21 October he launched a military rescue
+  operation and threatened on X, in Haitian Creole, to destroy Haiti's gangs
+  "as in El Salvador" unless the men were released. On 22 October about 100
+  special forces soldiers were sent, followed by flights of troops and
+  equipment. On 28 October, after a phone call between Bukele and Haitian
+  Prime Minister Alix Didier Fils-Aimé, El Salvador's foreign ministry
+  announced a "robust deployment" of more than 2,000 soldiers. It was the
+  country's largest foreign deployment in decades. The aim was to find the
+  four men and also to keep "supporting anti-gang security efforts" in Haiti.
+  It was unclear whether the troops would serve under the GSF or separately.
+  Earlier that week Haiti had handed over four bodies said to be the missing
+  men, but Bukele rejected them: one was a child and another wore a different
+  country's uniform. On 2 November Salvadoran, Haitian and GSF troops began an
+  offensive in the Plain of the Cul-de-Sac. By early November the burned
+  vehicle had been found but there was no sign of the four men. The same week
+  Haiti postponed its elections to 2027.
+resolved_answer: >-
+  El Salvador deployed more than 2,000 troops to Haiti (announced 28 October),
+  its largest foreign deployment in decades, for a rescue mission and broader
+  anti-gang operations. The four men had not been found by early November.
+outcome_sources:
+  - url: https://www.bbc.com/news/articles/ck0e075n79j5o
+    title: El Salvador sends 2,000 troops to Haiti to rescue four missing soldiers
+    publisher: BBC News
+    published_date: 2026-10-29
+    excerpt: "El Salvador has deployed more than 2,000 soldiers to Haiti... The 'robust deployment' was communicated by El Salvador President Nayib Bukele to the Prime Minister of Haiti... Haiti handed four bodies over... but Bukele said they did not match."
+  - url: https://www.bloomberg.com/news/articles/2026-10-29/haiti-hostage-crisis-triggers-surge-of-2-000-el-salvador-troops
+    title: Haiti Hostage Crisis Triggers Surge of 2,000 El Salvador Troops
+    publisher: Bloomberg
+    published_date: 2026-10-29
+    excerpt: "El Salvador has now sent more than 2,000 troops to Haiti — its largest foreign deployment in decades — as it rushes to locate and rescue four soldiers who are believed to be hostages of powerful gangs."
+  - url: https://www.aljazeera.com/news/2026/10/29/el-salvador-pledges-more-than-2000-soldiers-as-haiti-delays-elections
+    title: El Salvador pledges more than 2,000 soldiers as Haiti delays elections
+    publisher: Al Jazeera
+    published_date: 2026-10-29
+    excerpt: "In an October 21 post on X, written in Haitian Creole, he threatened to destroy Haiti's gangs if they did not release the missing personnel... It remains unclear whether the additional Salvadoran troops will join the United Nations-backed Gang Suppression Force... or operate separately."
+market: null
+notes: >-
+  Open question with no market. The 100 special forces (22 Oct) and the 2 Nov offensive come from
+  Wikipedia's Current events portal (citing AP and EFE). The "vehicle found, no trace" detail is
+  from an AP report in early November.

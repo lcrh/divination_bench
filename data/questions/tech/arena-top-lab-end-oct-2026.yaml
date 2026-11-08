@@ -1,0 +1,88 @@
+id: arena-top-lab-end-oct-2026
+domain: tech
+title: Which company will own the #1 model on Arena's Text leaderboard on 31 October 2026?
+question: >-
+  Which company will own the top-ranked model on the Arena (formerly LMArena)
+  Text Arena overall leaderboard, with style control off, when it is checked
+  at 12:00 PM ET on 31 October 2026?
+question_type: multiple_choice
+options: ["Google", "Anthropic", "OpenAI", "Meta", "Another company"]
+resolution_criteria: >-
+  Resolves to the company owning the model ranked #1 on arena.ai's Text Arena
+  | Overall leaderboard (style control off, filtered for models) at 12:00 PM ET
+  on 31 October 2026, as in the Polymarket market "Which company has the best
+  AI model end of October?". Models marked AutoEval are excluded; ties are
+  broken by Polymarket's rules.
+context_summary: >-
+  The frontier race on Arena's crowd-voted text leaderboard has been tight all
+  autumn. Anthropic's Claude models held the top spots through the summer
+  (Claude Opus 5 and Fable variants around 1505). After months on the
+  sidelines of the frontier race, Google unveiled Gemini 4 Argon, the first
+  model of its Gemini 4 generation, on 30 September with access limited to
+  vetted partners, and made it broadly available on 13 October. Argon (High) went straight to #1 on the text
+  board, but with only about 5,000 votes and a "Preliminary" label. In the
+  early-to-mid October data it scored about 1524-1533, against roughly 1507-1516 for
+  Claude Opus 5.5 (High), with Meta's Muse Wonder (Max) and other Claude
+  models (Fable 5, Fable 5.1, Opus 4.6) close behind. The confidence
+  intervals overlapped and Arena's rank spread for Argon was 1 to 3. On other
+  boards, Anthropic's Claude Opus 5.5 and Fable 5.1 led Artificial Analysis,
+  LiveBench and Arena WebDev, while OpenAI's GPT-6 Astra (released in early
+  September) led Humanity's Last Exam but sat well down the text arena. Labs
+  ship often, and first place on the board has typically changed hands every
+  one to three months, usually after a flagship launch. Reports suggested
+  Google was testing newer Gemini 4 checkpoints, and further releases from
+  Anthropic, OpenAI or Meta were possible before the 31 October check. On 20
+  October Polymarket priced Google at about 73% and Anthropic at about 25%.
+context_sources:
+  - url: https://www.terapep.com/blog/llm-leaderboards-roundup-oct-2026-who-leads-each-benchmark-board/
+    title: "LLM Leaderboards Roundup (Oct 2026): Who Leads LMArena, LiveBench, HLE and More"
+    publisher: Terapep
+    published_date: 2026-10-18
+    excerpt: "Gemini 4 Argon (preliminary) tops LMArena text, Anthropic's Claude Opus 5.5 and Fable 5.1 lead Artificial Analysis, LiveBench and LMArena WebDev ... Gemini 4 Argon's first place is marked Preliminary, its ±9 interval overlaps those of #2 and #3."
+  - url: https://ai-model-psi-bice.vercel.app/news/october-12-leaderboard-refresh
+    title: Opus 5.5 takes the agent arena; Gemini 4 Argon holds the text lead
+    publisher: AI Model Index
+    published_date: 2026-10-12
+    excerpt: "Text arena — Oct 8: 1. Gemini 4 Argon (High) 1525.40 (4,892 votes); 2. Claude Opus 5.5 (High) 1507.08; 3. Claude Opus 4.6 (High) 1504.36."
+  - url: https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon
+    title: Google finally releases Gemini 4 Argon
+    publisher: The Verge
+    published_date: 2026-10-13
+    excerpt: "After months sitting on the sidelines of the frontier AI race, Google has finally launched its long-awaited Gemini 4 Argon model ... The company claims Argon outperforms rival models like GPT-6 Astra, Claude Fable 5.1, and Claude Opus 5.5 across a range of benchmarks."
+event_date: 2026-10-31
+outcome_summary: >-
+  Google. On 28 October Google announced Gemini 4 Carbon, a stronger
+  successor to Argon aimed at cybersecurity and long-horizon coding,
+  initially available only to selected cyber defenders through its Fairwind
+  Program. Carbon (High) appeared at #1 on the Arena text leaderboard
+  published 28 October with about 1540 points from roughly 4,400 votes
+  (style control off). Gemini 4 Argon (High) was second at about 1529 and
+  Claude Opus 5.5 (High) third at about 1516, followed by Claude Fable 5.1
+  (Max) and Claude Opus 5 (Max). Carbon held first place in every snapshot
+  from 29 October through early November, so Google owned the top two models
+  at the 31 October check. Carbon also debuted first on the Artificial
+  Analysis Intelligence Index v5.0 (59, versus Opus 5.5 at 58 and GPT-6 Astra
+  at 57). The Polymarket market resolved to Google.
+resolved_answer: Google
+outcome_sources:
+  - url: https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/
+    title: "Gemini 4 Carbon: our next frontier model"
+    publisher: Google (The Keyword)
+    published_date: 2026-10-28
+    excerpt: "Today, we're announcing the next frontier model: Gemini 4 Carbon ... Building on Gemini 4 Argon, which was launched two weeks ago ... Starting this week, we will make Carbon available to a subset of cyber defenders."
+  - url: https://www.wikiprompt.org/blog/llm-benchmark-snapshot-2026-11-03
+    title: "LLM Benchmark Snapshot, November 3 2026: Gemini 4 Carbon Takes the Text Arena"
+    publisher: WikiPrompt
+    published_date: 2026-11-03
+    excerpt: "Gemini 4 Carbon (High) has held the number one spot in every snapshot since October 29, at roughly 1540 Elo. It replaced its sibling Gemini 4 Argon (High), which had led through most of October and now sits second at about 1529. Claude Opus 5.5 (High) is third at about 1516."
+  - url: https://benchlm.ai/llm-leaderboard-history
+    title: LLM Leaderboard History
+    publisher: BenchLM
+    published_date: 2026-11-06
+    excerpt: "Current Top Arena Models (2026-10): 1 Gemini 4 Carbon (High) google 1540; 2 Gemini 4 Argon (High) google 1528.6; 3 Claude Opus 5.5 (High) anthropic 1515.8."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/which-company-has-the-best-ai-model-end-of-october
+  pre_event_probability: {"Google": 0.73, "Anthropic": 0.245, "OpenAI": 0.007, "Meta": 0.003}
+  as_of: 2026-10-20
+notes: "~$4.2M volume. Google was ~0.70 on 10 Oct, ~0.86 on 27 Oct, ~0.98 on 30 Oct. Context-source leaderboard tables (Terapep, AI Model Index) appear to use the style-control view; the market resolves on style control off, where scores differ by a few points but the order at the top was similar."

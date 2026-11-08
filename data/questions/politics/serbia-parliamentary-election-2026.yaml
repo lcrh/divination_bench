@@ -1,0 +1,94 @@
+id: serbia-parliamentary-election-2026
+domain: politics
+title: Serbia snap parliamentary election, 25 October 2026
+question: >-
+  Which electoral list will win the most seats in Serbia's National Assembly in
+  the snap parliamentary election of 25 October 2026?
+question_type: multiple_choice
+options: ["Student List – Students Win", "Aleksandar Vučić – United Serbia", "Another list"]
+resolution_criteria: >-
+  Resolves to the electoral list allocated the most of the 250 seats according
+  to the Republic Electoral Commission (RIK) final results.
+context_summary: >-
+  Serbia held early parliamentary elections on 25 October 2026 for the
+  250-seat National Assembly (3% threshold, waived for national-minority
+  lists). They followed nearly two years of student-led anti-corruption
+  protests triggered by the November 2024 Novi Sad railway-station canopy
+  collapse that killed 16 people. Aleksandar Vučić dissolved parliament on 9
+  September, then resigned as president on 27 September to head the ruling
+  Serbian Progressive Party's list, "Aleksandar Vučić – United Serbia", as its
+  prime-ministerial candidate; SNS had governed since 2012. The protest
+  movement ran as the "Student List – Students Win", headed by Ilija
+  Srdanović and endorsed by most of the opposition, several parties
+  withdrawing their own lists in its favour. Other lists included the SPS-led
+  "Ivica Dačić – Factor of Stability!", "European Serbia" and the nationalist
+  "Authentic Right". The campaign featured accusations of misuse of public
+  resources, vote-buying and pressure on public-sector workers; the government
+  made a one-off payment of almost €1 billion to adult citizens. Polls were
+  split: NSPM (published 20 Oct; fieldwork 25 Sep–5 Oct) had the Student List
+  narrowly ahead, 44.5% to 42.7%, the first opposition lead in over a decade,
+  while Ipsos's final estimate for the ruling list (fieldwork 20–22 Oct) had
+  United Serbia at 47.4% and the Student List at 40.0%. On Polymarket, the
+  Student List was priced at about 32% to win the most seats a week before the
+  vote and about 28% a day before.
+context_sources:
+  - url: https://srpske.rs/en/news/politika/2026/10/20/nspm-poll-student-list-ahead-of-vucic-list
+    title: "NSPM Poll: Student List 1.8 Points Ahead of Vucic"
+    publisher: Srpske Novine
+    published_date: 2026-10-20
+    excerpt: "the Student List 'Students Win' stands at 44.5 percent and the 'Aleksandar Vucic, United Serbia' list at 42.7 percent... fieldwork running from September 25 to October 5."
+  - url: https://new.intellinews.com/articles/serbia-s-student-list-leads-ruling-party-in-new-poll-ahead-of-election-477469
+    title: Serbia's Student List leads ruling party in new poll ahead of election
+    publisher: bne IntelliNews
+    published_date: 2026-10-20
+    excerpt: "The October 25 election is expected to pose the strongest electoral challenge yet to the Serbian Progressive Party (SNS)... Vucic resigned as president in September to campaign as the ruling list's candidate for prime minister."
+  - url: https://www.ipsos.com/sites/default/files/ct/news/documents/2026-10/Saopstenje_-_Ipsos_Strategic_Marketing_-_Parlamentarni%20Izbori_2026_-_finalna_procena.pdf
+    title: "Ipsos Strategic Marketing: Rezultati istraživanja pred parlamentarne izbore – oktobar 2026 (finalna procena)"
+    publisher: Ipsos Strategic Marketing
+    published_date: 2026-10-22
+    excerpt: "lista Aleksandar Vučić – Ujedinjena Srbija... tri dana pred izbore ima podršku 47.4% izašlih birača. Sledeća po snazi je lista Studentska lista – Studenti pobeđuju sa 40%. (Commissioned by the Vučić list; fieldwork 20–22 Oct.)"
+  - url: https://www.quiverquant.com/news/A+trader+just+placed+a+%2433K+bet+on+Student+List+%E2%80%93+Students+Win+winning+the+most+seats+in+Serbia%27s+election
+    title: A trader just placed a $33K bet on Student List – Students Win winning the most seats in Serbia's election
+    publisher: Quiver Quantitative
+    published_date: 2026-10-25
+    excerpt: "At the time of the trade [4:47 AM ET, Oct 25], the shares changed hands at 32% odds... The implied probability... has risen to 56% from 28% a day ago, 32% a week ago, and 38% a month ago."
+event_date: 2026-10-25
+outcome_summary: >-
+  The Student List won decisively, ending 14 years of SNS rule. Vučić conceded
+  on election night at 21:31. After a repeat vote at 53 polling stations on 1
+  November, RIK's final results (5 November) gave the Student List 2,354,417
+  votes (~53%) and 140 of 250 seats, an outright majority; "Aleksandar Vučić –
+  United Serbia" got 1,731,323 votes (~39%) and 103 seats. Dačić's SPS list
+  (~2.2%), European Serbia and Authentic Right all missed the threshold; the
+  remaining seven seats went to minority lists (Hungarians 2, Albanian
+  Coalition 2, SDP–CDP 1, SDA Sandžak 1, Zukorlić's SPP 1). Turnout was
+  68.9%, about 10 points higher than 2023. The Student List won around
+  two-thirds of diaspora votes. Aftermath: public-broadcaster executives at
+  RTS and RTV resigned, and prosecutors arrested several SNS-linked officials
+  and businesspeople.
+resolved_answer: Student List – Students Win
+outcome_sources:
+  - url: https://www.rik.parlament.gov.rs/vest/en/4523/75th-session-of-the-republic-electoral-commission-.php
+    title: 75th Session of the Republic Electoral Commission
+    publisher: Republic Electoral Commission of Serbia
+    published_date: 2026-11-05
+    excerpt: "ALEKSANDAR VUCIC – UNITED SERBIA (1,731,323 votes, 103 terms of office)... 'Student List – Students Win' (2,354,417 votes, 140 terms of office)."
+  - url: https://www.tanjug.rs/english/politics/290854/student-list-won-5271-pct-of-vote-or-140-seats-sns-won-3917-pct-or-104-seats-commission/vest
+    title: Student list won 52.71 pct of vote, or 140 seats, SNS won 39.17 pct, or 104 seats - commission
+    publisher: Tanjug
+    published_date: 2026-10-26
+    excerpt: "The Student List-The Students Will Win won 2,267,615 (52.71 pct), or 140 seats - an absolute majority in the new parliament."
+  - url: https://en.wikipedia.org/wiki/2026_Serbian_parliamentary_election
+    title: 2026 Serbian parliamentary election
+    publisher: Wikipedia
+    published_date: 2026-11-07
+    excerpt: "The Student List won the election with an absolute majority of seats, defeating the Serbian Progressive Party (SNS), which had been in power since 2012... Vučić conceded defeat on election night."
+market:
+  platform: polymarket
+  url: https://polymarket.com/event/serbia-parliamentary-election-winner-2026
+  pre_event_probability: {"Student List – Students Win": 0.28}
+  as_of: 2026-10-24
+notes: >-
+  Polymarket Student List price was ~32% a week before and ~28% a day before (Quiver Quantitative);
+  the Vučić list was the market favourite (~70%+). Wikipedia published_date is the approximate
+  access date of the article revision used.
