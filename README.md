@@ -11,6 +11,11 @@ For every question it produces readings with three methods:
 | `tarot`   | a deterministic 3-card Thoth draw (no reversals)         | full reading + standalone prediction |
 | `iching`  | a deterministic yarrow-stalk hexagram (with moving lines) | full reading + standalone prediction |
 | `predict` | nothing extra                                            | prediction only                     |
+| `tarot_reading` / `iching_reading` | the same draw as `tarot` / `iching`, with the instruction to analyse the situation deeply and make no specific predictions | reading only |
+
+Reading-only methods are judged in their own `reading` mode: Jev is asked which
+reading best describes what actually happened, and which is most specific and
+concrete about the situation (without seeing the outcome).
 
 A decision model ([TypeSafe Jev](https://openrouter.ai/typesafe/jev-1.13), via
 OpenRouter's Decisions API) then ranks the readings against what actually happened.

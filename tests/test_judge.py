@@ -23,8 +23,17 @@ from divination_bench.llm import (
     LLMClient,
 )
 from divination_bench.prompts_judge import accuracy_request, precision_request
-from divination_bench.schemas import Judgment, Method, Question, Reading, Source
+from divination_bench.schemas import (
+    READING_ONLY_BASE,
+    Judgment,
+    Method,
+    Question,
+    Reading,
+    Source,
+)
 from divination_bench.store import read_jsonl
+
+CORE = [Method.tarot, Method.iching, Method.predict]
 
 MODELS = ["mock/alpha", "mock/beta"]
 JUDGES = ["mock/alpha", "mock/beta", "mock/gamma"]
@@ -103,7 +112,7 @@ def test_build_groups_counts_and_membership():
     assert len(by_kind[("methods", "prediction")]) == 2 * 2
     assert len(by_kind[("methods", "full")]) == 2 * 2
     for g in by_kind[("methods", "prediction")]:
-        assert {r.method for r in g.readings} == set(Method)
+        assert {r.method for r in g.readings} == set(CORE)
         assert {r.model for r in g.readings} == {g.fixed_model}
     for g in by_kind[("methods", "full")]:
         assert {r.method for r in g.readings} == {Method.tarot, Method.iching}
@@ -375,8 +384,82 @@ def test_run_judging_with_generated_readings(tmp_path: Path):
     qs = [make_question("q1")]
     client = LLMClient(api_key="unused")
     readings = generate.run_generation(
-        qs, MODELS, list(Method), [0], client, tmp_path / "r.jsonl", progress=False
+        qs, MODELS, CORE, [0], client, tmp_path / "r.jsonl", progress=False
     )
-    assert len(readings) == len(MODELS) * len(Method)
+    assert len(readings) == len(MODELS) * len(CORE)
     js = run_judging(qs, readings, JUDGES, client, tmp_path / "j.jsonl", progress=False)
     assert len(js) == len(build_groups(readings)) * len(JUDGES)
+
+
+def test_reading_only_methods_share_casts_and_skip_predictions():
+    from divination_bench.divination import cast
+    from divination_bench.prompts_generation import (
+        build_generation_messages,
+        parse_generation,
+    )
+
+    q = make_question()
+    assert cast(q.id, Method.tarot_reading, 3) == cast(q.id, Method.tarot, 3)
+    assert cast(q.id, Method.iching_reading, 3) == cast(q.id, Method.iching, 3)
+    _, text = cast(q.id, Method.tarot_reading, 3)
+    msgs = build_generation_messages(q, Method.tarot_reading, text)
+    assert "Do NOT make specific predictions" in msgs[0]["content"]
+    assert "<prediction>" not in msgs[1]["content"]
+    assert "The cards drawn:" in msgs[1]["content"]
+    plain = build_generation_messages(q, Method.tarot, text)
+    assert "Do NOT make specific predictions" not in plain[0]["content"]
+    with pytest.raises(ValueError):
+        parse_generation("no tags", q, Method.iching_reading)
+    parsed = parse_generation("<reading>Thunder.</reading>", q, Method.iching_reading)
+    assert parsed == {"reading": "Thunder.", "prediction": "", "answer": None}
+
+
+def reading_only(qid: str, method: str, seed: int, model: str) -> Reading:
+    return make_reading(qid, method, seed, model).model_copy(
+        update={"prediction": "", "answer": None}
+    )
+
+
+def test_reading_mode_groups_and_requests():
+    rs = make_readings(seeds=(0,)) + [
+        reading_only("q1", m, 0, model)
+        for m in ("tarot_reading", "iching_reading")
+        for model in MODELS
+    ]
+    before = build_groups(make_readings(seeds=(0,)), modes=("full", "prediction"))
+    after = build_groups(rs)
+    assert [g for g in after if g.mode != "reading"] == before
+    reading = [g for g in after if g.mode == "reading"]
+    # models: one group per reading-only method; methods: one pair per model
+    assert len(reading) == 2 + 2
+    for g in reading:
+        assert {r.method for r in g.readings} <= set(READING_ONLY_BASE)
+
+    q = make_question()
+    g = next(g for g in reading if g.comparison == "methods")
+    items = assign_labels(g, "mock/jev")
+    acc_state, acc_q = accuracy_request(q, items, "reading")
+    prec_state, prec_q = precision_request(q, items, "reading")
+    assert "which reading best describes it" in acc_q["accuracy"]["instructions"]
+    assert "vague" not in acc_q["accuracy"]["instructions"]
+    assert set(acc_state) >= {f"reading {lab}" for lab in items}
+    assert acc_state["reading A"] == {"reading": items["A"].reading}
+    assert "52-48" not in json.dumps(prec_state)
+    assert "specific and concrete" in prec_q["precision"]["instructions"]
+
+
+def test_run_judging_reading_mode_mock(tmp_path: Path):
+    rs = [
+        reading_only("q1", m, 0, model)
+        for m in ("tarot_reading", "iching_reading")
+        for model in MODELS
+    ]
+    js = run_judging(
+        [make_question()],
+        rs,
+        ["mock/jev"],
+        LLMClient(api_key="unused"),
+        tmp_path / "j.jsonl",
+        progress=False,
+    )
+    assert len(js) == 4 and {j.mode for j in js} == {"reading"}

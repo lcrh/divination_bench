@@ -17,7 +17,18 @@ from .judge import current_judgments, judgment_key, split_key
 from .schemas import Judgment, KnowledgeProbe, Method, Question, Reading
 
 SELF_PREFERENCE_THRESHOLD = 0.10
-METHOD_ORDER = {"tarot": 0, "iching": 1, "predict": 2}
+METHOD_ORDER = {
+    "tarot": 0,
+    "iching": 1,
+    "predict": 2,
+    "tarot_reading": 3,
+    "iching_reading": 4,
+}
+MODE_LABELS = {
+    "prediction": "prediction only, all methods",
+    "full": "full reading, tarot vs I Ching",
+    "reading": "reading only (no prediction asked), tarot vs I Ching",
+}
 POOLED = "pooled"
 INDEPENDENT = "independent"
 
@@ -313,7 +324,11 @@ LB_COLUMNS = [
 
 
 def _modes(items: Sequence[Item]) -> list[str]:
-    return [m for m in ("prediction", "full") if any(it.mode == m for it in items)]
+    return [
+        m
+        for m in ("prediction", "full", "reading")
+        if any(it.mode == m for it in items)
+    ]
 
 
 def method_tables(items: Sequence[Item], n_boot: int, seed: int) -> list[Table]:
@@ -331,11 +346,7 @@ def method_tables(items: Sequence[Item], n_boot: int, seed: int) -> list[Table]:
                     its, lambda it: it.method, ci=ci, n_boot=n_boot, seed=seed
                 ):
                     rows.append({"generator": gen, "judges": jset, **row})
-        label = (
-            "prediction only, all methods"
-            if mode == "prediction"
-            else "full reading, tarot vs I Ching"
-        )
+        label = MODE_LABELS[mode]
         full = Table(
             f"method_leaderboard_{mode}",
             f"Method leaderboard: {label}",
@@ -747,7 +758,7 @@ def leakage_table(readings: Sequence[Reading]) -> Table:
     agg: dict[tuple[str, str], list[int]] = defaultdict(lambda: [0, 0])
     examples: dict[tuple[str, str], str] = {}
     for r in readings:
-        if r.method == Method.predict:
+        if r.method not in (Method.tarot, Method.iching):
             continue
         key = (str(r.method), r.model)
         agg[key][0] += 1

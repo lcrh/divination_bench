@@ -12,6 +12,8 @@ from divination_bench.prompts_generation import (
 from divination_bench.schemas import Method, Question, Reading, Source
 from divination_bench.store import read_jsonl
 
+CORE = [Method.tarot, Method.iching, Method.predict]
+
 OUTCOME = "The Zorblax Party won 41 seats in a landslide upset"
 RESOLVED = "Zorblax"
 
@@ -62,7 +64,7 @@ class CountingClient(LLMClient):
         return super().chat(model, messages, **kw)
 
 
-@pytest.mark.parametrize("method", list(Method))
+@pytest.mark.parametrize("method", CORE)
 def test_prompt_has_no_outcome(method):
     q = make_question()
     text = "cast text" if method != Method.predict else None
@@ -80,7 +82,7 @@ def test_prompt_has_no_outcome(method):
 
 def test_prompt_open_question_has_no_resolved_answer():
     q = make_question(qtype="open")
-    for method in Method:
+    for method in CORE:
         msgs = build_generation_messages(q, method, "cast")
         blob = "\n".join(m["content"] for m in msgs)
         assert "Zorblax" not in blob
@@ -157,9 +159,9 @@ def test_run_generation_end_to_end_and_resume(tmp_path):
     models = ["mock/a", "mock/b"]
     seeds = [0, 1]
     readings = run_generation(
-        qs, models, list(Method), seeds, client, out, workers=4, progress=False
+        qs, models, CORE, seeds, client, out, workers=4, progress=False
     )
-    expected = len(qs) * len(Method) * len(seeds) * len(models)
+    expected = len(qs) * len(CORE) * len(seeds) * len(models)
     assert len(readings) == expected
     assert client.calls == expected
     assert len(read_jsonl(out, Reading)) == expected
@@ -177,13 +179,13 @@ def test_run_generation_end_to_end_and_resume(tmp_path):
 
     client2 = CountingClient()
     again = run_generation(
-        qs, models, list(Method), seeds, client2, out, workers=4, progress=False
+        qs, models, CORE, seeds, client2, out, workers=4, progress=False
     )
     assert client2.calls == 0
     assert len(again) == expected
     assert len(read_jsonl(out, Reading)) == expected
 
-    run_generation(qs, models, list(Method), [0, 1, 2], client2, out, progress=False)
+    run_generation(qs, models, CORE, [0, 1, 2], client2, out, progress=False)
     assert client2.calls == expected // 2
 
 
@@ -192,27 +194,23 @@ def test_run_generation_resume_grows_grid_and_redoes_edited_questions(tmp_path):
     models = ["mock/a", "mock/b"]
     pilot = [binary_question("q-a")]
     client = CountingClient()
-    run_generation(pilot, models, list(Method), [0], client, out, progress=False)
-    assert client.calls == len(Method) * len(models)
+    run_generation(pilot, models, CORE, [0], client, out, progress=False)
+    assert client.calls == len(CORE) * len(models)
 
     full = [binary_question("q-a"), binary_question("q-b")]
     client = CountingClient()
-    readings = run_generation(
-        full, models, list(Method), [0, 1], client, out, progress=False
-    )
-    assert client.calls == 3 * len(Method) * len(models)
-    assert len(readings) == 4 * len(Method) * len(models)
+    readings = run_generation(full, models, CORE, [0, 1], client, out, progress=False)
+    assert client.calls == 3 * len(CORE) * len(models)
+    assert len(readings) == 4 * len(CORE) * len(models)
 
     edited = [
         full[0].model_copy(update={"context_summary": "New polling changes things."}),
         full[1],
     ]
     client = CountingClient()
-    readings = run_generation(
-        edited, models, list(Method), [0, 1], client, out, progress=False
-    )
-    assert client.calls == 2 * len(Method) * len(models)
-    assert len(readings) == 4 * len(Method) * len(models)
+    readings = run_generation(edited, models, CORE, [0, 1], client, out, progress=False)
+    assert client.calls == 2 * len(CORE) * len(models)
+    assert len(readings) == 4 * len(CORE) * len(models)
     assert len({(r.question_id, r.method, r.seed, r.model) for r in readings}) == len(
         readings
     )

@@ -40,8 +40,35 @@ ACCURACY_CRITERION = (
 )
 PRECISION_CRITERION = "Forecast {label} is more precise and committal than any other."
 
+# Reading mode: divinatory readings written before the event that analyse the
+# situation without forecasting it. The accuracy question is deliberately a plain
+# hindsight judgement with no penalty for vagueness (a proxy for a client saying
+# "so true"); it alone ranks the readings. Precision is recorded as a diagnostic.
+READING_ACCURACY_INSTRUCTIONS = (
+    "Each reading was done for this situation before the event. Knowing what actually "
+    "happened, which reading best describes it? Which one, read in hindsight, best "
+    "captures what really went on and how things turned out?"
+)
+READING_PRECISION_INSTRUCTIONS = (
+    "Each reading was written before the event and analyses the situation without "
+    "forecasting it. Which reading is the most specific and concrete about this "
+    "particular situation and how it is developing? Judge only what goes beyond the "
+    "background known beforehand: definite, checkable characterisations of the actors, "
+    "forces and direction of events are specific; generic symbolism that would fit any "
+    "situation is not, however long. Do not judge whether a reading is plausible or "
+    "correct, only how specific it is."
+)
+READING_ACCURACY_CRITERION = (
+    "Reading {label} describes what actually happened better than any other reading."
+)
+READING_PRECISION_CRITERION = (
+    "Reading {label} is more specific and concrete about this situation than any other."
+)
+
 
 def _forecast(r: Reading, mode: JudgeMode, show_answer: bool) -> dict:
+    if mode == "reading":
+        return {"reading": (r.reading or "").strip()}
     out: dict = {}
     if mode == "full" and r.reading:
         out["reading"] = r.reading.strip()
@@ -53,8 +80,9 @@ def _forecast(r: Reading, mode: JudgeMode, show_answer: bool) -> dict:
 
 def _forecasts(q: Question, items: dict[str, Reading], mode: JudgeMode) -> dict:
     show_answer = q.question_type in ("binary", "multiple_choice")
+    noun = "reading" if mode == "reading" else "forecast"
     return {
-        f"forecast {lab}": _forecast(r, mode, show_answer) for lab, r in items.items()
+        f"{noun} {lab}": _forecast(r, mode, show_answer) for lab, r in items.items()
     }
 
 
@@ -94,7 +122,11 @@ def accuracy_request(
         ],
         **_forecasts(q, items, mode),
     }
-    question = _choice(ACCURACY_INSTRUCTIONS, ACCURACY_CRITERION, list(items), mode)
+    if mode == "reading":
+        text = (READING_ACCURACY_INSTRUCTIONS, READING_ACCURACY_CRITERION)
+    else:
+        text = (ACCURACY_INSTRUCTIONS, ACCURACY_CRITERION)
+    question = _choice(*text, list(items), mode)
     return state, {"accuracy": question}
 
 
@@ -108,5 +140,9 @@ def precision_request(
         "background_known_beforehand": q.context_summary.strip(),
         **_forecasts(q, items, mode),
     }
-    question = _choice(PRECISION_INSTRUCTIONS, PRECISION_CRITERION, list(items), mode)
+    if mode == "reading":
+        text = (READING_PRECISION_INSTRUCTIONS, READING_PRECISION_CRITERION)
+    else:
+        text = (PRECISION_INSTRUCTIONS, PRECISION_CRITERION)
+    question = _choice(*text, list(items), mode)
     return state, {"precision": question}

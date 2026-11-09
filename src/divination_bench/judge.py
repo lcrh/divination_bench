@@ -27,6 +27,7 @@ from .generate import run_grid
 from .llm import DecisionError, LLMClient
 from .prompts_judge import accuracy_request, precision_request
 from .schemas import (
+    READING_ONLY_BASE,
     Comparison,
     JudgeMode,
     Judgment,
@@ -98,16 +99,26 @@ def judgment_key(j: Judgment) -> JudgmentKey:
     )
 
 
+def _mode_methods(mode: JudgeMode) -> Iterable[Method]:
+    if mode == "full":
+        return FULL_MODE_METHODS
+    if mode == "reading":
+        return READING_ONLY_BASE
+    return Method
+
+
 def _eligible(r: Reading, mode: JudgeMode) -> bool:
     if mode == "full":
         return r.method in FULL_MODE_METHODS and bool(r.reading)
+    if mode == "reading":
+        return r.method in READING_ONLY_BASE and bool(r.reading)
     return bool(r.prediction.strip())
 
 
 def build_groups(
     readings: Iterable[Reading],
     comparisons: Sequence[Comparison] = ("models", "methods"),
-    modes: Sequence[JudgeMode] = ("full", "prediction"),
+    modes: Sequence[JudgeMode] = ("full", "prediction", "reading"),
 ) -> list[JudgeGroup]:
     latest: dict[tuple[str, str, int, str], Reading] = {}
     for r in readings:
@@ -126,7 +137,7 @@ def build_groups(
                 buckets = {
                     (q, s, m, None): rs
                     for (q, s, m), rs in by_method.items()
-                    if mode == "prediction" or m in FULL_MODE_METHODS
+                    if m in _mode_methods(mode)
                 }
             else:
                 buckets = {(q, s, None, m): rs for (q, s, m), rs in by_model.items()}
@@ -270,7 +281,7 @@ def judge_group(
         acc, prec = _round(
             question, items, remaining, group.mode, judge, client, usages, raws
         )
-        pooled = pool(acc, prec)
+        pooled = acc if group.mode == "reading" else pool(acc, prec)
         if first is None:
             first = (acc, prec, pooled)
         best = max(remaining, key=lambda lab: (pooled[lab], acc[lab], -ord(lab)))
@@ -325,7 +336,7 @@ def run_judging(
     out_path: str | Path,
     *,
     comparisons: Sequence[Comparison] = ("models", "methods"),
-    modes: Sequence[JudgeMode] = ("full", "prediction"),
+    modes: Sequence[JudgeMode] = ("full", "prediction", "reading"),
     workers: int = 8,
     progress: bool = True,
 ) -> list[Judgment]:

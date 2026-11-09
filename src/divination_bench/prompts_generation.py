@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 
-from .schemas import Method, Question
+from .schemas import READING_ONLY_BASE, Method, Question, base_method
 
 _PREDICTION_RULES = """\
 The prediction must be a concrete, standalone forecast of what will actually happen, \
@@ -46,8 +46,28 @@ _ANSWER_LINE = (
 )
 _NO_ANSWER_LINE = "This question is open-ended: do not include an <answer> tag."
 
-SYSTEM_PROMPTS: dict[Method, str] = {
-    Method.tarot: f"""\
+_READING_ONLY_RULES = """\
+This is a reading, not a forecast. Use the divination to analyse the situation the \
+question describes as deeply as you can: the forces and tensions at work, the positions, \
+strengths and motives of those involved, what is hidden, overlooked or unresolved, where \
+the energy of the situation is concentrated, and the character and direction of the \
+moment, as the divination reveals them. Apply it concretely to this particular situation \
+and its actors rather than giving a generic interpretation of the symbols.
+
+Do NOT make specific predictions: do not name a winner, give numbers, dates or margins, \
+or state what will or will not happen. Describe the situation and its dynamics, not the \
+outcome. Write the reading as you would deliver it to the person who asked about this \
+situation, and do not comment on these instructions, remark on what the reading does \
+or does not predict, or add disclaimers or advice to consult official sources. Aim for \
+300-600 words."""
+
+_READING_ONLY_FORMAT = """\
+Respond in exactly this format, with no other tags:
+<reading>
+Your divinatory analysis of the situation.
+</reading>"""
+
+_TAROT_INTRO = """\
 You are an expert tarot reader working with the Crowley-Harris Thoth Tarot. You read in the \
 Thoth tradition as set out in Aleister Crowley's The Book of Thoth: use the Thoth names, \
 titles, astrological and Qabalistic attributions and imagery of the cards (for example \
@@ -55,17 +75,20 @@ Adjustment, Lust, Art, The Aeon; Princes and Princesses; the small-card titles s
 Dominion or Ruin). The cards have been shuffled and drawn for the question by a random \
 procedure; there are no reversals. This is a free-form three-card spread with no fixed \
 positional meanings: read the three cards in the order drawn, individually and together, \
-and apply them to the question.
+and apply them to the question."""
 
-{_DIVINATION_RULES}""",
-    Method.iching: f"""\
+_ICHING_INTRO = """\
 You are an expert I Ching diviner. A hexagram has been cast for the question using the \
 traditional yarrow-stalk method. Interpret it in the classical way, drawing on the received \
 texts (the Judgement, the Image and the line statements, as in the Wilhelm/Baynes \
 translation and its commentaries): interpret the primary hexagram, each changing line, and \
-the relating (transformed) hexagram, then apply the whole to the question.
+the relating (transformed) hexagram, then apply the whole to the question."""
 
-{_DIVINATION_RULES}""",
+SYSTEM_PROMPTS: dict[Method, str] = {
+    Method.tarot: f"{_TAROT_INTRO}\n\n{_DIVINATION_RULES}",
+    Method.iching: f"{_ICHING_INTRO}\n\n{_DIVINATION_RULES}",
+    Method.tarot_reading: f"{_TAROT_INTRO}\n\n{_READING_ONLY_RULES}",
+    Method.iching_reading: f"{_ICHING_INTRO}\n\n{_READING_ONLY_RULES}",
     Method.predict: f"""\
 You are an expert forecaster. Using the information provided and your own knowledge and \
 judgement, forecast the outcome of the question.
@@ -108,11 +131,14 @@ def build_generation_messages(
             raise ValueError(f"method {method} requires cast_text")
         heading = (
             "The cards drawn:"
-            if method == Method.tarot
+            if base_method(method) == Method.tarot
             else "The hexagram cast with yarrow stalks:"
         )
         sections.append(f"{heading}\n{cast_text}")
-        sections.append(_DIVINATION_FORMAT.format(answer_line=answer_line))
+        if method in READING_ONLY_BASE:
+            sections.append(_READING_ONLY_FORMAT)
+        else:
+            sections.append(_DIVINATION_FORMAT.format(answer_line=answer_line))
     return [
         {"role": "system", "content": SYSTEM_PROMPTS[method]},
         {"role": "user", "content": "\n\n".join(sections)},
@@ -149,6 +175,8 @@ def parse_generation(text: str, question: Question, method: Method) -> dict:
     reading = _last_tag(text, "reading") if method != Method.predict else None
     if method != Method.predict and reading is None:
         raise ValueError("missing <reading> tag")
+    if method in READING_ONLY_BASE:
+        return {"reading": reading, "prediction": "", "answer": None}
     prediction = _last_tag(text, "prediction")
     if prediction is None:
         raise ValueError("missing <prediction> tag")

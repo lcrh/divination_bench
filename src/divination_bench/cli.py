@@ -46,12 +46,17 @@ ModelsOpt = Annotated[
 ]
 JudgesOpt = Annotated[str | None, typer.Option("--judges", help="Judge models (csv).")]
 MethodsOpt = Annotated[
-    str | None, typer.Option("--methods", help="tarot,iching,predict (csv).")
+    str | None,
+    typer.Option(
+        "--methods", help="tarot,iching,predict,tarot_reading,iching_reading (csv)."
+    ),
 ]
 SeedsOpt = Annotated[
     str | None, typer.Option("--seeds", help="Seeds (csv), e.g. 0,1,2.")
 ]
-ModesOpt = Annotated[str | None, typer.Option("--modes", help="full,prediction (csv).")]
+ModesOpt = Annotated[
+    str | None, typer.Option("--modes", help="full,prediction,reading (csv).")
+]
 ComparisonsOpt = Annotated[
     str | None, typer.Option("--comparisons", help="models,methods (csv).")
 ]
@@ -184,9 +189,9 @@ def load_settings(
     method_list = _csv(methods) or gen.get("methods", [m.value for m in Method])
     for m in method_list:
         Method(m)
-    mode_list = _csv(modes) or jud.get("modes", ["full", "prediction"])
+    mode_list = _csv(modes) or jud.get("modes", ["full", "prediction", "reading"])
     comparison_list = _csv(comparisons) or jud.get("comparisons", ["models", "methods"])
-    if bad := set(mode_list) - {"full", "prediction"}:
+    if bad := set(mode_list) - {"full", "prediction", "reading"}:
         raise typer.BadParameter(f"unknown modes {sorted(bad)}")
     if bad := set(comparison_list) - {"models", "methods"}:
         raise typer.BadParameter(f"unknown comparisons {sorted(bad)}")
@@ -653,7 +658,7 @@ def estimate_calls(
     for g in build_groups(fake, s.comparisons, s.modes):  # type: ignore[arg-type]
         per_item = (
             a.judge_input_per_item_full
-            if g.mode == "full"
+            if g.mode != "prediction"
             else a.judge_input_per_item_prediction
         )
         # successive choice: rounds over n, n-1, ..., 2 forecasts, each in every

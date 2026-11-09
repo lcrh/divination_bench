@@ -7,7 +7,7 @@ results_dir: results
 seeds: [0]
 
 generation:
-  methods: [tarot, iching, predict]
+  methods: [tarot, iching, predict, tarot_reading, iching_reading]
   models:
     - anthropic/claude-opus-5.5
     - openai/gpt-6-astra
@@ -15,7 +15,7 @@ generation:
   max_tokens: 16000
 
 judging:
-  modes: [full, prediction]
+  modes: [full, prediction, reading]
   comparisons: [models, methods]
   # OpenRouter Decisions-API model (https://openrouter.ai/api/alpha/decisions).
   judges:

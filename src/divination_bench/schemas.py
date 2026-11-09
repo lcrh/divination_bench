@@ -87,6 +87,21 @@ class Method(StrEnum):
     tarot = "tarot"
     iching = "iching"
     predict = "predict"
+    # Reading only: the same draw as tarot / iching, interpreted without a prediction.
+    tarot_reading = "tarot_reading"
+    iching_reading = "iching_reading"
+
+
+READING_ONLY_BASE = {
+    Method.tarot_reading: Method.tarot,
+    Method.iching_reading: Method.iching,
+}
+
+
+def base_method(method: Method | str) -> Method:
+    """The divination system a method draws from (itself, for non reading-only)."""
+    m = Method(method)
+    return READING_ONLY_BASE.get(m, m)
 
 
 class Reading(BaseModel):
@@ -104,7 +119,7 @@ class Reading(BaseModel):
     reading: str | None = Field(
         default=None, description="Full interpretation. None for `predict`."
     )
-    prediction: str
+    prediction: str = Field(description="Empty for reading-only methods.")
     answer: str | None = Field(
         default=None,
         description="Chosen option for binary / multiple_choice questions.",
@@ -118,7 +133,7 @@ class Reading(BaseModel):
     )
 
 
-JudgeMode = Literal["full", "prediction"]
+JudgeMode = Literal["full", "prediction", "reading"]
 Comparison = Literal["models", "methods"]
 
 
