@@ -1,0 +1,137 @@
+id: hurricane-isaias-landfall-2026
+domain: other
+title: Hurricane Isaias landfall on the US Gulf Coast
+question: >-
+  Hurricane Isaias, the first hurricane of the 2026 Atlantic season, is
+  expected to make landfall on the northern US Gulf Coast on the evening of
+  9 October 2026. Where and when will it make landfall, how strong will it
+  be at landfall, and what will its impacts be?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the National Hurricane Center's landfall update (location,
+  time, maximum sustained winds and category on the Saffir-Simpson scale,
+  central pressure) and contemporary reports of surge, gusts, deaths and
+  power outages. Landfall intensity is the operational NHC figure, not the
+  storm's peak or any later reanalysis.
+context_summary: >-
+  Isaias became the first hurricane of the 2026 Atlantic season on the night
+  of 7 October, the latest first Atlantic hurricane on record, in a season
+  suppressed by a strong El Nino. Moving east-northeast and then north across
+  the Gulf of Mexico, it prompted Hurricane Warnings from Ocean Springs,
+  Mississippi, to the Bay/Gulf County line in Florida, mandatory evacuations
+  in parts of the Florida Panhandle, states of emergency in Florida and
+  Alabama, and offshore oil shut-ins. At 10 PM CDT on 8 October the NHC raised
+  the intensity to 90 kt. It forecast a brief peak of 100 kt (115 mph, major
+  hurricane) early Friday 9 October, followed by "some weakening before
+  landfall" as southwesterly shear increased, with 85 kt forecast near the
+  coast. Instead, Isaias strengthened overnight. At 7:20 AM CDT on 9 October,
+  Hurricane Hunters found it had become a major hurricane with 120 mph winds
+  and a 959 mb pressure. The 10 AM discussion noted that shear had increased
+  to 30-40 kt, but because the shear was aligned with the storm's motion,
+  hurricane models (HAFS-A, HAFS-B, HWRF) and SHIPS/LGEM suggested Isaias
+  could stay a major hurricane up to landfall. The official forecast showed
+  100 kt just offshore the western Florida Panhandle that evening. At 1 PM CDT
+  on 9 October, the NHC still had 120 mph winds and 959 mb about 145 miles
+  south of Pensacola. It said that "fluctuations in intensity are possible"
+  but that Isaias was "expected to be at or near major hurricane strength
+  when it makes landfall this evening". Storm surge of up to 6-9 ft was
+  forecast from the Alabama/Florida border to Grayton Beach, Florida.
+context_sources:
+  - url: https://www.nbcnews.com/weather/hurricanes/hurricane-isaias-expected-get-stronger-way-florida-alabama-mississippi-rcna602235
+    title: Hurricane Isaias is expected to get stronger on its way to Florida, Alabama and Mississippi coasts
+    publisher: NBC News (Associated Press)
+    published_date: 2026-10-08
+    excerpt: "Isaias was forecast to intensify rapidly and bring strong winds and a life-threatening storm surge to the Florida Panhandle, southern Alabama and southern Mississippi when it makes landfall on the northern Gulf Coast late Friday or early Saturday."
+  - url: https://www.nhc.noaa.gov/archive/2026/al09/al092026.discus.010.shtml
+    title: Hurricane Isaias Discussion Number 10
+    publisher: National Hurricane Center (NOAA)
+    published_date: 2026-10-08
+    excerpt: "A majority of Google DeepMind ensemble members show Isaias briefly reaching major hurricane status early Friday ... and this is now reflected in the NHC forecast. This strengthening should be short lived as southwesterly shear from the aforementioned trough will increase considerably on Friday and cause some weakening before landfall. ... 12H 09/1200Z 100 KT 115 MPH; 24H 10/0000Z 85 KT 100 MPH"
+  - url: https://www.nhc.noaa.gov/archive/2026/al09/al092026.update.10091218.shtml
+    title: "Hurricane Isaias Tropical Cyclone Update: Isaias becomes a major hurricane"
+    publisher: National Hurricane Center (NOAA)
+    published_date: 2026-10-09
+    excerpt: "Just-received data from an Air Force Reserve Hurricane Hunter aircraft indicate that Isaias has strengthened to a major hurricane with maximum sustained winds of 120 mph (195 km/h) with higher gusts. The minimum central pressure measured from a dropsonde is 959 mb."
+  - url: https://www.nhc.noaa.gov/archive/2026/al09/al092026.discus.012.shtml
+    title: Hurricane Isaias Discussion Number 12
+    publisher: National Hurricane Center (NOAA)
+    published_date: 2026-10-09
+    excerpt: "the hurricane regional models (HAFS-A, HAFS-B, and HWRF), as well as the statistical-dynamical models (SHIPS and LGEM), all suggest that Isaias could maintain major hurricane intensity up until its landfall this evening. Therefore, the NHC official forecast depicts Isaias with 100-kt winds just offshore the western Florida Panhandle this evening."
+  - url: https://www.scientificamerican.com/article/how-hurricane-isaias-got-so-dangerously-strong-so-fast/
+    title: How Hurricane Isaias got so dangerously strong so fast
+    publisher: Scientific American
+    published_date: 2026-10-09
+    excerpt: "Overnight, it ballooned into a major Category 3 storm with 120-mile-per-hour winds and is set to slam into the U.S. Gulf Coast Friday evening ... Isaias isn't expected to weaken until after it makes landfall."
+  - url: https://www.nhc.noaa.gov/archive/2026/al09/al092026.public_a.012.shtml
+    title: Hurricane Isaias Intermediate Advisory Number 12A
+    publisher: National Hurricane Center (NOAA)
+    published_date: 2026-10-09
+    excerpt: "Isaias is a category 3 hurricane on the Saffir-Simpson Hurricane Wind Scale. Fluctuations in intensity are possible through this afternoon, but Isaias is expected to be at or near major hurricane strength when it makes landfall this evening."
+event_date: 2026-10-09
+outcome_summary: >-
+  Isaias made landfall near Destin, Florida (30.4N 86.5W, about 40 miles
+  east of Pensacola) at about 8:30 PM CDT on 9 October 2026 (0130 UTC 10
+  October). This was its first and only US landfall. NHC, using NWS Doppler
+  radar data, gave maximum sustained winds of 105 mph (165 km/h), a Category
+  2 hurricane, and an estimated minimum central pressure of 971 mb. Earlier
+  that day it had peaked as a Category 3 with 120 mph winds and 959 mb, but it
+  weakened slightly as it came ashore. Reported gusts reached 116 mph near
+  Santa Rosa Sound, with sustained winds of 91 mph there, and 100 mph near
+  Pensacola. Water levels reached about 5.6 ft above MHHW at Panama City
+  Beach. Isaias weakened rapidly inland and became post-tropical over Alabama
+  by 10 October. Four people died. Outages peaked at about 910,000 customers
+  across eight states, including about 458,000 in Florida and 328,000 in
+  Alabama, and about 670,000 were still without power at midday on 10
+  October. Pensacola's airport was damaged and closed to commercial flights.
+resolved_answer: >-
+  Landfall near Destin, Florida at 8:30 PM CDT on 9 October as a Category 2
+  (105 mph, 971 mb), weakened from a Category 3 peak; four deaths and about
+  910,000 customers without power at the peak.
+outcome_sources:
+  - url: https://www.nhc.noaa.gov/archive/2026/al09/al092026.update.10100129.shtml
+    title: "Hurricane Isaias Tropical Cyclone Update: Isaias makes landfall near Destin Florida"
+    publisher: National Hurricane Center (NOAA)
+    published_date: 2026-10-09
+    excerpt: "NWS Doppler Radar data indicate that Hurricane Isaias made landfall near Destin, Florida, around 830 PM CDT (0130 UTC) with maximum sustained winds of 105 mph (165 km/h). The estimated minimum central pressure is 971 mb (28.67 inches)."
+  - url: https://www.fpren.org/2026-10-09/isaias-makes-landfall-near-destin-widespread-impacts-continue
+    title: Isaias makes landfall near Destin, widespread impacts continue
+    publisher: Florida Public Radio Emergency Network
+    published_date: 2026-10-09
+    excerpt: "Isaias made landfall with maximum sustained winds of 105 mph, making it a Category 2 hurricane, and a minimum central pressure of 971 millibars."
+  - url: https://weather.com/2026/10/09/storms/hurricane/hurricane-isaias-landfall-florida
+    title: Hurricane Isaias makes landfall near Destin, Florida, as a Category 2
+    publisher: The Weather Channel (weather.com)
+    published_date: 2026-10-09
+    excerpt: "Hurricane Isaias has made landfall in Destin, Florida as a Category 2 with winds of 105 mph. Wind gusts as high as 116 mph have been reported in the Florida Panhandle this evening."
+  - url: https://www.cnbc.com/2026/10/10/isaias-weakens-to-category-1-hurricane-after-florida-landfall.html
+    title: Isaias kills four, leaves about 670,000 without power after landfall
+    publisher: CNBC
+    published_date: 2026-10-10
+    excerpt: "Four people died after Hurricane Isaias made landfall ... and about 670,000 residents in Florida, Alabama, Georgia and Mississippi were still without power ... A category 2 hurricane when it hit Florida's coast and the first of the 2026 Atlantic season"
+  - url: https://outage-pro.com/storms/isaias
+    title: Isaias (2026) Power Outages & Outage Map
+    publisher: Outage Pro
+    published_date: 2026-10-10
+    excerpt: "At its peak, 8:00 AM ET on 10/10/2026, 910,256 customers were without power in Isaias's affected area (2.78% of tracked customers), across 8 states. ... Florida 458,351 ... Alabama 327,782"
+  - url: https://www.weathernationtv.com/news/Gulf-Braces-For-Tropical-Impact
+    title: Isaias Makes Landfall as A Category 2, Recapping it's Impacts
+    publisher: WeatherNation
+    published_date: 2026-10-12
+    excerpt: "The storm got off to a slow start, but quickly strengthened Friday, becoming a Category 3 storm with winds of 120 mph. Although it weakened slightly as it came ashore, there are widespread reports of wind damage and power outages along the coast."
+notes: >-
+  No market included. Polymarket's Isaias market was about the landfall
+  state (it resolved Florida). Kalshi's "Hurricane Isaias category" market
+  appears to be about peak category, not landfall intensity: its Category 3+
+  bracket resolved Yes, so it does not match this question. No pre-event
+  prices for either market could be retrieved. Soft spots: (1) The NHC
+  Category 3 upgrade update is headed "720 AM CDT" but its summary says "0820
+  UTC", and the filename suggests 1218 UTC, so the exact time of the upgrade
+  is slightly ambiguous. It is clearly on the morning of 9 October. (2) The
+  Outage Pro page has no explicit publication date, so 2026-10-10 is the date
+  of its peak reading. (3) WeatherNation's date is the page's "12 Oct 2026"
+  stamp, which may be an update time. (4) CNBC calls the landfall "early on
+  Saturday", but NHC gives 8:30 PM CDT Friday (0130 UTC Saturday). (5)
+  Resolution uses the operational NHC landfall intensity. A later NHC
+  Tropical Cyclone Report could revise it. (6) The AP landfall story could not
+  be fetched (timeouts), so it is not cited.

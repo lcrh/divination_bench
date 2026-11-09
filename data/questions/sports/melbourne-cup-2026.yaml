@@ -6,10 +6,15 @@ question: >-
   November 2026), and how will the race unfold?
 question_type: open
 resolution_criteria: >-
-  Resolves to the horse officially placed first in the 2026 Melbourne Cup
-  (Race 7, Flemington, 3 November 2026), per Racing Victoria / Racing
-  Australia. Open-ended predictions are judged on the winner and also on
-  placings, trainer and jockey, and race shape.
+  Judged against the official result of the 2026 Melbourne Cup (Race 7,
+  Flemington, 3 November 2026), per Racing Victoria / Racing Australia. Core
+  outcome: Point Of Law (Ciaron Maher, Ethan Brown, 53kg) won in 3:21.88 on a
+  soft track, ahead of Zahrann (3 3/4 lengths back) and Juja Kibo, giving
+  Maher the first trainer trifecta in the race's history. Also check: Point Of
+  Law firming back to favourite at the jump; stablemate Royal Supremacy
+  leading by up to 20 lengths before being run down about 150 m out; Maher
+  having five of the first six; and Sons And Lovers fourth as Joseph O'Brien's
+  best finisher.
 context_summary: >-
   The 166th Melbourne Cup, a Group 1 two-mile handicap worth A$10.2 million,
   is run at Flemington at 3pm on Tuesday 3 November with a full field of 24.
@@ -62,7 +67,10 @@ outcome_summary: >-
   Lovers in fourth. Point Of Law became the third Northern Hemisphere
   three-year-old to win, after Rekindling (2017) and Cross Counter (2018). It
   was Maher's second Melbourne Cup win, after Gold Trip in 2022.
-resolved_answer: "Point Of Law (trainer Ciaron Maher, jockey Ethan Brown), ahead of Zahrann and Juja Kibo - a Maher trifecta"
+resolved_answer: >-
+  Point Of Law (trainer Ciaron Maher, jockey Ethan Brown) won on a soft track,
+  running down front-running stablemate Royal Supremacy late, with Zahrann
+  second and Juja Kibo third for the first trainer trifecta in Cup history.
 outcome_sources:
   - url: https://www.abc.net.au/news/2026-11-03/melbourne-cup-point-of-law-wins-for-ciaron-maher/107341548
     title: Point of Law wins Melbourne Cup to give trainer Ciaron Maher second victory
@@ -87,4 +95,4 @@ market:
     "Point Of Law": 0.125
     "Trustyourinstinct": 0.11
   as_of: 2026-11-03
-notes: "Raw implied probabilities from race-morning fixed odds (not normalised). Point Of Law firmed back to favourite at the jump."
+notes: "Raw implied probabilities from race-morning fixed odds (not normalised). Point Of Law firmed back to favourite at the jump. Market probabilities cover only the winner, a narrower closed framing than this open question."

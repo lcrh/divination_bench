@@ -1,0 +1,104 @@
+id: grab-foodpanda-taiwan-ftc-2026
+domain: business
+title: Fate of Grab's US$600m takeover of foodpanda Taiwan at Taiwan's Fair Trade Commission
+question: >-
+  Singapore's Grab has agreed to buy Delivery Hero's foodpanda business in
+  Taiwan for US$600 million, pending review by Taiwan's Fair Trade
+  Commission, whose extended deadline is 27 October 2026. What will happen to
+  the deal in the regulator's review, and why?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on the Fair Trade Commission's decision on or before 27 October
+  2026. Check what it decided (unconditional clearance, clearance with
+  conditions, prohibition, or a further delay or withdrawal), the date and
+  commissioners' vote if known, the main reasons it gave, how it treated
+  any remedies Grab offered, and the immediate reactions of Grab and Delivery
+  Hero. A prediction scores well if it gets the decision right and names the
+  central concern behind it.
+context_summary: >-
+  Taiwan's food delivery market is a duopoly of foodpanda (owned by Germany's
+  Delivery Hero) and Uber Eats. It handles about 427 million orders a year,
+  worth roughly NT$135 billion. In December 2024 the Fair Trade Commission
+  (FTC) blocked Uber's attempt to buy foodpanda Taiwan, which would have given
+  it more than 90% of the market. In March 2026 Delivery Hero agreed to sell
+  the business to Singapore's Grab for US$600 million in cash. It would be
+  Grab's first market outside Southeast Asia, and Grab does not currently
+  operate in Taiwan. The complication is that Uber owns about 13% of Grab
+  (only about 3.7% of voting rights under Grab's dual-class structure).
+  According to Grab, an Uber representative left its board in July 2026.
+  In July Uber also made a takeover offer for Delivery Hero itself, though
+  the published scope did not include foodpanda Taiwan. The FTC accepted
+  Grab's complete filing on 16 June. On 22 July it extended its review by 60
+  working days to 27 October, saying it needed to analyse whether Uber's
+  shareholding would weaken competition between Grab and Uber Eats. In
+  August it said it had taken no position in advance. Legislators, civic
+  groups and the New Power Party urged a rejection, some also raising
+  data-security worries. Grab issued statements stressing its independence,
+  saying Taiwan data would not be stored in mainland China. Supporters of
+  conditional approval warned that if the deal failed, foodpanda could
+  weaken and Uber Eats could end up dominating the market.
+context_sources:
+  - url: https://www.ftc.gov.tw/internet/main/doc/docDetail.aspx?docid=18469&uid=126
+    title: Grab與foodpanda結合案公平會延長審議期間至115年10月27日 (FTC extends review of Grab-foodpanda combination to 27 October 2026)
+    publisher: Fair Trade Commission (Taiwan)
+    published_date: 2026-07-22
+    excerpt: "由於Grab與富胖達公司結合後，市場結構仍維持結合前的「雙占」情形，Uber持有Grab之13%股份及3.7%表決權，是否會因二者間的「股權連結」影響結合後UberEats與Grab競爭之誘因及能力... 決議依法延長審議期間60個工作日至115年10月27日。"
+  - url: https://money.udn.com/money/story/5635/9768371
+    title: 外送併購審查倒數 不結合風險成焦點 (Countdown to delivery merger review; risks of no deal come into focus)
+    publisher: Economic Daily News (經濟日報)
+    published_date: 2026-09-22
+    excerpt: "今年7月，Uber進一步對Delivery Hero提出全球收購要約... 但支持附條件核准者指出必須比較交易成立與不成立兩種情境。若交易未能完成...市場資源與訂單可能加速向Uber Eats集中。"
+  - url: https://tseng-law.com/en/columns/issues/grab-foodpanda-taiwan-merger-review-singapore-platforms
+    title: "Grab–foodpanda in Taiwan: the closing date remains open"
+    publisher: Hovering International Law Firm
+    published_date: 2026-10-14
+    excerpt: "On August 17, the FTC said the review remained open and that it had not taken any particular position in advance... CTWANT reported on October 13 that... Taiwan's New Power Party asked the FTC to reject the acquisition and not to approve it subject to conditions."
+event_date: 2026-10-21
+outcome_summary: >-
+  On 21 October 2026, six days before its deadline, the FTC prohibited the
+  acquisition under Article 13(1) of the Fair Trade Act. Three commissioners
+  voted to block it, one favoured approval with conditions, and one recused.
+  The FTC said Uber's 13.1% stake in Grab, the long board service of Uber's
+  CEO at Grab, and the two companies' past cooperation (including Grab's 2018
+  takeover of Uber's Southeast Asia business) would weaken both firms'
+  incentive to compete. This risked coordination in a highly concentrated
+  market with high barriers to entry. Grab had offered to dilute Uber's
+  stake, bar Uber people from its board and limit information sharing. The
+  FTC said those measures could not be enforced reliably and were not
+  enough, and that Uber would need to cut its stake much further or sell it
+  entirely. It said Grab could file again. Grab said it was "disappointed" and
+  would focus on Southeast Asia, without saying whether it would try again.
+  Delivery Hero said its right to appeal was unaffected and that it had deal
+  protections including a break fee. Delivery-worker unions welcomed the
+  ruling.
+resolved_answer: >-
+  Taiwan's FTC blocked the deal outright on 21 October 2026 (3 votes to 1,
+  one recusal). It said Uber's 13.1% stake in Grab and the two companies'
+  close ties would dull competition with Uber Eats, and it rejected Grab's
+  offered remedies as insufficient.
+outcome_sources:
+  - url: https://focustaiwan.tw/business/202610210018
+    title: Taiwan blocks Grab's US$600M foodpanda deal over Uber ties
+    publisher: Focus Taiwan (CNA)
+    published_date: 2026-10-21
+    excerpt: "FTC Commissioner Shin Chih-chung said three commissioners voted to block the deal and one favored conditional approval, while a fifth commissioner recused themselves... It added that Uber would need to further reduce its stake in Grab, or potentially divest it entirely."
+  - url: https://www.taipeitimes.com/News/front/archives/2026/10/22/2003866403
+    title: Regulator blocks Grab's merger with Foodpanda
+    publisher: Taipei Times
+    published_date: 2026-10-22
+    excerpt: "Although Grab has proposed reducing Uber's stake, restricting Uber personnel from serving on its board and limiting the exchange of sensitive business information, the measures would be difficult to enforce and insufficient to address competition concerns, it said."
+  - url: https://www.businesstimes.com.sg/companies-markets/telcos-media-tech/taiwans-competition-watchdog-quashes-grabs-acquisition-foodpanda-taiwan
+    title: Taiwan's competition watchdog quashes Grab's acquisition of foodpanda in Taiwan
+    publisher: The Business Times
+    published_date: 2026-10-21
+    excerpt: "Delivery Hero, foodpanda's parent company, said in a stock market filing on Wednesday that the right to appeal is unaffected by the TFTC decision, and that it has appropriate deal protections in place, including a break fee arrangement."
+market: null
+notes: >-
+  No market found. Uber's voting share is given as 3.7% in the FTC's July
+  notice and 3.9% in its October decision; equity is 13% (July) and 13.1%
+  (October). Fortune (not cited) reported that the Uber board member who left
+  in July was CEO Dara Khosrowshahi. Note that
+  the decision came on 21 October, before the 27 October deadline; a
+  prediction that only gives the deadline date should not be penalised for
+  timing.

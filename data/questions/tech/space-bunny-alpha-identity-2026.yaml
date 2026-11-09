@@ -1,0 +1,93 @@
+id: space-bunny-alpha-identity-2026
+domain: tech
+title: What is Space Bunny Alpha, and who made it?
+question: >-
+  On 23 September 2026 a new listing called "Space Bunny Alpha" appeared on
+  OpenRouter. What is Space Bunny Alpha, and which company turned out to be
+  behind it?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on two things: (1) what Space Bunny Alpha is (its type, capabilities
+  and how it was released), and (2) which company it was eventually revealed to
+  come from and under what product name. A top answer names the developer and
+  the final model name. Partial credit goes to answers that correctly describe
+  the model's type, strengths and the developer's country without naming the
+  right company. Correct technical and release specifics (context length,
+  modalities, pricing, reveal date) add precision.
+context_summary: >-
+  OpenRouter is a marketplace and API gateway that routes requests to AI models
+  from many providers. In 2026 it had become a regular venue for labs to test
+  new models under codenames before announcing them. Codenamed models are listed
+  under a neutral "stealth" provider, usually free, with no maker named, and are
+  renamed and repriced once the developer claims them. Earlier examples included
+  Hunter Alpha (March 2026, later revealed as a Xiaomi model) and Ox Alpha
+  (August 2026, later revealed as Z.ai's GLM 5.3 Flash). Most recently, Union
+  Alpha appeared on 16 September 2026 and was unmasked about 33 hours later as
+  Pareto, a "blended" model from the start-up Unbiased (Circuit & Chisel). That
+  model runs several frontier and open models on each request. Observers noted
+  that these anonymity windows were getting shorter as the community got better
+  at fingerprinting models. On 23 September 2026 a new entry named "Space Bunny
+  Alpha" appeared on OpenRouter.
+context_sources:
+  - url: https://cellcog.ai/blog/what-is-union-alpha/
+    title: "Union Alpha Revealed: Pareto by Unbiased, at $2.50/$7.50"
+    publisher: CellCog
+    published_date: 2026-09-16
+    excerpt: "At 14:42 UTC on September 16, 2026, a new entry appeared in OpenRouter's model catalog with the id `stealth/union-alpha`... For about 33 hours, nobody said who made it. At 23:24 UTC on September 17 OpenRouter named it: Pareto, by Unbiased, a blended model that runs other labs' models under one id."
+  - url: https://edgenotes.net/en/articles/union-alpha-revealed-pareto-26-9/
+    title: "Union Alpha Revealed: It Is Pareto 26.9 from Circuit & Chisel's Unbiased AI"
+    publisher: Edgenotes
+    published_date: 2026-09-18
+    excerpt: "Last month, Zhipu AI's GLM 5.3 Flash model, which operated anonymously under the name Ox Alpha on OpenRouter, had its true identity uncovered... This pattern is turning into a new release strategy: launch a model for free and anonymously on routers, let the community evaluate it without brand bias."
+event_date: 2026-09-23
+outcome_summary: >-
+  Space Bunny Alpha was an anonymous ("stealth") AI model listed on OpenRouter,
+  and also on OpenCode, from 23 September 2026. OpenRouter described it as a
+  large model with "blazing-fast inference, strong coding capabilities and
+  native multimodal input support" (text, image and video in), adjustable
+  reasoning effort and a 1M-token context window. It was free during the
+  preview. On 24 September an independent token-count fingerprinting test
+  matched it to MiniMax models, making MiniMax the leading suspect. It was the #1
+  model on OpenRouter for 10 straight days and processed 56.7T tokens there, the
+  most of any stealth model OpenRouter had run. It was delisted on 5 October
+  without being claimed. On 19 October 2026 MiniMax officially launched MiniMax
+  M3.1 Flash and said Space Bunny had been an early version of it (over 200
+  trillion tokens served while anonymous). MiniMax claimed strong agentic,
+  coding, computer-use and cybersecurity results (DeepSWE 73.7%,
+  BankerToolBench 76.2, CyberGym 82%). Pricing was $0.15/M input and $0.60/M
+  output, and MiniMax promised to release the weights later.
+resolved_answer: >-
+  Space Bunny Alpha was a free, anonymous stealth preview on OpenRouter of a
+  fast, multimodal coding/agentic model with a 1M-token context. On 19 October
+  2026 it was revealed as MiniMax M3.1 Flash from the Chinese lab MiniMax.
+outcome_sources:
+  - url: https://openrouter.ai/stealth/space-bunny-alpha
+    title: Space Bunny Alpha - API Pricing & Providers
+    publisher: OpenRouter
+    published_date: 2026-09-23
+    excerpt: "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space Bunny Alpha was a stealth model, revealed to be MiniMax M3.1 Flash by MiniMax."
+  - url: https://www.theneuron.ai/blog/who-made-space-bunny-minimax-clue/
+    title: Who Made Space Bunny? A MiniMax Clue Sharpens the Mystery
+    publisher: The Neuron
+    published_date: 2026-09-24
+    excerpt: "An independent fingerprinting test sent 24 token-count probes through OpenCode's Space Bunny route. Its counts matched the MiniMax models tested on the same gateway across all 24 prompts... MiniMax has not confirmed the theory."
+  - url: https://www.minimax.io/blog/minimax-m31f
+    title: "MiniMax M3.1 Flash: Redefining Agent Performance and Cost"
+    publisher: MiniMax
+    published_date: 2026-10-19
+    excerpt: "Today, we officially roll out MiniMax M3.1 Flash. Space Bunny, which processed more than 200 trillion tokens while operating anonymously, was an early version of MiniMax M3.1 Flash."
+  - url: https://www.linkedin.com/posts/openrouter_stealth-model-reveal-space-bunny-alpha-activity-7517917744810524673-CaMG
+    title: "Stealth model reveal: Space Bunny Alpha... is back today as MiniMax M3.1 Flash"
+    publisher: OpenRouter (LinkedIn)
+    published_date: 2026-10-19
+    excerpt: "Space Bunny Alpha hopped off OpenRouter on Oct 5. It's back today as MiniMax M3.1 Flash, from MiniMax. Space Bunny was the #1 model on OpenRouter for 10 straight days, and processed 56.7T tokens, the most of any stealth model we've ever run."
+notes: >-
+  event_date is the day the listing first became public (23 Sep 2026). Its
+  identity was only confirmed on 19 Oct 2026. The OpenRouter listing page now
+  shows the post-reveal text, and its "Released Sep 23, 2026" field is used as
+  the published date. The context summary describes OpenRouter's stealth-model
+  practice, which hints that the listing is an anonymous model. The real unknown
+  is the maker and the final product name. The token counts differ by source:
+  56.7T is OpenRouter-only, while MiniMax's 200T+ figure presumably covers all
+  channels.

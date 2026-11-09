@@ -2,13 +2,19 @@ id: serbia-parliamentary-election-2026
 domain: politics
 title: Serbia snap parliamentary election, 25 October 2026
 question: >-
-  Which electoral list will win the most seats in Serbia's National Assembly in
-  the snap parliamentary election of 25 October 2026?
-question_type: multiple_choice
-options: ["Student List – Students Win", "Aleksandar Vučić – United Serbia", "Another list"]
+  What will be the outcome of Serbia's snap parliamentary election on 25
+  October 2026: how will the 250 seats in the National Assembly be divided,
+  and what will happen in its immediate aftermath?
+question_type: open
 resolution_criteria: >-
-  Resolves to the electoral list allocated the most of the 250 seats according
-  to the Republic Electoral Commission (RIK) final results.
+  Judged against the Republic Electoral Commission (RIK) final results of 5
+  November 2026. Core outcome: the Student List – Students Win won an outright
+  majority, 140 of 250 seats (about 53%), ending SNS rule since 2012;
+  "Aleksandar Vučić – United Serbia" won 103 seats (about 39%). Also check:
+  Vučić conceding on election night; SPS, European Serbia and Authentic Right
+  missing the 3% threshold; the remaining seven seats going to minority lists;
+  turnout of 68.9%; and the aftermath (RTS/RTV executives resigning, arrests of
+  SNS-linked officials).
 context_summary: >-
   Serbia held early parliamentary elections on 25 October 2026 for the
   250-seat National Assembly (3% threshold, waived for national-minority
@@ -66,7 +72,10 @@ outcome_summary: >-
   two-thirds of diaspora votes. Aftermath: public-broadcaster executives at
   RTS and RTV resigned, and prosecutors arrested several SNS-linked officials
   and businesspeople.
-resolved_answer: Student List – Students Win
+resolved_answer: >-
+  The Student List – Students Win won an outright majority of 140 of 250 seats
+  (about 53%) to 103 for Vučić's United Serbia (about 39%), ending 14 years of
+  SNS rule; Vučić conceded on election night.
 outcome_sources:
   - url: https://www.rik.parlament.gov.rs/vest/en/4523/75th-session-of-the-republic-electoral-commission-.php
     title: 75th Session of the Republic Electoral Commission
@@ -91,4 +100,5 @@ market:
 notes: >-
   Polymarket Student List price was ~32% a week before and ~28% a day before (Quiver Quantitative);
   the Vučić list was the market favourite (~70%+). Wikipedia published_date is the approximate
-  access date of the article revision used.
+  access date of the article revision used. Market probabilities refer to the
+  former closed framing (which list wins the most seats); the question is now open.

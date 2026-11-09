@@ -1,0 +1,105 @@
+id: jaxa-mmx-h3-f10-launch-2026
+domain: science
+title: JAXA Martian Moons eXploration (MMX) launch on H3 Flight No. 10
+question: >-
+  JAXA's Martian Moons eXploration (MMX) Phobos sample-return spacecraft is
+  scheduled to launch on H3 Launch Vehicle Flight No. 10 from Tanegashima at
+  04:41:03 JST on 20 October 2026, with a reserved launch period running to
+  9 November 2026. What will happen with this launch: when will it fly, how
+  will the rocket perform, and where will MMX end up?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against JAXA's official launch-result announcements: the liftoff
+  date and time (JST), any postponements, how the rocket performed, and
+  whether and when MMX separated and was placed on its planned trajectory.
+context_summary: >-
+  MMX is JAXA's flagship planetary mission and its largest Solar System
+  mission to date. The 4,480 kg spacecraft is meant to orbit Mars, land twice
+  on the moon Phobos, deploy the French-German Idefix rover, and return at
+  least 10 grams of Phobos material to Earth in 2031. In August, JAXA set the
+  launch for 04:41:03 JST on 20 October 2026 (19:41 UTC on 19 October) aboard
+  H3 Flight No. 10, from the Yoshinobu Launch Complex at Tanegashima. The
+  launch has an instantaneous window and a reserved period running to
+  9 November, the end of the 2026 Mars transfer opportunity. The rocket is
+  the most powerful H3-24L variant: two LE-9 engines, four SRB-3 boosters,
+  and a long fairing flying for the first time. It is also H3's first
+  launch beyond Earth orbit. The flight plan uses full first-stage thrust
+  without throttling, a coast of about an hour, a second upper-stage burn,
+  and spacecraft separation over Africa about 71 minutes after liftoff.
+  H3's record is mixed. Its March 2023 debut failed. Then on 22 December
+  2025, Flight No. 8 lost the MICHIBIKI No. 5 navigation satellite when the
+  second-stage engine's second burn failed to build up normally; the cause
+  was later traced to a payload-adapter defect. H3 returned to flight with
+  Flight No. 6 on 12 June 2026 and Flight No. 9 on 11 August 2026, both
+  successful. A Japanese preview noted that no H3 launch had ever gone
+  without a postponement, although the weather forecast for launch morning,
+  as of 18 October, was clear.
+context_sources:
+  - url: https://global.jaxa.jp/press/2026/08/20260820-1_e.html
+    title: Launch schedule of the Martian Moons eXploration (MMX) spacecraft aboard H3 Launch Vehicle flight No.10 (H3 F10)
+    publisher: JAXA
+    published_date: 2026-08-20
+    excerpt: "Launch date: October 20, 2026 Launch time: 4:41:03 (JST) ... Reserved launch period: October 21, 2026 - November 7, 2026 Launch site Yoshinobu Launch Complex at the JAXA Tanegashima Space Center"
+  - url: https://fanfun.jaxa.jp/countdown/mmx_h3f10/files/h3f10_presskit_en_20261016.pdf
+    title: H3 Flight No. 10 Press Kit (English version)
+    publisher: JAXA
+    published_date: 2026-10-16
+    excerpt: "Flight No. 8 launched on 22 December 2025. The second-stage engine failed to build up normally during its second burn and shut down prematurely. MICHIBIKI No. 5 ... could not be placed into its planned orbit, and the launch failed. ... Flight No. 9, an H3-22 incorporating the same measures, launched on 11 August 2026 and placed MICHIBIKI No. 7 into its designated orbit, marking the resumption of steady H3 launch operations."
+  - url: https://global.jaxa.jp/press/2026/10/20261018-1_e.html
+    title: Launch time of the Martian Moons eXploration (MMX) spacecraft aboard H3 Launch Vehicle Flight No.10
+    publisher: JAXA
+    published_date: 2026-10-18
+    excerpt: "Launch date: October 20, 2026 Launch time: 04:41:03 JST ... Reserved launch period: October 21, 2026 – November 9, 2026"
+  - url: https://spaceandsky.com/mmx-launch-time-h3-flight-10-phobos-sample-return/
+    title: MMX launch time set for Oct. 19 UTC on H3
+    publisher: SpaceAndSky
+    published_date: 2026-10-18
+    excerpt: "Japan's space agency has set the launch of its Martian Moons eXploration spacecraft for 19:41 UTC on Oct. 19 (3:41 p.m. EDT), which is 04:41 JST on Oct. 20 in Japan, JAXA said. ... JAXA notes that the launch time may vary during that period, so a slip would not simply repeat the same minute on a later day."
+  - url: https://news.mynavi.jp/techplus/article/H3F10_MMX-1/
+    title: "H3ロケット“大台”の10機目は初の探査機打ち上げ、注目ポイントは?"
+    publisher: TECH+ (Mynavi)
+    published_date: 2026-10-19
+    excerpt: "打ち上げ予定の日時は、10月20日の4時41分3秒。ウィンドウはなく、この時刻にピンポイントで打ち上げる必要がある。予備期間は11月9日までの3週間ほど確保されており ... H3ロケットでは初となる「延期なし」打ち上げも期待できるかもしれない。 [Launch is set for 04:41:03 on 20 Oct with no window; a ~3-week reserve period to 9 Nov is secured ... we may even get the first-ever 'no-postponement' launch for H3.]"
+event_date: 2026-10-20
+outcome_summary: >-
+  H3 Flight No. 10 lifted off on schedule at 04:41:03 JST on 20 October 2026
+  (19:41 UTC on 19 October) from the Yoshinobu Launch Complex at Tanegashima,
+  with no postponement. JAXA reported that the rocket flew as planned. MMX
+  separation was confirmed about 71 minutes 13 seconds after liftoff, and the
+  spacecraft was injected into its predetermined orbit, a Mars transfer
+  trajectory. Arrival at Mars is expected in August 2027. This was H3's third
+  consecutive success since the December 2025 Flight No. 8 failure. The
+  Idefix rover is due to land on Phobos around the turn of 2028/2029, and
+  sample return is planned for 2031.
+resolved_answer: >-
+  Launched on the first attempt, exactly on time on 20 October JST; MMX
+  separated about 71 minutes later onto its planned Mars transfer trajectory.
+outcome_sources:
+  - url: https://global.jaxa.jp/press/2026/10/20261020-1_e.html
+    title: Launch result of the Martian Moons eXploration (MMX) spacecraft aboard H3 Launch Vehicle flight No.10
+    publisher: JAXA
+    published_date: 2026-10-20
+    excerpt: "JAXA launched the Martian Moons eXploration (MMX) spacecraft aboard H3 Launch Vehicle flight No.10 at 04:41:03 JST on October 20, 2026 from the Tanegashima Space Center. The H3 Launch Vehicle flew as planned, and approximately 71 minutes and 13 seconds after liftoff, the separation of the MMX spacecraft was confirmed. The MMX spacecraft was then injected into the predetermined orbit."
+  - url: https://www.dlr.de/en/latest/news/2026/mmx-mission-successfully-launches-idefix-rover-on-its-way-to-martian-moon-phobos
+    title: MMX mission successfully launched – Idefix® rover on its way to Martian moon Phobos
+    publisher: German Aerospace Center (DLR)
+    published_date: 2026-10-19
+    excerpt: "On 19 October 2026 at 21:41 CEST, the Japanese MMX (Martian Moons eXploration) spacecraft lifted off on schedule on board an H3 launch vehicle from the Tanegashima Space Center."
+notes: >-
+  No market field. I found no Polymarket, Kalshi or Manifold market. Clutch
+  Predict, a play-money credits app, lists several resolved questions of the
+  form "Will H3 launch MMX on 20 October?", with final crowd confidence of
+  67-86%. Those figures have no as-of timestamps and are not real-money
+  prices, so I did not include them. Soft spots: (1) The press kit's
+  published_date comes from its filename (20261016), not from a date printed
+  in the document. (2) The claim that no H3 launch had ever gone without a
+  postponement comes from a single Japanese preview (Mynavi TECH+) and was
+  not independently verified. (3) The launch was on 20 October JST but
+  19 October UTC and in Europe and the Americas. Times are anchored to
+  JST, the official JAXA date. event_date is 2026-10-20 JST, and the DLR
+  outcome source is dated 19 October in CEST. (4) The reserved period was
+  originally announced as running to 7 November and was later extended to
+  9 November. The question uses the later date. The likely prior is high for
+  launch success (7 of H3's 9 prior flights succeeded) but more uncertain for on-time
+  launch.

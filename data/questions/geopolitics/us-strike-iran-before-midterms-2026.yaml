@@ -1,20 +1,23 @@
 id: us-strike-iran-before-midterms-2026
 domain: geopolitics
-title: Will the US strike Iran before the 3 November 2026 midterm elections?
+title: US–Iran military and diplomatic developments before the 3 November 2026 midterms
 question: >-
-  Will the United States carry out an air or missile strike that hits Iranian
-  territory at any point before the end of 3 November 2026 (US midterm
-  Election Day)?
-question_type: binary
-options: ["Yes", "No"]
+  What will happen between the United States and Iran, militarily and
+  diplomatically, between early October 2026 and the US midterm elections on
+  3 November 2026?
+question_type: open
 resolution_criteria: >-
-  Resolves Yes if, between 2 October and 3 November 2026 (11:59 PM ET), the
-  United States carries out a publicly reported or acknowledged air strike or
-  surface-to-surface missile strike, initiated by US forces, that directly hits
-  Iranian territory (including Iranian islands). Intercepted munitions, cyber
-  operations, naval gunfire and threats do not count. This mirrors the
-  Polymarket market "US-Iran ceasefire continues through the midterms?", which
-  resolves No (i.e. this question resolves Yes) on such a strike.
+  Judged on US–Iran developments between 2 October and 3 November 2026. Core
+  outcome: despite Trump's pledge, on 2 November (the eve of the midterms) US
+  forces struck Iranian targets on Qeshm Island in the Strait of Hormuz,
+  described by US officials as limited, "defensive" strikes on a launcher after
+  an IRGC unit fired a surface-to-air missile at a US aircraft, not a
+  resumption of major combat. Also check: reports that this was one of a series
+  of limited, unannounced US strikes in recent weeks; no resumption of major
+  combat operations; and Qatar-mediated
+  diplomacy continuing, with a Qatari plan (blockade lifted and some frozen
+  assets released in exchange for IAEA inspections and reopening the strait)
+  reported by 7 November.
 context_summary: >-
   The US-Israel war with Iran, which began in early 2026, had settled into an
   uneasy ceasefire, but not a settlement. Iran's Revolutionary Guard was still
@@ -57,7 +60,7 @@ context_sources:
     excerpt: "Iran appears to have succeeded in its apparent effort to use the midterm elections to inflict political pain on Trump... one reason why an Iranian escalation in the next three weeks cannot be ruled out."
 event_date: 2026-11-02
 outcome_summary: >-
-  Yes. On Monday 2 November 2026, the eve of the midterms, US forces struck
+  On Monday 2 November 2026, the eve of the midterms, US forces struck
   Iranian targets on Qeshm Island in the Strait of Hormuz. Iranian state media
   (IRNA) reported several explosions there. US officials described the strikes
   as limited and "defensive", not a resumption of major combat operations. They
@@ -71,7 +74,10 @@ outcome_summary: >-
   would have the US lift the naval blockade and release some frozen assets, in
   exchange for IAEA inspections and Iran reopening the strait. Meanwhile
   Netanyahu was reported to be pressing Trump for renewed military action.
-resolved_answer: "Yes"
+resolved_answer: >-
+  On 2 November, the eve of the midterms, US forces carried out limited,
+  "defensive" strikes on an IRGC missile launcher on Iran's Qeshm Island, not
+  a resumption of major combat; Qatar-mediated talks continued afterwards.
 outcome_sources:
   - url: https://www.reuters.com/5f374b32b07b/world/middle-east/us-struck-irans-qeshm-island-wall-street-journal-reports-2026-11-03/
     title: US carries out 'defensive' strikes on Iran's Qeshm Island, officials say
@@ -94,7 +100,9 @@ market:
   pre_event_probability: {"Yes": 0.055, "No": 0.945}
   as_of: 2026-11-01
 notes: >-
-  The market's own outcomes are inverted: "ceasefire continues" (= No here) traded at 0.945 at
-  12:00 UTC on 1 Nov, 0.82 on 26 Oct and ~0.75-0.80 in mid-October (Polymarket CLOB price
-  history). The outcome is a low-probability upset, below the ideal 10-90% band, although
-  the strike was small and described as defensive.
+  Market probabilities refer to the former closed framing ("Yes" = a US strike hitting Iranian
+  territory before the end of 3 November); the question is now open. The market's own outcomes
+  are inverted: "ceasefire continues" (= "No" above) traded at 0.945 at 12:00 UTC on 1 Nov,
+  0.82 on 26 Oct and ~0.75-0.80 in mid-October (Polymarket CLOB price history). Under the
+  closed framing the outcome was a low-probability upset, although the strike was small and
+  described as defensive.

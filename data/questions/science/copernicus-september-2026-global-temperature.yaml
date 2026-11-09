@@ -1,0 +1,92 @@
+id: copernicus-september-2026-global-temperature
+domain: science
+title: Copernicus's verdict on global temperature in September 2026
+question: >-
+  After August 2026 tied July 2023 as the hottest month ever recorded, how
+  will September 2026 compare? What will the Copernicus Climate Change
+  Service (C3S) report for global average surface air temperature in
+  September 2026: its rank among Septembers in the ERA5 record, and how far
+  above the 1850-1900 pre-industrial level it was?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the C3S monthly climate bulletin for September 2026 (ERA5
+  data). Check the rank of September 2026 among all Septembers, the anomaly
+  above pre-industrial (1850-1900) and above 1991-2020, the margin to the
+  record September, and whether extra-polar sea surface temperatures set a
+  September record. A prediction scores well if it gets the rank and the
+  pre-industrial anomaly to within about 0.05 C.
+context_summary: >-
+  A strong El Nino developed in the tropical Pacific in 2026. NOAA declared
+  El Nino conditions on 11 June and gave a 63% chance that it would become
+  "very strong" (more than 2.0 C above normal in the Nino 3.4 region).
+  Australia's Bureau of Meteorology declared it a few days later. On
+  10 September C3S reported that August 2026 had been the joint-warmest
+  month ever recorded, tied with July 2023, at 16.96 C. That was 0.85 C
+  above the 1991-2020 average and 1.65 C above pre-industrial, the first
+  month above 1.5 C since November 2025. June to August 2026 tied 2024 as
+  the warmest boreal summer on record. Extra-polar sea surface temperatures
+  (60S-60N) were the highest on record for August at 21.07 C, and tropical
+  Pacific SSTs were at record highs as El Nino continued to intensify. C3S
+  said it could become one of the strongest El Nino events on record. The
+  benchmark to beat was September 2023, which had broken the previous
+  September record by an exceptional margin during the last strong El Nino
+  and was about 0.93 C above the 1991-2020 average. Global temperatures
+  usually lag El Nino by several months, so the biggest effects of the 2026
+  event were expected in late 2026 and 2027. Western Europe had just had
+  its warmest summer on record.
+context_sources:
+  - url: https://www.noaa.gov/news-release/el-nino-forms-expected-to-strengthen-say-noaa-forecasters
+    title: El Nino forms, expected to strengthen, say NOAA forecasters
+    publisher: NOAA
+    published_date: 2026-06-11
+    excerpt: "NOAA's National Weather Service announced today that El Nino has developed in the tropical Pacific, and issued an El Nino Advisory... Forecasters predict a 63% chance of sea surface temperatures exceeding 2.0C in the Nino-monitored region of the Pacific."
+  - url: https://climate.copernicus.eu/copernicus-august-was-worlds-joint-hottest-month-record-pushing-global-temperatures-back-above
+    title: "Copernicus: August was the world's joint hottest month on record, pushing global temperatures back above 1.5C above pre-industrial levels"
+    publisher: Copernicus Climate Change Service (ECMWF)
+    published_date: 2026-09-10
+    excerpt: "August 2026 was the joint warmest month ever recorded, tied with July 2023... With a global average surface air temperature 1.65C higher than the estimated pre-industrial baseline, this August was the first month to exceed 1.5C since November 2025... SSTs remained exceptionally high across much of the tropical Pacific, where El Nino conditions are present and forecast to further strengthen."
+  - url: https://www.reuters.com/sustainability/cop/august-was-worlds-joint-hottest-month-record-scientists-say-2026-09-10/
+    title: August was world's joint-hottest month on record, scientists say
+    publisher: Reuters
+    published_date: 2026-09-10
+    excerpt: "Average global temperature in August reaches 16.96 C... Month is world's first since 2025 to exceed 1.5 C above pre-industrial levels... World's sea surface temperatures also hit record high."
+event_date: 2026-10-09
+outcome_summary: >-
+  C3S reported that September 2026 was the second-warmest September on
+  record globally, behind September 2023. Global average surface air
+  temperature was 16.27 C, 0.82 C above the 1991-2020 average and 0.11 C
+  cooler than September 2023 (+0.93 C). It was 1.63 C above pre-industrial,
+  the second month in a row above 1.5 C. The 12-month average (October 2025
+  to September 2026) returned to 1.50 C above pre-industrial. Extra-polar
+  SST set a September record of 21.05 C, well above 2023's 20.92 C, and
+  Nino 3.4 SST reached an all-time monthly high. Western Europe had its
+  joint-warmest September (tied with 2023), and Europe as a whole its
+  third-warmest. NOAA and NASA also ranked the month second behind 2023;
+  NOAA reported a record ocean surface anomaly for any month.
+resolved_answer: >-
+  Second-warmest September on record, behind 2023: 16.27 C globally, 1.63 C
+  above pre-industrial (0.82 C above 1991-2020, 0.11 C below September
+  2023), with record September sea surface temperatures.
+outcome_sources:
+  - url: https://climate.copernicus.eu/global-temperatures-remain-over-15degc-above-pre-industrial-levels-during-second-warmest-september
+    title: Global temperatures remain over 1.5C above pre-industrial levels during second warmest September
+    publisher: Copernicus Climate Change Service (ECMWF)
+    published_date: 2026-10-14
+    excerpt: "The global average surface air temperature for September was 16.27C, 1.63C higher than the estimated 1850-1900 pre-industrial baseline for the month... The month was also the second hottest September on record, behind only 2023... highest average sea surface temperature (SST) on record for September across the extra-polar ocean, at 21.05C."
+  - url: https://yaleclimateconnections.org/2026/10/september-2026-2nd-hottest-september-for-earth-hottest-for-the-u-s/
+    title: "September 2026: 2nd-hottest September for Earth, hottest for the U.S."
+    publisher: Yale Climate Connections
+    published_date: 2026-10-09
+    excerpt: "September 2026 was the planet's second-hottest September since modern record-keeping began in 1850, NOAA's National Centers for Environmental Information, or NCEI, reported October 9. NASA and the European Copernicus Climate Change Service also rated it as the second-hottest September, behind 2023."
+market: null
+notes: >-
+  No market. Date soft spot: the Copernicus press-release page is dated
+  14 October, but Yale Climate Connections said on 9 October that C3S had
+  already rated September second-warmest, so the bulletin was public by
+  then. event_date is 9 October, and all context sources are from
+  10 September or earlier. The figure of about 0.93 C above 1991-2020 for
+  September 2023 is restated from the outcome bulletin. It was well known
+  before the event, but no dated pre-event page carrying it was retrieved.
+  The 1.63 C anomaly is a C3S/ERA5 figure. NOAA and NASA use different
+  baselines.

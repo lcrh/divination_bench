@@ -1,0 +1,105 @@
+id: ema-narsoplimab-reexamination-2026
+domain: science
+title: EMA's re-examination of narsoplimab (Yartemlea) for transplant-associated TMA
+question: >-
+  In June 2026 the European Medicines Agency's human medicines committee
+  (CHMP) recommended refusing EU authorisation of Omeros' narsoplimab
+  (Yartemlea) for thrombotic microangiopathy after stem cell transplant,
+  and Omeros asked for a re-examination. What will the CHMP decide when the
+  re-examination concludes in October 2026, and on what grounds?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the CHMP's re-examination outcome (October 2026 meeting
+  highlights and the EMA's question-and-answer document). Check the
+  decision (refusal confirmed, reversed to a positive opinion, or converted
+  to a conditional or restricted approval), whether a conditional marketing
+  authorisation was considered and why it was or wasn't granted, and the
+  main scientific reasons given (for example single-arm design, concomitant
+  therapies, external-control survival comparison, paediatric data). A
+  prediction scores well if it gets the decision and at least the main
+  evidential objection right.
+context_summary: >-
+  Haematopoietic stem cell transplant-associated thrombotic microangiopathy
+  (TA-TMA) is a frequently fatal complication of bone marrow transplants.
+  No treatment was approved for it in Europe. Narsoplimab, Omeros'
+  monoclonal antibody against MASP-2 (the effector enzyme of the lectin
+  complement pathway), was approved by the US FDA as Yartemlea in December
+  2025 for adults and children aged two and older. It was the first
+  approved therapy for TA-TMA, and US sales were growing quickly ($32.2m
+  gross in Q2 2026). Omeros's European application, with orphan
+  designation, relied on the same evidence as the FDA approval: a pivotal
+  single-arm trial in 28 adults, survival comparisons with an external
+  registry of untreated patients, and data from its compassionate-use
+  programme. After an oral explanation in June 2026, at which Omeros
+  appeared with four international transplant experts, the CHMP adopted a
+  negative opinion on 25 June. Omeros said it was disappointed, given the
+  lethality of the disease and the lack of any approved European
+  treatment. It requested re-examination and asked for an Ad Hoc Expert
+  Group (AHEG) of external haematology and transplant experts to review the
+  case. In August it submitted grounds for re-examination, including
+  patient-level data. CHMP re-examinations are carried out by new
+  rapporteurs and can confirm or reverse the original opinion. Omeros noted
+  in its filings that there was no guarantee of a reversal. The outcome was
+  expected at the CHMP's 12-15 October 2026 meeting.
+context_sources:
+  - url: https://investor.omeros.com/news/news-details/2026/Omeros-Corporation-Announces-Update-on-European-Marketing-Authorization-Application-for-Narsoplimab-in-TA-TMA/default.aspx
+    title: Omeros Corporation Announces Update on European Marketing Authorization Application for Narsoplimab in TA-TMA
+    publisher: Omeros Corporation (Business Wire)
+    published_date: 2026-06-26
+    excerpt: "Following an oral explanation meeting with the CHMP held this week, at which Omeros presented its position together with four international experts in hematopoietic cell transplantation, Omeros was informed that the CHMP has adopted a negative opinion... Omeros intends to request re-examination... and... to seek review of the matter by an Ad Hoc Expert Group (AHEG)."
+  - url: https://investor.omeros.com/news/news-details/2026/Omeros-Corporation-Reports-Second-Quarter-2026-Financial-Results/default.aspx
+    title: Omeros Corporation Reports Second Quarter 2026 Financial Results
+    publisher: Omeros Corporation (Business Wire)
+    published_date: 2026-08-12
+    excerpt: "YARTEMLEA... generated gross revenues of $32.2 million in the second quarter of 2026... We believe the clinical evidence supports approval and have requested re-examination. As part of the re-examination procedure, an Ad Hoc Expert Group (AHEG)... will review the evidence and address questions central to CHMP's assessment."
+event_date: 2026-10-15
+outcome_summary: >-
+  On 15 October 2026 the CHMP confirmed its refusal after re-examination
+  (EMA meeting highlights and Q&A published 16 October). The EMA said the
+  pivotal study had no placebo or active comparator and patients were
+  taking other medicines, so benefits could not be attributed to
+  Yartemlea. It also cited mid-study changes, how effectiveness was
+  measured, and how the dose was chosen. Published studies of other
+  treatments showed similar results. The external-control survival
+  comparison could not reliably confirm an effect. Paediatric data were too
+  limited to support dose, efficacy or safety, and the mechanism was not
+  confirmed. Omeros floated switching to a conditional marketing
+  authorisation, but the EMA said the criteria weren't met because benefit
+  had not been demonstrated. An expert group was consulted. Omeros said the
+  AHEG had recommended an external review of patient-level data that the
+  CHMP did not provide to the experts, called itself "deeply disappointed",
+  and said it would end its EU compassionate-use programme because of US
+  demand.
+resolved_answer: >-
+  The CHMP confirmed its refusal on 15 October 2026. Efficacy was not shown
+  because the 28-patient pivotal study was single-arm with confounding
+  concomitant treatments and design problems, and external-control
+  survival comparisons were unreliable. A conditional authorisation was
+  also rejected because benefit had not been demonstrated.
+outcome_sources:
+  - url: https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026
+    title: Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 12-15 October 2026
+    publisher: European Medicines Agency
+    published_date: 2026-10-16
+    excerpt: "Following a re-examination of its initial opinion, the committee has confirmed its recommendation to refuse marketing authorisation for the medicine Yartemlea (narsoplimab)."
+  - url: https://www.ema.europa.eu/en/medicines/human/EPAR/yartemlea
+    title: Yartemlea (EPAR - refusal)
+    publisher: European Medicines Agency
+    published_date: 2026-10-16
+    excerpt: "The main study supporting the application did not compare Yartemlea with placebo or another treatment. Participants were also taking other medications... the Agency concluded that the application for Yartemlea did not fulfil the criteria for a CMA because the benefits of the medicine are not demonstrated. The initial refusal was therefore confirmed after re-examination in October 2026."
+  - url: https://investor.omeros.com/news/news-details/2026/Omeros-Corporation-Receives-CHMP-Negative-Opinion-Following-Re-Examination-of-European-Marketing-Authorization-Application-for-Narsoplimab-in-TA-TMA/default.aspx
+    title: Omeros Corporation Receives CHMP Negative Opinion Following Re-Examination of European Marketing Authorization Application for Narsoplimab in TA-TMA
+    publisher: Omeros Corporation (Business Wire)
+    published_date: 2026-10-16
+    excerpt: "The AHEG recommended a review of individual patient-level data by external experts to better understand the factors associated with treatment response and survival... CHMP did not provide patient-level data to the AHEG."
+market: null
+notes: >-
+  No market. The base rate is that CHMP re-examinations usually confirm the
+  original negative opinion, so the "what" was the more predictable part
+  and the grounds are where precision matters. The EMA EPAR page shows no
+  explicit publication date; 16 October is used, matching the Q&A release
+  noted in the meeting highlights. The claim that the 12-15 October meeting
+  would conclude the re-examination is an inference from the standard CHMP
+  timetable, not from a retrieved pre-event source. The 25 June date of the
+  initial opinion comes from the EMA's EPAR page.

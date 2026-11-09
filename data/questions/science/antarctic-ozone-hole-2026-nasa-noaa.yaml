@@ -1,0 +1,96 @@
+id: antarctic-ozone-hole-2026-nasa-noaa
+domain: science
+title: NASA and NOAA's verdict on the 2026 Antarctic ozone hole
+question: >-
+  NASA and NOAA publish an annual assessment of the Antarctic ozone hole
+  after the peak depletion season (7 September to 13 October). What will
+  they report about the 2026 ozone hole: how large it was on average and at
+  its peak, how it ranked among the years since monitoring began, and how
+  deep the ozone loss was?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the joint NASA/NOAA 2026 ozone hole release. Check the
+  seasonal mean area (7 Sep to 13 Oct) and its rank among the ~48 years of
+  satellite monitoring, the date and size of the single-day maximum, the
+  lowest ozone value over the South Pole (in Dobson units), and the
+  agencies' overall framing (whether recovery under the Montreal Protocol is
+  still described as on track). A prediction scores well if it gets the
+  size class (small, average, or among the largest), the approximate rank,
+  and the depth of ozone loss right.
+context_summary: >-
+  The Antarctic ozone hole forms every austral spring when sunlight returns
+  to the cold polar stratosphere and chlorine and bromine from legacy
+  chlorofluorocarbons destroy ozone on polar stratospheric clouds. Its size
+  depends both on the declining level of ozone-depleting substances and on
+  year-to-year weather, especially the strength and size of the polar
+  vortex. The 2025 hole had been unusually small, which scientists cited as
+  evidence of recovery under the 1987 Montreal Protocol. The largest holes
+  on record occurred around 2000 and 2006; the 2006 hole spanned about
+  29.6 million km2 at its peak. In 2026 the Copernicus Atmosphere Monitoring
+  Service (CAMS) reported on 16 September that the hole had passed
+  15 million km2, larger than Antarctica, by the end of August, slightly
+  earlier than average. It then grew sharply in early September, reaching
+  an estimated 25 million km2 on 12 September, about 5 million km2 above
+  the average for that date, with forecasts pointing to further growth. The
+  growth coincided with a sudden drop in stratospheric temperatures about
+  20 km above the South Pole. CAMS noted, however, that other measures,
+  the minimum ozone column inside the hole and the ozone mass deficit,
+  stayed close to average. Germany's DLR, using Sentinel-5P data, put the
+  area at up to 27 million km2 as of 20 September and said ozone levels
+  inside the hole had not fallen to exceptionally low values. NASA and NOAA
+  measure the hole by its mean area over 7 September to 13 October and
+  rank each year against the record since 1979, alongside balloon
+  measurements of ozone over the South Pole.
+context_sources:
+  - url: https://atmosphere.copernicus.eu/copernicus-ozone-hole-reaches-notable-threshold-early-again-area-increases-above-average-2026
+    title: "Copernicus: Ozone hole reaches notable threshold early again as area increases above average in 2026"
+    publisher: Copernicus Atmosphere Monitoring Service (ECMWF)
+    published_date: 2026-09-16
+    excerpt: "In the first half of September, the area of this year's ozone hole increased sharply, to an estimated 25 million km2 on 12 September - around 5 million km2 above the average for this period... other ozone hole diagnostics... including the ozone column minimum value... and the ozone mass deficit, remained close to the average values."
+  - url: https://www.dlr.de/en/eoc/latest/news/2026/ozone-hole-2026-one-of-the-largest-in-years
+    title: "Ozone Hole 2026: One of the Largest in Years"
+    publisher: German Aerospace Center (DLR)
+    published_date: 2026-10-26
+    excerpt: "Measurements from the TROPOMI instrument aboard... Sentinel-5P satellite show that the ozone hole in 2026 has reached a very large area of up to 27 million km2 (as of September 20, 2026)... Ozone levels within the ozone hole have not fallen to exceptionally low values."
+event_date: 2026-11-04
+outcome_summary: >-
+  On 4 November 2026 NASA and NOAA reported that the 2026 ozone hole was
+  the seventh-largest in 48 years of monitoring by seasonal mean area. From
+  7 September to 13 October it averaged about 25 million km2 (9.6 million
+  square miles). Its largest single-day extent was 27.1 million km2
+  (10.5 million square miles) on 18 September, about 90% of the record set
+  on 9 September 2000. NASA's Paul Newman said the hole grew "to proportions
+  we haven't seen in a decade" because of an unusually large, powerful polar
+  vortex after weak planetary-wave activity in August and September. The
+  hole was not especially deep: balloon soundings found the lowest ozone
+  over the South Pole was 105 Dobson units on 17 October, against a record
+  low of 92 DU in October 2006. The agencies said it would have been
+  1 to 2 million square miles larger with year-2000 levels of
+  ozone-depleting substances, that Antarctic stratospheric chlorine has
+  fallen by about a third, and that recovery remains on track for the 2070s.
+resolved_answer: >-
+  NASA and NOAA ranked the 2026 hole the seventh-largest in 48 years, with a
+  seasonal mean of about 25 million km2 and a peak of 27.1 million km2 on
+  18 September, caused by a strong polar vortex. It was not especially
+  deep: the South Pole minimum was 105 DU, and recovery remains on track.
+outcome_sources:
+  - url: https://www.noaa.gov/news-release/noaa-nasa-release-measurements-of-2026-ozone-hole
+    title: NOAA, NASA release measurements of 2026 ozone hole
+    publisher: NOAA
+    published_date: 2026-11-04
+    excerpt: "Fueled by a powerful polar vortex, the 2026 ozone hole became the seventh-largest in 48 years of monitoring, based on NOAA and NASA analysis of the seasonal mean area... the average extent of the hole covered about 9.6 million square miles (25 million square kilometers)... The hole reached its greatest extent for the year on September 18 at 10.5 million square miles (27.1 million square kilometers)."
+  - url: https://science.nasa.gov/earth/climate-change/ozone-layer/2026-ozone-hole/
+    title: NASA, NOAA Track 2026 Antarctic Ozone Hole
+    publisher: NASA Science
+    published_date: 2026-11-04
+    excerpt: "The ozone hole ranked seventh largest by area in 48 years of monitoring, but was not as deep as other large holes on record... ozone concentrations directly overhead reached their lowest value for the year - 105 Dobson units - on Oct. 17."
+market: null
+notes: >-
+  No market. Most of the physical outcome was fixed by 13 October, and daily
+  data were public on NASA Ozone Watch and CAMS before the 4 November
+  release, so a forecaster with live access could have estimated the rank.
+  The tested models only see the September and October context. Rankings
+  differ between datasets: CAMS put its own six-hourly peak (27.44 million
+  km2 on 20 September) third-highest in its record. Judge against the
+  NASA/NOAA figures.

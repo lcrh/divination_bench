@@ -1,21 +1,21 @@
 id: tesla-roadster-sub-1s-0-60-demo-2026
 domain: tech
-title: Will Tesla demonstrate a sub-1-second 0-60 mph run at its October 2026 Roadster event?
+title: What Tesla shows at its October 2026 next-generation Roadster event
 question: >-
-  At Tesla's next-generation Roadster unveiling on the evening of 15 October
-  2026 (US Central time), will a Roadster physically present at the event
-  perform a live, timed 0-60 mph run from a standing start in under 1.0
-  seconds?
-question_type: binary
-options: ["Yes", "No"]
+  What will Tesla show and announce at its next-generation Roadster unveiling
+  on the evening of 15 October 2026 (US Central time) near McGregor, Texas,
+  including any live demonstrations and the car's claimed specifications?
+question_type: open
 resolution_criteria: >-
-  Resolves Yes if, during the 15 October 2026 event, any version of the
-  Roadster (prototype included) performs a live, timed 0-60 mph acceleration
-  run under its own power from a standing start, and the demonstrated time
-  (shown on screen / instrumentation, or officially published by Tesla for
-  that specific run) is below 1.0 seconds. Claims of future capability
-  without a demonstrated run do not count. Otherwise resolves No. Mirrors the
-  Polymarket market of the same name.
+  Judged on what was demonstrated and announced at the 15 October 2026 event.
+  Core outcome: a stunt-heavy live show using SpaceX-developed cold-gas
+  thrusters and a fan-suction system, including a thruster-assisted 0-60 mph
+  run timed at 0.81 seconds (0.67 s with rollout subtracted). Also check: the
+  car driving upside down on a curved ramp, launching and rolling upright in
+  mid-air, barrel-rolling over a line of Teslas and doing a side flip; three
+  trims (Performance under 1.6 s, Thrust under 0.9 s with a $250,000
+  reservation, invite-only Rocket under 0.59 s and not road-legal); claims of
+  230+ mph and 300+ miles of range; production from 2028; and no price given.
 context_summary: >-
   Tesla is due to unveil the long-delayed second-generation Roadster at an
   outdoor event near SpaceX's McGregor test site in Texas on Thursday 15
@@ -55,7 +55,7 @@ context_sources:
     excerpt: "Best case, Tesla fires the thrusters on a closed course and shows a launch under 1.5 seconds ... Worst case, the SpaceX package is mentioned but not shown."
 event_date: 2026-10-15
 outcome_summary: >-
-  Yes. At the roughly 25-minute event in McGregor, Texas, the Roadster
+  At the roughly 25-minute event in McGregor, Texas, the Roadster
   repeatedly used a fan-suction system and cold-gas thrusters developed with
   SpaceX: it drove up a curved ramp and hung upside down, launched off and
   rolled upright in mid-air, leapt and barrel-rolled over a line of Tesla
@@ -69,7 +69,11 @@ outcome_summary: >-
   given. Reporters called it more of a stunt show than a product launch.
   Polymarket's "0-60 under 1 second" and "flies for 1s+" markets both
   resolved Yes.
-resolved_answer: "Yes"
+resolved_answer: >-
+  Tesla staged a thruster- and fan-assisted stunt show in which the Roadster
+  drove upside down, flipped and leapt over cars, and ran 0-60 mph in a timed
+  0.81 seconds; it announced three trims, claimed 230+ mph and 300+ miles of
+  range, targeted production in 2028, and gave no price.
 outcome_sources:
   - url: https://www.roadandtrack.com/news/a74151425/the-air-assisted-tesla-roadster-flies-in-demo-hits-0-60-in-08-seconds/
     title: The Air-Assisted Tesla Roadster Flies in Demo, Hits 0-60 In 0.8 Seconds
@@ -91,4 +95,4 @@ market:
   url: https://polymarket.com/event/will-the-tesla-roadsters-0-60-time-be-less-than-1-second
   pre_event_probability: {"Yes": 0.195}
   as_of: 2026-10-15
-notes: "Polymarket CLOB price history at ~12:00 UTC on 15 Oct (first recorded point). High-volume market (~$6.8M). The companion 'Roadster flies for 1s+' market was ~0.67 just before the event and also resolved Yes."
+notes: "The market probability refers to the former closed framing (a live timed sub-1-second 0-60 run); the question is now open. Polymarket CLOB price history at ~12:00 UTC on 15 Oct (first recorded point). High-volume market (~$6.8M). The companion 'Roadster flies for 1s+' market was ~0.67 just before the event and also resolved Yes."

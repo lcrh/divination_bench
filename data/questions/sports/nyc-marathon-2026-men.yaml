@@ -6,9 +6,14 @@ question: >-
   1 November 2026, and how will the race be decided?
 question_type: open
 resolution_criteria: >-
-  Resolves to the first-placed man in the official 2026 TCS New York City
-  Marathon results (1 November 2026). Open-ended predictions are judged on
-  the winner and also on podium, winning time and race dynamics.
+  Judged against the official 2026 TCS New York City Marathon results (1
+  November 2026). Core outcome: Andreas Almgren (Sweden) won on his marathon
+  debut in 2:06:01, the third-fastest time in race history and the first
+  European-born men's win since 1996. Also check: Yemaneberhan Crippa second
+  (2:06:14, 13 seconds back) and Kamohelo Mofolo third (PB 2:06:26), pipping
+  defending champion Benson Kipruto (2:06:27) on the line; halfway in
+  1:04:01 after repeated Talbi surges; Kipruto's 4:38 23rd mile cutting the
+  lead group to four; and Almgren pulling away from Crippa in Central Park.
 context_summary: >-
   The 2026 TCS New York City Marathon on Sunday 1 November marks the 50th
   anniversary of the five-borough course. It is the final World Marathon
@@ -48,7 +53,10 @@ outcome_summary: >-
   win by 13 seconds (Crippa 2:06:14). Lesotho's Kamohelo Mofolo finished fast
   for third in a PB of 2:06:26, pipping defending champion Kipruto (2:06:27)
   on the line. In the women's race, Sheila Chepkirui won in 2:24:36.
-resolved_answer: "Andreas Almgren (SWE), 2:06:01 on his marathon debut, ahead of Yemaneberhan Crippa and Kamohelo Mofolo"
+resolved_answer: >-
+  Andreas Almgren (Sweden) won on his marathon debut in 2:06:01, pulling away
+  from Yemaneberhan Crippa (2:06:14) in Central Park, with Kamohelo Mofolo
+  third just ahead of defending champion Benson Kipruto.
 outcome_sources:
   - url: https://worldathletics.org/news/report/new-york-city-marathon-2026-almgren-chepkirui
     title: Almgren wins on marathon debut, Chepkirui regains title in New York
@@ -68,4 +76,4 @@ market:
     "Benson Kipruto": 0.28
     "Sam Chelanga": 0.06
   as_of: 2026-10-28
-backup: true
+notes: "Kalshi probabilities from LetsRun (thinly traded). They cover only the winner, a narrower closed framing than this open question."

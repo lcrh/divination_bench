@@ -1,0 +1,101 @@
+id: ethiopia-tigray-offensive-outcome-2026
+domain: geopolitics
+title: How Ethiopia's new war with the TPLF-led rebel alliance unfolds in its first weeks
+question: >-
+  On 23 September 2026 Tigrayan forces, leading a new seven-group rebel alliance
+  that aims to topple Prime Minister Abiy Ahmed, launched a major offensive
+  against Ethiopia's federal government. What will happen in this war over the
+  following three weeks, up to mid-October 2026?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on the military and political situation in northern Ethiopia between
+  27 September and about 16 October 2026. The core question is which side
+  gained ground: did the rebels expand their offensive, did it stall into a
+  stalemate, or did federal forces push into Tigray? The judge should also
+  check who controlled Mekelle, the Tigray capital, and whether it changed
+  hands. Further checkable details are whether Eritrea became directly involved
+  and whether Ethiopia–Eritrea relations changed, whether any ceasefire or
+  African Union-mediated talks took hold, and whether Addis Ababa took any
+  political steps regarding Tigray's administration.
+context_summary: >-
+  On 20 September 2026 seven Ethiopian armed groups announced an alliance to
+  overthrow Prime Minister Abiy Ahmed's government. The Ethiopian Peoples'
+  Forces Alliance for Survival includes the Tigray People's Liberation Front
+  (TPLF), the Amhara Fano National Movement and the Oromo Liberation Army.
+  Fano had fought alongside the federal army against the TPLF in the 2020-22
+  war, which ended with the 2022 Pretoria agreement. On 23 September Tigray's
+  TPLF-led regional government said it had entered a "defensive war". Its
+  forces seized the airports of Mekelle, Axum and Shire, Ethiopian Airlines
+  suspended flights, and fighting spread into the neighbouring Afar and Amhara
+  regions, including around the border town of Abala and near Lalibela. Each
+  side blamed the other for starting it. The army claimed to have killed more
+  than 270 rebels on one front. Addis Ababa accused Eritrea of financing the
+  alliance, which Eritrea denied. Relations between the two neighbours had
+  soured over Abiy's push for Red Sea port access. Analysts warned of a
+  regional war overlapping with Sudan's conflict. One risk analyst said the
+  federal government was tactically stronger than in 2020 because of its
+  drone stocks and divisions within the TPLF. About 750,000 Tigrayans were
+  still displaced from the last war. The African Union called the airport
+  seizures inconsistent with the Pretoria deal, urged an immediate halt and
+  asked former Nigerian president Olusegun Obasanjo to engage the parties.
+  Analysts said the conflict had not yet become a full-scale civil war.
+context_sources:
+  - url: https://www.cnbcafrica.com/2026/tigrayan-leaders-say-new-war-with-ethiopian-government-has-begun-as-fighting-erupts
+    title: Tigrayan leaders say new war with Ethiopian government has begun, as fighting erupts (Reuters)
+    publisher: Reuters via CNBC Africa
+    published_date: 2026-09-23
+    excerpt: "Forces from the northern Ethiopian region of Tigray launched a major offensive against the federal government on Wednesday... The federal government is in a tactically stronger position than in 2020 due to its large stocks of drones and divisions within the TPLF, said Edward Bach."
+  - url: https://www.aljazeera.com/news/2026/9/26/is-ethiopia-on-the-verge-of-another-civil-war-as-fighting-erupts-in-tigray
+    title: Is Ethiopia on the verge of another civil war as fighting erupts in Tigray?
+    publisher: Al Jazeera
+    published_date: 2026-09-26
+    excerpt: "Tigrayan forces have taken control of the airports at Mekelle, Axum and Shire... There is a risk it could, but analysts say the conflict has not descended into a full-scale civil war yet... It has asked former Nigerian President Olusegun Obasanjo... to engage the parties urgently."
+event_date: 2026-10-04
+outcome_summary: >-
+  The rebel offensive was quickly reversed. Federal forces and pro-government
+  militias pushed the rebels back from Afar and Amhara in late September and
+  counterattacked into Tigray along several axes. On about 1 October Ethiopia
+  closed its embassy in Asmara and expelled Eritrean diplomats, accusing
+  Eritrea of backing the rebels. Eritrea then severed diplomatic ties. On 3-4
+  October the TPLF withdrew from Mekelle, saying its regional government would
+  operate "from somewhere else". The pro-government Tigray Peace Force and the
+  federal army entered the city and retook its airport, a major blow to the
+  alliance. Eritrean troops then entered northern Tigray around 7 October in
+  support of the rebels. Ethiopian drone strikes hit them, and many pulled
+  back, though some stayed near the border, for example around Zalambessa.
+  Federal forces retook Adigrat (10 October) and Adwa (11 October). There was
+  no ceasefire. On 16 October Abiy's government declared the TPLF defeated and
+  installed a six-month federal caretaker administration for Tigray, staffed
+  mostly by former TPLF figures allied with Getachew Reda, with regional
+  elections promised within six months.
+resolved_answer: >-
+  Federal forces counterattacked and recaptured Mekelle on 3-4 October 2026
+  after the TPLF withdrew, then pushed north to Adigrat and Adwa. Eritrean
+  troops briefly entered Tigray before Ethiopian drone strikes drove most of
+  them back. Ethiopia and Eritrea cut diplomatic ties, and on 16 October Abiy
+  installed a six-month federal caretaker government in Tigray.
+outcome_sources:
+  - url: https://www.cnbcafrica.com/2026/government-forces-seize-capital-of-ethiopias-tigray-region-from-rebels
+    title: Government forces seize capital of Ethiopia's Tigray region from rebels (Reuters)
+    publisher: Reuters via CNBC Africa
+    published_date: 2026-10-05
+    excerpt: "Pro-government forces have regained control of the capital of Tigray... The TPLF said in a statement it had retreated from the capital and that the regional government would be 'temporarily moved out of Mekelle'... The federal government in Addis Ababa severed diplomatic ties with Eritrea last week."
+  - url: https://www.france24.com/en/africa/20261016-ethiopia-announces-interim-government-tigray-calls-for-polls-six-months
+    title: Ethiopia announces interim government in Tigray, aims for polls in six months
+    publisher: France 24 (AFP)
+    published_date: 2026-10-16
+    excerpt: "The Tigray People's Liberation Front (TPLF) launched a major offensive against government forces on September 23, before being pushed back and losing control of its strongholds, including the regional capital... will administer Tigray for the next six months."
+  - url: https://kuwaittimes.com/article/51864/world/in-tigray-ethiopians-welcome-departure-of-eritrean-troops/
+    title: In Tigray, Ethiopians welcome departure of Eritrean troops (AFP)
+    publisher: Kuwait Times (AFP)
+    published_date: 2026-10-18
+    excerpt: "Eritrea has deployed thousands of troops in northern Tigray... Some Eritrean forces have returned to their country, while others remain near the border on the Ethiopian side, following drone strikes that pushed them back."
+market: null
+notes: >-
+  No market. The dates of town recaptures (Adigrat 10 Oct, Adwa 11 Oct) and of
+  the embassy closure (1 Oct) come from Wikipedia's "2026 Ethiopian offensive"
+  page, which cites Reuters, AFP and ACLED. The Critical Threats brief of
+  16 Oct describes the caretaker appointees as linked to Getachew Reda's Simret
+  party and the Tigray Peace Forces. Low-level fighting and Fano activity in
+  Amhara continued after Mekelle fell, so "war over" is not strictly accurate.

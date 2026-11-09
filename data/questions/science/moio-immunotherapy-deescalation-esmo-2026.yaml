@@ -1,0 +1,108 @@
+id: moio-immunotherapy-deescalation-esmo-2026
+domain: science
+title: Results of the French MOIO trial of less-frequent immunotherapy
+question: >-
+  The French phase 3 MOIO trial tested whether patients responding to
+  immune checkpoint inhibitors after six months could safely switch to the
+  same dose every 12 weeks instead of the standard schedule. Its results
+  are being presented in ESMO 2026's Presidential Symposium on 26 October
+  2026. What will MOIO show about efficacy, survival and toxicity, and what
+  will its investigators conclude?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the MOIO presentation (LBA10, ESMO 2026, 26 October) and
+  contemporaneous reports. Check whether non-inferiority for
+  progression-free survival was shown (and the hazard ratio and medians),
+  what overall survival showed, whether the trial ran to completion or was
+  stopped early, whether toxicity fell meaningfully with less frequent
+  dosing, and the investigators' practice recommendation. A prediction
+  scores well if it gets the direction (de-escalation supported or not),
+  the overall-survival result, and the toxicity finding right.
+context_summary: >-
+  Immune checkpoint inhibitors such as anti-PD-1 and anti-PD-L1 antibodies
+  are typically given every two to six weeks until progression or
+  unacceptable toxicity, often for years. Because many responders keep
+  responding for a long time, and the drugs occupy their targets for long
+  after dosing, oncologists have wondered whether spacing doses out could
+  cut costs, hospital visits and side effects without losing efficacy.
+  MOIO (NCT05078047), sponsored by the French academic group Unicancer and
+  coordinated by Dr Gwenaelle Gravis of Institut Paoli-Calmettes in
+  Marseille, is the first randomised phase 3 test of this idea. It opened
+  in March 2022. Adults with advanced or metastatic solid tumours (lung,
+  kidney, head and neck, bladder, triple-negative breast, Merkel cell,
+  liver, melanoma not in complete response and others) who had a partial
+  or complete response after six months of standard immunotherapy were
+  randomised 1:1. They either continued the standard schedule or received
+  the same dose every three months. The primary endpoint is
+  progression-free survival with a non-inferiority design, and the
+  secondary endpoints include overall survival, quality of life, safety
+  and cost-effectiveness. The planned enrolment was 646 patients, with
+  interim futility analyses built in. ESMO selected the trial as late-breaking abstract
+  LBA10 for its third Presidential Symposium in Madrid on 26 October 2026.
+  Previewers described it as tackling a question "many clinicians will
+  recognize from daily practice: can immune checkpoint inhibitor dosing
+  frequency be safely reduced in responding patients?"
+context_sources:
+  - url: https://www.unicancer.fr/wp-content/uploads/sites/2/2022/05/MOIO_Poster_v1.0_20220509.pdf
+    title: MOIO and ancillary study MOIO-TR (trial design poster)
+    publisher: Unicancer
+    published_date: 2022-05-09
+    excerpt: "MOIO is a non-inferiority, multicenter, randomized, controlled, open label phase III trial of reduced dose intensity of IO versus approved standard IO regimen in patients with metastatic oncologic tumour in partial (PR) or complete response (CR) after 6 months of treatment with standard IO... IO will be administered every 3 months (at the same dose levels)."
+  - url: https://touchoncology.com/insight/esmo-2026-your-quick-guide-to-the-presidential-symposia-and-keynote-sessions/
+    title: "ESMO 2026: Your quick guide to the Presidential Symposia and Keynote sessions"
+    publisher: touchONCOLOGY
+    published_date: 2026-10-20
+    excerpt: "The final Presidential Symposium brings two phase 3 endometrial cancer trials, relapsed osteosarcoma, and a pan-tumor question many clinicians will recognize from daily practice: can immune checkpoint inhibitor dosing frequency be safely reduced in responding patients? ... LBA10 ... Reduced-frequency vs standard immune checkpoint inhibitor dosing in responding patients ... Gwenaelle Gravis."
+event_date: 2026-10-26
+outcome_summary: >-
+  MOIO failed. Enrolment had been halted in May 2026 after an unexpected
+  overall-survival imbalance at the first interim analysis, with 340 of a
+  planned 646 patients randomised (March 2022 to November 2025) at 36
+  French centres. In the modified intention-to-treat population (308
+  patients, median follow-up 18.6 months), median PFS was 25.0 months with
+  standard dosing versus 21.9 months with 12-weekly dosing (HR 1.35, 95% CI
+  roughly 0.90-2.0). Non-inferiority (margin 1.30) was not shown, although
+  the prespecified futility boundary was not formally crossed either.
+  Deaths were 19.9% with reduced-frequency dosing versus 10.5% with
+  standard dosing (OS HR about 2.0, p=0.0286). Toxicity did not fall
+  meaningfully: grade 3-4 immune-related adverse events were 9.5% versus
+  10.5%, and serious adverse events 25.0% versus 26.3%. Subgroups
+  suggested harm in urothelial and lung cancer and possibly no harm in
+  kidney and head and neck cancer (hypothesis-generating only). Gravis
+  said 12-weekly dosing is not recommended outside trials. A
+  pharmacokinetic sub-study suggested drug levels can fall below the
+  effective threshold.
+resolved_answer: >-
+  MOIO failed to show non-inferiority (PFS 21.9 vs 25.0 months, HR 1.35) and
+  was stopped early after nearly twice as many deaths with 12-weekly dosing
+  (19.9% vs 10.5%). Toxicity did not fall, so investigators advised against
+  routine dose spacing.
+outcome_sources:
+  - url: https://oncodaily.com/oncolibrary/immune-oncology/moio-trial
+    title: "MOIO Trial: Can Immunotherapy Be Given Less Frequently?"
+    publisher: OncoDaily
+    published_date: 2026-10-26
+    excerpt: "Median PFS was 25.0 months... with standard treatment versus 21.9 months... with reduced-frequency treatment. The HR... was 1.35 (95% CI 0.90-2.00). Non-inferiority was not established... Reduced-frequency treatment was associated with a higher hazard of death (HR 2.00...)... Grade 3-4 immune-related adverse events occurred in 10.5%... versus 9.5%."
+  - url: https://www.medscape.com/viewarticle/less-frequent-ici-therapy-fails-trial-offers-lessons-2026a100153t
+    title: Less Frequent ICI Therapy Fails in Trial but Offers Lessons
+    publisher: Medscape
+    published_date: 2026-10-27
+    excerpt: "The MOIO trial was halted in May following a significant and unexpected increase in deaths among patients receiving less-frequent dosing... 19.9% vs 10.5% (P = .0286)... 'reducing treatment frequency did not translate into a meaningful reduction in treatment-related toxicity.'"
+  - url: https://www.unicancer.fr/wp-content/uploads/2026/10/communique-de-presse-esmo-octobre-2026.pdf
+    title: Les travaux de recherche d'Unicancer a l'honneur au Congres ESMO
+    publisher: Unicancer
+    published_date: 2026-10-26
+    excerpt: "Les premiers resultats de l'analyse intermediaire de futilite ne montrent pas de reduction cliniquement significative de la toxicite, et le rapport benefice-risque est tout a fait incertain pour les patients traites toutes les 12 semaines. Ces resultats ont ainsi conduit les experts a arreter les inclusions dans l'etude."
+market: null
+notes: >-
+  No market. Soft spot: the trial was halted in May 2026, and
+  ClinicalTrials.gov showed it as "active, not recruiting". An attentive
+  observer could have taken that as a warning sign before ESMO, but no
+  public announcement of the halt or its reason was found before
+  26 October. The Medscape page carries no explicit date, and its
+  27 October date is an estimate. The Unicancer press release is undated
+  in the text; its October 2026 upload path and ESMO timing suggest about
+  26 October. The touchONCOLOGY preview misspells the acronym as "MIOIO".
+  HR confidence intervals differ slightly between reports (0.90-2.00 vs
+  0.90-2.04).

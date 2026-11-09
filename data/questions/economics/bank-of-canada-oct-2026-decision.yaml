@@ -3,12 +3,19 @@ domain: economics
 title: Bank of Canada October 2026 rate decision
 question: >-
   What will the Bank of Canada decide about its overnight policy rate, currently
-  2.25%, at its announcement on 28 October 2026?
-question_type: multiple_choice
-options: ["Cut", "Hold at 2.25%", "Hike 25 bp", "Hike 50 bp or more"]
+  2.25%, at its announcement on 28 October 2026, and what will it signal about
+  the path ahead?
+question_type: open
 resolution_criteria: >-
-  Resolves to the change in the target for the overnight rate announced by the
-  Bank of Canada on 28 October 2026, per its official press release.
+  Judged against the Bank of Canada's official 28 October 2026 press release
+  and Monetary Policy Report. Core outcome: a 25 bp hike to 2.50%, its first
+  change after seven holds and first hike since July 2023. Also check: the
+  rationale (reducing the risk that elevated energy prices spill over into
+  generalized inflation); cautious guidance that further hikes could be needed
+  but the bank would "proceed carefully", meeting by meeting; the inflation
+  forecast raised to about 3.5% by end-2026 and 3.1% in 2027 (from 2.0%);
+  2026 growth raised to 1.0%; and the rate remaining below the neutral-range
+  midpoint.
 context_summary: >-
   The Bank of Canada has held its overnight rate at 2.25% for seven straight
   decisions, a level at the low end of its estimated neutral range. An oil
@@ -62,7 +69,10 @@ outcome_summary: >-
   Even after the hike, the rate sits below the 2.75% midpoint of the bank's
   neutral range. The next decision is 9 December. Forecasters who called a
   hold, including RBC, TD and Dominion Lending Centres, were wrong.
-resolved_answer: "Hike 25 bp"
+resolved_answer: >-
+  The Bank of Canada raised its overnight rate 25 bp to 2.50%, its first hike
+  since July 2023, citing the risk of energy-driven inflation spreading, and
+  said further increases could be needed but it would proceed carefully.
 outcome_sources:
   - url: https://www.streetinsider.com/Reuters/Bank+of+Canada+raises+key+interest+rate%2C+says+another+hike+possible/27246392.html
     title: Bank of Canada raises key interest rate, says another hike possible
@@ -87,4 +97,5 @@ market:
 notes: >-
   Polymarket daily prices from the CLOB price-history API. The hike was priced
   at only about 15% until the 19 October CPI release. Kalshi was about 81%
-  before the decision.
+  before the decision. Market probabilities refer to the former closed framing
+  (cut / hold / hike 25 bp / hike 50 bp or more); the question is now open.

@@ -2,14 +2,19 @@ id: texas-senate-talarico-paxton-2026
 domain: politics
 title: Texas US Senate race 2026 — Talarico vs Paxton
 question: >-
-  Will Democrat James Talarico defeat Republican Ken Paxton in the US Senate
-  election in Texas on 3 November 2026?
-question_type: binary
-options: ["Yes", "No"]
+  What will be the result of the 3 November 2026 US Senate election in Texas
+  between Democrat James Talarico and Republican Ken Paxton: who will win, by
+  what margin, and in what wider national context?
+question_type: open
 resolution_criteria: >-
-  Resolves Yes if James Talarico wins the 3 November 2026 Texas US Senate
-  general election per official results / AP call; No if Ken Paxton (or anyone
-  else) wins.
+  Judged against official Texas Secretary of State results and the AP call.
+  Core outcome: Talarico won, 5,444,982 votes (about 55.1%) to Paxton's
+  4,249,373 (about 43.0%), a margin of roughly 12 points, with Libertarian Ted
+  Brown on 190,237. Also check: the AP call on election night; the seat
+  flipping and Talarico being the first Texas Democrat to win statewide in
+  more than 30 years; the margin far exceeding the final polls and market
+  forecasts; and a national Democratic wave in which Democrats won both the
+  House and Senate.
 context_summary: >-
   Texas's 2026 Senate race pitted Republican Ken Paxton, the state's
   controversial attorney general, against Democrat James Talarico, a
@@ -52,7 +57,10 @@ outcome_summary: >-
   Democrats took control of both the House and Senate, with further Senate
   upsets in South Carolina and Kansas, a sharp rebuke to Trump, who had
   campaigned for Paxton repeatedly.
-resolved_answer: "Yes"
+resolved_answer: >-
+  Talarico beat Paxton by about 12 points (roughly 55.1% to 43.0%), flipping
+  the seat and becoming the first Texas Democrat to win statewide in more than
+  30 years, amid a national Democratic wave that won both chambers of Congress.
 outcome_sources:
   - url: https://apnews.com/article/texas-senate-talarico-paxton-midterm-election-66df71a7c2bfa962cffd4134ef1a0364
     title: Democrat James Talarico wins Texas Senate election over Republican Ken Paxton
@@ -72,3 +80,5 @@ market:
 notes: >-
   Kalshi had Talarico at 71% on 31 Oct (news.kalshi.com). Polymarket prices from Action Network
   27 Oct. Texas SOS published_date is approximate (results page, no date stamp).
+  Market probabilities refer to the former closed framing ("Yes" = Talarico wins);
+  the question is now open.

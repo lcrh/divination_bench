@@ -5,16 +5,18 @@ question: >-
   What will Tanzania's High Court decide when it delivers judgment in the
   treason trial of opposition leader Tundu Lissu, scheduled for 6 November
   2026?
-question_type: multiple_choice
-options:
-  - "Convicted of treason"
-  - "Acquitted of treason but convicted of a lesser offence"
-  - "Acquitted and freed"
-  - "Judgment postponed or case otherwise not decided on 6 November"
+question_type: open
 resolution_criteria: >-
-  Resolves according to the judgment delivered by the three-judge High Court
-  panel (Dar es Salaam Sub-Registry) on 6 November 2026, as reported by major
-  news outlets.
+  Judged against the judgment delivered by the three-judge High Court panel
+  (Dar es Salaam Sub-Registry) on 6 November 2026, as reported by major news
+  outlets. Core outcome: Lissu was acquitted of treason (the prosecution failed
+  to prove intent to intimidate or overthrow the government) but convicted of
+  the lesser offence of incitement over his "No Reforms, No Election" campaign,
+  and sentenced to four years in prison. Also check: about 19 months already
+  served in detention; Lissu accusing the judges of "manufacturing" an offence
+  he was never charged with; his plans to seek bail and appeal; the sentence
+  potentially barring him from the 2030 elections; and condemnation by Human
+  Rights Watch and others.
 context_summary: >-
   Tundu Lissu, 58, chairman of Tanzania's main opposition party Chadema and a
   former presidential candidate, was arrested on 9 April 2025. This followed a
@@ -64,7 +66,10 @@ outcome_summary: >-
   because the conviction was not for treason, and he has leave to appeal to
   the Court of Appeal. If the sentence stands it would bar him from the 2030
   elections. Human Rights Watch and other groups condemned the conviction.
-resolved_answer: "Acquitted of treason but convicted of a lesser offence"
+resolved_answer: >-
+  The High Court acquitted Lissu of treason but convicted him of the lesser
+  offence of incitement and sentenced him to four years in prison, after about
+  19 months already spent in detention.
 outcome_sources:
   - url: https://www.bbc.com/news/articles/ckp8g4pm0y4lo
     title: "Tundu Lissu: Tanzania opposition leader found guilty of incitement but acquitted of treason"
@@ -83,5 +88,6 @@ outcome_sources:
     excerpt: "Tanzania's High Court on November 6 convicted Tundu Lissu... of incitement, sentencing him to four years in prison. The judges acquitted him of treason, a charge that carries the death penalty."
 market: null
 notes: >-
-  No market found. "Deadly protests" around the 2025 election is background (AFP via Mwanzo TV:
+  No market found. Formerly multiple choice (convicted of treason / acquitted of treason but
+  convicted of a lesser offence / acquitted and freed / postponed); now open. "Deadly protests" around the 2025 election is background (AFP via Mwanzo TV:
   "thousands were killed according to the opposition and rights activists").

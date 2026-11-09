@@ -45,7 +45,10 @@ class Question(BaseModel):
         default=None,
         description="Possible answers for binary / multiple_choice questions.",
     )
-    resolution_criteria: str
+    resolution_criteria: str = Field(
+        description="Judge-only (accuracy round): may name the actual outcome, so it "
+        "must never be shown to forecasters or in the precision round."
+    )
     context_summary: str = Field(
         description="What was known before the decisive event. Must not leak the outcome."
     )

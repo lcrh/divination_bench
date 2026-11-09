@@ -1,0 +1,107 @@
+id: prix-goncourt-2026
+domain: culture
+title: Prix Goncourt 2026 proclamation
+question: >-
+  What will happen when the Académie Goncourt proclaims the 2026 Prix
+  Goncourt at the Drouant restaurant in Paris on 3 November 2026: who will
+  win, with which book, and how will the jury's vote go?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the Académie Goncourt's official proclamation on 3 November
+  2026: the winning author and book, the round of voting and the vote split
+  among the finalists. The Goncourt des lycéens, Goncourt des détenus and
+  other Goncourt-branded prizes do not count.
+context_summary: >-
+  The Prix Goncourt, France's most prestigious literary prize (a symbolic
+  10-euro cheque, but typically hundreds of thousands of extra sales), is
+  proclaimed on 3 November 2026 at the Drouant restaurant in Paris. The jury
+  has nine members since the death of Didier Decoin, chaired by Philippe
+  Claudel, and also includes Christine Angot, Pierre Assouline, Tahar Ben
+  Jelloun, Pascal Bruckner, Paule Constant, Françoise Chandernagor, Camille
+  Laurens and Eric-Emmanuel Schmitt; with an odd number of jurors, the
+  president's casting vote should not be needed. The 2026 season was shaken
+  in late September when the Académie, in an unusual step, removed Thélyson
+  Orélien's bestseller "C'était ça ou mourir" (Grasset) from its first list
+  after plagiarism allegations and analyses suggesting the novel was largely
+  AI-generated. On 27 October the Académie named four finalists, all
+  published by houses in the Madrigall (Gallimard) group: Yannick Haenel,
+  "La solitude des professeurs est infinie" (Gallimard), set amid the
+  conditions of teaching in a collège; Philippe Jaenada, "L'inconnue du quai
+  de Javel" (Flammarion), an archive-driven investigation of the unsolved
+  1949 murder of a young woman in Paris; Clémentine Mélois, "Choses que je
+  croyais perdues" (L'Arbalète/Gallimard); and Sylvain Prudhomme, "De
+  l'autre côté du lac" (Minuit), a contemplative Alpine thriller about wild
+  nature. Haenel, Jaenada and Prudhomme have all previously won major autumn
+  prizes (Médicis/Interallié for Haenel, Femina for both Jaenada and
+  Prudhomme). Anne Godard, seen as a favourite at the second stage, was
+  eliminated. Previews saw no single clear favourite: Fnac's L'Éclaireur
+  named Jaenada (the most-cited author) and the critically acclaimed
+  Prudhomme as the two favourites, while Lire Magazine's two editors split,
+  one backing Jaenada and the other Haenel.
+context_sources:
+  - url: https://www.france24.com/fr/culture/20260925-le-roman-de-th%C3%A9lyson-or%C3%A9lien-entach%C3%A9-de-scandales-supprim%C3%A9-de-la-s%C3%A9lection-du-goncourt
+    title: Le roman de Thélyson Orélien, entaché de scandales, supprimé de la sélection du Goncourt
+    publisher: France 24
+    published_date: 2026-09-25
+    excerpt: "Dans un communiqué publié vendredi 25 septembre, l'Académie Goncourt a annoncé supprimer le roman \"C'était ça ou mourir\" de sa sélection. ... le romancier canado-haïtien de 38 ans est accusé de plagiats et d'utilisation de l'intelligence artificielle."
+  - url: https://www.lefigaro.fr/livres/le-prochain-goncourt-se-trouve-parmi-ces-quatre-auteurs-20261027
+    title: Le prochain Goncourt se trouve parmi ces quatre auteurs
+    publisher: Le Figaro
+    published_date: 2026-10-27
+    excerpt: "Le lauréat se trouvera forcément parmi ces quatre auteurs. ... Ont donc été écartés de la deuxième sélection Anne Godard pour Nous aussi, qui faisait figure de favorite, ... Depuis le décès de Didier Decoin, le jury est composé de neuf membres et présidé par Philippe Claudel. ... la voix double du président n'aura pas lieu d'être."
+  - url: https://leclaireur.fnac.com/article/698572-prix-goncourt-quel-finaliste-remportera-ledition-2026/
+    title: "Prix Goncourt : qui pour remporter l'édition 2026 ?"
+    publisher: L'Éclaireur Fnac
+    published_date: 2026-10-28
+    excerpt: "Philippe Jaenada, avec son nouveau livre enquête L'inconnue du Quai de Javel est probablement l'auteur le plus cité ces derniers jours. ... En face, le roman contemplatif de Sylvain Prudhomme, De l'autre côté du lac, est largement plébiscité par la critique. ... Les deux écrivains font office de favoris."
+  - url: https://www.ouest-france.fr/culture/livres/lire-magazine/prix-goncourt-quel-ouvrage-va-remporter-la-precieuse-recompense-le-pronostic-des-journalistes-de-lire-magazine-ac407796-d384-11f1-af78-2d36ec019942
+    title: "Prix Goncourt : quel ouvrage va remporter la précieuse récompense ? Le pronostic des journalistes de « Lire Magazine »"
+    publisher: Ouest-France (Lire Magazine)
+    published_date: 2026-11-02
+    excerpt: "La rédaction en chef de Lire Magazine se prête au jeu des pronostics : l'un défend avec enthousiasme Philippe Jaenada, l'autre mise sur Yannick Haenel."
+event_date: 2026-11-03
+outcome_summary: >-
+  On Tuesday 3 November 2026 at Drouant, the Académie Goncourt awarded the
+  124th Prix Goncourt to Philippe Jaenada (62) for "L'inconnue du quai de
+  Javel" (Flammarion) in the first round of voting, by six votes to three
+  for Sylvain Prudhomme ("De l'autre côté du lac", Minuit). Yannick Haenel
+  and Clémentine Mélois received no votes. Jury president Philippe Claudel
+  said the book "rend visible une femme qui a été invisibilisée". Jaenada
+  succeeds Laurent Mauvignier (2025, "La Maison vide"). The Prix Renaudot,
+  announced at the same time, went to François-Henri Désérable for "Le
+  Palais" (Gallimard).
+resolved_answer: >-
+  Philippe Jaenada won for "L'inconnue du quai de Javel" in the first round,
+  6 votes to 3 for Sylvain Prudhomme.
+outcome_sources:
+  - url: https://www.academiegoncourt.com/prix-goncourt-2026
+    title: Prix Goncourt 2026
+    publisher: Académie Goncourt
+    published_date: 2026-11-03
+    excerpt: "Le 124ème prix Goncourt a été décerné, au premier tour de scrutin, à Philippe Jaenada pour son roman L'inconnu du quai de Javel, paru aux Éditions Flammarion, chez Drouant ce mardi 3 novembre 2026. Philippe Jaenada a remporté ce Prix Goncourt par six voix devant Sylvain Prudhomme qui a obtenu trois voix pour De l'autre côté du lac aux Éditions de Minuit."
+  - url: https://www.franceinfo.fr/culture/livres/prix-litteraires/philippe-jaenada-a-remporte-le-prix-goncourt-2026-avec-l-inconnue-du-quai-de-javel_8265806.html
+    title: Philippe Jaenada a remporté le prix Goncourt 2026 avec "L'Inconnue du quai de Javel"
+    publisher: franceinfo
+    published_date: 2026-11-03
+    excerpt: "Il était le favori : Philippe Jaenada remporte le prix Goncourt dès le premier tour pour L'Inconnue du quai de Javel. Il succède à Laurent Mauvignier. ... Les neuf membres de l'Académie lui ont accordé six voix et trois autres à Sylvain Prudhomme pour De l'autre côté du lac."
+  - url: https://www.20minutes.fr/arts-stars/livres/4259984-20261103-goncourt-2026-philippe-jaenada-remporte-prestigieux-prix-roman-inconnue-quai-javel
+    title: "Goncourt 2026 : Philippe Jaenada remporte le prestigieux Prix pour son roman « L'inconnue du quai de Javel »"
+    publisher: 20 Minutes
+    published_date: 2026-11-03
+    excerpt: "alors que Clémentine Mélois et Sylvain Prudhomme faisaient figure d'outsiders et Yannick Haenel et Philippe Jaenada de grands favoris, c'est bien ce dernier qui s'est vu décerner, mardi 3 novembre 2026, le plus prestigieux des Prix littéraires francophones"
+notes: >-
+  No real-money prediction market or bookmaker odds found; the only "market"
+  was a free jouepredict.fr poll that closed on 5 October with too few
+  participants to show a share, so market is omitted. Soft spots: Jaenada
+  was the most-cited favourite (franceinfo afterwards: "Il était le
+  favori"), so a well-informed forecaster had an edge, though pre-event
+  previews split between Jaenada, Prudhomme and Haenel. The Le Figaro page
+  returned 403 to direct fetch; its excerpt comes from the retrieved search
+  result text. The Lire Magazine piece is truncated in the retrieved
+  version, so only its standfirst is quoted. Earlier reports (franceinfo, Le
+  Parisien, Sept 2026) gave the proclamation date as 4 November; all later
+  sources and the Académie confirm 3 November. The Académie page misspells
+  the title as "L'inconnu du quai de Javel"; the 20 Minutes source wrongly
+  dates the Orélien withdrawal to 2025. The Orélien withdrawal (25 Sep) is
+  just after the models' 22 Sep cutoff, so it is new information to them.

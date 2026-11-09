@@ -2,22 +2,19 @@ id: f1-mexico-city-gp-2026-winner
 domain: sports
 title: Winner of the 2026 Formula 1 Mexico City Grand Prix
 question: >-
-  Who will win the 2026 Formula 1 Mexico City Grand Prix on 1 November 2026?
-question_type: multiple_choice
-options:
-  - "Lewis Hamilton"
-  - "Charles Leclerc"
-  - "George Russell"
-  - "Kimi Antonelli"
-  - "Max Verstappen"
-  - "Lando Norris"
-  - "Oscar Piastri"
-  - "Another driver"
+  Who will win the 2026 Formula 1 Mexico City Grand Prix on 1 November 2026,
+  and how will the race and the championship picture unfold?
+question_type: open
 resolution_criteria: >-
-  Resolves to the driver classified first in the official FIA / Formula 1
-  race result of the 2026 Mexico City Grand Prix (Autodromo Hermanos
-  Rodriguez, 1 November 2026), including any post-race penalties applied on
-  the day.
+  Judged against the official FIA / Formula 1 race result (Autodromo Hermanos
+  Rodriguez, 1 November 2026), including post-race penalties applied on the
+  day. Core outcome: Max Verstappen (Red Bull) won from fifth on the grid,
+  0.799s ahead of Lewis Hamilton, with Kimi Antonelli third and clinching the
+  world title as the youngest champion ever. Also check: Leclerc fourth,
+  Norris fifth, Russell sixth; the lap-1 Hamilton–Leclerc battle with both off
+  track and Leclerc's 5s penalty; Russell's 10s penalty for spinning Hadjar;
+  Verstappen taking the lead via the pit stops; a red flag after Bottas's
+  crash; and a late Safety Car after a Piastri–Lindblad collision.
 context_summary: >-
   Mercedes' 20-year-old Kimi Antonelli arrives at the Mexico City Grand Prix
   (71 laps, 1 November 2026) with nine wins this season, including Austin the
@@ -70,7 +67,10 @@ outcome_summary: >-
   survived minor contact with Hamilton into Turn 1. A late Safety Car followed
   a Piastri-Lindblad collision. Verstappen nailed the restart with eight laps
   left and held Hamilton within a second to the flag.
-resolved_answer: "Max Verstappen"
+resolved_answer: >-
+  Max Verstappen won from fifth on the grid, 0.799s ahead of Lewis Hamilton,
+  with Kimi Antonelli third to clinch the 2026 title as the youngest F1
+  champion ever.
 outcome_sources:
   - url: https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH
     title: Antonelli crowned youngest ever F1 champion as Verstappen wins eventful Mexico City Grand Prix
@@ -95,4 +95,4 @@ market:
     "Oscar Piastri": 0.003
     "Another driver": 0.007
   as_of: 2026-11-01
-notes: "Probabilities normalised from bet365 race-day fractional odds (after qualifying)."
+notes: "Probabilities normalised from bet365 race-day fractional odds (after qualifying). They refer to the former closed framing (race winner from a list of drivers); the question is now open."

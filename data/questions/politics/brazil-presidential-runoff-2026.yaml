@@ -2,13 +2,19 @@ id: brazil-presidential-runoff-2026
 domain: politics
 title: Brazil presidential runoff, 25 October 2026 (Lula vs Flávio Bolsonaro)
 question: >-
-  Who will win Brazil's presidential runoff election on 25 October 2026 between
-  incumbent President Luiz Inácio Lula da Silva and Senator Flávio Bolsonaro?
-question_type: multiple_choice
-options: ["Luiz Inácio Lula da Silva", "Flávio Bolsonaro"]
+  What will happen in Brazil's presidential runoff on 25 October 2026 between
+  incumbent President Luiz Inácio Lula da Silva and Senator Flávio Bolsonaro:
+  who will win, by what margin, and what will follow in the immediate
+  aftermath?
+question_type: open
 resolution_criteria: >-
-  Resolves to the candidate declared winner of the 25 October 2026 second round
-  by Brazil's Superior Electoral Court (TSE), based on valid votes.
+  Judged against the TSE's official second-round result of 25 October 2026.
+  Core outcome: Lula won, 51.79% (about 64.26 million votes) to Flávio
+  Bolsonaro's 48.21% (about 59.83 million), a margin of about 3.6 points or
+  4.4 million votes, on turnout of about 80.8%. Also check: the comeback after
+  trailing in the first round (a first since 1985) and a fourth term for Lula;
+  a tense count in which Flávio briefly led; Flávio refusing to recognise the
+  result and calling for annulment while the TSE confirmed Lula's win.
 context_summary: >-
   Brazil held the first round of its 2026 presidential election on 4 October.
   In a result that both pollsters and prediction markets had failed to
@@ -58,7 +64,10 @@ outcome_summary: >-
   confirmed Lula's victory. World leaders congratulated Lula. The result was a
   major upset relative to prediction markets, which had Flávio at roughly
   75-80% until election day.
-resolved_answer: Luiz Inácio Lula da Silva
+resolved_answer: >-
+  Lula won the runoff 51.79% to 48.21% (a margin of about 4.4 million votes),
+  coming back from second place in the first round to win a fourth term;
+  Flávio Bolsonaro refused to recognise the result.
 outcome_sources:
   - url: https://www.bbc.com/news/articles/ckm23y3mg1yyo
     title: Lula wins fourth term in dramatic Brazil election comeback
@@ -83,4 +92,5 @@ market:
 notes: >-
   Market prices from Preduck price log (https://blog.preduck.com/blog/brazil-election-odds)
   and Action Network preview: Polymarket Flávio 78% / Lula 22% on 22 Oct, Flávio 79.9% on 24 Oct;
-  Kalshi Flávio 79% / Lula 22%.
+  Kalshi Flávio 79% / Lula 22%. Market probabilities refer to the former closed
+  framing (winner only); the question is now open.

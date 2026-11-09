@@ -1,0 +1,108 @@
+id: malaysia-perikatan-deregistration-2026
+domain: law
+title: Fate of Malaysia's opposition coalition Perikatan Nasional under a deregistration threat
+question: >-
+  Malaysia's Registrar of Societies (RoS) suspended the opposition coalition
+  Perikatan Nasional (PN) and gave it 30 days to show cause why it should not
+  be deregistered, just as a Melaka state election was called. What will
+  happen to PN's legal status, and to its ability to contest the Melaka
+  election under its own name and logo, by the end of October 2026?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on events between 14 October and about 4 November 2026. The judge
+  should check, first, whether the RoS actually deregistered PN, and when.
+  Second, what the courts did: whether the High Court granted or refused a
+  stay of the suspension or deregistration, and whether either side
+  appealed. Third, whether PN was able to field candidates under its own name
+  and logo at the Melaka nomination day on 31 October, or had to use a
+  component party's banner or stay out. Predictions that get both the
+  regulator's action and the court outcome right score best.
+context_summary: >-
+  Perikatan Nasional (PN) is Malaysia's main opposition coalition. Its
+  components include PAS, Gerakan, MIPP, Wawasan and Pejuang; PN
+  secretary-general Takiyuddin Hassan is also PAS's secretary-general. In
+  August 2026 one component, Bersatu, complained to the Registrar of Societies
+  (RoS) that it had been excluded from a 16 July PN Supreme Council meeting
+  and raised its membership status. On 22 September the RoS issued a notice
+  under the Societies Act 1966 giving PN 30 days to explain why its
+  registration should not be cancelled, saying PN had breached Clause 7.1 of
+  its constitution. On 23 September it suspended all PN activities except
+  responding to the notice. The notices coincided with the dissolution of the
+  Melaka state assembly ahead of a snap election, with nomination day on
+  31 October and polling on 14 November. The suspension barred PN from
+  meeting, issuing statements, campaigning or using its name and symbol. PN
+  alleged possible bad faith and, on 5 October, filed for judicial review
+  against the RoS director-general and Home Minister Saifuddin Nasution
+  Ismail. It argued it had not been heard or shown Bersatu's complaint.
+  Federal counsel called the challenge premature because the RoS had not yet
+  made a final decision. On 13 October High Court judge Azizan Md Arshad
+  granted leave for judicial review but refused an immediate interim stay,
+  leaving the suspension in force. He set 22 October for a full hearing on a
+  stay. PN said it was racing against time before nomination day.
+context_sources:
+  - url: https://www.malaymail.com/news/malaysia/2026/09/24/ros-suspends-perikatan-activities-issues-show-cause-notice-over-bersatu-complaint/236284
+    title: RoS suspends Perikatan activities, issues show-cause notice over Bersatu complaint
+    publisher: Malay Mail
+    published_date: 2026-09-24
+    excerpt: "The notice, issued under Subsection 13(2) of the Societies Act 1966, requires PN to address concerns within 30 days or face deregistration... both notices were served on consecutive days on September 22 and 23, directly coinciding with the announcement and dissolution of the Melaka State Legislative Assembly."
+  - url: https://www.thestar.com.my/news/nation/2026/10/13/high-court-grants-perikatan-leave-to-challenge-ros-suspension-order
+    title: High Court grants Perikatan leave to challenge Registrar of Societies suspension order
+    publisher: The Star
+    published_date: 2026-10-13
+    excerpt: "Justice Azizan Md Arshad also did not allow an interim stay of execution of the suspension pending the substantive hearing of the judicial review against the ROS. The judge, however, fixed Oct 22 to hear an inter-parte stay application."
+event_date: 2026-10-20
+outcome_summary: >-
+  PN replied to the RoS on 12 October. On 20 October (announced late on
+  19-20 October), two days before the 30-day window would have lapsed, the
+  RoS cancelled PN's registration under subparagraph 13(1)(c)(iv) of the
+  Societies Act. It said PN's explanation failed to refute the grounds,
+  chiefly the exclusion of Bersatu in breach of Clause 7.1. PN considered an
+  appeal to the home minister and said it might contest under a component
+  party's banner. On 22 October, however, the High Court (Judge Azizan Md
+  Arshad) granted PN's stay application, freezing both the suspension and the
+  deregistration pending its judicial review. That let PN resume activities
+  and contest Melaka under its own name and logo. On 23 October the RoS
+  director-general and Home Minister appealed the stay to the Court of Appeal.
+  The appellate court twice postponed case management because the appellants
+  had not finished filing, so the stay stayed in force and PN fielded
+  candidates under its own logo on nomination day, 31 October. On 4 November
+  the Court of Appeal fixed 22 February 2027 to hear the RoS appeal. The High
+  Court set the judicial review hearing for 7 December 2026.
+resolved_answer: >-
+  The RoS deregistered PN on 20 October 2026, but on 22 October the High Court
+  stayed the deregistration and suspension pending judicial review. The
+  government's appeal was not heard in time (it is set for February 2027), so
+  PN contested the Melaka election under its own name and logo at the
+  31 October nomination.
+outcome_sources:
+  - url: https://www.straitstimes.com/asia/se-asia/perikatan-nasionals-registration-cancelled-after-failing-to-refute-grounds-for-deregistration
+    title: PN registration cancelled by RoS after failed appeal
+    publisher: The Straits Times (Bernama)
+    published_date: 2026-10-20
+    excerpt: "Malaysia's Registrar of Societies cancelled Perikatan Nasional's registration after its Oct 12 reply failed to refute the grounds for deregistration... acted under subparagraph 13(1)(c)(iv) of the Societies Act 1966."
+  - url: https://www.thestar.com.my/news/nation/2026/10/23/ros-home-minister-file-appeal-against-stay-on-perikatan039s-deregistration
+    title: ROS, Home Minister file appeal against stay on Perikatan's deregistration
+    publisher: The Star
+    published_date: 2026-10-23
+    excerpt: "Yesterday, the High Court has allowed Perikatan's application to stay the suspension and deregistration imposed on them by the ROS, pending the disposal of a judicial review... The deregistration took place two days before the 30-day stated in the notice lapsed."
+  - url: https://www.scoop.my/news/301811/pn-can-use-own-logo-in-melaka-polls-as-court-of-appeal-postpones-hearing/
+    title: PN can use own logo in Melaka polls as Court of Appeal postpones hearing
+    publisher: Scoop
+    published_date: 2026-10-30
+    excerpt: "The postponement means the High Court's stay order remains in force, allowing the coalition to use its own logo for tomorrow's nomination day."
+  - url: https://theedgemalaysia.com/node/824504
+    title: Appellate court sets February for ROS appeal against PN deregistration stay
+    publisher: The Edge Malaysia
+    published_date: 2026-11-04
+    excerpt: "The Court of Appeal has fixed Feb 22, 2027 to hear an appeal by the Registrar of Societies (ROS) against a High Court ruling that paused the order to deregister the Perikatan Nasional (PN) coalition... The High Court will hear their judicial review application on Dec 7."
+market: null
+notes: >-
+  No market. The question is framed as of about 14 October, after the High
+  Court refused an interim stay. The New Straits Times reported the
+  deregistration on the evening of 19 October; most outlets date it 20 October.
+  This question is about a regulator and the courts, not about the Melaka vote
+  result (polling is on 14 November, outside the window). The Straits Times
+  headline says "after failed appeal", but the article describes PN's failed
+  show-cause reply. The PN contest under component banners was floated by
+  Takiyuddin (FMT, 20 Oct) but never happened.

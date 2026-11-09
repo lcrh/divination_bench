@@ -3,21 +3,16 @@ domain: sports
 title: 2026 MLB World Series - Milwaukee Brewers vs Tampa Bay Rays
 question: >-
   Who will win the 2026 World Series between the Milwaukee Brewers and the
-  Tampa Bay Rays, and in how many games?
-question_type: multiple_choice
-options:
-  - "Brewers in 4"
-  - "Brewers in 5"
-  - "Brewers in 6"
-  - "Brewers in 7"
-  - "Rays in 4"
-  - "Rays in 5"
-  - "Rays in 6"
-  - "Rays in 7"
+  Tampa Bay Rays, starting 23 October 2026, and how will the series unfold?
+question_type: open
 resolution_criteria: >-
-  Resolves to the team that wins four games in the best-of-seven 2026 World
-  Series (scheduled to start 23 October 2026) combined with the total number
-  of games played in the series, per MLB official results.
+  Judged against MLB official results. Core outcome: the Brewers won the
+  series 4-1, clinching their first championship with a 4-1 win in Game 5 at
+  Tropicana Field on 28 October. Also check: game scores (G1 3-2, G2 5-4, G3
+  10-1 Brewers; G4 Rays 4-3 in 12 innings on a walk-off; G5 4-1 Brewers);
+  Misiorowski winning two games; William Contreras as World Series MVP (.381,
+  four RBIs); Jackson Chourio's 10 hits in the first four games; and
+  Milwaukee's 11-2 postseason record.
 context_summary: >-
   The 2026 World Series opens on Friday 23 October at American Family Field
   in Milwaukee. It is the first Fall Classic since 1980 in which neither team
@@ -66,7 +61,10 @@ outcome_summary: >-
   throwing out four base stealers and going 10-for-13 on automated ball-strike
   (ABS) challenges. Jackson Chourio tied Babe Ruth's record of 10 hits in the
   first four games of a World Series. Milwaukee went 11-2 in the postseason.
-resolved_answer: "Brewers in 5"
+resolved_answer: >-
+  The Brewers beat the Rays 4-1, winning Game 5 4-1 on 28 October for their
+  first title; the Rays' only win was a 12-inning walk-off in Game 4, and
+  William Contreras was named MVP.
 outcome_sources:
   - url: https://en.wikipedia.org/wiki/2026_World_Series
     title: 2026 World Series
@@ -96,4 +94,4 @@ market:
     "Rays in 6": 0.116
     "Rays in 7": 0.134
   as_of: 2026-10-20
-notes: "Market probabilities are implied from American correct-score odds, normalised to remove the bookmaker margin. Series winner alone: Brewers about 0.60."
+notes: "Market probabilities are implied from American correct-score odds, normalised to remove the bookmaker margin. Series winner alone: Brewers about 0.60. They refer to the former closed framing (winner and series length); the question is now open."

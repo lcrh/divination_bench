@@ -1,0 +1,87 @@
+id: herugavialis-cairensis-2026
+domain: science
+title: What is Herugavialis cairensis, and why was it given that name?
+question: >-
+  In October 2026 scientists announced a newly named animal, Herugavialis
+  cairensis. What is it, and why was it given that name?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on (1) what kind of organism it is: living or extinct, which animal
+  group, roughly when and where it lived, and what fossil material it is based
+  on; and (2) the reasoning behind the name. A top answer gets the animal group,
+  the approximate age, the location and rock formation, and the explanation for
+  "Heru". Credit is reduced for answers that get only the generic meaning of the
+  Latin parts right. Extra precision: when the fossils were found and how they
+  were previously classified, the methods behind the new classification, and
+  where the paper was published.
+context_summary: >-
+  In early October 2026 a team of palaeontologists from the UK, Sweden, Germany
+  and Egypt formally named Herugavialis cairensis in a peer-reviewed paper. The
+  team included researchers from University College London, the Swedish Museum
+  of Natural History and Mansoura University in Egypt. The UCL group led by
+  Philip Mannion and Paul Burke had spent recent years using CT scans to
+  re-examine historical crocodylian fossils, especially long-snouted forms
+  whose classification was disputed. Other groups were also publishing on the
+  evolution of these animals, including new fossils from Peru in 2025.
+context_sources:
+  - url: https://discovery.ucl.ac.uk/id/eprint/10202699/
+    title: Evaluation of the endocranial anatomy of the early Paleogene north African gavialoid crocodylian Argochampsa krebsi and evolutionary implications for adaptation to salinity tolerance in marine crocodyliforms
+    publisher: Journal of Anatomy (via UCL Discovery)
+    published_date: 2025-01-15
+    excerpt: "Authors: Carly Pligersdorffer, Paul M. J. Burke, Philip D. Mannion (University College London)... Argochampsa krebsi is a gavialoid crocodylian..."
+  - url: https://royalsocietypublishing.org/rsbl/article/21/8/20250238/236036/Exceptional-fossils-from-Peru-and-an-integrative
+    title: Exceptional fossils from Peru and an integrative phylogeny reconcile the evolutionary timing and mode of Gavialis and its kin
+    publisher: Biology Letters (Royal Society)
+    published_date: 2025-08-06
+    excerpt: "The acquisition of a long and slender snout (longirostry) resulted in extremely similar morphology across crocodylians and, therefore, raised a conflict between morphological and molecular phylogenetic hypotheses involving the longirostrine living gharials, Gavialis gangeticus and Tomistoma schlegelii."
+event_date: 2026-10-06
+outcome_summary: >-
+  Herugavialis cairensis is an extinct gavialoid crocodylian (a gavial: a
+  long, thin-snouted, fish-eating crocodile) that lived about 45 million years
+  ago, in the Middle Eocene (Lutetian), in the shallow sea then covering
+  northern Egypt. It is known from a nearly complete skull of about 18 inches
+  and other fossils collected in the 1920s at Gebel Mokattam east of Cairo, in
+  the Mokattam Formation limestone. That is the same rock formation the Great
+  Sphinx of Giza was carved from. The fossils were described in 1927 as
+  Tomistoma cairense, a relative of the living false gharial. CT scanning showed
+  differences such as telescoped, raised eye-socket rims, and phylogenetic
+  analysis showed it is not close to Tomistoma, so it was given a new genus. The
+  name honours the Egyptian god Heru (Horus), often linked to the Sphinx ("Horus
+  of the Horizon"). The choice was made because the skull, like the Sphinx, is
+  missing the tip of its nose/snout and comes from the same rock. "-gavialis"
+  reflects its kinship with Gavialis, and "cairensis" refers to Cairo. The paper
+  (Burke et al.) appeared in Royal Society Open Science on 7 October 2026, with
+  embargoed coverage published the evening of 6 October US time.
+resolved_answer: >-
+  It is an extinct, roughly 45-million-year-old (Middle Eocene) gavial, a
+  long-snouted fish-eating crocodile, from the Mokattam Formation near Cairo.
+  The fossils were found in the 1920s and were previously classed as Tomistoma
+  cairense. It was named after the god Heru (Horus) because it comes from the
+  same rock as the Great Sphinx and, like the Sphinx, is missing the tip of its
+  nose.
+outcome_sources:
+  - url: https://nautil.us/from-the-great-sphinxs-raw-materials-a-new-crocodile-species-surfaces-1285592
+    title: From the Great Sphinx's Raw Materials, a New Crocodile Species Surfaces
+    publisher: Nautilus
+    published_date: 2026-10-06
+    excerpt: "That same material—from the Mokattam Formation east of Cairo—has now yielded a new species of crocodile: Herugavialis cairensis... 'Given this coincidence with the famously missing nose of the Great Sphinx, we decided to name the new crocodile after the Egyptian god Heru,' explained lead study author Paul Burke."
+  - url: https://royalsocietypublishing.org/rsos/article/13/10/261173/483496/Cranial-anatomy-of-the-Middle-Eocene-Egyptian
+    title: Cranial anatomy of the Middle Eocene Egyptian crocodylian Herugavialis cairensis provides new insights into gavialoid diversity in the Mediterranean region
+    publisher: Royal Society Open Science
+    published_date: 2026-10-07
+    excerpt: "Heru, after the Egyptian god (also known as Horus), is often associated with, and possibly the inspiration for, the Great Sphinx of Giza. The latter was sculpted from the Mokattam Formation, from which the type specimen of H. cairensis was recovered, with both sharing the absence of the anterior tip of their nose/snout."
+  - url: https://www.smithsonianmag.com/smart-news/a-century-ago-an-extinct-crocidilians-skull-was-found-in-the-rocks-that-built-the-sphinx-turns-out-it-belonged-to-a-new-species-180989641/
+    title: A Century Ago, an Extinct Crocodilian's Skull Was Found in the Rocks That Built the Sphinx. Turns Out, It Belonged to a New Species
+    publisher: Smithsonian Magazine
+    published_date: 2026-10-09
+    excerpt: "In the 1920s, several fossilized remains, including a largely intact crocodile-like skull, emerged from the roughly 45-million-year-old Mokattam Formation at a site near Cairo... Until now, the well-preserved skull was the holotype... for the extinct T. cairense."
+notes: >-
+  Taxonomically this is a new genus for an already-described species (Tomistoma
+  cairense, 1927 becomes Herugavialis cairensis), though press coverage calls
+  it a "new species". The name itself gives away "gavial" and "Cairo", so the
+  question also asks why it was named that way: the Sphinx and Heru link cannot
+  be guessed from the Latin. Nautilus published at 6:00 PM CDT on 6 Oct 2026
+  (the embargo lift), so event_date is 6 Oct, while the paper's online date is
+  7 Oct. The UCL press release (7 Oct) was seen only through search snippets
+  because direct fetches timed out, so it is not cited.

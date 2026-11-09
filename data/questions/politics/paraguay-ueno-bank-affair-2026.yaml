@@ -1,0 +1,115 @@
+id: paraguay-ueno-bank-affair-2026
+domain: politics
+title: How Paraguay's ueno bank affair plays out in early November 2026
+question: >-
+  In October 2026 Paraguay's fast-growing digital bank ueno, which has
+  political ties to President Santiago Peña and to the central bank's
+  president, came under regulatory scrutiny over loans to related companies.
+  What will happen with the ueno affair by 7 November 2026, for the bank
+  itself, for the central bank's leadership and for President Peña?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on events up to 7 November 2026. The judge should check three things.
+  First, ueno's fate: whether it recapitalised and carried on, was put under
+  intervention or resolution, or failed, and whether customers' accounts were
+  frozen. Second, whether central bank president Carlos Carvallo stayed or
+  left. Third, President Peña's political fate: whether he stayed in office,
+  faced impeachment, resigned or was removed, and whether he faced criminal
+  proceedings. A prediction scores well if it gets the scale right (a contained
+  regulatory episode versus a bank collapse and a presidential crisis) and the
+  key outcomes for Peña.
+context_summary: >-
+  Ueno, launched in 2021 by Paraguay's Grupo Vázquez, had grown from a niche
+  fintech into one of the country's four domestic systemically important
+  banks. It said it had about 3 million customers, in a country of 6.5
+  million people, and managed roughly $800-850 million in public funds,
+  including pension-related money. In 2026 leaked regulatory documents
+  suggested excessive lending to companies linked to Grupo Vázquez, and the
+  central bank opened a preliminary administrative proceeding, which ueno said
+  was not a finding of wrongdoing. The case was politically sensitive. Central
+  bank president Carlos Carvallo had been ueno's president until August 2023,
+  though the central bank said he had recused himself. President Santiago
+  Peña, an economist elected in 2023 for the ruling Colorado Party, had been a
+  business partner of Grupo Vázquez until March 2025. In October, senators from
+  both the ruling party and the opposition demanded that the central bank's
+  leadership be replaced, and the banking association called the central
+  bank's report to the Senate "incomplete". Peña refused to change the central
+  bank leadership, citing its autonomy, and called the affair the "overflow" of
+  a technical matter into politics. On 16 October Fitch kept ueno's rating at
+  'BB' but moved the outlook to negative, citing rapid balance-sheet growth and
+  high intangible assets that left limited capital headroom. Ueno's 2031
+  global bonds fell to about 87 cents on the dollar, and a board member
+  promised good news on a capital injection "in the coming days". Paraguay
+  had recently won investment-grade ratings, and authorities repeatedly tried
+  to calm markets. An internal Colorado Party contest over the 2028
+  presidential nomination added to the pressure.
+context_sources:
+  - url: https://www.ueno.com.py/inversores/wp-content/uploads/sites/3/2026/10/Risk-Rating-Report-%E2%80%93-Fitch-Ratings-%E2%80%93-October-2026.pdf
+    title: Fitch Revises Ueno Bank's Outlook to Negative; Affirms IDR at 'BB'
+    publisher: Fitch Ratings (hosted by ueno)
+    published_date: 2026-10-16
+    excerpt: "The Negative Outlook reflects the downside potential for Ueno's capitalization metrics due to rapid balance-sheet growth and high intangible assets that have tightened the bank's loss-absorption capacity."
+  - url: https://www.investing.com/news/stock-market-news/paraguays-central-bank-under-pressure-over-politically-connected-lender-4967146
+    title: Paraguay's central bank under pressure over politically connected lender (Reuters)
+    publisher: Reuters via Investing.com
+    published_date: 2026-10-22
+    excerpt: "Paraguay's central bank and its president face mounting calls to resign as scrutiny intensifies over how they supervised a fast-growing digital bank with political ties... Peña described the situation as an 'overflow' of a technical matter."
+  - url: https://www.larepublica.co/globoeconomia/banco-paraguayo-ueno-busca-reforzar-capital-ante-caida-de-sus-bonos-4515873
+    title: Banco paraguayo Ueno busca reforzar capital ante caída de sus bonos
+    publisher: La República
+    published_date: 2026-10-31
+    excerpt: "'Esperamos tener muy buenas noticias para el mercado sobre el frente de capitalización en los próximos días'... vio caer sus bonos con vencimiento en 2031 a unos US$0,87 por dólar."
+event_date: 2026-11-06
+outcome_summary: >-
+  Ueno collapsed within a week. On Tuesday 3 November the central bank put it
+  into resolution, the regulator's strongest step short of immediate
+  liquidation, after finding that it had breached minimum solvency
+  requirements. The
+  accounts of nearly 3 million customers were frozen while they were moved to
+  other banks. Central bank president Carlos Carvallo resigned on 3 November.
+  Prosecutors issued arrest warrants for eight ueno executives, and protesters
+  demanded Peña's resignation. On Thursday 5 November Peña announced his
+  resignation, just as the lower house voted to open an impeachment trial. A
+  special session called to handle the resignation was adjourned in favour of
+  continuing with impeachment. On Friday 6 November the Senate removed him from office, and
+  Vice President Pedro Alliana, against whom the Colorado Party had dropped
+  impeachment proceedings, was sworn in as president. Peña was arrested. On
+  7 November prosecutors charged him with breach of trust and administration
+  for personal gain, and a judge ordered pretrial detention at a military
+  facility. Carvallo was also charged and detained. By 7 November about
+  $160 million had been paid to some 1.2 million savers under the deposit
+  guarantee. Reuters called it Paraguay's deepest political crisis in more
+  than a decade.
+resolved_answer: >-
+  Ueno was put into resolution on 3 November 2026 and millions of accounts were
+  frozen. Central bank chief Carvallo resigned. President Peña tried to resign
+  on 5 November, but the Senate impeached and removed him on 6 November and
+  Vice President Pedro Alliana took over. Peña was then arrested, charged and
+  held in pretrial detention.
+outcome_sources:
+  - url: https://www.reuters.com/5f374b32b07b/business/finance/what-is-ueno-bank-how-did-it-trigger-paraguays-political-crisis-2026-11-05/
+    title: What is ueno bank and how did it trigger Paraguay's political crisis?
+    publisher: Reuters
+    published_date: 2026-11-05
+    excerpt: "Paraguay's President Santiago Peña resigned on Thursday after the collapse of ueno... Carvallo resigned from the central bank on Tuesday after it put ueno into resolution... They issued arrest warrants for eight ueno executives this week."
+  - url: https://www.bbc.com/news/articles/c6p9g39vln3yo
+    title: Paraguay President Santiago Peña resigns after bank collapse
+    publisher: BBC News
+    published_date: 2026-11-05
+    excerpt: "His resignation came as Paraguay's lower house of congress voted in favour of pursuing an impeachment trial... a special session convened on Thursday to address his resignation was adjourned in favour of continuing with the impeachment process."
+  - url: https://www.investing.com/news/stock-market-news/how-a-digital-banks-collapse-toppled-paraguays-president-5010316
+    title: How a digital bank's collapse toppled Paraguay's president (Reuters)
+    publisher: Reuters via Investing.com
+    published_date: 2026-11-08
+    excerpt: "On Friday evening, President Santiago Peña was impeached after attempting to resign, and his vice president, Pedro Alliana, was sworn in... prosecutors charged him on Saturday with breach of trust and administration for personal gain. A judge ordered him held in pretrial detention at a military facility."
+market: null
+notes: >-
+  No market. The question is framed as of about 31 October, before the
+  resolution. The La República piece is dated 31 October but appears to
+  reprint an interview from about a week earlier ("Fitch last week").
+  Wikipedia's Current events portal says the Senate vote to remove Peña was
+  unanimous (AFP) and that he was placed under house arrest (UPI) before the
+  pretrial detention order. Reuters (8 Nov) reports detention at a military
+  facility. The BBC article's date (5 Nov) is inferred from its "3 days ago"
+  stamp on 8 Nov.

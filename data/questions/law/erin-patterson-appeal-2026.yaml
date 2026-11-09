@@ -5,16 +5,17 @@ question: >-
   How will Victoria's Court of Appeal rule on 30 October 2026 on Erin
   Patterson's appeal against her murder convictions and the prosecution's
   appeal against her sentence?
-question_type: multiple_choice
-options:
-  - "Convictions quashed and acquittal entered"
-  - "Convictions quashed and a retrial ordered"
-  - "Conviction appeal dismissed; sentence left unchanged (life with 33-year non-parole period)"
-  - "Conviction appeal dismissed; sentence increased (non-parole period lengthened or removed)"
+question_type: open
 resolution_criteria: >-
-  Resolves according to the orders of the Court of Appeal of the Supreme
-  Court of Victoria handed down on 30 October 2026 in both the conviction
-  appeal and the Director of Public Prosecutions' sentence appeal.
+  Judged against the orders of the Court of Appeal of the Supreme Court of
+  Victoria handed down on 30 October 2026 in both appeals. Core outcome: the
+  conviction appeal was dismissed (all seven grounds rejected, including the
+  jury-hotel ground) and the DPP's sentence appeal was upheld, with the
+  33-year non-parole period set aside and Patterson resentenced to life with
+  no non-parole period. Also check: leave granted on two grounds but both
+  rejected; the court's language ("extraordinarily cold and calculated",
+  "shocking criminality"); and her only remaining avenue being a special leave
+  application to the High Court within 28 days.
 context_summary: >-
   In July 2025 a Supreme Court of Victoria jury, sitting in Morwell, found
   Erin Patterson guilty of murdering her former in-laws Don and Gail
@@ -69,7 +70,10 @@ outcome_summary: >-
   history. Patterson, 52, watched by video link from the Dame Phyllis Frost
   Centre. Her only remaining avenue is a special leave application to the
   High Court of Australia, due within 28 days.
-resolved_answer: "Conviction appeal dismissed; sentence increased (non-parole period lengthened or removed)"
+resolved_answer: >-
+  The Court of Appeal dismissed Patterson's conviction appeal on all seven
+  grounds and upheld the DPP's sentence appeal, removing the 33-year
+  non-parole period so she must serve life with no possibility of parole.
 outcome_sources:
   - url: https://www.abc.net.au/news/2026-10-30/erin-patterson-loses-mushroom-murder-convictions-appeal/107326714
     title: Mushroom murderer Erin Patterson likely to die in jail after failed appeal
@@ -88,5 +92,6 @@ outcome_sources:
     excerpt: "'In all the circumstances, after anxious consideration, we have concluded that the case involved such shocking criminality that it is inappropriate to fix a non-parole period.'"
 market: null
 notes: >-
-  No market found. The options follow the four outcomes set out by AAP in its pre-judgment
-  explainer "Six ways mushroom killer's appeal could turn out".
+  No market found. The former multiple-choice options followed the four outcomes set out by
+  AAP in its pre-judgment explainer "Six ways mushroom killer's appeal could turn out"; the
+  question is now open.

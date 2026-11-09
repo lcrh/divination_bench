@@ -1,0 +1,102 @@
+id: earhart-taraia-object-expedition-2026
+domain: science
+title: What the Taraia Object expedition finds on Nikumaroro
+question: >-
+  An expedition led by the Archaeological Legacy Institute and Purdue
+  University sailed from Tarawa, Kiribati, in October 2026 to investigate
+  the "Taraia Object", an anomaly in the lagoon of Nikumaroro atoll that
+  its backers believed was Amelia Earhart's lost Lockheed Electra. What
+  will the expedition find, and what will it announce about the object?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged against the expedition's announcement of results (Purdue / ALI,
+  18-19 October 2026) and contemporaneous reports. Check what the object
+  was identified as, whether any aircraft wreckage or Earhart-linked
+  evidence was confirmed, what other artefacts were recovered, and the
+  team's stance on the castaway hypothesis and future searches. A
+  prediction scores well if it gets the identification (aircraft or not,
+  and if not, what) and the overall result (confirmation, inconclusive, or
+  debunked) right.
+context_summary: >-
+  Amelia Earhart and navigator Fred Noonan vanished on 2 July 1937 while
+  flying from Lae, New Guinea, to Howland Island in their Lockheed Electra
+  10-E, a plane bought with Purdue Research Foundation money. The official
+  view is that they ran out of fuel and crashed at sea near Howland. A
+  rival "castaway" hypothesis, championed for decades by TIGHAR, holds that
+  they landed on the reef at Nikumaroro (then Gardner Island), about 400
+  miles away in what is now Kiribati. It cites 1930s-era artefacts, bones
+  found in 1940, and radio bearings. Earlier searches came up empty: a
+  2019 Robert Ballard expedition found nothing, and a 2024 sonar "plane"
+  near Howland turned out to be rock. In 2020 an amateur researcher spotted
+  a plane-shaped anomaly at the edge of Nikumaroro's lagoon by the Taraia
+  Peninsula in satellite imagery. It was later found in aerial photos going
+  back to 1938. The Archaeological Legacy Institute (ALI), led by Richard
+  Pettigrew, together with Purdue, said it was "very likely" the Electra
+  and planned a Phase 1 survey before possible excavation. The trip was
+  postponed from November 2025 by Kiribati approvals and cyclone season.
+  On 7 October 2026 a 17-person team, including three Kiribati
+  representatives, left Tarawa on the Marin Mainiku for the 830-nautical-mile
+  voyage with magnetometer and sonar gear, due to arrive around
+  12-13 October. Pettigrew expected an identification within a couple of
+  days of arrival and called finding the Electra "the discovery of a
+  lifetime". TIGHAR's Ric Gillespie was sceptical, saying the object looked
+  like a fallen tree.
+context_sources:
+  - url: https://www.axios.com/local/indianapolis/2026/10/08/answers-imminent-in-purdue-s-search-for-amelia-earhart-plane
+    title: Answers imminent in Purdue's search for Amelia Earhart plane
+    publisher: Axios Indianapolis
+    published_date: 2026-10-08
+    excerpt: "A crew that includes three Boilermaker representatives left Tarawa Wednesday for a roughly 830-nautical-mile voyage to Nikumaroro with an expected arrival date of Oct. 13... Originally planned for November 2025, delays with the government of Kiribati's approval process and the looming cyclone season pushed the trip to this fall... Pettigrew said he expects an ID 'within just a couple of days' of arrival."
+  - url: https://www.purdue.edu/newsroom/2026/Q4/earhart-expedition-update-crew-at-sea-expected-to-arrive-on-nikumaroro-in-72-hours
+    title: "Earhart expedition update: Crew at sea, expected to arrive on Nikumaroro in 72 hours"
+    publisher: Purdue University
+    published_date: 2026-10-09
+    excerpt: "Their focus will be inspecting the Taraia Object, an anomaly in Nikumaroro's lagoon first noticed in satellite imagery in 2020 and later confirmed to be visible on aerial photos taken as far back as 1938. The vessel is making good time and is tentatively expected to arrive at Nikumaroro around midday Monday, Oct. 12, local time."
+  - url: https://www.bbc.com/news/articles/c3y0e871rk4vo
+    title: Expedition hopes to find aviator Amelia Earhart's plane on remote island
+    publisher: BBC News
+    published_date: 2026-10-10
+    excerpt: "'Finding Amelia Earhart's Electra aircraft would be the discovery of a lifetime,' Richard Pettigrew... said... Ric Gillespie... told news agency Reuters that the object looked like a tree that had fallen from the atoll into the nearby water. 'I'd love to find that airplane. It ain't gonna happen,' he said."
+event_date: 2026-10-18
+outcome_summary: >-
+  On 18 October 2026 (US time; 19 October on Nikumaroro) the expedition
+  announced "no conclusive evidence" that Earhart's Electra was in the
+  lagoon. The Taraia Object was likely a collection of large trees
+  deposited on the peninsula's sandspit. Much of it had broken up and
+  washed away, leaving one Y-shaped segment. Its reflective, metal-like
+  appearance came from a carbonate veneer of concreted coral sand. A
+  magnetometer anomaly west of the site turned out to be a roughly
+  30-inch (about 3-foot) steel tube or pipe that the archaeologists judged
+  not to be from the aircraft. Hydroprobing around the object found only
+  coral rubble. The weather-extended trip spent seven days at Nikumaroro,
+  four of them onshore. The team said it still believed the broader
+  castaway hypothesis, would keep studying the artefacts it found, and
+  Purdue pledged to continue the search.
+resolved_answer: >-
+  No sign of the Electra. The Taraia Object turned out to be a pile of large
+  trees and debris whose shiny look came from a coral-sand carbonate
+  coating. The team found only incidental artefacts, such as a steel tube,
+  but said it still backed the castaway theory.
+outcome_sources:
+  - url: https://www.purdue.edu/newsroom/2026/Q4/search-for-amelia-earharts-plane-continues-after-taraia-object-expedition-on-nikumaroro-rules-out-latest-hypothesis/
+    title: Search for Amelia Earhart's plane continues after Taraia Object expedition on Nikumaroro rules out latest hypothesis
+    publisher: Purdue University
+    published_date: 2026-10-18
+    excerpt: "Evidence gathered at the Taraia Peninsula on Nikumaroro confirmed that the visual anomaly first seen in satellite imagery in 2020 was likely a collection of large trees deposited along the peninsula's sandspit... The fragment's reflective surface, long associated with the idea that the object was a metallic substance, was due to its carbonate veneer."
+  - url: https://www.smithsonianmag.com/smart-news/researchers-claimed-a-blurry-object-on-apple-maps-was-very-likely-amelia-earharts-missing-plane-it-turned-out-to-be-a-collection-of-large-trees-180989734/
+    title: Researchers Claimed a Blurry Object on Apple Maps Was 'Very Likely' Amelia Earhart's Missing Plane. It Turned Out to Be a 'Collection of Large Trees'
+    publisher: Smithsonian Magazine
+    published_date: 2026-10-22
+    excerpt: "On October 18, the researchers announced the results: They had found 'no conclusive evidence' of Earhart's plane on Nikumaroro. That tantalizing shape in the satellite imagery had likely been 'a collection of large trees.'"
+market: null
+notes: >-
+  No market. The subject is American (Earhart, Purdue), but the site and
+  part of the team are Kiribati. Departure date differs by source: Purdue's
+  results release says 6 October, while Axios, BBC and Purdue's own
+  pre-trip updates say 7 October local time. The "very likely" quote and
+  the Phase 1-3 plan come from ALI material quoted in the Smithsonian
+  outcome article. Smithsonian also gives the 17-person team size, which
+  matches Purdue's roster. The steel-tube detail combines Purdue (about 30
+  inches, found in the lagoon) with a UWF/Newswise account (about 3 feet,
+  judged unrelated to the aircraft).

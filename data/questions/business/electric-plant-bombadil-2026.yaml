@@ -1,0 +1,84 @@
+id: electric-plant-bombadil-2026
+domain: business
+title: What is Bombadil, unveiled by Electric Plant Company?
+question: >-
+  On 20 October 2026 the San Francisco start-up Electric Plant Company came out
+  of stealth and unveiled something called "Bombadil". What is Bombadil, and
+  what does it do?
+question_type: open
+options: null
+resolution_criteria: >-
+  Judged on how accurately and specifically the answer describes Bombadil: what
+  kind of thing it is (product type / technology), what input it works from,
+  what it outputs or measures, and who it is for. A top answer identifies the
+  core technology and data source precisely. Vague answers ("some kind of AI
+  product for plants") get limited credit. Further correct specifics (for
+  example any associated hardware, scale figures, or the size of the funding
+  round) add precision.
+context_summary: >-
+  Electric Plant Company is a San Francisco start-up co-founded in 2023 by CEO
+  Justin Mast and chief scientist Lee von Kraus. Mast previously founded
+  Bloomscape, an online garden centre that shipped full-grown houseplants
+  across the US, and comes from a family of commercial greenhouse operators.
+  Von Kraus is a neuroscientist who has worked with DARPA and NASA and
+  co-founded Halo Neuroscience. The company had operated mostly out of public
+  view. On 20 October 2026 it formally emerged from stealth, announcing seed
+  funding and the debut of "Bombadil", named after the Tolkien character. Its
+  press materials described it as a first of its kind.
+context_sources:
+  - url: https://mastj.substack.com/p/we-are-planetary-gardeners
+    title: "We Are Planetary Gardeners: A Techno-Biophilic Vision"
+    publisher: Justin's Substack (Justin Mast)
+    published_date: 2025-02-24
+    excerpt: "In April 2023, a mutual investor introduced me to my co-founder. Lee von Kraus is a contrarian scientist... collaborations with DARPA and NASA... Prior to The Electric Plant Company, I started Bloomscape, an online garden center that shipped full-grown houseplants around the country."
+event_date: 2026-10-20
+outcome_summary: >-
+  Bombadil is an AI foundation model for plant electrophysiology, which Electric
+  Plant Company called the first of its kind. It reads a plant's health and
+  physiological state directly from the plant's own electrical signals, rather
+  than inferring it from soil, weather or visual inspection. It is a
+  Transformer, pretrained self-supervised (without labels) on more than 4
+  million hours of electrical recordings from over 1,400 plants across about
+  100 species (125+ by launch) in ten environments. The company says its corpus
+  has since grown to 7 million hours. Its first readout head estimates seven
+  physiological stress markers, including photosystem II efficiency, leaf
+  temperature relative to the air, and the Crop Water Stress Index. It also
+  works on species it never saw in training. The signals come from "Bud", a
+  low-cost sensor costing tens of dollars that is screwed into the plant's
+  cambium and streams microvolt signals to the cloud. Target users are growers,
+  orchards, agribusiness, forestry and plant-care operators, and Mast claimed
+  water savings of 20% or more. The company announced an $11.2M seed round led
+  by Onto Ventures and Climactic, and released a technical white paper.
+resolved_answer: >-
+  Bombadil is Electric Plant Company's AI foundation model for plant
+  electrophysiology. Fed by the company's low-cost "Bud" sensor, it decodes the
+  electrical signals inside living plants to estimate their health and stress
+  in real time, across about 100+ species. It was trained on more than 4
+  million hours of recordings and launched alongside an $11.2M seed round.
+outcome_sources:
+  - url: https://www.businesswire.com/news/home/20261020814345/en/Electric-Plant-Company-Launches-From-Stealth-With-%2411.2M-in-Funding-and-a-Foundation-AI-Model-for-Plants-Bombadil
+    title: Electric Plant Company Launches From Stealth With $11.2M in Funding and a Foundation AI Model for Plants, Bombadil
+    publisher: Business Wire
+    published_date: 2026-10-20
+    excerpt: "Electric Plant Company today emerged from stealth with $11.2 million in seed funding and the debut of Bombadil, the first AI foundation model for plant electrophysiology. Trained on more than 4 million hours of recordings across 100 species... It reads a plant's health state directly from the plant's own electrical activity."
+  - url: https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/
+    title: Plants can speak using electricity, so this startup built an AI model to decipher their language
+    publisher: TechCrunch
+    published_date: 2026-10-20
+    excerpt: "Electric Plant... has been spending the past three years collecting data to build a large language model, Bombadil, capable of interpreting the subtle electrical signals coursing through a plant's stem and relaying details about the plant's needs to growers... The startup's sensors are also significantly cheaper than existing tools... 'This is tens of dollars.'"
+  - url: https://www.electricplant.co/research/bombadil-paper
+    title: "Bombadil: A Foundation Model for Plant Electrophysiology"
+    publisher: Electric Plant Co
+    published_date: 2026-10-19
+    excerpt: "Here we present Bombadil, a foundation model for plant electrophysiology, pretrained without labels on over 4 million hours of electrical signals recorded from 100 plant species in ten distinct environments... Bombadil tracks changes in seven physiological indicators of plant stress, even among species and stressors with no labels in training."
+notes: >-
+  The white paper carries the date 19 Oct 2026, but the public launch (press
+  release, TechCrunch, founder's post) was 20 Oct 2026, which is used as the
+  event_date. The context source is a Feb 2025 founder essay that already
+  discussed plants' electrical signalling and the company's mission. The
+  context summary deliberately leaves out that mission so the answer is not
+  given away. The company name, the Bloomscape background and the Tolkien
+  nature-spirit name still hint at plants. A strong answer must add the
+  foundation-model and electrophysiology specifics. Species counts vary by
+  source (100 in the press release and white paper, 125+ on TechCrunch and the
+  FAQ).

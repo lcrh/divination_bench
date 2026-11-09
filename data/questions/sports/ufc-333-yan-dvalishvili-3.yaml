@@ -2,15 +2,16 @@ id: ufc-333-yan-dvalishvili-3
 domain: sports
 title: UFC 333 - Petr Yan vs Merab Dvalishvili trilogy for the bantamweight title
 question: >-
-  Will Petr Yan retain the UFC bantamweight championship against Merab
-  Dvalishvili in their trilogy fight at UFC 333 in Abu Dhabi on 24 October
-  2026?
-question_type: binary
-options: ["Yes", "No"]
+  What will happen in the Petr Yan vs Merab Dvalishvili trilogy bout for the
+  UFC bantamweight title at UFC 333 in Abu Dhabi on 24 October 2026?
+question_type: open
 resolution_criteria: >-
-  Resolves Yes if Petr Yan is declared the winner of the UFC 333
-  bantamweight title bout against Merab Dvalishvili (any method). Resolves No
-  if Dvalishvili wins, or if the bout ends in a draw or no contest.
+  Judged against the official UFC 333 result. Core outcome: Petr Yan retained
+  the title by unanimous decision, 48-47 on all three scorecards. Also check
+  the fight's shape: Dvalishvili won the first two rounds on all cards and
+  the first half of round 3; a Yan body kick in round 3 turned the fight and
+  Yan took rounds 3, 4 and 5 on every card, winning the trilogy 2-1. The bout
+  was called a Fight of the Year contender.
 context_summary: >-
   UFC 333 at Etihad Arena on Yas Island, Abu Dhabi (24 October 2026) has two
   title fights. In the co-main event, men's bantamweight champion Petr Yan
@@ -54,7 +55,10 @@ outcome_summary: >-
   won the series 2-1. In the main event, Alexander Volkanovski retained the
   featherweight title with a second-round TKO of the previously unbeaten
   Movsar Evloev.
-resolved_answer: "Yes"
+resolved_answer: >-
+  Petr Yan retained the title by unanimous decision (48-47 on all three
+  cards), coming back after losing the first two rounds to take rounds 3-5,
+  and won the trilogy 2-1.
 outcome_sources:
   - url: https://www.cbssports.com/ufc/news/ufc-333-petr-yan-merab-dvalishvili-results-bantamweight-title-fight-of-the-year-contender/
     title: "UFC 333 results: Petr Yan outduels Merab Dvalishvili to retain title in Fight of the Year contender"
@@ -73,4 +77,4 @@ market:
     "Yes": 0.568
     "No": 0.432
   as_of: 2026-10-23
-notes: "Probabilities normalised from FanDuel moneyline Yan -148 / Dvalishvili +120."
+notes: "Probabilities normalised from FanDuel moneyline Yan -148 / Dvalishvili +120. They refer to the former closed framing (\"Yes\" = Yan retains); the question is now open."

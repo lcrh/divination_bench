@@ -5,19 +5,16 @@ question: >-
   For which line of research will the Nobel Assembly at Karolinska Institutet
   award the 2026 Nobel Prize in Physiology or Medicine, announced on 5
   October 2026, and to whom?
-question_type: multiple_choice
-options:
-  - "GLP-1 hormone biology (e.g. Drucker, Holst, Mojsov)"
-  - "Optogenetics (e.g. Deisseroth, Hegemann)"
-  - "Optical coherence tomography (Fujimoto, Huang, Swanson)"
-  - "Orexin and narcolepsy (Mignot, Yanagisawa)"
-  - "Another discovery"
+question_type: open
 resolution_criteria: >-
-  Resolves to the option matching the prize motivation in the official
-  Nobel Assembly press release of 5 October 2026. The laureates named in each
-  option are examples. The option resolves on the field even if the exact
-  set of laureates differs. Judges may also credit correctly naming the
-  laureates.
+  Judged against the official Nobel Assembly press release of 5 October 2026.
+  Core outcome: the prize went to optogenetics, "for their discoveries
+  concerning light-gated ion channels and optogenetics". Also check the
+  laureates: Karl Deisseroth (Stanford/HHMI), Peter Hegemann (Humboldt
+  University of Berlin) and Georg Nagel (University of Würzburg), sharing SEK
+  12 million equally. Getting the field right matters most; naming the exact
+  trio (including Nagel, and not Miesenböck or Boyden) earns extra credit.
+  Predicting GLP-1 or another field scores poorly.
 context_summary: >-
   The 2026 Nobel Prize in Physiology or Medicine will be announced in
   Stockholm on Monday 5 October, opening Nobel week. Nominations are secret
@@ -74,7 +71,10 @@ outcome_summary: >-
   Miesenböck and Ed Boyden, often named in optogenetics speculation, were
   left out, while Nagel was included. Clarivate noted that Deisseroth had
   been one of its Citation Laureates since 2019.
-resolved_answer: "Optogenetics (e.g. Deisseroth, Hegemann)"
+resolved_answer: >-
+  Optogenetics: the prize went jointly to Karl Deisseroth, Peter Hegemann and
+  Georg Nagel "for their discoveries concerning light-gated ion channels and
+  optogenetics".
 outcome_sources:
   - url: https://www.nobelprize.org/prizes/medicine/2026/press-release/
     title: "Press release: Nobel Prize in Physiology or Medicine 2026"
@@ -86,4 +86,4 @@ outcome_sources:
     publisher: Reuters
     published_date: 2026-10-05
     excerpt: "American Karl Deisseroth and Germans Peter Hegemann and Georg Nagel won the 2026 Nobel Prize in Physiology or Medicine on Monday for developing optogenetics."
-notes: "No liquid prediction market found; expert previews treated GLP-1 as the front-runner with optogenetics a strong alternative."
+notes: "No liquid prediction market found; expert previews treated GLP-1 as the front-runner with optogenetics a strong alternative. Formerly multiple choice over research fields (GLP-1, optogenetics, OCT, orexin, other); now open."

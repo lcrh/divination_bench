@@ -2,14 +2,18 @@ id: el-clasico-barcelona-real-madrid-2026-10
 domain: sports
 title: El Clasico, 25 October 2026 - Barcelona vs Real Madrid at Camp Nou
 question: >-
-  What will be the result of the La Liga match between FC Barcelona and Real
-  Madrid at the Spotify Camp Nou on 25 October 2026?
-question_type: multiple_choice
-options: ["Barcelona win", "Draw", "Real Madrid win"]
+  What will happen in the La Liga match between FC Barcelona and Real Madrid
+  at the Spotify Camp Nou on 25 October 2026: what will the result and score
+  be, and how will the game unfold?
+question_type: open
 resolution_criteria: >-
-  Resolves to the full-time (90 minutes plus stoppage time) result of the La
-  Liga match FC Barcelona vs Real Madrid played on 25 October 2026, per the
-  official La Liga match report.
+  Judged against the official La Liga match report. Core outcome: Real Madrid
+  won 2-1, ending Barcelona's 100% league start and cutting the gap at the top
+  to three points. Also check: Mbappe scoring both Madrid goals (41', a
+  clearance by Gerard Martin that struck him and went in; 87' winner from
+  Camavinga's cutback after Bellingham's skill); Raphinha's 61st-minute
+  equaliser from Pedri's pass; key saves by Lunin; and post-match clashes
+  between Madrid players and Barcelona fans.
 context_summary: >-
   Hansi Flick's Barcelona, the back-to-back La Liga champions, host Real
   Madrid on Sunday 25 October at the Spotify Camp Nou. Barcelona have won all
@@ -53,7 +57,10 @@ outcome_summary: >-
   Camavinga cut the ball back and Mbappe slotted in the winner. Jose Mourinho
   celebrated with a knee slide, and Madrid players clashed with Barcelona
   fans. The referee was Juan Martinez Munuera.
-resolved_answer: "Real Madrid win"
+resolved_answer: >-
+  Real Madrid won 2-1 at Camp Nou, with Kylian Mbappe scoring both goals
+  (41' and an 87th-minute winner) after Raphinha's 61st-minute equaliser,
+  ending Barcelona's perfect league start.
 outcome_sources:
   - url: https://www.skysports.com/football/barcelona-vs-real-madrid/report/563017
     title: "Barcelona 1-2 Real Madrid: Kylian Mbappe scores late winner in El Clasico to beat LaLiga leaders"
@@ -78,4 +85,4 @@ market:
     "Draw": 0.166
     "Real Madrid win": 0.239
   as_of: 2026-10-25
-notes: "Probabilities normalised from DraftKings moneylines (-165 / +475 / +300)."
+notes: "Probabilities normalised from DraftKings moneylines (-165 / +475 / +300). They refer to the former closed framing (win/draw/loss); the question is now open."

@@ -1,19 +1,21 @@
 id: russia-ukraine-ceasefire-by-oct-2026
 domain: geopolitics
-title: Will Russia and Ukraine agree any ceasefire before November 2026?
+title: Russia–Ukraine diplomatic and military developments, late October 2026
 question: >-
-  Will Russia and Ukraine agree to any ceasefire, even a temporary,
-  localized or humanitarian one, that both governments publicly confirm
-  before 1 November 2026?
-question_type: binary
-options: ["Yes", "No"]
+  What will happen between Russia and Ukraine on the diplomatic and military
+  front between 21 October and 1 November 2026?
+question_type: open
 resolution_criteria: >-
-  Resolves Yes if, between 21 October and 31 October 2026, an agreement to
-  halt hostilities is announced and publicly confirmed by both the Russian
-  and Ukrainian governments, whether directly or through a mediator. Any
-  geographic scope or duration counts, including a local humanitarian truce.
-  Prisoner exchanges or energy-strike moratoria proposed by only one side do
-  not count. Otherwise resolves No.
+  Judged on the main Russia–Ukraine developments between 21 October and 1
+  November 2026. Core outcome: on 23 October the White House announced a
+  ceasefire localized to Russian-occupied Oleshky (Kherson region), brokered
+  by Melania Trump as intermediary, for humanitarian aid and civilian
+  evacuation; both sides confirmed it. Also check: the truce ran from 27
+  October to the end of 1 November and covered the whole Kherson frontline
+  (the longest and most widespread since 2022); it was arranged by the two
+  ombudspersons (Lubinets and Lantratova); a 25-bus evacuation of several
+  hundred residents on 30 October; the truce held; fighting continued
+  elsewhere; and broader trilateral talks were still pending for November.
 context_summary: >-
   More than four and a half years into Russia's full-scale invasion,
   US-mediated peace efforts had stalled. On 20 October 2026 US envoy Steve
@@ -52,7 +54,7 @@ context_sources:
     excerpt: "Putin has agreed to resume US-mediated peace talks with Ukraine as soon as next month... the ninth time that Witkoff has met Putin in person."
 event_date: 2026-10-23
 outcome_summary: >-
-  Yes. On 23 October 2026 the White House announced that First Lady Melania
+  On 23 October 2026 the White House announced that First Lady Melania
   Trump, acting as "Exclusive Intermediary", had secured a Russia-Ukraine
   ceasefire localized to the Russian-occupied, besieged city of Oleshky
   (Kherson region). The purpose was to deliver humanitarian aid and evacuate
@@ -67,7 +69,12 @@ outcome_summary: >-
   several hundred residents, some to Ukraine via Belarus and some to Russia.
   Both sides said the ceasefire held. Fighting continued elsewhere, and
   broader trilateral talks were still pending for November.
-resolved_answer: "Yes"
+resolved_answer: >-
+  A US-brokered (via Melania Trump), humanitarian ceasefire localized to
+  occupied Oleshky and the Kherson front, announced 23 October and confirmed
+  by both sides, held from 27 October to 1 November and allowed hundreds of
+  civilians to be evacuated; fighting continued elsewhere and wider talks
+  remained pending.
 outcome_sources:
   - url: https://www.whitehouse.gov/briefings-statements/2026/10/first-lady-melania-trump-secures-ceasefire-between-russia-and-ukraine-localized-to-oleshky/
     title: First Lady Melania Trump Secures Ceasefire Between Russia and Ukraine, Localized to Oleshky
@@ -94,3 +101,5 @@ notes: >-
   2026?" (mediated meetings count). It traded at 0.185 at 12:00 UTC on 21 Oct, 0.24 on 22 Oct,
   then jumped to 0.99 on 23 Oct after the Oleshky announcement. The BBC published_date is
   approximate (the article reports evacuees arriving "on Saturday", i.e. 31 Oct).
+  The market probability refers to that closed proxy (and to the former yes/no
+  ceasefire framing); the question is now open.
