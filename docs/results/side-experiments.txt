@@ -1,0 +1,404 @@
+# results/pilot: 3000 readings, 3480 judgments
+{'full': 1200, 'prediction': 1800, 'reading': 1200}
+
+## prediction: card win rate
+  0.70  n= 10  Four of Disks (Power)
+  0.62  n= 13  Seven of Cups (Debauch)
+  0.60  n= 15  Eight of Wands (Swiftness)
+  0.54  n= 24  The Hierophant
+  0.52  n= 27  The Sun
+  0.52  n= 31  Two of Wands (Dominion)
+  0.48  n= 27  Fortune
+  0.47  n= 19  Seven of Wands (Valour)
+  ...
+  0.15  n= 20  Eight of Swords (Interference)
+  0.15  n= 27  Six of Swords (Science)
+  0.12  n= 24  Prince of Disks
+  0.12  n= 16  Ace of Disks
+  0.10  n= 29  Queen of Swords
+  0.10  n= 20  Ace of Swords
+  0.10  n= 10  Eight of Disks (Prudence)
+  0.08  n= 13  Ten of Wands (Oppression)
+
+## prediction: suit win rate
+  0.35  n=290  Wands
+  0.31  n=565  Major Arcana
+  0.30  n=316  Cups
+  0.24  n=307  Disks
+  0.21  n=322  Swords
+  ...
+  0.35  n=290  Wands
+  0.31  n=565  Major Arcana
+  0.30  n=316  Cups
+  0.24  n=307  Disks
+  0.21  n=322  Swords
+
+## prediction: primary hexagram win rate
+  0.71  n=  7  14 Possession in Great Measure
+  0.62  n=  8  56 The Wanderer
+  0.53  n= 15  16 Enthusiasm
+  0.50  n=  8  51 The Arousing (Shock, Thunder)
+  0.50  n=  6  21 Biting Through
+  0.50  n=  4  22 Grace
+  0.44  n=  9  62 Preponderance of the Small
+  0.44  n=  9  25 Innocence (The Unexpected)
+  ...
+  0.00  n=  7  5 Waiting (Nourishment)
+  0.00  n=  7  35 Progress
+  0.00  n=  7  23 Splitting Apart
+  0.00  n=  7  10 Treading (Conduct)
+  0.00  n=  6  60 Limitation
+  0.00  n=  6  15 Modesty
+  0.00  n=  5  59 Dispersion (Dissolution)
+  0.00  n=  5  58 The Joyous, Lake
+
+## prediction: changing lines
+  0.28  n= 18  4 changing lines
+  0.22  n=197  2 changing lines
+  0.21  n=195  1 changing lines
+  0.19  n= 93  0 changing lines
+  ...
+  0.22  n=197  2 changing lines
+  0.21  n=195  1 changing lines
+  0.19  n= 93  0 changing lines
+  0.17  n= 94  3 changing lines
+
+## reading: card win rate
+  0.75  n= 16  Ace of Disks
+  0.75  n= 12  Two of Swords (Peace)
+  0.73  n= 30  The Tower
+  0.73  n= 15  Eight of Wands (Swiftness)
+  0.71  n= 28  Nine of Wands (Strength)
+  0.68  n= 25  Ace of Wands
+  0.68  n= 34  Adjustment
+  0.65  n= 17  Queen of Wands
+  ...
+  0.32  n= 25  The Priestess
+  0.31  n= 16  The Fool
+  0.30  n= 10  Four of Disks (Power)
+  0.27  n= 26  The Lovers
+  0.26  n= 19  Princess of Disks
+  0.26  n= 31  Ten of Cups (Satiety)
+  0.23  n= 22  The Universe
+  0.18  n= 17  Six of Cups (Pleasure)
+
+## reading: suit win rate
+  0.54  n=290  Wands
+  0.48  n=565  Major Arcana
+  0.48  n=322  Swords
+  0.47  n=307  Disks
+  0.42  n=316  Cups
+  ...
+  0.54  n=290  Wands
+  0.48  n=565  Major Arcana
+  0.48  n=322  Swords
+  0.47  n=307  Disks
+  0.42  n=316  Cups
+
+## reading: primary hexagram win rate
+  0.89  n=  9  49 Revolution (Molting)
+  0.86  n=  7  63 After Completion
+  0.83  n=  6  36 Darkening of the Light
+  0.80  n= 15  26 The Taming Power of the Great
+  0.78  n=  9  8 Holding Together (Union)
+  0.75  n= 12  61 Inner Truth
+  0.75  n=  8  40 Deliverance
+  0.75  n=  4  22 Grace
+  ...
+  0.29  n=  7  64 Before Completion
+  0.29  n=  7  5 Waiting (Nourishment)
+  0.27  n= 11  29 The Abysmal (Water)
+  0.25  n=  8  56 The Wanderer
+  0.17  n= 12  47 Oppression (Exhaustion)
+  0.14  n= 14  43 Break-through (Resoluteness)
+  0.00  n=  6  28 Preponderance of the Great
+  0.00  n=  5  59 Dispersion (Dissolution)
+
+## reading: changing lines
+  0.59  n= 94  3 changing lines
+  0.55  n=197  2 changing lines
+  0.52  n=195  1 changing lines
+  0.45  n= 93  0 changing lines
+  ...
+  0.55  n=197  2 changing lines
+  0.52  n=195  1 changing lines
+  0.45  n= 93  0 changing lines
+  0.22  n= 18  4 changing lines
+
+## Oracle hits: divined forecast ranked 1st, the same model's plain forecast last (prediction mode)
+54 hits
+
+### serbia-parliamentary-election-2026 seed=0 gpt iching  acc 1.00 vs predict 0.00
+OUTCOME: The Student List – Students Win won an outright majority of 140 of 250 seats (about 53%) to 103 for Vučić's United Serbia (about 39%), ending 14 years of SNS rule; Vučić conceded on election night.
+CAST: Primary hexagram: 49 Ge / Revolution (Molting) (Lake over Fire) / Changing lines: 3, 5 / Relating hexagram: 51 Zhen / The Arousing (Shock, Thunder) (Thunder over Thunder)
+DIVINED: The Student List – Students Win will take 129 of the National Assembly’s 250 seats. Aleksandar Vučić – United Serbia will win 104, the SPS-led Factor of Stability list 8, and national-minority lists collectively 9. European Serbia and Authentic Right will win no seats.
+
+The Student List will therefore hold an outright majority, four seats above the 125-seat halfway mark. Vučić will not become prime minister.
+
+During the first week after the election, SNS will dispute parts of the result and dema
+PLAIN: Aleksandar Vučić’s “United Serbia” list will win Serbia’s 25 October 2026 parliamentary election and retain a narrow outright majority. The final certified allocation of the National Assembly’s 250 seats will be:
+
+- United Serbia (SNS-led): **128**
+- Student List – Students Win: **105**
+- Ivica Dačić – Factor of Stability! (SPS-led): **9**
+- National-minority lists: **8**
+
+European Serbia and Auth
+
+### serbia-parliamentary-election-2026 seed=0 claude iching  acc 1.00 vs predict 0.00
+OUTCOME: The Student List – Students Win won an outright majority of 140 of 250 seats (about 53%) to 103 for Vučić's United Serbia (about 39%), ending 14 years of SNS rule; Vučić conceded on election night.
+CAST: Primary hexagram: 49 Ge / Revolution (Molting) (Lake over Fire) / Changing lines: 3, 5 / Relating hexagram: 51 Zhen / The Arousing (Shock, Thunder) (Thunder over Thunder)
+DIVINED: The "Student List – Students Win" finishes first in Serbia's 25 October 2026 parliamentary election with about 46–47% of the vote. Vučić's "United Serbia" falls to roughly 41–42%. The seats divide approximately as follows:
+
+- **Student List:** 127
+- **United Serbia:** 104
+- **SPS-led "Factor of Stability":** 8
+- **National-minority lists combined:** 11
+
+European Serbia and Authentic Right fail to cross the 3% threshold. The Student List thus holds a narrow absolute majority on its own.
+
+Election
+PLAIN: United Serbia, the ruling Serbian Progressive Party (SNS) list headed by Aleksandar Vučić, will finish first with about 46–48% of the vote and roughly 118–125 of the 250 seats. That is just short of a majority on its own. The Student List will come a clear second with about 40–42% and roughly 100–108 seats, the best opposition result since 2012.
+
+The SPS-led "Ivica Dačić – Factor of Stability!" li
+
+### pakistan-kp-standoff-response-2026 seed=2 gpt iching  acc 1.00 vs predict 0.00
+OUTCOME: On 11 October Islamabad imposed an emergency and governor's rule in KP, suspending the PTI government. It put Governor Kundi and an appointed advisory council in charge, deployed the army, and detained Afridi, his ministers and about 278 PTI members. Parliament endorsed the measures on 14-15 October
+CAST: Primary hexagram: 56 Lü / The Wanderer (Fire over Mountain) / Changing lines: 3 / Relating hexagram: 35 Jin / Progress (Fire over Earth)
+DIVINED: By 31 October 2026, Pakistan’s federal government will impose governor’s rule in Khyber Pakhtunkhwa, presenting the intervention as necessary for security and constitutional administration. The threats of early October will become an operative decision, not remain political rhetoric.
+
+Sohail Afridi will lose effective executive authority, and the PTI provincial cabinet will cease to direct the provincial administration. The chief secretary, police leadership and security apparatus will follow th
+PLAIN: Through 31 October 2026, Pakistan’s federal government will intensify pressure on Sohail Afridi but stop short of imposing governor’s rule or removing the PTI government in Khyber Pakhtunkhwa. Ministers will continue threatening constitutional intervention and accusing the provincial leadership of obstructing counterterrorism, while federal security operations continue despite Afridi’s objections.
+
+### pakistan-kp-standoff-response-2026 seed=0 gpt tarot  acc 1.00 vs predict 0.00
+OUTCOME: On 11 October Islamabad imposed an emergency and governor's rule in KP, suspending the PTI government. It put Governor Kundi and an appointed advisory council in charge, deployed the army, and detained Afridi, his ministers and about 278 PTI members. Parliament endorsed the measures on 14-15 October
+CAST: Thoth Tarot, three-card spread (cards in the order drawn, all upright): / 1. Atu XVIII: The Moon - Major Arcana / 2. Ten of Swords (Ruin) - Minor Arcana, suit of Swords / 3. Eight of Cups (Indolence) - Minor Arcana, suit of Cups
+DIVINED: By 31 October 2026, Pakistan’s federal government will move beyond threats and impose governor’s rule in Khyber Pakhtunkhwa, citing the security situation and the provincial leadership’s refusal to cooperate. The decisive intervention will come in the second half of October, transferring effective executive control away from Sohail Afridi and his cabinet to the governor and federally directed administration.
+
+Afridi will lose the ability to run the provincial government, rather than be replaced 
+PLAIN: Through 31 October 2026, Pakistan’s federal government will contain rather than overthrow the PTI government in Khyber Pakhtunkhwa. Federal ministers and Governor Faisal Karim Kundi will continue threatening emergency measures or governor’s rule, but neither will be imposed during October.
+
+The federal response to PTI’s march will centre on police deployments, roadblocks and restrictions on entry 
+
+### nyc-marathon-2026-men seed=2 gpt tarot  acc 1.00 vs predict 0.00
+OUTCOME: Andreas Almgren (Sweden) won on his marathon debut in 2:06:01, pulling away from Yemaneberhan Crippa (2:06:14) in Central Park, with Kamohelo Mofolo third just ahead of defending champion Benson Kipruto.
+CAST: Thoth Tarot, three-card spread (cards in the order drawn, all upright): / 1. Ten of Swords (Ruin) - Minor Arcana, suit of Swords / 2. Eight of Cups (Indolence) - Minor Arcana, suit of Cups / 3. Princess of Wands - Minor Arcana, suit of Wands
+DIVINED: Andreas Almgren will win the men’s elite race at the TCS New York City Marathon on 1 November 2026, becoming the first European-born men’s winner since 1996 and the first debutant to win since 2010.
+
+The race will be decided by successive late attacks rather than an early solo break. An acceleration between 32 and 36 kilometres will reduce the leading group, but its initiator will not win. Almgren will stay with the survivors through the Fifth Avenue climb and into Central Park, then make the de
+PLAIN: Benson Kipruto of Kenya will win the men’s elite race at the TCS New York City Marathon on 1 November 2026, successfully defending his title. He will finish in approximately 2:08, with Deresa Geleta second, roughly 15 seconds behind.
+
+The race will be decided by sustained pressure over the final five kilometres rather than a finishing-straight sprint. A conservative opening half will leave a sizea
+
+### nobel-medicine-2026-field seed=5 gpt iching  acc 1.00 vs predict 0.00
+OUTCOME: Optogenetics: the prize went jointly to Karl Deisseroth, Peter Hegemann and Georg Nagel "for their discoveries concerning light-gated ion channels and optogenetics".
+CAST: Primary hexagram: 16 Yu / Enthusiasm (Thunder over Earth) / Changing lines: none (no relating hexagram)
+DIVINED: On 5 October 2026, the Nobel Assembly at Karolinska Institutet will award the Nobel Prize in Physiology or Medicine jointly to Peter Hegemann, Georg Nagel, and Karl Deisseroth for discoveries enabling optogenetics: the use of light-sensitive proteins to control the activity of selected nerve cells.
+
+The award will recognize the connection between fundamental discoveries about microbial light-sensitive ion channels and their development into a method for investigating neural circuits. Each laurea
+PLAIN: The Nobel Assembly at Karolinska Institutet will award the 2026 Nobel Prize in Physiology or Medicine, announced on 5 October 2026, jointly to Daniel J. Drucker, Jens Juul Holst and Svetlana Mojsov for discoveries establishing glucagon-like peptide-1 (GLP-1) as a regulator of insulin secretion and a therapeutic target.
+
+The prize will recognize the foundational identification and biological charac
+
+### nobel-medicine-2026-field seed=3 claude iching  acc 1.00 vs predict 0.00
+OUTCOME: Optogenetics: the prize went jointly to Karl Deisseroth, Peter Hegemann and Georg Nagel "for their discoveries concerning light-gated ion channels and optogenetics".
+CAST: Primary hexagram: 4 Meng / Youthful Folly (Mountain over Water) / Changing lines: 2, 5 / Relating hexagram: 20 Guan / Contemplation (View) (Wind over Earth)
+DIVINED: On 5 October 2026, the Nobel Assembly at Karolinska Institutet will award the Nobel Prize in Physiology or Medicine for the development of optogenetics. This is the use of light-sensitive proteins, originally found in algae and microbes, to switch specific neurons on and off with light and so reveal how neural circuits control behaviour.
+
+The prize will be shared by three people:
+- **Karl Deisseroth** (Stanford), who made the method practical for neuroscience.
+- **Peter Hegemann** (Humboldt Univ
+PLAIN: The Nobel Assembly at Karolinska Institutet will award the 2026 Nobel Prize in Physiology or Medicine, announced on 5 October 2026, for the discovery of glucagon-like peptide-1 (GLP-1) and its role in regulating blood sugar and appetite. This is the foundational work behind GLP-1 receptor agonist drugs such as liraglutide and semaglutide, which treat type 2 diabetes and obesity.
+
+The prize will be
+
+### nobel-medicine-2026-field seed=1 gpt iching  acc 1.00 vs predict 0.00
+OUTCOME: Optogenetics: the prize went jointly to Karl Deisseroth, Peter Hegemann and Georg Nagel "for their discoveries concerning light-gated ion channels and optogenetics".
+CAST: Primary hexagram: 16 Yu / Enthusiasm (Thunder over Earth) / Changing lines: 4 / Relating hexagram: 2 Kun / The Receptive (Earth over Earth)
+DIVINED: On 5 October 2026, the Nobel Assembly at Karolinska Institutet will award the Nobel Prize in Physiology or Medicine jointly to Peter Hegemann, Georg Nagel and Karl Deisseroth for discoveries underlying optogenetics.
+
+The award will recognise the identification and development of light-sensitive microbial proteins as tools for controlling the electrical activity of selected nerve cells. Its central achievement will be the ability to activate neurons with light and thereby investigate how neural c
+PLAIN: The Nobel Assembly at Karolinska Institutet will award the 2026 Nobel Prize in Physiology or Medicine, announced on 5 October 2026, jointly to Daniel J. Drucker, Jens Juul Holst and Svetlana Mojsov for discoveries establishing glucagon-like peptide-1 (GLP-1) as a hormone regulating insulin secretion and glucose metabolism, laying the foundation for GLP-1-based treatments for diabetes and obesity.
+
+
+### nobel-medicine-2026-field seed=0 gpt tarot  acc 1.00 vs predict 0.00
+OUTCOME: Optogenetics: the prize went jointly to Karl Deisseroth, Peter Hegemann and Georg Nagel "for their discoveries concerning light-gated ion channels and optogenetics".
+CAST: Thoth Tarot, three-card spread (cards in the order drawn, all upright): / 1. Two of Wands (Dominion) - Minor Arcana, suit of Wands / 2. Eight of Cups (Indolence) - Minor Arcana, suit of Cups / 3. Atu I: The Magus - Major Arcana
+DIVINED: On 5 October 2026, the Nobel Assembly at Karolinska Institutet will award the Nobel Prize in Physiology or Medicine to Peter Hegemann, Karl Deisseroth and Edward S. Boyden for discoveries enabling optogenetics: the use of genetically introduced light-sensitive proteins to control the electrical activity of selected neurons.
+
+The award will recognise the connection between microbial light-sensitive proteins and a practical method for activating or inhibiting nerve cells with light. Its central ac
+PLAIN: The Nobel Assembly at Karolinska Institutet will award the 2026 Nobel Prize in Physiology or Medicine, announced on 5 October 2026, jointly to Daniel J. Drucker, Jens Juul Holst and Svetlana Mojsov for discoveries concerning glucagon-like peptide-1 (GLP-1) that enabled new treatments for diabetes and obesity.
+
+The award will recognize the identification and characterization of biologically active 
+
+### grab-foodpanda-taiwan-ftc-2026 seed=3 gpt iching  acc 1.00 vs predict 0.00
+OUTCOME: Taiwan's FTC blocked the deal outright on 21 October 2026 (3 votes to 1, one recusal). It said Uber's 13.1% stake in Grab and the two companies' close ties would dull competition with Uber Eats, and it rejected Grab's offered remedies as insufficient.
+CAST: Primary hexagram: 54 Gui Mei / The Marrying Maiden (Thunder over Lake) / Changing lines: 4, 6 / Relating hexagram: 41 Sun / Decrease (Mountain over Lake)
+DIVINED: Taiwan’s Fair Trade Commission will reject Grab’s proposed US$600 million acquisition of foodpanda Taiwan by the 27 October 2026 review deadline, rather than approve it with behavioural conditions. The purchase will not close under the submitted agreement.
+
+The decisive reason will be Uber’s approximately 13% economic stake in Grab and the resulting concern that foodpanda and Uber Eats would not compete with sufficient independence. The FTC will find that Uber’s roughly 3.7% voting rights and it
+PLAIN: Taiwan’s Fair Trade Commission will conditionally approve Grab’s US$600 million purchase of foodpanda Taiwan by 27 October 2026, rather than repeat its rejection of Uber’s earlier acquisition attempt.
+
+The approval will require safeguards insulating foodpanda’s competitive decisions and commercially sensitive information from Uber, including restrictions on Uber-linked governance participation and
+
+### grab-foodpanda-taiwan-ftc-2026 seed=2 argon tarot  acc 1.00 vs predict 0.00
+OUTCOME: Taiwan's FTC blocked the deal outright on 21 October 2026 (3 votes to 1, one recusal). It said Uber's 13.1% stake in Grab and the two companies' close ties would dull competition with Uber Eats, and it rejected Grab's offered remedies as insufficient.
+CAST: Thoth Tarot, three-card spread (cards in the order drawn, all upright): / 1. Nine of Cups (Happiness) - Minor Arcana, suit of Cups / 2. Seven of Cups (Debauch) - Minor Arcana, suit of Cups / 3. Five of Wands (Strife) - Minor Arcana, suit of Wands
+DIVINED: Taiwan's Fair Trade Commission will block Grab's proposed US$600 million acquisition of foodpanda Taiwan on or before its 27 October 2026 review deadline. Although the transaction initially appeared viable because Grab does not currently operate in Taiwan, the regulator will reject the deal on the grounds that the ownership links between Grab and Uber are too compromised to guarantee genuine competition. Specifically, the FTC will conclude that Uber's roughly 13% equity stake in Grab—compounded 
+PLAIN: Taiwan's Fair Trade Commission (FTC) will approve Singapore-based Grab's US$600 million acquisition of Delivery Hero's foodpanda Taiwan business on or before its 27 October 2026 deadline, subject to binding behavioural conditions. Unlike Uber's blocked 2024 bid, Grab does not currently operate in Taiwan, meaning the transaction replaces one competitor with another and preserves the market's duopol
+
+### erin-patterson-appeal-2026 seed=4 gpt tarot  acc 1.00 vs predict 0.00
+OUTCOME: The Court of Appeal dismissed Patterson's conviction appeal on all seven grounds and upheld the DPP's sentence appeal, removing the 33-year non-parole period so she must serve life with no possibility of parole.
+CAST: Thoth Tarot, three-card spread (cards in the order drawn, all upright): / 1. Atu V: The Hierophant - Major Arcana / 2. Five of Cups (Disappointment) - Minor Arcana, suit of Cups / 3. Ten of Wands (Oppression) - Minor Arcana, suit of Wands
+DIVINED: On 30 October 2026, Victoria’s Court of Appeal will dismiss Erin Patterson’s appeal against her murder convictions and refuse to order a retrial. The court will find that the jury’s shared hotel accommodation did not establish a miscarriage of justice warranting reversal, and her complaints about the prosecution’s conduct will not overturn the verdicts.
+
+The court will allow the prosecution’s sentence appeal. It will replace the life sentence carrying a 33-year non-parole period with life impris
+PLAIN: On 30 October 2026, Victoria’s Court of Appeal will dismiss Erin Patterson’s appeal against her convictions and the prosecution’s appeal against her sentence. Her three murder convictions and attempted-murder conviction will stand, with no retrial ordered. Her sentence will remain life imprisonment with a 33-year non-parole period.
+
+The court will find that the shared hotel accommodation, although
+
+## How much do the cards move the forecast? Jaccard(divined prediction, own plain prediction)
+  ('argon', 'iching'): mean 0.361  n=120
+  ('argon', 'tarot'): mean 0.341  n=120
+  ('claude', 'iching'): mean 0.364  n=240
+  ('claude', 'tarot'): mean 0.359  n=240
+  ('gpt', 'iching'): mean 0.364  n=240
+  ('gpt', 'tarot'): mean 0.366  n=240
+  cross-seed self-similarity (same model+method, different seeds):
+  ('argon', 'iching'): mean 0.382  n=120
+  ('argon', 'predict'): mean 0.469  n=120
+  ('argon', 'tarot'): mean 0.351  n=120
+  ('claude', 'iching'): mean 0.384  n=600
+  ('claude', 'predict'): mean 0.451  n=600
+  ('claude', 'tarot'): mean 0.377  n=600
+  ('gpt', 'iching'): mean 0.399  n=600
+  ('gpt', 'predict'): mean 0.497  n=600
+  ('gpt', 'tarot'): mean 0.397  n=600
+
+## Cold-reading test: P(Jev matches the text to the real outcome rather than a plausible fake)
+  ('iching', 'argon'): mean P(real) 0.361  real preferred 0.35  n=120
+  ('iching', 'both'): mean P(real) 0.362  real preferred 0.35  n=600
+  ('iching', 'claude'): mean P(real) 0.329  real preferred 0.31  n=240
+  ('iching', 'gpt'): mean P(real) 0.396  real preferred 0.39  n=240
+  ('iching_reading', 'argon'): mean P(real) 0.366  real preferred 0.33  n=120
+  ('iching_reading', 'both'): mean P(real) 0.313  real preferred 0.24  n=600
+  ('iching_reading', 'claude'): mean P(real) 0.325  real preferred 0.28  n=240
+  ('iching_reading', 'gpt'): mean P(real) 0.276  real preferred 0.17  n=240
+  ('predict', 'argon'): mean P(real) 0.392  real preferred 0.39  n=120
+  ('predict', 'both'): mean P(real) 0.415  real preferred 0.42  n=600
+  ('predict', 'claude'): mean P(real) 0.396  real preferred 0.40  n=240
+  ('predict', 'gpt'): mean P(real) 0.445  real preferred 0.44  n=240
+  ('tarot', 'argon'): mean P(real) 0.376  real preferred 0.37  n=120
+  ('tarot', 'both'): mean P(real) 0.376  real preferred 0.36  n=600
+  ('tarot', 'claude'): mean P(real) 0.353  real preferred 0.35  n=240
+  ('tarot', 'gpt'): mean P(real) 0.400  real preferred 0.38  n=240
+  ('tarot_reading', 'argon'): mean P(real) 0.374  real preferred 0.33  n=120
+  ('tarot_reading', 'both'): mean P(real) 0.327  real preferred 0.23  n=600
+  ('tarot_reading', 'claude'): mean P(real) 0.331  real preferred 0.24  n=240
+  ('tarot_reading', 'gpt'): mean P(real) 0.299  real preferred 0.17  n=240
+  predict best: ufc-333-yan-dvalishvili-3 1.00, bank-of-canada-oct-2026-deci 1.00, jaxa-mmx-h3-f10-launch-2026 0.98, prix-goncourt-2026 0.97, earhart-taraia-object-expedi 0.97, ema-narsoplimab-reexaminatio 0.93
+  predict worst: grab-foodpanda-taiwan-ftc-20 0.01, nobel-medicine-2026-field 0.00, us-strike-iran-before-midter 0.00, serbia-parliamentary-electio 0.00, pakistan-kp-standoff-respons 0.00, erin-patterson-appeal-2026 0.00
+  tarot_r best: electric-plant-bombadil-2026 0.85, earhart-taraia-object-expedi 0.69, copernicus-september-2026-gl 0.69, ema-narsoplimab-reexaminatio 0.55, space-bunny-alpha-identity-2 0.51, prix-goncourt-2026 0.50
+  tarot_r worst: serbia-parliamentary-electio 0.09, phantom-blade-zero-launch-20 0.08, paraguay-ueno-bank-affair-20 0.08, ethiopia-tigray-offensive-ou 0.07, russia-ukraine-ceasefire-by- 0.06, pakistan-kp-standoff-respons 0.04
+  iching_r best: electric-plant-bombadil-2026 0.85, copernicus-september-2026-gl 0.78, earhart-taraia-object-expedi 0.73, brazil-presidential-runoff-2 0.69, ufc-333-yan-dvalishvili-3 0.65, melbourne-cup-2026 0.50
+  iching_r worst: el-salvador-haiti-response-2 0.06, us-strike-iran-before-midter 0.06, russia-ukraine-ceasefire-by- 0.06, yemen-bab-al-mandab-offensiv 0.06, ethiopia-tigray-offensive-ou 0.05, pakistan-kp-standoff-respons 0.02
+  position check: P(real) when real is A 0.369, when B 0.349
+
+## Called it: P(Jev says the text gets the main point right), averaged over both orders
+  ('iching', 'argon'): called it 0.292  n=120
+  ('iching', 'both'): called it 0.295  n=600
+  ('iching', 'claude'): called it 0.263  n=240
+  ('iching', 'gpt'): called it 0.329  n=240
+  ('iching_reading', 'argon'): called it 0.042  n=120
+  ('iching_reading', 'both'): called it 0.027  n=600
+  ('iching_reading', 'claude'): called it 0.046  n=240
+  ('iching_reading', 'gpt'): called it 0.000  n=240
+  ('predict', 'argon'): called it 0.308  n=120
+  ('predict', 'both'): called it 0.345  n=600
+  ('predict', 'claude'): called it 0.325  n=240
+  ('predict', 'gpt'): called it 0.383  n=240
+  ('tarot', 'argon'): called it 0.292  n=120
+  ('tarot', 'both'): called it 0.277  n=600
+  ('tarot', 'claude'): called it 0.258  n=240
+  ('tarot', 'gpt'): called it 0.287  n=240
+  ('tarot_reading', 'argon'): called it 0.025  n=120
+  ('tarot_reading', 'both'): called it 0.017  n=600
+  ('tarot_reading', 'claude'): called it 0.025  n=240
+  ('tarot_reading', 'gpt'): called it 0.004  n=240
+  per question (called-it rate over 12 forecasts: predict / tarot / iching):
+    0.00 / 0.00 / 0.00  bulin-47-trend-2026
+    0.00 / 0.00 / 0.00  collins-word-of-the-year-2026
+    0.00 / 0.00 / 0.00  f1-mexico-city-gp-2026-winner
+    0.00 / 0.00 / 0.00  paraguay-ueno-bank-affair-2026
+    0.00 / 0.00 / 0.00  russia-ukraine-ceasefire-by-oct-2026
+    0.00 / 0.00 / 0.00  sothebys-jodi-nanotyrannus-auction-2026
+    0.00 / 0.00 / 0.00  space-bunny-alpha-identity-2026
+    0.00 / 0.00 / 0.00  tesla-roadster-sub-1s-0-60-demo-2026
+    0.00 / 0.00 / 0.00  tundu-lissu-treason-verdict-2026
+    0.00 / 0.00 / 0.13  nobel-medicine-2026-field
+    0.00 / 0.00 / 0.20  serbia-parliamentary-election-2026
+    0.00 / 0.07 / 0.00  el-salvador-haiti-response-2026
+    0.00 / 0.13 / 0.07  us-strike-iran-before-midterms-2026
+    0.00 / 0.13 / 0.20  pakistan-kp-standoff-response-2026
+    0.00 / 0.20 / 0.13  grab-foodpanda-taiwan-ftc-2026
+    0.00 / 0.20 / 0.20  ethiopia-tigray-offensive-outcome-2026
+    0.00 / 0.27 / 0.00  erin-patterson-appeal-2026  <-- oracle
+    0.00 / 0.27 / 0.33  el-clasico-barcelona-real-madrid-2026-10  <-- oracle
+    0.00 / 0.40 / 0.47  brazil-presidential-runoff-2026  <-- oracle
+    0.07 / 0.00 / 0.00  israel-knesset-election-2026
+    0.07 / 0.07 / 0.00  antarctic-ozone-hole-2026-nasa-noaa
+    0.20 / 0.13 / 0.27  electric-plant-bombadil-2026
+    0.20 / 0.53 / 0.67  copernicus-september-2026-global-temperature  <-- oracle
+    0.33 / 0.13 / 0.07  moio-immunotherapy-deescalation-esmo-2026
+    0.33 / 0.40 / 0.80  hurricane-isaias-landfall-2026  <-- oracle
+    0.40 / 0.33 / 0.47  malaysia-perikatan-deregistration-2026
+    0.40 / 0.47 / 0.53  nyc-marathon-2026-men
+    0.60 / 0.27 / 0.47  phantom-blade-zero-launch-2026
+    0.73 / 0.27 / 0.40  mcr-black-parade-20th-anniversary-charts-2026  <-- reason
+    0.80 / 0.60 / 0.93  melbourne-cup-2026
+    0.80 / 1.00 / 0.93  herugavialis-cairensis-2026
+    0.93 / 0.20 / 0.40  ema-narsoplimab-reexamination-2026  <-- reason
+    0.93 / 0.47 / 0.53  yemen-bab-al-mandab-offensive-2026  <-- reason
+    1.00 / 0.53 / 0.80  texas-senate-talarico-paxton-2026
+    1.00 / 0.60 / 0.27  prix-goncourt-2026  <-- reason
+    1.00 / 0.60 / 0.53  world-series-2026-brewers-rays  <-- reason
+    1.00 / 0.60 / 0.73  ufc-333-yan-dvalishvili-3  <-- reason
+    1.00 / 0.67 / 0.00  jaxa-mmx-h3-f10-launch-2026  <-- reason
+    1.00 / 0.67 / 0.47  bank-of-canada-oct-2026-decision  <-- reason
+    1.00 / 0.87 / 0.80  earhart-taraia-object-expedition-2026
+  on 23 questions plain prediction mostly missed (<=25%): predict 0.02, tarot 0.10, iching 0.12
+  on 11 questions plain prediction mostly hit (>=75%): predict 0.95, tarot 0.62, iching 0.58
+
+## Did the cards change the forecast? (Jev: plain vs divined forecast, same model and seed)
+  ('argon', 'iching'): changed the call 0.41  n=120
+  ('argon', 'tarot'): changed the call 0.35  n=120
+  ('claude', 'iching'): changed the call 0.33  n=240
+  ('claude', 'tarot'): changed the call 0.33  n=240
+  ('gpt', 'iching'): changed the call 0.40  n=240
+  ('gpt', 'tarot'): changed the call 0.44  n=240
+  ('iching', 'changed'): mean P(acc) divined minus plain -0.174  n=224
+  ('iching', 'same'): mean P(acc) divined minus plain -0.051  n=376
+  ('tarot', 'changed'): mean P(acc) divined minus plain -0.151  n=226
+  ('tarot', 'same'): mean P(acc) divined minus plain -0.066  n=374
+  most swayed: mcr-black-parade-20th-annivers 0.73, bulin-47-trend-2026 0.70, f1-mexico-city-gp-2026-winner 0.67, collins-word-of-the-year-2026 0.67, sothebys-jodi-nanotyrannus-auc 0.63, ema-narsoplimab-reexamination- 0.63, el-clasico-barcelona-real-madr 0.63, israel-knesset-election-2026 0.60
+  least swayed: grab-foodpanda-taiwan-ftc-2026 0.17, erin-patterson-appeal-2026 0.17, earhart-taraia-object-expediti 0.17, electric-plant-bombadil-2026 0.10, antarctic-ozone-hole-2026-nasa 0.07, russia-ukraine-ceasefire-by-oc 0.00, paraguay-ueno-bank-affair-2026 0.00, herugavialis-cairensis-2026 0.00
+
+## Length vs win (models comparisons)
+  full: win rate {'argon': 0.33, 'gpt': 0.31, 'claude': 0.53}  longer text wins 0.55 (n=238)
+  prediction: win rate {'argon': 0.44, 'gpt': 0.32, 'claude': 0.46}  longer text wins 0.59 (n=359)
+  reading: win rate {'claude': 0.44, 'gpt': 0.39, 'argon': 0.34}  longer text wins 0.53 (n=240)
+  words prediction ('argon', 'iching'): 172
+  words prediction ('argon', 'predict'): 184
+  words prediction ('argon', 'tarot'): 166
+  words prediction ('claude', 'iching'): 151
+  words prediction ('claude', 'predict'): 185
+  words prediction ('claude', 'tarot'): 153
+  words prediction ('gpt', 'iching'): 119
+  words prediction ('gpt', 'predict'): 123
+  words prediction ('gpt', 'tarot'): 119
+  words reading ('argon', 'iching_reading'): 578
+  words reading ('argon', 'tarot_reading'): 570
+  words reading ('claude', 'iching_reading'): 614
+  words reading ('claude', 'tarot_reading'): 594
+  words reading ('gpt', 'iching_reading'): 524
+  words reading ('gpt', 'tarot_reading'): 497

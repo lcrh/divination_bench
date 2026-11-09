@@ -515,30 +515,53 @@ def report(
     include_backups: BackupsOpt = False,
     exclude_known: ExcludeKnownOpt = False,
     n_boot: BootOpt = 1000,
+    seeds: Annotated[
+        str | None,
+        typer.Option(
+            "--seeds",
+            help="Only these seeds (csv); writes to results/<run>/seeds-<seeds>/.",
+        ),
+    ] = None,
 ) -> None:
     """Write results/<run>/report.md and CSVs from the stored records."""
     s = load_settings(config, run)
     qs = select_questions(s.questions_dir, questions, limit, include_backups)
-    _report(s, qs, exclude_known=exclude_known, n_boot=n_boot)
+    only = [int(x) for x in _csv(seeds)] if seeds else None
+    _report(s, qs, exclude_known=exclude_known, n_boot=n_boot, only_seeds=only)
 
 
 def _report(
-    s: Settings, qs: list[Question], *, exclude_known: bool, n_boot: int
+    s: Settings,
+    qs: list[Question],
+    *,
+    exclude_known: bool,
+    n_boot: int,
+    only_seeds: list[int] | None = None,
 ) -> None:
+    readings = read_jsonl(s.readings_path, Reading)
+    judgments = read_jsonl(s.judgments_path, Judgment)
+    out_dir = s.run_dir
+    title = f"divination-bench report: {s.run}"
+    if only_seeds is not None:
+        readings = [r for r in readings if r.seed in only_seeds]
+        judgments = [j for j in judgments if j.seed in only_seeds]
+        label = "-".join(map(str, only_seeds))
+        out_dir = s.run_dir / f"seeds-{label}"
+        title += f" (seeds {', '.join(map(str, only_seeds))})"
     rep = build_report(
         qs,
-        read_jsonl(s.readings_path, Reading),
-        read_jsonl(s.judgments_path, Judgment),
+        readings,
+        judgments,
         read_jsonl(s.probes_path, KnowledgeProbe),
-        s.run_dir,
+        out_dir,
         exclude_known=exclude_known,
         n_boot=n_boot,
-        title=f"divination-bench report: {s.run}",
+        title=title,
         total_spend=run_spend(s),
     )
     if rep.excluded:
         console.print(f"Excluded known questions: {', '.join(rep.excluded)}")
-    console.print(f"[green]Wrote {s.run_dir / 'report.md'}")
+    console.print(f"[green]Wrote {Path(out_dir) / 'report.md'}")
 
 
 @app.command("run")

@@ -46,12 +46,22 @@ judgments = last_wins(
         j["fixed_model"],
     ),
 )
+judged = {
+    (j["seed"], m.split("|")[1])
+    for j in judgments.values()
+    for m in j["label_map"].values()
+}
+readings = {k: r for k, r in readings.items() if (k[2], k[3]) in judged}
 questions = {}
 for p in QDIR.rglob("*.yaml"):
     q = yaml.safe_load(p.read_text())
     questions[q["id"]] = q
 
-short = {"anthropic/claude-opus-5.5": "claude", "openai/gpt-6-astra": "gpt"}
+short = {
+    "anthropic/claude-opus-5.5": "claude",
+    "openai/gpt-6-astra": "gpt",
+    "google/gemini-4-argon": "argon",
+}
 
 
 def words(s: str) -> set[str]:
@@ -210,7 +220,12 @@ if want("diverge"):
 
 def extras(name: str) -> dict:
     p = RUN / "extras" / f"{name}.jsonl"
-    return {json.loads(x)["key"]: json.loads(x) for x in p.open()} if p.exists() else {}
+    out = {json.loads(x)["key"]: json.loads(x) for x in p.open()} if p.exists() else {}
+    return {
+        k: r
+        for k, r in out.items()
+        if len(parts := k.split("|")) < 4 or (int(parts[2]), parts[3]) in judged
+    }
 
 
 if want("coldread"):

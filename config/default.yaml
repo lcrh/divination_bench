@@ -11,6 +11,7 @@ generation:
   models:
     - anthropic/claude-opus-5.5
     - openai/gpt-6-astra
+    - google/gemini-4-argon
   temperature: 1.0
   max_tokens: 16000
 
@@ -32,8 +33,16 @@ model_cutoffs:
     training_cutoff: 2026-04-30
     release_date: 2026-09-03
     source: https://developers.openai.com/api/docs/models/gpt-6-astra
+  # Released mid-window, so release-date checks fail for questions resolving
+  # before 13 October; its training cutoff precedes every event. Run with
+  # --ignore-cutoffs and rely on the knowledge probe.
+  google/gemini-4-argon:
+    training_cutoff: 2026-03-31
+    release_date: 2026-10-13
+    source: https://deepmind.google/models/model-cards/gemini-4-argon/
 
 knowledge_probe:
   models:
     - anthropic/claude-opus-5.5
     - openai/gpt-6-astra
+    - google/gemini-4-argon
