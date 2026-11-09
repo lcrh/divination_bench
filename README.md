@@ -12,13 +12,16 @@ For every question it produces readings with three methods:
 | `iching`  | a deterministic yarrow-stalk hexagram (with moving lines) | full reading + standalone prediction |
 | `predict` | nothing extra                                            | prediction only                     |
 
-LLM judges then rank the readings against what actually happened.
+A decision model ([TypeSafe Jev](https://openrouter.ai/typesafe/jev-1.13), via
+OpenRouter's Decisions API) then ranks the readings against what actually happened.
 
 ## Design
 
 **Questions** (`data/questions/<domain>/<id>.yaml`, template in
-`data/questions/_example.yaml.txt`). Each has a neutral question, type
-(`binary` / `multiple_choice` / `open`) with options, resolution criteria, a
+`data/questions/_example.yaml.txt`). Questions are open-ended ("what will
+happen?") across uncorrelated events and domains, including "what is X" questions
+about things unknown before the cutoff. Each has a neutral question, type
+(`open`, or `binary` / `multiple_choice` with options), resolution criteria, a
 context summary that does not leak the outcome, dated context sources, the
 event date, an outcome summary, the resolved answer and dated outcome sources.
 `validate` prints, per question, the latest context source date, event date
@@ -26,19 +29,32 @@ and latest outcome source date, and checks every event is after the documented
 `model_cutoffs` (max of training cutoff and release date) of every tested
 model. Reserve questions (`backup: true`) are skipped unless `--include-backups`.
 
-**Casting** is deterministic in `(question_id, method, seed)`, so `cast` can
-reproduce any draw. Models see the draw, not the randomness.
+**Casting** is deterministic in `sha256(question_id|method|seed)`, so every
+question gets its own draw, both models get the same draw for a given seed, and
+`cast` can reproduce any draw. Models see the draw, not the randomness.
 
 **Reading → standalone prediction.** Divination readings end with a
 `prediction` that must not mention cards, hexagrams or divination, plus an
 `answer` (one of the options) for binary / multiple-choice questions. This is
 what makes tarot, I Ching and plain prediction directly comparable.
 
-**Judging.** Each judge call ranks an anonymised group of 2-3 items, shown as
-`[Item A]`, `[Item B]`, ... in an order shuffled deterministically per
-(group, judge). The judge sees the question, options, resolution criteria, the
-pre-event context, the outcome summary, the resolved answer and dated outcome
-excerpts.
+**Judging.** Each group of 2-3 anonymised forecasts (`forecast A`, `forecast B`,
+... with labels shuffled deterministically per (group, judge)) is ranked by
+*successive choice*: Jev picks the best of the remaining forecasts, that one is
+removed, and it picks again (a Plackett-Luce ranking). Each pick combines two
+Decisions-API `choice` questions, asked in separate calls:
+
+- **accuracy**: which forecast's claims best match what actually happened. Jev
+  sees the question, resolution criteria, outcome summary, resolved answer and
+  dated outcome excerpts.
+- **precision**: which forecast is most precise and committal. Jev sees only the
+  question and pre-event background, so knowing the outcome cannot colour it.
+
+The two probability vectors are combined with a log-linear (geometric) opinion
+pool, `P(i) ∝ sqrt(P_acc(i) · P_prec(i))`: being right about a vague forecast,
+or precise about a wrong one, both score low. Every round is asked in all cyclic
+rotations of the remaining forecasts and averaged, so each forecast appears in
+every position. A 3-way ranking takes 10 calls (about $0.0005).
 
 | comparison | fixed                    | mode `prediction`                   | mode `full`                             |
 |------------|--------------------------|-------------------------------------|-----------------------------------------|
@@ -47,19 +63,22 @@ excerpts.
 
 In `prediction` mode the judge is not told how items were produced.
 
-**Primary criterion: did what was predicted actually happen?** The core outcome
-dominates; specific checkable details earn credit only when they are right and
-are penalised when wrong; vague, hedged or unfalsifiable claims earn little;
-contradicted claims are penalised; eloquence, length and spiritual insight earn
-nothing. In `full` mode the reading can earn credit where it clearly
-anticipated aspects of the outcome. Judges return a 0-10 score and a strict
-1..n ranking per item (invalid output is retried up to twice).
+The rubric: the central outcome matters most; specific details count only if
+they came true and count against a forecast if false; restating known
+background, vague or unfalsifiable claims earn nothing; style, length and
+symbolism are ignored. In `full` mode, concrete claims in the reading count as
+part of the forecast. Malformed answers are retried up to twice.
+
+The report ranks by mean rank and pairwise win rate, and also shows mean pooled
+P(best) and its two components, P(acc) and P(prec), from the first round.
 
 **Caveats.**
-- *Self-preference*: two of the three judges are also the tested models. The
-  report shows pooled results, results from `independent` judges only (judge
-  not among the ranked models / not the generator), per-judge results, and a
-  self-preference table that flags judges favouring their own model.
+- *Judge strength*: Jev is a small, cheap decision model, not a frontier LLM.
+  Its choice probabilities are often near one-hot, so the rank order carries
+  most of the signal.
+- *Self-preference*: Jev is not a tested model, so there is none. The report's
+  `independent` rows and self-preference table only matter if tested models are
+  added as judges with `--judges`.
 - *Leakage*: besides the documented cutoffs, a knowledge probe asks each tested
   model whether it already knows each outcome. `report --exclude-known` drops
   questions a model claimed to know (and did not get wrong).
@@ -77,8 +96,12 @@ uv run divination-bench run --mock --run dry --limit 3   # offline end-to-end dr
 uv run divination-bench estimate          # rough cost from OpenRouter pricing
 ```
 
-A real run, step by step (every stage is resumable; rerunning skips what is
-already in the run directory):
+A real run, step by step. Every stage is resumable: rerunning skips what is
+already in the run directory, so you can pilot one question to check costs
+(`--limit 1 --seeds 0`) and later widen the same run with more questions, seeds,
+models or methods. Each record carries a fingerprint of its exact request; if a
+question or prompt is edited, only the affected readings and rankings are redone
+(and a ranking is redone when a new reading joins its group).
 
 ```bash
 uv run divination-bench probe    --run main --budget 120
@@ -89,21 +112,23 @@ uv run divination-bench report   --run main [--exclude-known]
 uv run divination-bench run --run main --budget 120
 ```
 
-`--budget` caps the total recorded spend of the run directory, including
-costs already recorded there. Narrow a run with `--questions id1,id2`,
+`--budget` caps the total spend of the run directory: every paid call is also
+logged to `spend.jsonl`, so calls whose output was discarded (parse failures,
+superseded records) still count. Narrow a run with `--questions id1,id2`,
 `--limit N`, `--models`, `--judges`, `--methods`, `--seeds`, `--modes`,
 `--comparisons`; tune with `--reasoning-effort low|medium|high` and
 `--workers`. `estimate` token assumptions can be overridden with
-`--assume judge_output=5000` (or an `estimate:` section in the config); judging
-dominates the cost, so trimming judges, modes or comparisons is the main lever.
+`--assume gen_output_divination=8000` (or an `estimate:` section in the config).
+Generation dominates the cost; ranking with Jev costs well under a dollar.
 
 ## Results layout
 
 ```
 results/<run>/
   readings.jsonl     one Reading per (question, method, seed, model)
-  judgments.jsonl    one Judgment per (group, judge), with label -> 'method|model' map
+  judgments.jsonl    one Judgment (ranking) per (group, judge), with label -> 'method|model' map
   probes.jsonl       knowledge probes
+  spend.jsonl        ledger of every paid API call
   probe_cutoffs.json models' self-reported training cutoffs
   config.<command>.yaml  resolved settings snapshot per command
   report.md          leaderboards, accuracy, per-domain, agreement, probes, cost
@@ -111,7 +136,7 @@ results/<run>/
 ```
 
 The report covers: method leaderboards (per generator and pooled; mean rank,
-mean score, pairwise win rate, CIs) and head-to-head matrices; objective
+mean P(best), P(acc), P(prec), pairwise win rate, CIs) and head-to-head matrices; objective
 accuracy on binary / multiple-choice questions vs a chance baseline; model
 leaderboards per method; self-preference; per-domain method scores; judge
 agreement (Kendall / Spearman); knowledge probes; cost per stage and model;
@@ -124,9 +149,10 @@ question metadata.
 2. Pick an event that resolved after every tested model's cutoff and release.
    Context sources must predate the event; the context summary must not hint
    at the outcome.
-3. For binary / multiple-choice questions, `resolved_answer` must be one of
-   `options` verbatim. Give outcome excerpts with the specific facts (numbers,
-   names, margins) a judge needs.
+3. Prefer `open` questions phrased as "what will happen?"; `resolved_answer` is
+   then a one-line headline. For binary / multiple-choice questions it must be
+   one of `options` verbatim. Give outcome excerpts with the specific facts
+   (numbers, names, margins) a judge needs.
 4. Run `uv run divination-bench validate`.
 
 ## Development

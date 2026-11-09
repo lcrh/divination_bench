@@ -109,6 +109,10 @@ class Reading(BaseModel):
     raw_response: str
     usage: dict | None = None
     created_at: str
+    fingerprint: str | None = Field(
+        default=None,
+        description="Hash of (model, prompt); a mismatch means the reading is stale.",
+    )
 
 
 JudgeMode = Literal["full", "prediction"]
@@ -117,13 +121,23 @@ Comparison = Literal["models", "methods"]
 
 class RankedItem(BaseModel):
     label: str
-    rank: int
-    score: float = Field(description="0-10 absolute correspondence score.")
-    rationale: str
+    rank: int = Field(description="1 = best, by the pooled probability `score`.")
+    score: float = Field(
+        description="Pooled probability of being the best forecast in its group: "
+        "normalised sqrt(p_accuracy * p_precision)."
+    )
+    p_accuracy: float = Field(
+        description="Probability of being the forecast that best matches what "
+        "happened, averaged over presentation orders."
+    )
+    p_precision: float = Field(
+        description="Probability of being the most specific forecast (judged without "
+        "the outcome), averaged over presentation orders."
+    )
 
 
 class Judgment(BaseModel):
-    """One judge call ranking a group of anonymised readings."""
+    """One judge's forced ranking of a group of anonymised readings."""
 
     question_id: str
     comparison: Comparison
@@ -139,6 +153,10 @@ class Judgment(BaseModel):
     raw_response: str
     usage: dict | None = None
     created_at: str
+    fingerprint: str | None = Field(
+        default=None,
+        description="Hash of (judge, requests incl. items); a mismatch means it is stale.",
+    )
 
 
 class KnowledgeProbe(BaseModel):
@@ -152,3 +170,4 @@ class KnowledgeProbe(BaseModel):
     raw_response: str
     usage: dict | None = None
     created_at: str
+    fingerprint: str | None = None

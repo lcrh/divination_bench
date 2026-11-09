@@ -1,23 +1,31 @@
-"""Anonymised ranking of readings by LLM judges."""
+"""Anonymised forced ranking of readings by a decision model (TypeSafe Jev).
+
+A group (2-3 readings of one question and seed that differ only in model, or only in
+method) is ranked by successive choice: the judge picks the best of the remaining
+forecasts, that one is removed, and it picks again, which is a Plackett-Luce ranking.
+Each pick pools two Choice answers, accuracy (judged with the outcome) and precision
+(judged without it), as a log-linear opinion pool: P(i) ∝ sqrt(P_acc(i) * P_prec(i)).
+Every round is shown in all cyclic rotations of the remaining forecasts and the
+probabilities are averaged, so each forecast appears once in every position.
+"""
 
 from __future__ import annotations
 
 import hashlib
 import json
+import math
 import random
-import re
-import threading
 from collections import defaultdict
 from collections.abc import Iterable, Sequence
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
+from functools import partial
 from pathlib import Path
 
 from rich.console import Console
-from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
 
-from .llm import BudgetExceededError, LLMClient
-from .prompts_judge import judge_messages, retry_message
+from .generate import run_grid
+from .llm import DecisionError, LLMClient
+from .prompts_judge import accuracy_request, precision_request
 from .schemas import (
     Comparison,
     JudgeMode,
@@ -27,10 +35,17 @@ from .schemas import (
     RankedItem,
     Reading,
 )
-from .store import append_jsonl, now_iso, read_jsonl
+from .store import (
+    append_jsonl,
+    fingerprint,
+    is_current,
+    merge_usage,
+    now_iso,
+    read_jsonl,
+)
 
 LABELS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-MAX_RETRIES = 2
+DECISION_ATTEMPTS = 3
 FULL_MODE_METHODS = (Method.tarot, Method.iching)
 
 console = Console(stderr=True)
@@ -49,7 +64,7 @@ def split_key(key: str) -> tuple[str, str]:
 
 @dataclass(frozen=True)
 class JudgeGroup:
-    """A set of readings ranked against each other in one judge call."""
+    """A set of readings ranked against each other."""
 
     question_id: str
     comparison: Comparison
@@ -128,7 +143,7 @@ def build_groups(
 
 
 def assign_labels(group: JudgeGroup, judge: str) -> dict[str, Reading]:
-    """Deterministic per-(group, judge) shuffle so position bias averages out across judges."""
+    """Deterministic per-(group, judge) anonymous labels."""
     seed_str = "|".join(str(x) for x in group.key(judge))
     rng = random.Random(int(hashlib.sha256(seed_str.encode()).hexdigest(), 16))
     items = list(group.readings)
@@ -136,120 +151,170 @@ def assign_labels(group: JudgeGroup, judge: str) -> dict[str, Reading]:
     return dict(zip(LABELS, items, strict=False))
 
 
-class JudgeParseError(ValueError):
-    pass
+def rotations(labels: Sequence[str]) -> list[list[str]]:
+    return [list(labels[i:]) + list(labels[:i]) for i in range(len(labels))]
 
 
-_FENCE = re.compile(r"```(?:json)?\s*(.*?)```", re.DOTALL)
-_LABEL = re.compile(r"^\[?\s*(?:item\s+)?([A-Z])\s*\]?$", re.IGNORECASE)
+def first_round_requests(
+    q: Question, group: JudgeGroup, judge: str
+) -> list[tuple[dict, dict]]:
+    items = assign_labels(group, judge)
+    reqs = []
+    for order in rotations(list(items)):
+        shown = {lab: items[lab] for lab in order}
+        reqs += [
+            accuracy_request(q, shown, group.mode),
+            precision_request(q, shown, group.mode),
+        ]
+    return reqs
 
 
-def _extract_json(text: str) -> dict:
-    candidates = [m.group(1) for m in _FENCE.finditer(text)] + [text]
-    decoder = json.JSONDecoder()
-    for cand in candidates:
-        for start in (i for i, ch in enumerate(cand) if ch == "{"):
-            try:
-                obj, _ = decoder.raw_decode(cand, start)
-            except json.JSONDecodeError:
-                continue
-            if isinstance(obj, dict) and "ranking" in obj:
-                return obj
-    raise JudgeParseError("no JSON object with a 'ranking' key found")
+def group_fingerprint(q: Question, group: JudgeGroup, judge: str) -> str:
+    """Changes whenever the judge would see something different: other items, edited
+    readings, an edited question or outcome, or changed rubric text. Later rounds
+    depend on earlier answers, so the first round stands for the whole ranking."""
+    reqs = [
+        {"state": s, "questions": qs} for s, qs in first_round_requests(q, group, judge)
+    ]
+    return fingerprint(judge, reqs)
 
 
-def parse_ranking(text: str, labels: Sequence[str]) -> list[RankedItem]:
-    obj = _extract_json(text)
-    entries = obj["ranking"]
-    if not isinstance(entries, list):
-        raise JudgeParseError("'ranking' is not a list")
-    items: dict[str, RankedItem] = {}
-    for e in entries:
-        if not isinstance(e, dict):
-            raise JudgeParseError("ranking entries must be objects")
-        m = _LABEL.match(str(e.get("label", "")).strip())
-        label = m.group(1).upper() if m else None
-        if label not in labels:
-            raise JudgeParseError(f"unknown label {e.get('label')!r}")
-        if label in items:
-            raise JudgeParseError(f"label {label} ranked twice")
+def parse_choice(answer: dict, labels: Sequence[str]) -> dict[str, float]:
+    if answer.get("type") != "choice":
+        raise DecisionError(f"not a choice answer: {answer!r}")
+    probs = answer.get("probabilities")
+    if probs:
+        if set(probs) != set(labels):
+            raise DecisionError(f"probabilities for {sorted(probs)}, expected {labels}")
+        out = {lab: max(0.0, float(probs[lab])) for lab in labels}
+    elif answer.get("choice") in labels:
+        out = {lab: float(lab == answer["choice"]) for lab in labels}
+    else:
+        raise DecisionError(f"unknown choice {answer.get('choice')!r}")
+    total = sum(out.values())
+    if total <= 0:
+        raise DecisionError("all choice probabilities are zero")
+    return {lab: p / total for lab, p in out.items()}
+
+
+def _ask(
+    client: LLMClient,
+    judge: str,
+    request: tuple[dict, dict],
+    usages: list,
+    raws: list,
+) -> dict[str, float]:
+    state, questions = request
+    ((key, q),) = questions.items()
+    labels = list(q["criteria"])
+    error: Exception | None = None
+    for _ in range(DECISION_ATTEMPTS):
         try:
-            rank, score = int(e["rank"]), float(e["score"])
-        except (KeyError, TypeError, ValueError) as exc:
-            raise JudgeParseError(f"bad rank/score for {label}: {exc}") from exc
-        if not 0 <= score <= 10:
-            raise JudgeParseError(f"score {score} for {label} outside 0-10")
-        items[label] = RankedItem(
-            label=label, rank=rank, score=score, rationale=str(e.get("rationale", ""))
-        )
-    missing = [lab for lab in labels if lab not in items]
-    if missing:
-        raise JudgeParseError(f"missing labels {missing}")
-    if sorted(i.rank for i in items.values()) != list(range(1, len(labels) + 1)):
-        raise JudgeParseError(f"ranks must be 1..{len(labels)} without ties")
-    return sorted(items.values(), key=lambda i: i.rank)
+            result = client.decide(judge, state, questions)
+            usages.append(result.usage)
+            raws.append({"question": key, "order": labels, "response": result.raw})
+            return parse_choice(result.answers[key], labels)
+        except DecisionError as e:
+            error = e
+    raise DecisionError(f"{judge} gave no usable {key} answer: {error}")
 
 
-def _merge_usage(usages: list[dict | None]) -> dict | None:
-    present = [u for u in usages if u]
-    if not present:
-        return None
-    merged: dict = dict(present[-1])
-    for k in {k for u in present for k, v in u.items() if _is_number(v)}:
-        merged[k] = sum(u.get(k) or 0 for u in present if _is_number(u.get(k, 0)))
-    merged["attempts"] = len(usages)
-    return merged
+def pool(p_acc: dict[str, float], p_prec: dict[str, float]) -> dict[str, float]:
+    """Log-linear (geometric) opinion pool of two distributions over the same labels."""
+    raw = {lab: math.sqrt(p_acc[lab] * p_prec[lab]) for lab in p_acc}
+    total = sum(raw.values())
+    if total <= 0:
+        raw = {lab: (p_acc[lab] + p_prec[lab]) / 2 for lab in p_acc}
+        total = sum(raw.values())
+    return {lab: v / total for lab, v in raw.items()}
 
 
-def _is_number(v: object) -> bool:
-    return isinstance(v, int | float) and not isinstance(v, bool)
+def _round(
+    q: Question,
+    items: dict[str, Reading],
+    remaining: list[str],
+    mode: JudgeMode,
+    judge: str,
+    client: LLMClient,
+    usages: list,
+    raws: list,
+) -> tuple[dict[str, float], dict[str, float]]:
+    """Accuracy and precision choice probabilities over `remaining`, averaged over
+    all cyclic presentation orders."""
+    acc: dict[str, float] = defaultdict(float)
+    prec: dict[str, float] = defaultdict(float)
+    orders = rotations(remaining)
+    for order in orders:
+        shown = {lab: items[lab] for lab in order}
+        for lab, p in _ask(
+            client, judge, accuracy_request(q, shown, mode), usages, raws
+        ).items():
+            acc[lab] += p / len(orders)
+        for lab, p in _ask(
+            client, judge, precision_request(q, shown, mode), usages, raws
+        ).items():
+            prec[lab] += p / len(orders)
+    return dict(acc), dict(prec)
 
 
 def judge_group(
-    question: Question,
-    group: JudgeGroup,
-    judge: str,
-    client: LLMClient,
-    *,
-    temperature: float = 0.0,
-    max_tokens: int = 16000,
+    question: Question, group: JudgeGroup, judge: str, client: LLMClient
 ) -> Judgment:
     items = assign_labels(group, judge)
-    labels = list(items)
-    messages = judge_messages(question, items, group.mode)
+    remaining = list(items)
     usages: list[dict | None] = []
-    error = ""
-    for _ in range(MAX_RETRIES + 1):
-        result = client.chat(
-            judge, messages, temperature=temperature, max_tokens=max_tokens
+    raws: list[dict] = []
+    order: list[str] = []
+    first: tuple[dict[str, float], dict[str, float], dict[str, float]] | None = None
+    while len(remaining) > 1:
+        acc, prec = _round(
+            question, items, remaining, group.mode, judge, client, usages, raws
         )
-        usages.append(result.usage)
-        try:
-            ranking = parse_ranking(result.text, labels)
-        except JudgeParseError as exc:
-            error = str(exc)
-            messages = messages + [
-                {"role": "assistant", "content": result.text},
-                retry_message(error, labels),
-            ]
-            continue
-        return Judgment(
-            question_id=group.question_id,
-            comparison=group.comparison,
-            judge_model=judge,
-            mode=group.mode,
-            seed=group.seed,
-            fixed_method=group.fixed_method,
-            fixed_model=group.fixed_model,
-            label_map={lab: reading_key(r) for lab, r in items.items()},
-            ranking=ranking,
-            raw_response=result.text,
-            usage=_merge_usage(usages),
-            created_at=now_iso(),
-        )
-    raise JudgeParseError(
-        f"{judge} gave invalid output {MAX_RETRIES + 1} times: {error}"
+        pooled = pool(acc, prec)
+        if first is None:
+            first = (acc, prec, pooled)
+        best = max(remaining, key=lambda lab: (pooled[lab], acc[lab], -ord(lab)))
+        order.append(best)
+        remaining.remove(best)
+    order += remaining
+    assert first is not None
+    acc0, prec0, pooled0 = first
+    return Judgment(
+        question_id=group.question_id,
+        comparison=group.comparison,
+        judge_model=judge,
+        mode=group.mode,
+        seed=group.seed,
+        fixed_method=group.fixed_method,
+        fixed_model=group.fixed_model,
+        label_map={lab: reading_key(r) for lab, r in items.items()},
+        ranking=[
+            RankedItem(
+                label=lab,
+                rank=i + 1,
+                score=pooled0[lab],
+                p_accuracy=acc0[lab],
+                p_precision=prec0[lab],
+            )
+            for i, lab in enumerate(order)
+        ],
+        raw_response=json.dumps(raws),
+        usage=merge_usage(usages),
+        created_at=now_iso(),
+        fingerprint=group_fingerprint(question, group, judge),
     )
+
+
+def current_judgments(judgments: Iterable[Judgment]) -> list[Judgment]:
+    """One judgment per (group, judge): the one covering the most items, newest first
+    among equals, so a later narrowed rerun cannot displace a fuller judgment."""
+    best: dict[JudgmentKey, tuple[int, int, Judgment]] = {}
+    for i, j in enumerate(judgments):
+        key = judgment_key(j)
+        rank = (len(j.ranking), i)
+        if key not in best or rank > best[key][:2]:
+            best[key] = (*rank, j)
+    return [j for *_, j in sorted(best.values(), key=lambda t: t[1])]
 
 
 def run_judging(
@@ -261,68 +326,41 @@ def run_judging(
     *,
     comparisons: Sequence[Comparison] = ("models", "methods"),
     modes: Sequence[JudgeMode] = ("full", "prediction"),
-    temperature: float = 0.0,
-    max_tokens: int = 16000,
     workers: int = 8,
     progress: bool = True,
 ) -> list[Judgment]:
-    """Judge every group not yet in `out_path`; returns all judgments in the file."""
+    """Judge every group without a current judgment in `out_path`; returns the current
+    judgments in the file. A group is re-judged when its items or prompt changed."""
     qmap = {q.id: q for q in questions}
     groups = build_groups(
         (r for r in readings if r.question_id in qmap), comparisons, modes
     )
-    done = {judgment_key(j) for j in read_jsonl(out_path, Judgment)}
-    todo = [(g, j) for g in groups for j in judges if g.key(j) not in done]
-    if not todo:
-        console.print(f"Judging: nothing to do ({len(done)} judgments on file).")
-        return read_jsonl(out_path, Judgment)
-
-    stop = threading.Event()
-    failures: list[str] = []
-
-    def work(group: JudgeGroup, judge: str) -> None:
-        if stop.is_set():
-            return
-        j = judge_group(
-            qmap[group.question_id],
-            group,
-            judge,
-            client,
-            temperature=temperature,
-            max_tokens=max_tokens,
-        )
-        append_jsonl(out_path, j)
-
-    with (
-        Progress(
-            TextColumn("[bold]Judging"),
-            BarColumn(),
-            MofNCompleteColumn(),
-            TextColumn("${task.fields[spent]:.2f} spent"),
-            console=console,
-            disable=not progress,
-        ) as bar,
-        ThreadPoolExecutor(max_workers=workers) as pool,
-    ):
-        task = bar.add_task("judge", total=len(todo), spent=client.spent_usd)
-        futures = {pool.submit(work, g, j): (g, j) for g, j in todo}
-        for fut in as_completed(futures):
-            g, j = futures[fut]
-            if fut.cancelled():
+    existing = read_jsonl(out_path, Judgment)
+    on_file: dict[JudgmentKey, list[str | None]] = defaultdict(list)
+    for j in existing:
+        on_file[judgment_key(j)].append(j.fingerprint)
+    jobs = []
+    stale = 0
+    for g in groups:
+        q = qmap[g.question_id]
+        for judge in judges:
+            fps = on_file.get(g.key(judge))
+            if fps and any(is_current(f, group_fingerprint(q, g, judge)) for f in fps):
                 continue
-            try:
-                fut.result()
-            except BudgetExceededError as exc:
-                if not stop.is_set():
-                    console.print(f"[red]{exc}; stopping judging.")
-                stop.set()
-                for f in futures:
-                    f.cancel()
-            except Exception as exc:  # noqa: BLE001 - one bad group must not kill the run
-                failures.append(f"{g.key(j)}: {exc}")
-                console.print(f"[yellow]Judge failed for {g.key(j)}: {exc}")
-            bar.update(task, advance=1, spent=client.spent_usd)
-
-    if failures:
-        console.print(f"[yellow]{len(failures)} judge calls failed (rerun to retry).")
-    return read_jsonl(out_path, Judgment)
+            stale += bool(fps)
+            jobs.append((g.key(judge), partial(judge_group, q, g, judge, client)))
+    if stale:
+        console.print(
+            f"[yellow]Re-judging {stale} groups whose items or prompt changed."
+        )
+    if not jobs:
+        console.print(f"Judging: nothing to do ({len(existing)} judgments on file).")
+    run_grid(
+        jobs,
+        client,
+        on_result=lambda j: append_jsonl(out_path, j),
+        workers=workers,
+        progress=progress,
+        description="judging",
+    )
+    return current_judgments(read_jsonl(out_path, Judgment))

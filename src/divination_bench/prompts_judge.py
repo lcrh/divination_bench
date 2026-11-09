@@ -1,150 +1,112 @@
-"""Prompt text for the judging stage."""
+"""Decisions-API requests for ranking forecasts with a decision model (TypeSafe Jev).
+
+A group of anonymised forecasts is ranked by repeatedly asking which of the remaining
+forecasts is best. Each round asks two Choice questions in separate requests:
+- accuracy: the judge sees the forecasts together with what actually happened;
+- precision: the judge sees the forecasts and the pre-event background only, so that
+  knowing the outcome cannot colour how specific a forecast looks.
+"""
 
 from __future__ import annotations
 
 from .schemas import JudgeMode, Question, Reading
 
-RUBRIC = """\
-You are an impartial judge for a forecasting benchmark. [[MOCK:judge]]
+ACCURACY_INSTRUCTIONS = (
+    "Compare each forecast with what actually happened. Which forecast's claims about "
+    "the outcome best match what actually happened? The central outcome matters most; "
+    "specific details count in a forecast's favour only if they came true, and count "
+    "against it if they turned out false. Restating facts already known beforehand, "
+    "and vague claims that cannot be checked, earn nothing. Ignore style, length and "
+    "symbolism."
+)
 
-You will see several anonymous forecasts about the same real-world question. \
-They were written before the outcome was known, using only the background \
-information shown to you. You are also told what actually happened. Your job \
-is to rank the items by how well what they predicted matches what actually \
-occurred.
+PRECISION_INSTRUCTIONS = (
+    "Which forecast is the most precise and committal about how events will turn out? "
+    "Judge only claims that go beyond the background known beforehand: a definite "
+    "central outcome plus concrete checkable details (numbers, names, margins, dates) "
+    "is precise; hedged, both-ways or unfalsifiable claims are not, however long. Do "
+    "not judge whether a forecast is plausible or correct, only how specific it is."
+)
 
-Scoring rubric, in order of importance:
-1. Core outcome. Did the item predict the outcome that actually happened (for \
-binary / multiple-choice questions: the resolved answer)? This dominates \
-everything else: an item that gets the core outcome right should normally \
-outrank one that gets it wrong.
-2. Specific, checkable details (numbers, margins, names, dates, sequence of \
-events). Credit specifics only when the outcome information confirms them. \
-Specifics that turned out wrong are penalised; a confident wrong detail is \
-worse than no detail.
-3. Vague, hedged, both-ways or unfalsifiable claims earn little credit, even \
-if they can be read as consistent with the outcome. Restating facts that were \
-already known beforehand is not a successful prediction.
-4. Claims contradicted by the outcome are penalised.
-Do not reward eloquence, length, confidence, symbolism or spiritual insight \
-for their own sake. Judge only what the items claimed would happen against \
-what did happen.
+FULL_MODE_NOTE = (
+    " Each forecast consists of a divination reading and the standalone prediction "
+    "derived from it; treat concrete claims in either as part of the forecast. Symbolic "
+    "language that could fit any outcome makes no claim."
+)
 
-{mode_instructions}
-
-Score each item from 0 to 10 on an absolute scale:
-- 9-10: core outcome right and the specific details right.
-- 7-8: core outcome right; specifics mostly right or sparse.
-- 4-6: partially right, or right only in a vague / hedged way.
-- 1-3: mostly wrong, or so vague it cannot be checked.
-- 0: core outcome clearly wrong and details contradicted.
-
-Then rank all items from best (rank 1) to worst (rank n). Ranks must be a \
-permutation of 1..n with no ties; break near-ties on the correctness and \
-specificity of checkable details. Ranks must agree with scores (a higher \
-score never gets a worse rank).
-
-Respond with only a JSON object and no other text, in this format:
-{{"ranking": [{{"label": "A", "rank": 1, "score": 8, "rationale": "one or two sentences"}}, ...]}}
-Include every item exactly once, using its letter as the label."""
-
-MODE_INSTRUCTIONS: dict[str, str] = {
-    "prediction": (
-        "Each item is a standalone prediction, plus the chosen answer where the "
-        "question has options. You are not told how the items were produced; "
-        "judge them only on their content."
-    ),
-    "full": (
-        "Each item is a full divination reading (a tarot spread or an I Ching "
-        "hexagram interpreted for the question) followed by the standalone "
-        "prediction derived from it. Read the whole item. Score primarily what "
-        "the reading and prediction together claimed would happen versus what "
-        "happened: the reading can earn credit where it clearly and specifically "
-        "anticipated aspects of the outcome, and loses credit where it asserted "
-        "things that did not happen. Symbolic language that could fit any "
-        "outcome earns nothing."
-    ),
-}
+ACCURACY_CRITERION = (
+    "Forecast {label}'s claims match what actually happened better than any other "
+    "forecast's."
+)
+PRECISION_CRITERION = "Forecast {label} is more precise and committal than any other."
 
 
-def system_prompt(mode: JudgeMode) -> str:
-    return RUBRIC.format(mode_instructions=MODE_INSTRUCTIONS[mode])
-
-
-def _question_block(q: Question) -> str:
-    lines = [
-        "# Question",
-        q.question.strip(),
-        "",
-        f"Question type: {q.question_type}",
-    ]
-    if q.options:
-        lines.append("Options: " + " | ".join(q.options))
-    lines += [
-        f"Resolution criteria: {q.resolution_criteria.strip()}",
-        "",
-        f"# What was known beforehand (as of {q.context_as_of})",
-        q.context_summary.strip(),
-        "",
-        f"# What actually happened (event date {q.event_date})",
-        q.outcome_summary.strip(),
-        "",
-        f"Resolved answer: {q.resolved_answer}",
-        "",
-        "## Outcome sources",
-    ]
-    for s in sorted(q.outcome_sources, key=lambda s: s.published_date):
-        lines.append(f"- {s.published_date} | {s.publisher}: {s.title}")
-        if s.excerpt:
-            lines.append(f"  Excerpt: {s.excerpt.strip()}")
-    return "\n".join(lines)
-
-
-def _item_block(label: str, r: Reading, mode: JudgeMode, show_answer: bool) -> str:
-    lines = [f"[Item {label}]"]
+def _forecast(r: Reading, mode: JudgeMode, show_answer: bool) -> dict:
+    out: dict = {}
     if mode == "full" and r.reading:
-        lines += ["Reading:", _defang(r.reading.strip()), ""]
-    lines += ["Prediction:", _defang(r.prediction.strip())]
+        out["reading"] = r.reading.strip()
+    out["prediction"] = r.prediction.strip()
     if show_answer:
-        lines.append(f"Chosen answer: {r.answer or '(none given)'}")
-    lines.append(f"[End of item {label}]")
-    return "\n".join(lines)
+        out["chosen_answer"] = r.answer or "(none given)"
+    return out
 
 
-def _defang(text: str) -> str:
-    """Keep item text from forging an item header line."""
-    return "\n".join(
-        " " + line if line.startswith("[Item ") else line for line in text.splitlines()
-    )
-
-
-def user_prompt(q: Question, items: dict[str, Reading], mode: JudgeMode) -> str:
+def _forecasts(q: Question, items: dict[str, Reading], mode: JudgeMode) -> dict:
     show_answer = q.question_type in ("binary", "multiple_choice")
-    blocks = [_item_block(lab, r, mode, show_answer) for lab, r in items.items()]
-    labels = ", ".join(items)
-    return (
-        _question_block(q)
-        + f"\n\n# Items to rank ({len(items)})\n\n"
-        + "\n\n".join(blocks)
-        + f"\n\nReturn the JSON ranking for all {len(items)} items ({labels})."
-    )
-
-
-def judge_messages(
-    q: Question, items: dict[str, Reading], mode: JudgeMode
-) -> list[dict]:
-    return [
-        {"role": "system", "content": system_prompt(mode)},
-        {"role": "user", "content": user_prompt(q, items, mode)},
-    ]
-
-
-def retry_message(error: str, labels: list[str]) -> dict:
     return {
-        "role": "user",
-        "content": (
-            f"Your previous response could not be used: {error}. Respond again with "
-            "only the JSON object, ranking every item exactly once (labels "
-            f"{', '.join(labels)}), ranks 1..{len(labels)} without ties."
-        ),
+        f"forecast {lab}": _forecast(r, mode, show_answer) for lab, r in items.items()
     }
+
+
+def _question(q: Question) -> dict:
+    out: dict = {"question": q.question.strip()}
+    if q.options:
+        out["options"] = q.options
+    return out
+
+
+def _choice(instructions: str, criterion: str, labels: list[str], mode: JudgeMode):
+    return {
+        "type": "choice",
+        "instructions": instructions + (FULL_MODE_NOTE if mode == "full" else ""),
+        "criteria": {lab: criterion.format(label=lab) for lab in labels},
+    }
+
+
+def accuracy_request(
+    q: Question, items: dict[str, Reading], mode: JudgeMode
+) -> tuple[dict, dict]:
+    """(state, questions) asking which of `items` (label -> reading, in presentation
+    order) best matches the outcome."""
+    state = {
+        **_question(q),
+        "resolution_criteria": q.resolution_criteria.strip(),
+        "what_actually_happened": q.outcome_summary.strip(),
+        "resolved_answer": q.resolved_answer,
+        "outcome_sources": [
+            {
+                "date": str(s.published_date),
+                "publisher": s.publisher,
+                "title": s.title,
+                **({"excerpt": s.excerpt.strip()} if s.excerpt else {}),
+            }
+            for s in sorted(q.outcome_sources, key=lambda s: s.published_date)
+        ],
+        **_forecasts(q, items, mode),
+    }
+    question = _choice(ACCURACY_INSTRUCTIONS, ACCURACY_CRITERION, list(items), mode)
+    return state, {"accuracy": question}
+
+
+def precision_request(
+    q: Question, items: dict[str, Reading], mode: JudgeMode
+) -> tuple[dict, dict]:
+    """(state, questions) asking which of `items` is most precise; never includes
+    the outcome."""
+    state = {
+        **_question(q),
+        "background_known_beforehand": q.context_summary.strip(),
+        **_forecasts(q, items, mode),
+    }
+    question = _choice(PRECISION_INSTRUCTIONS, PRECISION_CRITERION, list(items), mode)
+    return state, {"precision": question}

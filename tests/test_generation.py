@@ -187,6 +187,69 @@ def test_run_generation_end_to_end_and_resume(tmp_path):
     assert client2.calls == expected // 2
 
 
+def test_run_generation_resume_grows_grid_and_redoes_edited_questions(tmp_path):
+    out = tmp_path / "readings.jsonl"
+    models = ["mock/a", "mock/b"]
+    pilot = [binary_question("q-a")]
+    client = CountingClient()
+    run_generation(pilot, models, list(Method), [0], client, out, progress=False)
+    assert client.calls == len(Method) * len(models)
+
+    full = [binary_question("q-a"), binary_question("q-b")]
+    client = CountingClient()
+    readings = run_generation(
+        full, models, list(Method), [0, 1], client, out, progress=False
+    )
+    assert client.calls == 3 * len(Method) * len(models)
+    assert len(readings) == 4 * len(Method) * len(models)
+
+    edited = [
+        full[0].model_copy(update={"context_summary": "New polling changes things."}),
+        full[1],
+    ]
+    client = CountingClient()
+    readings = run_generation(
+        edited, models, list(Method), [0, 1], client, out, progress=False
+    )
+    assert client.calls == 2 * len(Method) * len(models)
+    assert len(readings) == 4 * len(Method) * len(models)
+    assert len({(r.question_id, r.method, r.seed, r.model) for r in readings}) == len(
+        readings
+    )
+
+
+def test_generate_one_keeps_cost_of_failed_attempts():
+    from divination_bench.generate import generate_one
+
+    class Scripted(LLMClient):
+        def __init__(self):
+            super().__init__()
+            self.texts = ["junk", "<prediction>p</prediction><answer>Yes</answer>"]
+
+        def chat(self, model, messages, **kw):
+            return ChatResult(self.texts.pop(0), {"cost": 0.25}, model)
+
+    r = generate_one(binary_question("q"), Method.predict, 0, "x/y", Scripted())
+    assert r.usage == {"cost": 0.5, "attempts": 2}
+    assert r.fingerprint
+
+
+def test_ledger_records_paid_calls(tmp_path, monkeypatch):
+    from divination_bench import llm
+
+    ledger = tmp_path / "spend.jsonl"
+    client = LLMClient(api_key="k", ledger_path=ledger)
+    monkeypatch.setattr(
+        client,
+        "_chat_remote",
+        lambda *a: ChatResult("junk", {"cost": 0.3}, "x/y"),
+    )
+    client.chat("x/y", [{"role": "user", "content": "hi"}])
+    client.chat("x/y", [{"role": "user", "content": "hi"}])
+    assert llm.ledger_cost(ledger) == pytest.approx(0.6)
+    assert llm.ledger_cost(tmp_path / "missing.jsonl") == 0.0
+
+
 class FlakyClient(CountingClient):
     def chat(self, model, messages, **kw):
         self.calls += 1

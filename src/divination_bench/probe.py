@@ -11,7 +11,14 @@ from .generate import run_grid
 from .llm import LLMClient
 from .prompts_generation import normalize_answer
 from .schemas import KnowledgeProbe, Question
-from .store import append_jsonl, now_iso, read_jsonl
+from .store import (
+    append_jsonl,
+    fingerprint,
+    is_current,
+    merge_usage,
+    now_iso,
+    read_jsonl,
+)
 
 PARSE_ATTEMPTS = 3
 
@@ -79,8 +86,10 @@ def _is_correct(question: Question, stated: str | None) -> bool | None:
 def probe_one(question: Question, model: str, client: LLMClient) -> KnowledgeProbe:
     messages = build_probe_messages(question)
     last_error: Exception | None = None
+    usages: list[dict | None] = []
     for _ in range(PARSE_ATTEMPTS):
         result = client.chat(model, messages, temperature=0.0, max_tokens=4000)
+        usages.append(result.usage)
         try:
             parsed = parse_probe(result.text)
         except (ValueError, json.JSONDecodeError) as e:
@@ -93,8 +102,9 @@ def probe_one(question: Question, model: str, client: LLMClient) -> KnowledgePro
             stated_answer=parsed["stated_answer"],
             correct=_is_correct(question, parsed["stated_answer"]),
             raw_response=result.text,
-            usage=result.usage,
+            usage=result.usage if len(usages) == 1 else merge_usage(usages),
             created_at=now_iso(),
+            fingerprint=fingerprint(model, messages),
         )
     raise ValueError(f"unparseable probe output: {last_error}")
 
@@ -108,15 +118,19 @@ def run_probes(
     workers: int = 8,
     progress: bool = True,
 ) -> list[KnowledgeProbe]:
-    """Probe every missing (question, model) pair; return all probes in the grid."""
-    existing = read_jsonl(out_path, KnowledgeProbe)
-    done = {(p.question_id, p.model) for p in existing}
-    grid = {(q.id, m) for q in questions for m in models}
+    """Probe every missing or stale (question, model) pair; return the current probes
+    in the grid."""
+    latest = {(p.question_id, p.model): p for p in read_jsonl(out_path, KnowledgeProbe)}
+    grid = [(q.id, m) for q in questions for m in models]
     jobs = [
         ((q.id, m), partial(probe_one, q, m, client))
         for q in questions
         for m in models
-        if (q.id, m) not in done
+        if (q.id, m) not in latest
+        or not is_current(
+            latest[(q.id, m)].fingerprint,
+            fingerprint(m, build_probe_messages(q)),
+        )
     ]
     new = run_grid(
         jobs,
@@ -126,7 +140,8 @@ def run_probes(
         progress=progress,
         description="probing",
     )
-    return [p for p in existing if (p.question_id, p.model) in grid] + new
+    latest.update(((p.question_id, p.model), p) for p in new)
+    return [latest[k] for k in grid if k in latest]
 
 
 def probe_cutoff(model: str, client: LLMClient) -> str:

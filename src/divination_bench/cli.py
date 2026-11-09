@@ -17,7 +17,7 @@ from rich.table import Table as RichTable
 from .analyze import build_report, question_metadata_rows, recorded_cost
 from .cutoffs import cutoff_violations, parse_cutoffs
 from .judge import build_groups
-from .llm import MOCK_PREFIX, LLMClient
+from .llm import MOCK_PREFIX, LLMClient, ledger_cost
 from .questions import load_questions
 from .schemas import Judgment, KnowledgeProbe, Method, Question, Reading
 from .store import now_iso, read_jsonl
@@ -30,6 +30,8 @@ app = typer.Typer(
 console = Console(width=None if sys.stdout.isatty() else 160)
 
 OPENROUTER_MODELS_URL = "https://openrouter.ai/api/v1/models"
+# Decision models are missing from /models; USD per token (input, output).
+DECISION_MODEL_PRICING = {"typesafe/jev-1.13": (0.042e-6, 0.0)}
 
 ConfigOpt = Annotated[Path, typer.Option("--config", help="YAML config file.")]
 RunOpt = Annotated[str, typer.Option("--run", help="Run name: results/<run>/.")]
@@ -116,8 +118,6 @@ class Settings:
     comparisons: list[str]
     gen_temperature: float
     gen_max_tokens: int
-    judge_temperature: float
-    judge_max_tokens: int
     workers: int
     budget: float | None
     reasoning_effort: str | None
@@ -135,6 +135,10 @@ class Settings:
     @property
     def probes_path(self) -> Path:
         return self.run_dir / "probes.jsonl"
+
+    @property
+    def spend_path(self) -> Path:
+        return self.run_dir / "spend.jsonl"
 
     def snapshot(self, command: str) -> None:
         self.run_dir.mkdir(parents=True, exist_ok=True)
@@ -202,8 +206,6 @@ def load_settings(
         comparisons=comparison_list,
         gen_temperature=float(gen.get("temperature", 1.0)),
         gen_max_tokens=int(gen.get("max_tokens", 16000)),
-        judge_temperature=float(jud.get("temperature", 0.0)),
-        judge_max_tokens=int(jud.get("max_tokens", 16000)),
         workers=workers or int(cfg.get("workers", 8)),
         budget=budget if budget is not None else cfg.get("budget_usd"),
         reasoning_effort=reasoning_effort or cfg.get("reasoning_effort"),
@@ -246,13 +248,23 @@ def check_cutoffs(s: Settings, qs: list[Question], ignore: bool) -> None:
         )
 
 
-def make_client(s: Settings) -> LLMClient:
-    client = LLMClient(budget_usd=s.budget, reasoning_effort=s.reasoning_effort)
-    client.spent_usd = recorded_cost(
+def run_spend(s: Settings) -> float:
+    """Everything this run directory has spent so far, across all earlier invocations."""
+    records = recorded_cost(
         read_jsonl(s.readings_path, Reading),
         read_jsonl(s.judgments_path, Judgment),
         read_jsonl(s.probes_path, KnowledgeProbe),
     )
+    return max(records, ledger_cost(s.spend_path))
+
+
+def make_client(s: Settings) -> LLMClient:
+    client = LLMClient(
+        budget_usd=s.budget,
+        reasoning_effort=s.reasoning_effort,
+        ledger_path=s.spend_path,
+    )
+    client.spent_usd = run_spend(s)
     if s.budget is not None:
         console.print(
             f"Budget ${s.budget:.2f}; already recorded in {s.run_dir}: "
@@ -365,10 +377,14 @@ def _probe(s: Settings, qs: list[Question], client: LLMClient, *, cutoff: bool) 
         ],
     )
     if cutoff:
-        cutoffs = {m: probe_cutoff(m, client) for m in s.probe_models}
-        (s.run_dir / "probe_cutoffs.json").write_text(json.dumps(cutoffs, indent=2))
-        for m, text in cutoffs.items():
-            console.print(f"[bold]{m}[/] cutoff: {text.strip()[:300]}")
+        path = s.run_dir / "probe_cutoffs.json"
+        cutoffs = json.loads(path.read_text()) if path.exists() else {}
+        for m in s.probe_models:
+            if m not in cutoffs:
+                cutoffs[m] = probe_cutoff(m, client)
+                path.write_text(json.dumps(cutoffs, indent=2))
+        for m in s.probe_models:
+            console.print(f"[bold]{m}[/] cutoff: {cutoffs[m].strip()[:300]}")
 
 
 @app.command()
@@ -479,8 +495,6 @@ def _judge(s: Settings, qs: list[Question], client: LLMClient) -> list[Judgment]
         s.judgments_path,
         comparisons=s.comparisons,
         modes=s.modes,
-        temperature=s.judge_temperature,
-        max_tokens=s.judge_max_tokens,
         workers=s.workers,
     )
     console.print(f"{len(judgments)} judgments; spent ${client.spent_usd:.2f}")
@@ -515,6 +529,7 @@ def _report(
         exclude_known=exclude_known,
         n_boot=n_boot,
         title=f"divination-bench report: {s.run}",
+        total_spend=run_spend(s),
     )
     if rep.excluded:
         console.print(f"Excluded known questions: {', '.join(rep.excluded)}")
@@ -575,10 +590,10 @@ class Assumptions:
     gen_input: int = 1500
     gen_output_divination: int = 5000
     gen_output_predict: int = 2500
-    judge_input_base: int = 2500
+    judge_input_base: int = 1500
     judge_input_per_item_full: int = 1800
     judge_input_per_item_prediction: int = 300
-    judge_output: int = 3000
+    judge_output: int = 70
     probe_input: int = 600
     probe_output: int = 1500
 
@@ -641,13 +656,17 @@ def estimate_calls(
             if g.mode == "full"
             else a.judge_input_per_item_prediction
         )
-        for j in s.judges:
-            add(
-                f"judge:{g.comparison}/{g.mode}",
-                j,
-                a.judge_input_base + per_item * len(g.readings),
-                a.judge_output,
-            )
+        # successive choice: rounds over n, n-1, ..., 2 forecasts, each in every
+        # rotation, each rotation asking accuracy and precision separately
+        for k in range(len(g.readings), 1, -1):
+            for j in s.judges:
+                for _ in range(2 * k):
+                    add(
+                        f"judge:{g.comparison}/{g.mode}",
+                        j,
+                        a.judge_input_base + per_item * k,
+                        a.judge_output,
+                    )
     return list(rows.values())
 
 
@@ -698,6 +717,7 @@ def estimate(
     except httpx.HTTPError as exc:
         console.print(f"[yellow]Could not fetch pricing ({exc}); showing tokens only.")
         pricing = {}
+    pricing = {**DECISION_MODEL_PRICING, **pricing}
 
     t = RichTable(title=f"Estimate for {len(qs)} questions")
     for col in ("stage", "model", "calls", "in tok", "out tok", "$/M in/out", "cost $"):

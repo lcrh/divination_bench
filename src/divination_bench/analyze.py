@@ -12,7 +12,8 @@ from itertools import combinations
 from pathlib import Path
 from typing import Self
 
-from .judge import judgment_key, split_key
+from .generate import current_readings
+from .judge import current_judgments, judgment_key, split_key
 from .schemas import Judgment, KnowledgeProbe, Method, Question, Reading
 
 SELF_PREFERENCE_THRESHOLD = 0.10
@@ -102,9 +103,19 @@ class Acc:
     score_sum: float = 0.0
     wins: float = 0.0
     pairs: float = 0.0
+    p_acc_sum: float = 0.0
+    p_prec_sum: float = 0.0
 
     def __add__(self, other: Acc) -> Acc:
-        out = Acc(self.n, self.rank_sum, self.score_sum, self.wins, self.pairs)
+        out = Acc(
+            self.n,
+            self.rank_sum,
+            self.score_sum,
+            self.wins,
+            self.pairs,
+            self.p_acc_sum,
+            self.p_prec_sum,
+        )
         out += other
         return out
 
@@ -114,7 +125,17 @@ class Acc:
         self.score_sum += other.score_sum
         self.wins += other.wins
         self.pairs += other.pairs
+        self.p_acc_sum += other.p_acc_sum
+        self.p_prec_sum += other.p_prec_sum
         return self
+
+    @property
+    def mean_p_accuracy(self) -> float | None:
+        return self.p_acc_sum / self.n if self.n else None
+
+    @property
+    def mean_p_precision(self) -> float | None:
+        return self.p_prec_sum / self.n if self.n else None
 
     @property
     def mean_rank(self) -> float | None:
@@ -146,9 +167,19 @@ class Item:
     score: float
     n_items: int
     judge_in_group: bool
+    p_accuracy: float = 0.0
+    p_precision: float = 0.0
 
     def acc(self) -> Acc:
-        return Acc(1, self.rank, self.score, self.n_items - self.rank, self.n_items - 1)
+        return Acc(
+            1,
+            self.rank,
+            self.score,
+            self.n_items - self.rank,
+            self.n_items - 1,
+            self.p_accuracy,
+            self.p_precision,
+        )
 
 
 def items_from_judgments(judgments: Iterable[Judgment]) -> list[Item]:
@@ -172,6 +203,8 @@ def items_from_judgments(judgments: Iterable[Judgment]) -> list[Item]:
                     score=ri.score,
                     n_items=len(j.ranking),
                     judge_in_group=j.judge_model in models,
+                    p_accuracy=ri.p_accuracy,
+                    p_precision=ri.p_precision,
                 )
             )
     return items
@@ -246,6 +279,8 @@ def leaderboard(
             "mean_rank": acc.mean_rank,
             "mean_score": acc.mean_score,
             "score_ci": score_ci.get(ent),
+            "p_accuracy": acc.mean_p_accuracy,
+            "p_precision": acc.mean_p_precision,
             "win_rate": acc.win_rate,
             "win_ci": win_ci.get(ent),
         }
@@ -256,10 +291,9 @@ def leaderboard(
 
 def judge_sets(items: Sequence[Item]) -> list[tuple[str, list[Item]]]:
     """Pooled, independent (judge's own model not among the items), then each judge."""
-    sets = [
-        (POOLED, list(items)),
-        (INDEPENDENT, [it for it in items if not it.judge_in_group]),
-    ]
+    sets = [(POOLED, list(items))]
+    if any(it.judge_in_group for it in items):
+        sets.append((INDEPENDENT, [it for it in items if not it.judge_in_group]))
     for judge in sorted({it.judge for it in items}):
         sets.append((judge, [it for it in items if it.judge == judge]))
     return [(name, its) for name, its in sets if its]
@@ -269,8 +303,10 @@ LB_COLUMNS = [
     ("n", "n"),
     ("questions", "questions"),
     ("mean_rank", "mean rank"),
-    ("mean_score", "mean score"),
-    ("score_ci", "score 95% CI"),
+    ("mean_score", "mean P(best)"),
+    ("score_ci", "P(best) 95% CI"),
+    ("p_accuracy", "P(acc)"),
+    ("p_precision", "P(prec)"),
     ("win_rate", "win rate"),
     ("win_ci", "win 95% CI"),
 ]
@@ -764,8 +800,10 @@ def cost_table(
         a = agg[(stage, model)]
         a[0] += 1
         a[1] += _usage_num(usage, "cost")
-        a[2] += _usage_num(usage, "prompt_tokens")
-        a[3] += _usage_num(usage, "completion_tokens")
+        a[2] += _usage_num(usage, "prompt_tokens") + _usage_num(usage, "input_tokens")
+        a[3] += _usage_num(usage, "completion_tokens") + _usage_num(
+            usage, "output_tokens"
+        )
     rows: list[dict[str, Cell]] = [
         {
             "stage": stage,
@@ -887,14 +925,21 @@ def build_report(
     n_boot: int = 1000,
     seed: int = 0,
     title: str = "divination-bench report",
+    total_spend: float | None = None,
 ) -> Report:
-    """Build the report; if `out_dir` is given, write report.md and one CSV per table."""
+    """Build the report; if `out_dir` is given, write report.md and one CSV per table.
+
+    Analyses use only the current record per key (superseded readings and judgments
+    are dropped); the cost table counts every record, since all of them were paid for.
+    """
     qmap = {q.id: q for q in questions}
     known = known_question_ids(p for p in probes if p.question_id in qmap)
     excluded = sorted(known) if exclude_known else []
     keep = set(qmap) - set(excluded)
-    readings = [r for r in readings if r.question_id in keep]
-    judgments = [j for j in judgments if j.question_id in keep]
+    paid_readings = [r for r in readings if r.question_id in keep]
+    paid_judgments = [j for j in judgments if j.question_id in keep]
+    readings = current_readings(paid_readings)
+    judgments = current_judgments(paid_judgments)
     used_qids = {r.question_id for r in readings} | {j.question_id for j in judgments}
     items = items_from_judgments(judgments)
 
@@ -912,7 +957,7 @@ def build_report(
         (
             "Cost and coverage",
             [
-                cost_table(readings, judgments, probes),
+                cost_table(paid_readings, paid_judgments, probes),
                 coverage_table(readings, judgments),
             ],
         ),
@@ -923,12 +968,20 @@ def build_report(
         "",
         f"- Questions with data: {len(used_qids)} (of {len(qmap)} loaded)",
         f"- Readings: {len(readings)}; judgments: {len(judgments)}",
-        f"- Recorded cost: ${recorded_cost(readings, judgments, probes):.2f}",
+        f"- Recorded cost: ${recorded_cost(paid_readings, paid_judgments, probes):.2f}"
+        + (
+            f" (total run spend incl. discarded calls: ${total_spend:.2f})"
+            if total_spend is not None
+            else ""
+        ),
         f"- Questions a tested model claimed to know: {len(known)}"
         + (f" (excluded: {', '.join(excluded)})" if excluded else " (not excluded)"),
         (
-            "- Scores are 0-10 judge scores; win rate is the share of pairwise "
-            "comparisons within a judge call that the entry won."
+            "- Rankings come from successive choices (best of the remaining forecasts, "
+            "repeated); win rate is the share of pairwise comparisons within a ranking "
+            "that the entry won. P(best) pools the judge's accuracy and precision "
+            "choice probabilities as sqrt(P_acc * P_prec), renormalised; P(acc) and "
+            "P(prec) are the two components (precision is judged without the outcome)."
         ),
         "",
     ]

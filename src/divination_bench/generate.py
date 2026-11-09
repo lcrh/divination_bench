@@ -10,6 +10,7 @@ from contextlib import nullcontext
 from functools import partial
 from pathlib import Path
 
+from rich.console import Console
 from rich.progress import (
     BarColumn,
     MofNCompleteColumn,
@@ -22,9 +23,17 @@ from .divination import cast
 from .llm import BudgetExceededError, LLMClient
 from .prompts_generation import build_generation_messages, parse_generation
 from .schemas import Method, Question, Reading
-from .store import append_jsonl, now_iso, read_jsonl
+from .store import (
+    append_jsonl,
+    fingerprint,
+    is_current,
+    merge_usage,
+    now_iso,
+    read_jsonl,
+)
 
 log = logging.getLogger(__name__)
+console = Console(stderr=True)
 
 PARSE_ATTEMPTS = 3
 
@@ -33,6 +42,22 @@ ReadingKey = tuple[str, str, int, str]
 
 def reading_key(r: Reading) -> ReadingKey:
     return (r.question_id, str(r.method), r.seed, r.model)
+
+
+def current_readings(readings: Iterable[Reading]) -> list[Reading]:
+    """The latest reading per (question, method, seed, model)."""
+    return list({reading_key(r): r for r in readings}.values())
+
+
+def _messages(question: Question, method: Method, seed: int) -> list[dict]:
+    _, cast_text = cast(question.id, method, seed)
+    return build_generation_messages(question, method, cast_text)
+
+
+def reading_fingerprint(
+    question: Question, method: Method, seed: int, model: str
+) -> str:
+    return fingerprint(model, _messages(question, method, seed))
 
 
 def generate_one(
@@ -49,10 +74,12 @@ def generate_one(
     cast_data, cast_text = cast(question.id, method, seed)
     messages = build_generation_messages(question, method, cast_text)
     last_error: ValueError | None = None
+    usages: list[dict | None] = []
     for _ in range(PARSE_ATTEMPTS):
         result = client.chat(
             model, messages, temperature=temperature, max_tokens=max_tokens
         )
+        usages.append(result.usage)
         try:
             parsed = parse_generation(result.text, question, method)
         except ValueError as e:
@@ -66,8 +93,9 @@ def generate_one(
             cast=cast_data,
             cast_text=cast_text,
             raw_response=result.text,
-            usage=result.usage,
+            usage=result.usage if len(usages) == 1 else merge_usage(usages),
             created_at=now_iso(),
+            fingerprint=fingerprint(model, messages),
             **parsed,
         )
     raise ValueError(
@@ -86,12 +114,17 @@ def run_grid[K, T](
 ) -> list[T]:
     """Run jobs concurrently; log and skip failures, stop scheduling on budget exhaustion."""
     stop = threading.Event()
+    budget_logged = False
     results: list[T] = []
 
     def guarded(fn: Callable[[], T]) -> T | None:
         if stop.is_set():
             return None
-        return fn()
+        try:
+            return fn()
+        except BudgetExceededError:
+            stop.set()
+            raise
 
     bar = (
         Progress(
@@ -112,9 +145,9 @@ def run_grid[K, T](
             try:
                 value = fut.result()
             except BudgetExceededError as e:
-                if not stop.is_set():
+                if not budget_logged:
+                    budget_logged = True
                     log.warning("%s; stopping after in-flight requests finish", e)
-                    stop.set()
                     for f in futures:
                         f.cancel()
                 value = None
@@ -142,21 +175,27 @@ def run_generation(
     workers: int = 8,
     progress: bool = True,
 ) -> list[Reading]:
-    """Generate every missing reading and return all readings in the grid (old and new)."""
+    """Generate every missing or stale reading and return the current readings in the
+    grid (old and new). A reading is stale when its prompt changed, e.g. the question
+    was edited after it was generated."""
     questions = list(questions)
     methods = [Method(m) for m in methods]
-    existing = read_jsonl(out_path, Reading)
-    done = {reading_key(r) for r in existing}
-    grid: set[ReadingKey] = set()
+    latest = {reading_key(r): r for r in read_jsonl(out_path, Reading)}
+    grid: list[ReadingKey] = []
     jobs: list[tuple[ReadingKey, Callable[[], Reading]]] = []
+    stale = 0
     for q in questions:
         for method in methods:
             for seed in seeds:
                 for model in models:
                     key = (q.id, str(method), seed, model)
-                    grid.add(key)
-                    if key in done:
-                        continue
+                    grid.append(key)
+                    prev = latest.get(key)
+                    if prev is not None:
+                        fp = reading_fingerprint(q, method, seed, model)
+                        if is_current(prev.fingerprint, fp):
+                            continue
+                        stale += 1
                     fn = partial(
                         generate_one,
                         q,
@@ -168,6 +207,8 @@ def run_generation(
                         max_tokens=max_tokens,
                     )
                     jobs.append((key, fn))
+    if stale:
+        console.print(f"[yellow]Regenerating {stale} readings whose prompt changed.")
     new = run_grid(
         jobs,
         client,
@@ -176,4 +217,5 @@ def run_generation(
         progress=progress,
         description="generating",
     )
-    return [r for r in existing if reading_key(r) in grid] + new
+    latest.update((reading_key(r), r) for r in new)
+    return [latest[k] for k in grid if k in latest]

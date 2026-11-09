@@ -34,7 +34,7 @@ def judgment(
     scores: list[float] | None = None,
 ) -> Judgment:
     """`order` lists 'method|model' keys from best to worst."""
-    scores = scores or [9.0 - 3 * i for i in range(len(order))]
+    scores = scores or [[0.6, 0.4], [0.5, 0.3, 0.2]][len(order) - 2]
     labels = "ABC"[: len(order)]
     first = order[0].split("|")
     return Judgment(
@@ -47,11 +47,17 @@ def judgment(
         fixed_model=first[1] if comparison == "methods" else None,
         label_map=dict(zip(labels, order, strict=True)),
         ranking=[
-            RankedItem(label=lab, rank=i + 1, score=scores[i], rationale="")
+            RankedItem(
+                label=lab,
+                rank=i + 1,
+                score=scores[i],
+                p_accuracy=scores[i],
+                p_precision=scores[i],
+            )
             for i, lab in enumerate(labels)
         ],
         raw_response="",
-        usage={"cost": 0.1, "prompt_tokens": 100, "completion_tokens": 50},
+        usage={"cost": 0.1, "input_tokens": 100, "output_tokens": 50},
         created_at="",
     )
 
@@ -217,8 +223,10 @@ def test_cli_validate_and_estimate_calls(tmp_path: Path):
         for stage in ("generate", "judge")
     }
     assert calls["generate"] == 2 * 3 * 2
-    # models: (pred: 3 methods + full: 2) per question; methods: 2 per (question, model)
-    assert calls["judge"] == 2 * (5 + 2 * 2)
+    # successive choice over k items costs 2k + 2(k-1) + ... + 4 calls:
+    # 4 for a pair, 10 for a triple. Per question, models: 5 pairs (pred: 3 methods,
+    # full: 2); methods: per model a triple (pred) and a pair (full).
+    assert calls["judge"] == 2 * (5 * 4 + 2 * (10 + 4))
 
 
 def test_cli_mock_run(tmp_path: Path):

@@ -16,12 +16,10 @@ generation:
 
 judging:
   modes: [full, prediction]
+  comparisons: [models, methods]
+  # OpenRouter Decisions-API model (https://openrouter.ai/api/alpha/decisions).
   judges:
-    - anthropic/claude-opus-5.5
-    - openai/gpt-6-astra
-    - deepseek/deepseek-v4-pro-0813
-  temperature: 0.0
-  max_tokens: 16000
+    - typesafe/jev-1.13
 
 # Documented cutoffs of the tested models. Every question's event_date must be
 # after max(training_cutoff, release_date) for every tested model.
